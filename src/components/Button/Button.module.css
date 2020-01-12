@@ -78,4 +78,8 @@
     line-height: var(--line-height-button);
     height: var(--line-height-button);
   }
+
+  .root.--small .feedback {
+    line-height: var(--line-height-button);
+  }
 }
