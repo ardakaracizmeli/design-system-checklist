@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Sneak';
+  font-style:  normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("Sneak-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Sneak';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("Sneak-Regular.woff") format("woff");
+}

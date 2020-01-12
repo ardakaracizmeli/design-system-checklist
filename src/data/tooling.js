@@ -1,0 +1,115 @@
+export default {
+  id: 'tooling',
+  title: 'Tooling',
+  description: 'To provide even more efficiency for anyone using your design system, make tooling essential. Find the workflows where you can integrate things with the tools people use. This helps organically spread your design system and make it crucial to people’s daily work.',
+  sections: [
+    {
+      title: 'Design',
+      id: 'design',
+      description: 'The UI and UX in a design system need to be tied to development as much as possible. The tools in this checklist should help designers and developers work better together.',
+      checklist: [
+        {
+          id: 'figma',
+          title: 'Figma',
+          description: 'Thanks to its cloud-based workflow, you can design and distribute your components to your team easily. Figma also lets everyone get involved in the design process early on, encouraging a better design culture.'
+        },
+        {
+          id: 'plugins',
+          title: 'Plugins',
+          description: 'Figma comes with a built-in plugin library. You can use any of the plugins to  populate data to your design files from real data sources, test edge cases or check how you’re complying with accessibility standards.'
+        },
+        {
+          id: 'versionControlDesign',
+          title: 'Version control',
+          description: 'Having your design versioned with semantic versioning will allow you to easily align design with development, roll back faulty changes and release changes in code and design at the same time.'
+        },
+        {
+          id: 'contributionGuidelinesDesign',
+          title: 'Contribution guidelines',
+          description: 'Define the process of contributing to the UI and UX of the design system and document it in a discoverable place to make it easier for everyone to contribute.'
+        },
+      ],
+      resources: [
+        {
+          title: 'Figma',
+          url: 'https://www.figma.com/'
+        },
+        {
+          title: 'Figma Plugins',
+          url: 'https://www.figma.com/c'
+        },
+        {
+          title: 'Semantic Versioning for Designers',
+          url: 'https://github.com/jackunderhill/semver-design'
+        },
+      ],
+    },
+    {
+      title: 'Development',
+      id: 'development',
+      description: 'One of the main challenges in developing a design system isn’t building the components.  It’s making your code stable, easy to read and contribute to.',
+      checklist: [
+        {
+          id: 'componentCatalog',
+          title: 'Component catalog',
+          description: 'Isolate your UI components’ environment outside of your product codebase to make sure they’re not dependent on any global dependencies and can be easily reused.'
+        },
+        {
+          id: 'documentation',
+          title: 'Documentation',
+          description: 'Having your code documented is key to driving adoption and reducing the load on the contributors.'
+        },
+        {
+          id: 'codeStyle',
+          title: 'Code style',
+          description: 'Having a defined code style helps align the way code’s written in the system and increases development velocity. It should be automated with the tools provided for each platform.'
+        },
+        {
+          id: 'unitTesting',
+          title: 'Unit testing',
+          description: 'Every part of the design system should be covered with unit tests.  Once your system’s adopted, any change in the isolated environment may affect how the product works.'
+        },
+        {
+          id: 'accessibilityTesting',
+          title: 'Accessibility testing',
+          description: 'Design systems should cover accessibility as much as possible.  Making this automatic reduces the risk of inaccessible components or user flows in the product.'
+        },
+        {
+          id: 'semanticVersioning',
+          title: 'Semantic versioning',
+          description: 'Version your code with semantic versioning that dictates how version numbers are assigned and incremented.'
+        },
+        {
+          id: 'releaseStrategy',
+          title: 'Release strategy',
+          description: 'Design system releases should be automated and ideally use scripts ran locally or in remote CI pipelines to prevent broken releases.'
+        },
+        {
+          id: 'commitMessageGuidelinesAndChangelog',
+          title: 'Commit message guidelines and changelog',
+          description: 'Automate the generation of your changelog by adopting a commit message guidelines that categorise and define the changes being made.'
+        },
+        {
+          id: 'mrTemplates',
+          title: 'MR templates',
+          description: 'Create merge request templates that outline the change being proposed to facilitate productive discussions.'
+        },
+        {
+          id: 'contributionGuidelines',
+          title: 'Contribution guidelines',
+          description: 'Define the process of contributing to the code of the design system. Document everything in a discoverable place to make it easier for everyone to contribute.'
+        },
+      ],
+      resources: [
+        {
+          title: 'Storybook: UI component explorer for frontend developers',
+          url: 'https://storybook.js.org/'
+        },
+        {
+          title: 'Semantic Versioning for Dummies',
+          url: 'https://medium.com/the-non-traditional-developer/semantic-versioning-for-dummies-45c7fe04a1f8'
+        },
+      ],
+    }
+  ],
+};

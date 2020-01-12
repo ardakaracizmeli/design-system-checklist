@@ -1,0 +1,28 @@
+.container {
+  margin-bottom: var(--spacing-32);
+  padding: 0 calc(var(--spacing-48) + var(--spacing-4));
+}
+
+.title {
+  position: sticky;
+  top: 0;
+  background: var(--color-background);
+  margin: 0 calc((var(--spacing-48) + var(--spacing-4)) * -1);
+  padding: var(--spacing-24) calc(var(--spacing-48) + var(--spacing-4)) 0;
+  z-index: 2;
+}
+
+.description {
+  margin-top: var(--spacing-32);
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0;
+  }
+
+  .title {
+    margin: 0;
+    padding: var(--spacing-24) 0 0;
+  }
+}

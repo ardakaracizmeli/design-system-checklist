@@ -1,0 +1,27 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.link:hover .arrowRight {
+  transform: translateX(var(--spacing-4));
+}
+
+.arrowRight {
+  margin-right: var(--spacing-12);
+  height: var(--spacing-20);
+  width: var(--spacing-20);
+  transition: var(--transition);
+}
+
+.arrowRight path {
+  fill: var(--color-text);
+}
+
+@media (max-width: 640px) {
+  .arrowRight {
+    width: var(--line-height-body);
+    height: var(--line-height-body);
+  }
+}
