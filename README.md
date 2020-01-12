@@ -1,4 +1,4 @@
-## Design systems checklist
+## Design Systems Checklist
 A checklist covering the main parts design systems consist of.
 
 ### Contributing
