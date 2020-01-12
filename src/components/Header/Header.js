@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import classnames from 'classnames';
+import ExportButton from '../../components/ExportButton';
 import s from './Header.module.css';
 
 const Header = () => {
   const [active, setActive] = useState(false);
+  const navClassName = classnames(s.nav, active && s['active']);
+  const burgerClassName = classnames(s.burger, active && s['active']);
 
   const toggleMenu = (flag) => {
     const nextActive = flag === undefined ? !active : flag;
-
     setActive(nextActive);
-    document.body.style.overflow = flag ? 'hidden' : 'auto';
+    document.body.style.overflow = nextActive ? 'hidden' : 'auto';
   };
 
   const closeMenu = () => toggleMenu(false);
@@ -20,8 +23,8 @@ const Header = () => {
         <Link to="/" onClick={closeMenu}>Design System Checklist</Link>
       </span>
 
-      <nav className={[s.nav, active && s.active].join(' ')}>
-        <ul>
+      <nav className={navClassName}>
+        <ul className={s.list}>
           <li className={s.item}>
             <Link to="/about/" onClick={closeMenu}>About</Link>
           </li>
@@ -31,10 +34,13 @@ const Header = () => {
           <li className={s.item}>
             <a href="https://github.com/ardakaracizmeli/design-system-checklist" target="_blank" rel="noopener noreferrer">Contribute</a>
           </li>
+          <li className={s.item}>
+            <ExportButton />
+          </li>
         </ul>
       </nav>
 
-      <button className={[s.burger, active && s.active].join(' ')} onClick={() => toggleMenu()}>
+      <button className={burgerClassName} onClick={() => toggleMenu()}>
         <span className={s.line} />
         <span className={s.line} />
         <span className={s.line} />

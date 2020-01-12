@@ -19,7 +19,7 @@ const ExportButton = () => {
     }, 5000);
   };
 
-  return <Button text="Export list state" feedbackText="Copied to clipboard" onClick={handleExport} toggled={exported} />
+  return <Button text="Share list" feedbackText="Copied" small onClick={handleExport} toggled={exported} />
 };
 
 export default ExportButton;

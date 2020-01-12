@@ -3,8 +3,8 @@ import classnames from 'classnames';
 import s from './Button.module.css';
 
 const Button = (props) => {
-  const { text, icon, feedbackText, toggled, onClick, href, attributes } = props;
-  const rootClassName = classnames(s.root, toggled && s['--toggled']);
+  const { text, icon, feedbackText, toggled, onClick, small, href, attributes } = props;
+  const rootClassName = classnames(s.root, small && s['--small'], toggled && s['--toggled']);
   const rootAttributes = { ...attributes };
   const TagName = href ? 'a' : 'button';
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '../../components/Hero';
-import ExportButton from '../../components/ExportButton';
 import SectionTitle from '../../components/SectionTitle';
 import { ReactComponent as ArrowRight } from '../../assets/icons/arrowRight.svg';
 import data from '../../data';
@@ -34,11 +33,9 @@ const HomeRoute = () => {
     <React.Fragment>
       <div className={s.container}>
         <Hero
-          title={<>Building better<br /> design systems</>}
+          title="Build better design systems"
           subtitle="An open-source checklist to help you plan, build and grow your design system."
-        >
-          <ExportButton />
-        </Hero>
+        />
         <ul className={s.list}>
           { items.map(renderItem) }
         </ul>

@@ -6,15 +6,14 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: var(--font-size-body);
-  line-height: calc(var(--spacing-48) + var(--spacing-8));
-  height: calc(var(--spacing-48) + var(--spacing-8));
+  font-size: var(--font-size-button);
+  line-height: var(--line-height-button);
+  height: var(--line-height-button);
   outline: none;
   box-sizing: border-box;
   border: 1px solid var(--color-text);
   padding: 0 var(--spacing-32);
   border-radius: var(--border-radius);
-  min-width: calc(var(--spacing-20) * 10);
   cursor: pointer;
   background: transparent;
   position: relative;
@@ -29,6 +28,12 @@
 
 .inner {
   transition: var(--transition);
+}
+
+.root.--small {
+  line-height: var(--spacing-48);
+  height: var(--spacing-48);
+  padding: 0 var(--spacing-16);
 }
 
 .icon {
@@ -48,6 +53,10 @@
   width: 100%;
 }
 
+.root.--small .feedback {
+  line-height: var(--spacing-48);
+}
+
 .root.--toggled .feedback {
   opacity: 1;
   transform: translateY(0) translateX(-50%);
@@ -63,5 +72,10 @@
 @media (max-width: 640px) {
   .root {
     width: 100%;
+  }
+
+  .root.--small {
+    line-height: var(--line-height-button);
+    height: var(--line-height-button);
   }
 }

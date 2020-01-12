@@ -16,5 +16,6 @@
 @media (max-width: 640px) {
   .container {
     padding: var(--spacing-32);
+    margin-bottom: calc(var(--spacing-32) * 2);
   }
 }

@@ -44,7 +44,7 @@
   }
 
   .list {
-    margin-bottom: var(--spacing-48);
+    margin-bottom: 0;
     padding: 0;
   }
 }

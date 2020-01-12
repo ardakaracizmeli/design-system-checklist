@@ -18,7 +18,6 @@ a {
 }
 
 ::selection {
-  background: var(--color-background);
   color: var(--color-primary);
 }
 

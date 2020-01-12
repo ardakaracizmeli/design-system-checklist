@@ -19,6 +19,8 @@
   /* Typography */
   --font-size-body: 16px;
   --line-height-body: 24px;
+  --font-size-button: 16px;
+  --line-height-button: 56px;
   --font-size-subtitle: 20px;
   --line-height-subtitle: 28px;
   --font-size-title: 24px;
