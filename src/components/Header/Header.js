@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import classnames from 'classnames';
-import ExportButton from '../../components/ExportButton';
 import s from './Header.module.css';
 
 const Header = () => {
@@ -24,7 +23,7 @@ const Header = () => {
       </span>
 
       <nav className={navClassName}>
-        <ul className={s.list}>
+        <ul>
           <li className={s.item}>
             <Link to="/about/" onClick={closeMenu}>About</Link>
           </li>
@@ -32,10 +31,10 @@ const Header = () => {
             <Link to="/workshop/" onClick={closeMenu}>Workshops</Link>
           </li>
           <li className={s.item}>
-            <a href="https://github.com/ardakaracizmeli/design-system-checklist" target="_blank" rel="noopener noreferrer">Contribute</a>
+          <Link to="/share/" onClick={closeMenu}>Share</Link>
           </li>
           <li className={s.item}>
-            <ExportButton />
+            <a href="https://github.com/ardakaracizmeli/design-system-checklist" target="_blank" rel="noopener noreferrer">Contribute</a>
           </li>
         </ul>
       </nav>

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
+import Button from '../../components/Button';
 import Hero from '../../components/Hero';
 import SectionTitle from '../../components/SectionTitle';
 import { ReactComponent as ArrowRight } from '../../assets/icons/arrowRight.svg';
@@ -11,6 +12,7 @@ const HomeRoute = () => {
   const keys = Object.keys(data);
   const items = keys.map(k => data[k]);
   const { checkedIds } = useCheckedIds();
+  const history = useHistory();
 
   const renderItem = (item) => {
     let total = 0;
@@ -35,7 +37,9 @@ const HomeRoute = () => {
         <Hero
           title="Build better design systems"
           subtitle="An open-source checklist to help you plan, build and grow your design system."
-        />
+        >
+          <Button text="Get started" onClick={() => history.push('/category/designLanguage/')}/>
+        </Hero>
         <ul className={s.list}>
           { items.map(renderItem) }
         </ul>

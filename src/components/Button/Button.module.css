@@ -10,16 +10,17 @@
   line-height: var(--line-height-button);
   height: var(--line-height-button);
   outline: none;
+  min-width: calc(var(--spacing-16) * 10);
   box-sizing: border-box;
-  border: 1px solid var(--color-text);
-  padding: 0 var(--spacing-32);
+  padding: 0 var(--spacing-24);
   border-radius: var(--border-radius);
   cursor: pointer;
-  background: transparent;
   position: relative;
   transition: background var(--transition) ease-in-out;
   overflow: hidden;
+  background: transparent;
   color: var(--color-text);
+  border: 1px solid var(--color-text);
 }
 
 .root:hover {
@@ -28,12 +29,6 @@
 
 .inner {
   transition: var(--transition);
-}
-
-.root.--small {
-  line-height: var(--spacing-48);
-  height: var(--spacing-48);
-  padding: 0 var(--spacing-16);
 }
 
 .icon {
@@ -53,10 +48,6 @@
   width: 100%;
 }
 
-.root.--small .feedback {
-  line-height: var(--spacing-48);
-}
-
 .root.--toggled .feedback {
   opacity: 1;
   transform: translateY(0) translateX(-50%);
@@ -67,19 +58,4 @@
   opacity: 0;
   transform: translateY(-100%);
   visibility: hidden;
-}
-
-@media (max-width: 640px) {
-  .root {
-    width: 100%;
-  }
-
-  .root.--small {
-    line-height: var(--line-height-button);
-    height: var(--line-height-button);
-  }
-
-  .root.--small .feedback {
-    line-height: var(--line-height-button);
-  }
 }

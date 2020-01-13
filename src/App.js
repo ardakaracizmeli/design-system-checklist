@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import HomeRoute from './routes/HomeRoute';
 import CategoryRoute from './routes/CategoryRoute';
+import ShareRoute from './routes/ShareRoute';
 import AboutRoute from './routes/AboutRoute';
 import WorkshopRoute from './routes/WorkshopRoute';
 import ExportRoute from './routes/ExportRoute';
@@ -44,6 +45,7 @@ const App = () => {
                     <Route exact path="/category/:category/" component={CategoryRoute} />
                     <Route exact path="/about/" component={AboutRoute} />
                     <Route exact path="/workshop/" component={WorkshopRoute} />
+                    <Route exact path="/share/" component={ShareRoute} />
                     <Route exact path="/export/:exportId" component={ExportRoute} />
                     <Route path="/" component={HomeRoute} />
                   </Switch>

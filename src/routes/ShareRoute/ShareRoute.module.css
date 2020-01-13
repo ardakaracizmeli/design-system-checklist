@@ -6,12 +6,7 @@
 }
 
 .text {
-  margin-top: var(--spacing-32);
-}
-
-.link {
-  color: var(--color-primary-dark);
-  transition: var(--transition);
+  margin-top: var(--spacing-48);
 }
 
 @media (max-width: 640px) {

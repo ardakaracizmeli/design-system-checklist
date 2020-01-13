@@ -54,12 +54,6 @@
   bottom: var(--spacing-16);
 }
 
-.list {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-
 .item {
   display: inline-block;
   margin-left: var(--spacing-24);
@@ -89,10 +83,6 @@
     top: var(--spacing-24);
   }
 
-  .list {
-    flex-direction: column;
-  }
-
   .nav {
     position: fixed;
     top: 0;
@@ -117,13 +107,9 @@
   .item {
     margin-left: 0;
     width: 100%;
-    padding: var(--spacing-8) 0;
+    padding: var(--spacing-12) 0;
     font-size: var(--font-size-title);
     line-height: var(--line-height-title);
-  }
-
-  .item:last-child {
-    margin-top: auto;
   }
 
   .item a {
