@@ -11,7 +11,7 @@ const Footer = () => {
       <div className={s.content}>
         <h4 className={s.title}>Need more than a checklist?</h4>
         <p className={s.text}>We offer in-house workshops including front-end & design architecture, covering best practices and team-specific scenarios.</p>
-        <Button text="Check our workshops" onClick={() => history.push('/workshop/')}/>
+        <Button text="About our workshops" onClick={() => history.push('/workshop/')}/>
       </div>
     </footer>
   );

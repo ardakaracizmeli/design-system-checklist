@@ -1,4 +1,5 @@
 import React from 'react';
+import CategoryNav from '../../components/CategoryNav';
 import Hero from '../../components/Hero';
 import Section from '../../components/Section';
 import data from '../../data';
@@ -23,6 +24,7 @@ const CategoryRoute = ({ match }) => {
       />
       <div className={s.sections}>
         { sections.map(section => <Section key={section.title} section={section} />) }
+        {/*<CategoryNav /> */}
       </div>
     </div>
   );

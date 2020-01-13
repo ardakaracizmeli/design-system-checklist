@@ -17,6 +17,8 @@
   --color-black: #000000;
 
   /* Typography */
+  --font-size-overline: 14px;
+  --line-height-overline: 20px;
   --font-size-body: 16px;
   --line-height-body: 24px;
   --font-size-button: 16px;
@@ -76,6 +78,8 @@
 
 @media (max-width: 640px) {
   :root {
+    --font-size-overline: 12px;
+    --line-height-overline: 18px;
     --font-size-body: 14px;
     --line-height-body: 20px;
     --font-size-subtitle: 18px;

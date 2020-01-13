@@ -5,7 +5,7 @@
 }
 
 .sections {
-  margin: calc(var(--spacing-48) * 2) 0;
+  margin-top: calc(var(--spacing-48) * 2);
 }
 
 @media (max-width: 640px) {
