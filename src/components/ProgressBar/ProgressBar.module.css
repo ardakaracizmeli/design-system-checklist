@@ -1,6 +1,7 @@
 .text {
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
+  color: var(--color-grayscale);
 }
 
 .text.completed {

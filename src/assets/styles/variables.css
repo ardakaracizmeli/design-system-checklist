@@ -7,8 +7,8 @@
   --color-secondary: #F2F1E8;
 
   --color-grayscale-light: #EEEEEE;
-  --color-grayscale: rgb(121, 59, 59);
-  --color-grayscale-dark: #414141;
+  --color-grayscale: #5f5f5f;
+  --color-grayscale-dark: #303030;
 
   --color-background: var(--color-primary-light);
   --color-text: var(--color-grayscale-dark);
@@ -62,7 +62,7 @@
     --color-primary: #978975;
     --color-primary-dark: #AF9F87;
 
-    --color-secondary: #161615;
+    --color-secondary: #171716;
 
     --color-grayscale-light: #212121;
     --color-grayscale: #757575;

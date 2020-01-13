@@ -2,7 +2,7 @@
   margin-top: var(--spacing-64);
   padding: var(--spacing-32) calc(var(--spacing-48) + var(--spacing-4));
   display: grid;
-  grid-gap: var(--spacing-16);
+  grid-gap: var(--spacing-48);
   grid-template-columns: 1fr 1fr;
 }
 
@@ -13,7 +13,8 @@
 .overline {
   font-size: var(--font-size-overline);
   line-height: var(--line-height-overline);
-  margin-bottom: var(--spacing-8);
+  color: var(--color-grayscale);
+  margin-bottom: var(--spacing-4);
   display: block;
 }
 
