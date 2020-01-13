@@ -53,7 +53,12 @@ const App = () => {
               )
             }
           </TransitionGroup>
-          <Footer />
+
+          <Switch>
+            <Route path="/category/" component={Footer} />
+            <Route path="/about/" component={Footer} />
+            <Route exact path="/" component={Footer} />
+          </Switch>
         </ChecklistsProvider>
       )} />
     </Router>
