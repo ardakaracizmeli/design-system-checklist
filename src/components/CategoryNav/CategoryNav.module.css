@@ -6,11 +6,6 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.item {
-  display: flex;
-  flex-direction: column;
-}
-
 .item:last-child {
   text-align: right;
 }
@@ -19,11 +14,14 @@
   font-size: var(--font-size-overline);
   line-height: var(--line-height-overline);
   margin-bottom: var(--spacing-8);
+  display: block;
 }
 
 .link {
   font-size: var(--font-size-subtitle);
   line-height: var(--line-height-subtitle);
+  display: inline-block;
+  vertical-align: top;
 }
 
 @media (max-width: 640px) {

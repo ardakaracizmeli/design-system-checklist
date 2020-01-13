@@ -6,12 +6,24 @@ const CategoryNav = ({ previous, next }) => {
   return (
     <div className={s.root}>
       <div className={s.item}>
-        <small className={s.overline}>Previous</small>
-        <Link className={s.link} to={previous.url}>{previous.text}</Link>
+        {
+          previous && (
+            <React.Fragment>
+              <small className={s.overline}>Previous</small>
+              <Link className={s.link} to={previous.url}>{previous.text}</Link>
+            </React.Fragment>
+          )
+        }
       </div>
       <div className={s.item}>
-        <small className={s.overline}>Next</small>
-        <Link className={s.link} to={next.url}>{next.text}</Link>
+        {
+          next && (
+            <React.Fragment>
+              <small className={s.overline}>Next</small>
+              <Link className={s.link} to={next.url}>{next.text}</Link>
+            </React.Fragment>
+          )
+        }
       </div>
     </div>
   );
