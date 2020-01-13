@@ -1,7 +1,5 @@
 .root {
   background: var(--color-secondary);
-  margin-top: calc(var(--spacing-64));
-  width: 100%;
 }
 
 .content {

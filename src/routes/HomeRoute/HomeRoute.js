@@ -38,7 +38,7 @@ const HomeRoute = () => {
           title="Build better design systems"
           subtitle="An open-source checklist to help you plan, build and grow your design system."
         >
-          <Button text="Get started" onClick={() => history.push('/category/designLanguage/')}/>
+          <Button text="Get started" onClick={() => history.push('/category/design-language/')}/>
         </Hero>
         <ul className={s.list}>
           { items.map(renderItem) }
