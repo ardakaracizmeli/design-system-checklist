@@ -9,7 +9,7 @@ const AboutText = () => {
       <br />
       <br />
       There’s lots of similarities in every design system. We should know, we’ve worked on them for a long time.
-      This website is a collection of best practices to help everyone build extensive and robust design systems wherever you work.
+      This website is a collection of best practices to help you build extensive and robust design systems wherever you work.
       <br />
       <br />
       Our categories might not look like the system you’ve planned or already have.
