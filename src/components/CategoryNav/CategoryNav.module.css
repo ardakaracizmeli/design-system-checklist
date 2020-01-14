@@ -1,6 +1,6 @@
 .root {
-  margin-top: var(--spacing-64);
-  padding: var(--spacing-32) calc(var(--spacing-48) + var(--spacing-4));
+  margin-top: calc(var(--spacing-32) * 3);
+  padding: 0 calc(var(--spacing-48) + var(--spacing-4));
   display: grid;
   grid-gap: var(--spacing-48);
   grid-template-columns: 1fr 1fr;
@@ -27,7 +27,7 @@
 
 @media (max-width: 640px) {
   .root {
-    padding: var(--spacing-32) 0;
-    margin-top: var(--spacing-32);
+    padding: 0;
+    margin-top: calc(var(--spacing-32) * 2);
   }
 }

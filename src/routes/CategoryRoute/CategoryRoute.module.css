@@ -5,15 +5,11 @@
 }
 
 .sections {
-  margin-top: calc(var(--spacing-48) * 2);
+  margin: calc(var(--spacing-48) * 2) 0;
 }
 
 @media (max-width: 640px) {
   .container {
     padding: var(--spacing-32);
-  }
-
-  .sections {
-    margin-bottom: 0;
   }
 }

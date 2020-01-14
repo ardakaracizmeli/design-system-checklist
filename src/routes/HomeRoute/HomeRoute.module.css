@@ -5,7 +5,7 @@
 }
 
 .list {
-  margin: calc(var(--spacing-48) * 2) 0;
+  margin: calc(var(--spacing-48) * 2) 0 calc(var(--spacing-48) * 3);
   padding: 0 calc(var(--spacing-48) + var(--spacing-4));
 }
 
@@ -44,7 +44,7 @@
   }
 
   .list {
-    margin-bottom: 0;
     padding: 0;
+    margin-bottom: calc(var(--spacing-48) * 2);
   }
 }
