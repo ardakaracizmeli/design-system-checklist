@@ -9,11 +9,11 @@ export default {
     "checklist": [{
       "id": "pm2",
       "title": "Roadmap",
-      "description": "Setting your short and long term vision and mapping out your course helps you decide the steps to take, understanding your place in the bigger picture and prioritising day-to-day tasks."
+      "description": "Setting your short and long term vision and mapping things out helps you decide the steps to take, understand your place in the bigger picture and prioritise day-to-day tasks."
     }, {
       "id": "pm3",
       "title": "Milestones",
-      "description": "With the help of your roadmap, define milestones that act as bigger epics in your project management. These will help you understand your progress."
+      "description": "Define milestones that act as bigger epics in your project management with the help of your roadmap. These will help you understand your progress."
     }, {
       "id": "pm4",
       "title": "Ticketing",
@@ -45,7 +45,7 @@ export default {
     }, {
       "id": "pm9",
       "title": "FAQ",
-      "description": "To save yourself and others time, define which questions are asked frequently by your audience and document them in a discoverable place."
+      "description": "To save everyone time, define which questions are asked frequently by your audience and document them in a discoverable place."
     }],
     "resources": [{
       "title": "The Paradox of Design Systems",

@@ -1,7 +1,7 @@
 export default {
   "id": "core-components",
   "title": "Core components",
-  "description": "Components are the main building blocks for user interfaces. Building a reusable component library enhances the product development workflow by reducing design and tech debt and speeding up the process.",
+  "description": "Components are the main building blocks for user interfaces. Building a reusable component library enhances your product development workflow by reducing design and tech debt and speeding up the process. Core components can’t be broken down into granular pieces without losing their meaning.",
   "sections": [{
     "title": "Avatar",
     "id": "cc1",
@@ -9,7 +9,7 @@ export default {
     "checklist": [{
       "id": "cc2",
       "title": "Image",
-      "description": "Avatar should mask an image into its shape and work with any image size since it may get this image from unknown data sources."
+      "description": "Avatars should mask an image into their shape and work with any image size since they may get this image from unknown data sources."
     }, {
       "id": "cc3",
       "title": "Image fallback",
@@ -29,7 +29,7 @@ export default {
     }, {
       "id": "cc7",
       "title": "Background colours",
-      "description": "When used with icons or text, there has to be a background colour from the design system colour tokens applied to the avatar shape. Make sure that icon and text have enough contrast ratio with the background according to the WCAG AA standard."
+      "description": "When used with icons or text, there has to be a background colour from the design system colour tokens applied to the avatar shape. Make sure that icons and text have enough contrast ratio with the background according to the WCAG AA standard."
     }],
     "resources": [{
       "title": "Design Better Avatars",
@@ -66,7 +66,7 @@ export default {
     }, {
       "id": "cc13",
       "title": "Area for icons or images",
-      "description": "Banners can supplement their message using a supporting icon or image. However, they shouldn’t be used instead of text content."
+      "description": "Banners can supplement their message using a supporting icon or image. They shouldn’t be used instead of text content."
     }, {
       "id": "cc14",
       "title": "Actions",
@@ -74,7 +74,7 @@ export default {
     }, {
       "id": "cc15",
       "title": "Dismissible action",
-      "description": "Don’t overwhelm the user with banners on the page, and include a dismissable action. That may be either a separate close button or one of the actions provided."
+      "description": "Don’t overwhelm the user with banners on the page and include a dismissable action. That may be either a separate close button or one of the actions provided."
     }, {
       "id": "cc16",
       "title": "Accessibility",
@@ -277,7 +277,7 @@ export default {
     }, {
       "id": "cc57",
       "title": "Error state",
-      "description": "The error state is used for form validation errors when the error is related to the checkbox field only. Always use a text error along with changing the color of the field."
+      "description": "The error state is used for form validation errors when the error is related to the checkbox field only. Always use a text error along with changing the colour of the field."
     }, {
       "id": "cc58",
       "title": "Keyboard support",
@@ -300,7 +300,7 @@ export default {
   }, {
     "title": "Input radio",
     "id": "cc60",
-    "description": "An input radio is a form element used for selecting only one option from a list of options.",
+    "description": "An input radio is a form element used for selecting one option from a list.",
     "checklist": [{
       "id": "cc61",
       "title": "Checked state",
@@ -316,11 +316,11 @@ export default {
     }, {
       "id": "cc64",
       "title": "Error state",
-      "description": "The error state is used for form validation errors when the error is related to the radio field only. Always use a text error along with changing the color of the field."
+      "description": "The error state is used for form validation errors when the error is related to the radio field only. Always use a text error along with changing the colour of the field."
     }, {
       "id": "cc65",
       "title": "Keyboard support",
-      "description": "Radio selection should be triggered when the Space key is pressed. Using native elements for this should provide this kind of interaction out of the box."
+      "description": "A radio selection should be triggered when the Space key is pressed. Using native elements for this should provide this kind of interaction out of the box."
     }, {
       "id": "cc66",
       "title": "Radio group",
@@ -384,7 +384,7 @@ export default {
     }, {
       "id": "cc77",
       "title": "Keyboard support",
-      "description": "Switch selection should be triggered when the Space key is pressed."
+      "description": "A switch selection should be triggered when the Space key is pressed."
     }],
     "resources": [{
       "title": "UX Design: Checkbox and Toggle in Forms",
@@ -411,7 +411,7 @@ export default {
     }, {
       "id": "cc81",
       "title": "Divided variant",
-      "description": "On many platforms (especially on mobile) lists with dividers are the best practice advised by the platform guidelines."
+      "description": "Lists with dividers are the best practice advised by many platform guidelines (especially on mobile)."
     }, {
       "id": "cc82",
       "title": "Supports actionable content",

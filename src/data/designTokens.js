@@ -13,7 +13,7 @@ export default {
     }, {
       "id": "dt3",
       "title": "Functional colours",
-      "description": "Besides your brand colours, make sure to have colours defined and made into variables for functions like disabled states, backgrounds, actions, and high contrast text."
+      "description": "Besides your brand colours, make sure to have colours defined and made into variables for functions like disabled states, backgrounds, actions and high contrast text."
     }, {
       "id": "dt4",
       "title": "Dark mode",
@@ -49,7 +49,7 @@ export default {
     }, {
       "id": "dt10",
       "title": "Spacing",
-      "description": "Horizontal and vertical rhythm plays a big role in a layout. Independent of your grid, you should provide easy methods for adding space between interface elements."
+      "description": "Horizontal and vertical rhythm plays a big role in a layout. You should provide easy methods for adding space between interface elements independent of your grid."
     }],
     "resources": [{
       "title": "Material Design: Responsive Layout Grid",
@@ -58,7 +58,7 @@ export default {
   }, {
     "title": "Typography",
     "id": "dt11",
-    "description": "Typography is one of the main ways we surface content in products. A clear hierarchy and contrasting styles in your typography scale will make things easier to read and help with the overall structure of your product. It’s also an opportunity to visualise your brand character and presence.",
+    "description": "Typography is one of the main ways you surface content in products. A clear hierarchy and contrasting styles in your typography scale will make things easier to read and help with the overall structure of your product. It’s also an opportunity to visualise your brand character and presence.",
     "checklist": [{
       "id": "dt12",
       "title": "Responsiveness",
@@ -70,7 +70,7 @@ export default {
     }, {
       "id": "dt14",
       "title": "Readability",
-      "description": "Optimising the letter-spacing (tracking), line-height (leading) and line length for your typography scale will help with the readability of text."
+      "description": "Optimising the letter spacing (tracking), line height (leading) and line length for your typography scale will help with the readability of text."
     }, {
       "id": "dt15",
       "title": "Performance",
@@ -87,7 +87,7 @@ export default {
   }, {
     "title": "Iconography",
     "id": "dt17",
-    "description": "Icons are symbols that represent functionality or content. They are especially recognisable and helpful in user interfaces since their meaning can be understood at a glance.  Although they can be used just for decoration, their full potential can be realised when they’re used meaningfully and consistently.",
+    "description": "Icons are symbols that represent functionality or content. They’re especially recognisable and helpful in user interfaces since their meaning can be understood at a glance. hough they can be used just for decoration, their full potential can be realised when they’re used meaningfully and consistently.",
     "checklist": [{
       "id": "dt18",
       "title": "Accessibility",

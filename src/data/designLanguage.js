@@ -18,6 +18,14 @@ export default {
       "id": "dl4",
       "title": "Tone of voice",
       "description": "A clear tone of voice defines how you speak to your audience at every moment in their journey, helping them get wherever they want to go."
+    }, {
+      "id": "dl5",
+      "title": "Terminology",
+      "description": "Create the standard terms and phrases that need to be kept the same throughout the user experience, speeding up the design process and unifying your voice."
+    }, {
+      "id": "dl6",
+      "title": "Writing guidelines",
+      "description": "Every consistent experience needs watertight writing. Laying down the foundations for your house style early keeps everything in line with consistent grammar, style choices and action-oriented language to help your design."
     }],
     "resources": [{
       "title": "Patagonia's vision",
@@ -31,26 +39,26 @@ export default {
     }]
   }, {
     "title": "Logo",
-    "id": "dl5",
-    "description": "Most customers form an opinion about a product in seconds. In most cases, your logo will be the first brand asset someone sees. And it’s all about making the right first impression. A distinctive logo helps users recognise a product immediately and giving them the essence of your branding.",
+    "id": "dl7",
+    "description": "Most customers form an opinion about a product in seconds. In most cases, your logo will be the first brand asset someone sees. It’s all about making the right first impression. A distinctive logo helps users recognise a product immediately and gives them the essence of your branding.",
     "checklist": [{
-      "id": "dl6",
+      "id": "dl8",
       "title": "Monochrome version",
       "description": "A monochrome version of your logo that looks good on top of photography or when it’s printed with a poor quality printer."
     }, {
-      "id": "dl7",
+      "id": "dl9",
       "title": "Small use guidance",
       "description": "Your logo must perform well and be recognisable at all sizes. Tips for using your logo in these cases will minimise the risk of it being misused."
     }, {
-      "id": "dl8",
-      "title": "Placement and clearance guidance",
-      "description": "Since it lives along with other content, your logo must come with clear guidance on how to place it and how to preserve its space."
-    }, {
-      "id": "dl9",
-      "title": "Usage guidance",
-      "description": "These are the logo crimes, providing contextual examples of what to do and what not to do with your logo."
-    }, {
       "id": "dl10",
+      "title": "Placement and clearance guidance",
+      "description": "Your logo must come with clear guidance on how to place it and how to preserve its space since it lives along with other content."
+    }, {
+      "id": "dl11",
+      "title": "Usage guidance",
+      "description": "These are the logo crimes, providing contextual examples of what to (not) do with your logo."
+    }, {
+      "id": "dl12",
       "title": "Different file formats",
       "description": "Providing a variety of formats for the vector version of your logo will make it easier for others to work and prevent anyone from redrawing it."
     }],
@@ -63,24 +71,24 @@ export default {
     }, { "title": "Atlassian Logos", "url": "https://www.atlassian.design/guidelines/brand/logos" }]
   }, {
     "title": "Guidelines",
-    "id": "dl11",
+    "id": "dl13",
     "description": "Providing guidance on how to approach common UX patterns will allow your organisation to establish a consistent approach and a consistent user experience on any platform.",
     "checklist": [{
-      "id": "dl12",
+      "id": "dl14",
       "title": "Accessibility",
       "description": "Guidelines for how you approach accessibility and how you leverage colour, hierarchy and assistive technologies to help your users."
     }, {
-      "id": "dl13",
+      "id": "dl15",
       "title": "User onboarding",
       "description": "How you onboard your users to your product or a new feature and give them a great experience from the start."
     }, {
-      "id": "dl14",
+      "id": "dl16",
       "title": "Notifications and permissions",
       "description": "Guardrails for how to write for the components that make up your designs, from style and technical rules to channeling your tone of voice correctly through copy."
     }, {
-      "id": "dl15",
-      "title": "Content",
-      "description": "Definitions of when is the right time to ask your users to give you permissions and what type of content is worthy of notifying them."
+      "id": "dl17",
+      "title": "Microcopy guidelines",
+      "description": "The standard way to write for the components in your design system. These take platform conventions and best practices for writing all into consideration."
     }],
     "resources": [{
       "title": "Human Interface Guidelines: Notifications",
