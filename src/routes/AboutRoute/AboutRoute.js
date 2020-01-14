@@ -5,7 +5,7 @@ import s from './AboutRoute.module.css';
 const AboutText = () => {
   return (
     <p className={s.text}>
-      Hello, we're <a className={s.link} href="https://twitter.com/ArdaKaracizmeli" target="_blank" rel="noopener noreferrer">@ArdaKaracizmeli</a>, <a className={s.link} href="https://twitter.com/blvdmitry" target="_blank" rel="noopener noreferrer">@DmitryBelyaev</a>, and <a className={s.link} href="mailto:steven.a.baguley@gmail.com">@StevenBaguley</a>.
+      Hello, we're <a className={s.link} href="https://twitter.com/ArdaKaracizmeli" target="_blank" rel="noopener noreferrer">@ArdaKaracizmeli</a>, <a className={s.link} href="https://twitter.com/blvdmitry" target="_blank" rel="noopener noreferrer">@DmitryBelyaev</a> and <a className={s.link} href="mailto:steven.a.baguley@gmail.com">@StevenBaguley</a>.
       <br />
       <br />
       There’s lots of similarities in every design system. We should know, we’ve worked on them for a long time.
