@@ -5,7 +5,7 @@ import s from './AboutRoute.module.css';
 const AboutText = () => {
   return (
     <p className={s.text}>
-      Hello, we're <a className={s.link} href="https://twitter.com/ArdaKaracizmeli" target="_blank" rel="noopener noreferrer">@ArdaKaracizmeli</a>, <a className={s.link} href="https://twitter.com/blvdmitry" target="_blank" rel="noopener noreferrer">@DmitryBelyaev</a> and <a className={s.link} href="mailto:steven.a.baguley@gmail.com">@StevenBaguley</a>.
+      Hello, we're <a className={s.link} href="https://twitter.com/ArdaKaracizmeli" target="_blank" rel="noopener noreferrer">@ArdaKaracizmeli</a>, <a className={s.link} href="https://twitter.com/blvdmitry" target="_blank" rel="noopener noreferrer">@DmitryBelyaev</a> and <a className={s.link} href="https://www.linkedin.com/in/steven-baguley-a59661a8/" target="_blank" rel="noopener noreferrer">@StevenBaguley</a>.
       <br />
       <br />
       We’ve been working on design systems for a long time. And we’ve spotted the similarities they all share. This website is a collection of best practices to help you build extensive and robust design systems wherever you work.
