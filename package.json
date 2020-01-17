@@ -1,6 +1,7 @@
 {
   "name": "design-system-checklist",
   "version": "0.1.0",
+  "homepage": "https://designsystemchecklist.com/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
