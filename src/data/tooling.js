@@ -26,6 +26,7 @@ export default {
     "resources": [
       { "title": "Figma", "url": "https://www.figma.com/" },
       { "title": "Sketch", "url": "https://www.sketch.com/" },
+      { "title": "Adobe XD", "url": "https://www.adobe.com/uk/products/xd.html" },
       { "title": "Abstract: Design Version Control", "url": "http://www.abstract.com/" },
       { "title": "Semantic Versioning for Designers", "url": "https://github.com/jackunderhill/semver-design" }
     ]
