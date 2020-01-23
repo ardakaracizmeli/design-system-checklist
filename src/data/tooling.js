@@ -8,12 +8,12 @@ export default {
     "description": "The UI and UX in a design system need to be tied to development as much as possible. The tools in this checklist should help designers and developers work better together.",
     "checklist": [{
       "id": "t2",
-      "title": "Figma",
-      "description": "Thanks to its cloud-based workflow, you can design and distribute your components to your team easily. Figma also lets everyone get involved in the design process early on, encouraging a better design culture."
+      "title": "Design Editor",
+      "description": "There are many Design Editors available in the market today with the most popular names being Sketch, Figma and Adobe XD (see resources below). If you're unsure which route to go down it's often best to speak with your design team."
     }, {
       "id": "t3",
       "title": "Plugins",
-      "description": "Figma comes with a built-in plugin library. You can use any of the plugins to  populate data to your design files from real data sources, test edge cases or check how you’re complying with accessibility standards."
+      "description": "Most popular Design Editors (Sketch and Figma, especially) come with third-party plugin support. Whilst it's best to use the editors in-built tools for laying out your components, plugins can bring in a range of useful data to populate them."
     }, {
       "id": "t4",
       "title": "Version control",
@@ -23,10 +23,12 @@ export default {
       "title": "Contribution guidelines",
       "description": "Define the process of contributing to the UI and UX of the design system and document it in a discoverable place to make it easier for everyone to contribute."
     }],
-    "resources": [{ "title": "Figma", "url": "https://www.figma.com/" }, {
-      "title": "Figma Plugins",
-      "url": "https://www.figma.com/c"
-    }, { "title": "Semantic Versioning for Designers", "url": "https://github.com/jackunderhill/semver-design" }]
+    "resources": [
+      { "title": "Figma", "url": "https://www.figma.com/" },
+      { "title": "Sketch", "url": "https://www.sketch.com/" },
+      { "title": "Abstract: Design Version Control", "url": "http://www.abstract.com/" },
+      { "title": "Semantic Versioning for Designers", "url": "https://github.com/jackunderhill/semver-design" }
+    ]
   }, {
     "title": "Development",
     "id": "t6",
