@@ -1,5 +1,8 @@
 ## Design Systems Checklist
-A checklist covering the main parts design systems consist of.
+
+https://designsystemchecklist.com
+
+An open-source checklist to help you plan, build and grow your design system.
 
 ### Contributing
 
