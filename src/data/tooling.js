@@ -8,8 +8,8 @@ export default {
     "description": "The UI and UX in a design system need to be tied to development as much as possible. The tools in this checklist should help designers and developers work better together.",
     "checklist": [{
       "id": "t2",
-      "title": "Design Editor",
-      "description": "There are many Design Editors available in the market today with the most popular names being Sketch, Figma and Adobe XD (see resources below). If you're unsure which route to go down it's often best to speak with your design team."
+      "title": "Design editor",
+      "description": "There are many design editors available in the market today with the most popular names being Sketch, Figma and Adobe XD. If you're unsure which route to go down it's often best to speak with your team."
     }, {
       "id": "t3",
       "title": "Plugins",
