@@ -354,6 +354,10 @@ export default {
       "title": "Error state",
       "description": "The error state is used for form validation errors when the error is related to the text field only. Always use a text error along with changing the colour of the field."
     }, {
+      "id": "cc113",
+      "title": "Autocomplete",
+      "description": "When applicable, adding support for the HTML autocomplete attribute will allow users to easily enter different data types."
+    }, {
       "id": "cc72",
       "title": "Icon support",
       "description": "Icons are used to describe input methods, express a text field state or provide additional functionality."
@@ -364,7 +368,13 @@ export default {
     }, {
       "title": "Backpack: Text Input",
       "url": "https://backpack.github.io/components/text-input?platform=web"
-    }, { "title": "Lightning Design System: Input", "url": "https://www.lightningdesignsystem.com/components/input/" }]
+    }, {
+      "title": "Lightning Design System: Input",
+      "url": "https://www.lightningdesignsystem.com/components/input/" 
+    }, {
+      "title": "MDN Web Docs: The HTML autocomplete attribute",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete"
+    }]
   }, {
     "title": "Input switch",
     "id": "cc73",
