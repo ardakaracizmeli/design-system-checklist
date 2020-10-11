@@ -79,6 +79,15 @@ export default {
       "title": "Storybook: UI component explorer for frontend developers",
       "url": "https://storybook.js.org/"
     }, {
+      "title": "Axe Core: Accessibility engine for automated UI testing",
+      "url": "https://github.com/dequelabs/axe-core"
+    }, {
+      "title": "Commitizen: Conventional commit messages",
+      "url": "https://github.com/commitizen"
+    }, {
+      "title": "Prettier: Opinionated code formatter",
+      "url": "https://prettier.io/"
+    }, {
       "title": "Semantic Versioning for Dummies",
       "url": "https://medium.com/the-non-traditional-developer/semantic-versioning-for-dummies-45c7fe04a1f8"
     }]
