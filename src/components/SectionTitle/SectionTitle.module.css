@@ -1,0 +1,10 @@
+.root {
+  padding-top: var(--spacing-24);
+}
+
+.title {
+  margin-bottom: var(--spacing-8);
+  font-size: var(--font-size-title);
+  line-height: var(--line-height-title);
+}
+

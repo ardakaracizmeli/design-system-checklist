@@ -1,0 +1,15 @@
+.container {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: var(--spacing-48);
+}
+
+.sections {
+  margin: calc(var(--spacing-48) * 2) 0;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: var(--spacing-32);
+  }
+}

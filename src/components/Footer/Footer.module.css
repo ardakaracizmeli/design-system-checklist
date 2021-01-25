@@ -1,0 +1,29 @@
+.root {
+  background: var(--color-secondary);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  max-width: var(--page-width);
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: var(--spacing-64) calc(var(--spacing-64) + var(--spacing-32));
+}
+
+.title {
+  font-size: var(--font-size-title);
+  line-height: var(--line-height-title);
+}
+
+.text {
+  margin: var(--spacing-16) 0 var(--spacing-32);
+}
+
+@media (max-width: 640px) {
+  .content {
+    padding: var(--spacing-48) var(--spacing-32);
+  }
+}

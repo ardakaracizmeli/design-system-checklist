@@ -1,0 +1,10 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+  rect { fill: #D1BFA6; }
+  @media (prefers-color-scheme: dark) {
+    rect { fill: #978975; }
+  }
+</style>
+<rect width="120" height="120" />
+<path fill-rule="evenodd" clip-rule="evenodd" d="M48.4501 71.3026L85.1014 34.6513L93.7988 43.3487L48.4501 88.6974L25.6514 65.8987L34.3488 57.2013L48.4501 71.3026Z" fill="white"/>
+</svg>

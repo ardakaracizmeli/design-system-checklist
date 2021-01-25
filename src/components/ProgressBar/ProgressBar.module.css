@@ -1,0 +1,25 @@
+.text {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  color: var(--color-grayscale);
+}
+
+.text.completed {
+  color: var(--color-primary-dark);
+}
+
+.container {
+  height: 3px;
+  position: relative;
+  width: 100%;
+  background: var(--color-grayscale-light);
+  margin-top: var(--spacing-24);
+}
+
+.bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: var(--color-primary);
+  transition: width ease-in-out var(--transition);
+}

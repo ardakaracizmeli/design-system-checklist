@@ -1,0 +1,34 @@
+.root {
+  padding: var(--spacing-32) calc(var(--spacing-48) + var(--spacing-4));
+}
+
+.root:last-child {
+  margin-bottom: 0;
+}
+
+.title {
+  font-size: var(--font-size-display);
+  line-height: var(--line-height-display);
+  font-weight: var(--font-weight-light);
+}
+
+.subtitle {
+  font-size: var(--font-size-title);
+  line-height: var(--line-height-title);
+  margin-top: var(--spacing-16);
+}
+
+.content {
+  margin-top: var(--spacing-48);
+}
+
+@media (max-width: 640px) {
+  .root {
+    margin: 0 0 calc(var(--spacing-32) * 2);
+    padding: 0;
+  }
+
+  .content {
+    margin-top: var(--spacing-32);
+  }
+}
