@@ -1,0 +1,60 @@
+.root {
+  font-family: 'Sneak', Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "dlig", "liga", "calt", "ss03";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--font-size-button);
+  line-height: var(--line-height-button);
+  height: var(--line-height-button);
+  outline: none;
+  box-sizing: border-box;
+  padding: 0 var(--spacing-24);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  position: relative;
+  transition: background var(--transition) ease-in-out;
+  overflow: hidden;
+  background: transparent;
+  color: var(--color-text);
+  border: 1px solid var(--color-text);
+}
+
+.root:hover {
+  background: var(--color-grayscale-light);
+}
+
+.inner {
+  transition: var(--transition);
+}
+
+.icon {
+  fill: currentColor;
+  margin-right: var(--spacing-8);
+}
+
+.feedback {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(100%) translateX(-50%);
+  transition: var(--transition);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  line-height: calc(var(--spacing-48) + var(--spacing-8));
+  width: 100%;
+}
+
+.root.--toggled .feedback {
+  opacity: 1;
+  transform: translateY(0) translateX(-50%);
+  visibility: visible;
+}
+
+.root.--toggled .inner {
+  opacity: 0;
+  transform: translateY(-100%);
+  visibility: hidden;
+}

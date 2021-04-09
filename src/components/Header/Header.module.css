@@ -1,0 +1,118 @@
+.container {
+  padding: var(--spacing-32) var(--spacing-48);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.logo {
+  padding-right: var(--spacing-24);
+  display: flex;
+  align-items: center;
+  z-index: 4;
+  position: relative;
+}
+
+.burger {
+  display: none;
+  padding: var(--spacing-24);
+  position: relative;
+  width: var(--spacing-24);
+  height: var(--spacing-24);
+  border: 0;
+  background: none;
+  z-index: 3;
+  margin-right: calc(var(--spacing-12) * -1);
+}
+
+.burger:focus {
+  outline: none;
+}
+
+.line {
+  position: absolute;
+  left: var(--spacing-12);
+  right: var(--spacing-12);
+  height: 2px;
+  width: var(--spacing-24);
+  background: var(--color-text);
+  transition: opacity 0.4s cubic-bezier(0.23,1,0.32,1), transform 0.4s cubic-bezier(0.23,1,0.32,1);
+}
+
+.line:nth-child(1) {
+  top: var(--spacing-16);
+}
+
+.line:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.line:nth-child(3) {
+  bottom: var(--spacing-16);
+}
+
+.item {
+  display: inline-block;
+  margin-left: var(--spacing-24);
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: var(--spacing-24) var(--spacing-32);
+    font-size: var(--font-size-subtitle);
+    line-height: var(--line-height-subtitle);
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .burger.active .line:nth-child(1) {
+    opacity: 0;
+  }
+
+  .burger.active .line:nth-child(2) {
+    transform: rotate(45deg);
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg);
+    top: var(--spacing-24);
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: var(--color-background);
+    z-index: 3;
+    padding: calc(var(--spacing-48) * 3) var(--spacing-32) var(--spacing-48);
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.45s cubic-bezier(0.23,1,0.32,1), transform 0.45s cubic-bezier(0.23,1,0.32,1);
+    pointer-events: none;
+  }
+
+  .nav.active {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .item {
+    margin-left: 0;
+    width: 100%;
+    padding: var(--spacing-12) 0;
+    font-size: var(--font-size-title);
+    line-height: var(--line-height-title);
+  }
+
+  .item a {
+    display: block;
+  }
+}
