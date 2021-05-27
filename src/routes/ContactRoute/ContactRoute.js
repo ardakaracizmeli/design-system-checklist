@@ -17,7 +17,7 @@ const ContactRoute = () => {
   return (
     <div className={s.container}>
       <Hero title="Need more guidance?" subtitle={text}>
-        <Button text="Contact us" href="mailto:ardakaracizmeli@gmail.com?cc=blv.dmitry@gmail.com" />
+        <Button text="Contact us" href="mailto:admin@lightweightlabs.design" />
       </Hero>
     </div>
   );
