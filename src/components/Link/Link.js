@@ -1,11 +1,13 @@
 import React from 'react';
-import { ReactComponent as ArrowRight } from '../../assets/icons/arrowRight.svg';
+import IconArrowRight from '../../icons/arrowRight';
 import s from './Link.module.css';
 
 const Link = ({ title, url }) => {
   return (
     <a className={s.link} href={url} target="_blank" rel="noopener noreferrer">
-      <ArrowRight className={s.arrowRight} />
+      <span className={s.arrowRight}>
+        <IconArrowRight />
+      </span>
       {title}
     </a>
   );

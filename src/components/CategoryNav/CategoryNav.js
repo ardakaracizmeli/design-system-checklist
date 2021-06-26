@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import s from './CategoryNav.module.css';
 
 const CategoryNav = ({ previous, next }) => {
@@ -10,7 +10,7 @@ const CategoryNav = ({ previous, next }) => {
           previous && (
             <React.Fragment>
               <small className={s.overline}>Previous</small>
-              <Link className={s.link} to={previous.url}>{previous.text}</Link>
+              <Link className={s.link} href={previous.url}>{previous.text}</Link>
             </React.Fragment>
           )
         }
@@ -20,7 +20,7 @@ const CategoryNav = ({ previous, next }) => {
           next && (
             <React.Fragment>
               <small className={s.overline}>Next</small>
-              <Link className={s.link} to={next.url}>{next.text}</Link>
+              <Link className={s.link} href={next.url}>{next.text}</Link>
             </React.Fragment>
           )
         }
