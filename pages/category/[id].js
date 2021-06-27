@@ -6,7 +6,8 @@ import Section from '../../src/components/Section';
 import data from '../../src/data';
 import s from './category.module.css';
 
-const CategoryRoute = () => {
+const CategoryRoute = (props) => {
+  const { tCore, tContent } = props;
   const { query } = useRouter();
   const { id } = query;
   const keys = Object.keys(data);
@@ -16,32 +17,72 @@ const CategoryRoute = () => {
   const item = items.find((item, index) => {
     const isFound = item.id === id;
 
-    if (isFound && items[index - 1]) previous = items[index - 1];
-    if (isFound && items[index + 1]) next = items[index + 1];
+    if (isFound && items[index - 1]) previous = tContent[items[index - 1].id];
+    if (isFound && items[index + 1]) next = tContent[items[index + 1].id];
 
     return isFound;
   });
 
   if (!item) return null;
 
-  const { title, description, sections } = item;
+  const { id: categoryId, sections } = item;
+  const categoryTranslations = tContent[categoryId];
 
   return (
     <div className={s.container}>
       <Hero
-        title={title}
-        subtitle={description}
+        title={categoryTranslations.title}
+        subtitle={categoryTranslations.description}
       />
       <div className={s.sections}>
-        { sections.map(section => <Section key={section.title} section={section} />) }
+        {
+          sections.map(section => {
+            const sectionTranslations = categoryTranslations.sections[section.id];
+
+            const sectionData = {
+              title: sectionTranslations.title,
+              description: sectionTranslations.description,
+              checklist: section.checklist.map(item => ({
+                id: item.id,
+                title: sectionTranslations.checklist[item.id].title,
+                description: sectionTranslations.checklist[item.id].description,
+              }))
+            }
+
+            return <Section key={section.id} section={sectionData} />;
+          })
+        }
         <CategoryNav
+          previousLabel={tCore.previous}
+          nextLabel={tCore.next}
           next={next ? { text: next.title, url: `/category/${next.id}/` } : { text: 'Share your progress', url: '/share/' }}
           previous={previous && { text: previous.title, url: `/category/${previous.id}/` }}
         />
       </div>
     </div>
   );
-
 };
+
+export async function getStaticPaths() {
+  return {
+    paths: [
+      '/category/design-language',
+      '/category/design-tokens',
+      '/category/core-components',
+      '/category/tooling',
+      '/category/project-management'
+    ],
+    fallback: true,
+  }
+}
+
+export async function getStaticProps({ locale }) {
+  const tCore = (await import(`../../src/translations/${locale}/core`)).default;
+  const tContent = (await import(`../../src/translations/${locale}/content`)).default;
+
+  return {
+    props: { tContent, tCore }
+  };
+}
 
 export default CategoryRoute;
