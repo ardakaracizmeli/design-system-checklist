@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from '../../components/Button';
-import Hero from '../../components/Hero';
-import s from './ContactRoute.module.css';
+import Button from '../../src/components/Button';
+import Hero from '../../src/components/Hero';
+import s from './contact.module.css';
 
 const ContactRoute = () => {
   const text = (

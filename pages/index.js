@@ -1,18 +1,17 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
-import Button from '../../components/Button';
-import Hero from '../../components/Hero';
-import SectionTitle from '../../components/SectionTitle';
-import { ReactComponent as ArrowRight } from '../../assets/icons/arrowRight.svg';
-import data from '../../data';
-import { useCheckedIds } from '../../utilities/checklistsContext';
-import s from './HomeRoute.module.css';
+import Link from 'next/link';
+import Button from '../src/components/Button';
+import Hero from '../src/components/Hero';
+import SectionTitle from '../src/components/SectionTitle';
+import ArrowRightIcon from "../src/icons/arrowRight";
+import data from '../src/data';
+import { useCheckedIds } from '../src/utilities/checklistsContext';
+import s from './index.module.css';
 
 const HomeRoute = () => {
   const keys = Object.keys(data);
   const items = keys.map(k => data[k]);
   const { checkedIds } = useCheckedIds();
-  const history = useHistory();
 
   const renderItem = (item) => {
     let total = 0;
@@ -24,9 +23,11 @@ const HomeRoute = () => {
     });
 
     return (
-      <Link to={`/category/${item.id}/`} className={s.listItem} key={item.id}>
-        <SectionTitle title={item.title} key={item.id} total={total} completed={completed} />
-        <div className={s.arrowRight}><ArrowRight /></div>
+      <Link href={`/category/${item.id}/`} className={s.listItem} key={item.id}>
+        <a>
+          <SectionTitle title={item.title} key={item.id} total={total} completed={completed} />
+          <div className={s.arrowRight}><ArrowRightIcon /></div>
+        </a>
       </Link>
     );
   };
@@ -38,7 +39,9 @@ const HomeRoute = () => {
           title="Build better design systems"
           subtitle="An open-source checklist to help you plan, build and grow your design system."
         >
-          <Button text="Get started" onClick={() => history.push('/category/design-language/')}/>
+          <Link href="/category/design-language">
+            <Button text="Get started" />
+          </Link>
         </Hero>
         <ul className={s.list}>
           { items.map(renderItem) }

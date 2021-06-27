@@ -10,8 +10,8 @@
 
 .arrowRight {
   margin-right: var(--spacing-12);
-  height: var(--spacing-20);
-  width: var(--spacing-20);
+  height: var(--spacing-24);
+  width: var(--spacing-24);
   transition: var(--transition);
 }
 

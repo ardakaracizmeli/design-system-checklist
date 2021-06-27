@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from "next/link";
 import classnames from 'classnames';
 import s from './Header.module.css';
 
@@ -19,22 +19,22 @@ const Header = () => {
   return (
     <header className={s.container}>
       <span className={s.logo}>
-        <Link to="/" onClick={closeMenu}>Design System Checklist</Link>
+        <Link href="/" onClick={closeMenu}>Design System Checklist</Link>
       </span>
 
       <nav className={navClassName}>
         <ul>
           <li className={s.item}>
-            <Link to="/about/" onClick={closeMenu}>About</Link>
+            <Link href="/about" onClick={closeMenu}>About</Link>
           </li>
           <li className={s.item}>
-          <Link to="/share/" onClick={closeMenu}>Share</Link>
+          <Link href="/share" onClick={closeMenu}>Share</Link>
           </li>
           <li className={s.item}>
           <a href="https://github.com/ardakaracizmeli/design-system-checklist" target="_blank" rel="noopener noreferrer">Contribute</a>
           </li>
           <li className={s.item}>
-            <Link to="/contact/" onClick={closeMenu}>Contact</Link>
+            <Link href="/contact" onClick={closeMenu}>Contact</Link>
           </li>
         </ul>
       </nav>

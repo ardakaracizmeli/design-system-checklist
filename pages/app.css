@@ -1,6 +1,6 @@
-@import 'assets/styles/reset.css';
-@import 'assets/styles/variables.css';
-@import 'assets/fonts/sneak.css';
+@import '../src/assets/styles/reset.css';
+@import '../src/assets/styles/variables.css';
+@import '../src/assets/fonts/sneak.css';
 
 body {
   font-family: 'Sneak', Arial, Helvetica, sans-serif;

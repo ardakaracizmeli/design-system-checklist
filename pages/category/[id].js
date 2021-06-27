@@ -1,18 +1,20 @@
 import React from 'react';
-import CategoryNav from '../../components/CategoryNav';
-import Hero from '../../components/Hero';
-import Section from '../../components/Section';
-import data from '../../data';
-import s from './CategoryRoute.module.css';
+import { useRouter } from "next/router";
+import CategoryNav from '../../src/components/CategoryNav';
+import Hero from '../../src/components/Hero';
+import Section from '../../src/components/Section';
+import data from '../../src/data';
+import s from './category.module.css';
 
-const CategoryRoute = ({ match }) => {
+const CategoryRoute = () => {
+  const { query } = useRouter();
+  const { id } = query;
   const keys = Object.keys(data);
   const items = keys.map(k => data[k]);
-  const category = match.params.category;
   let previous;
   let next;
   const item = items.find((item, index) => {
-    const isFound = item.id === category;
+    const isFound = item.id === id;
 
     if (isFound && items[index - 1]) previous = items[index - 1];
     if (isFound && items[index + 1]) next = items[index + 1];
@@ -25,7 +27,6 @@ const CategoryRoute = ({ match }) => {
   const { title, description, sections } = item;
 
   return (
-
     <div className={s.container}>
       <Hero
         title={title}

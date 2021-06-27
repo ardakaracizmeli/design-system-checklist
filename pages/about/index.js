@@ -1,6 +1,6 @@
 import React from 'react';
-import Hero from '../../components/Hero';
-import s from './AboutRoute.module.css';
+import Hero from '../../src/components/Hero';
+import s from './about.module.css';
 
 const AboutText = () => {
   return (
@@ -24,11 +24,11 @@ const AboutRoute = () => {
     <div className={s.container}>
       <Hero
         title="About"
-        subtitle={AboutText()}
+        subtitle={<AboutText />}
       />
     </div>
   );
-  
+
 };
 
 export default AboutRoute;
