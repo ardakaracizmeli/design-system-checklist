@@ -1,5 +1,13 @@
-import projectManagement from './projectManagement';
+import designLanguage from "./designLanguage";
+import designTokens from "./designTokens";
+import coreComponents from "./coreComponents";
+import tooling from "./tooling";
+import projectManagement from "./projectManagement";
 
 export default {
-  'project-management': projectManagement
+  "design-language": designLanguage,
+  "design-tokens": designTokens,
+  "core-components": coreComponents,
+  tooling,
+  "project-management": projectManagement,
 };
