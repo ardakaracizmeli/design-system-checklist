@@ -11,7 +11,7 @@ export default {
           id: "cc-avatar-image-fallback",
         },
         {
-          id: "cc-avatar-accessibility",
+          id: "cc-avatar-a11y",
         },
         {
           id: "cc-avatar-sizes",
@@ -20,7 +20,7 @@ export default {
           id: "cc-avatar-icon",
         },
         {
-          id: "cc-avatar-background-colors",
+          id: "cc-avatar-bg",
         },
       ],
       resources: [
@@ -41,7 +41,7 @@ export default {
           id: "cc-badge-appearance",
         },
         {
-          id: "cc-badge-dismissible-action",
+          id: "cc-badge-dismiss",
         },
       ],
       resources: [
@@ -62,19 +62,19 @@ export default {
           id: "cc-banner-appearance",
         },
         {
-          id: "cc-banner-area-for-icons-or-images",
+          id: "cc-banner-image",
         },
         {
           id: "cc-banner-actions",
         },
         {
-          id: "cc-banner-dismissible-action",
+          id: "cc-banner-dismiss",
         },
         {
-          id: "cc-banner-accessibility",
+          id: "cc-banner-a11y",
         },
         {
-          id: "cc-banner-responsiveness",
+          id: "cc-banner-mobile",
         },
       ],
       resources: [
@@ -88,19 +88,19 @@ export default {
       id: "cc-button",
       checklist: [
         {
-          id: "cc-button-hover-state",
+          id: "cc-button-hover",
         },
         {
-          id: "cc-button-active-state",
+          id: "cc-button-active",
           title: "Active state",
           description:
             "Used when a button gets pressed. The same state can be used to represent the button responsible for toggling another element on the page while that element is visibly opened.",
         },
         {
-          id: "cc-button-focused-state",
+          id: "cc-button-focus",
         },
         {
-          id: "cc-button-icon-support",
+          id: "cc-button-icon",
         },
         {
           id: "cc-button-disabled",
@@ -133,19 +133,19 @@ export default {
       id: "cc-card",
       checklist: [
         {
-          id: "cc-card-supports-any-type-of-content",
+          id: "cc-card-content",
         },
         {
-          id: "cc-card-information-structure",
+          id: "cc-card-structure",
         },
         {
-          id: "cc-card-supports-media-sections",
+          id: "cc-card-media",
         },
         {
-          id: "cc-card-supplementary-actions",
+          id: "cc-card-actions",
         },
         {
-          id: "cc-card-responsiveness",
+          id: "cc-card-mobile",
         },
       ],
       resources: [
@@ -163,22 +163,22 @@ export default {
       id: "cc-carousel",
       checklist: [
         {
-          id: "cc-carousel-navigation-controls",
+          id: "cc-carousel-controls",
         },
         {
-          id: "cc-carousel-supports-any-content",
+          id: "cc-carousel-content",
         },
         {
-          id: "cc-carousel-items-width-customisation",
+          id: "cc-carousel-width",
         },
         {
-          id: "cc-carousel-touch-events-support",
+          id: "cc-carousel-touch",
         },
         {
-          id: "cc-carousel-keyboard-navigation",
+          id: "cc-carousel-keyboard",
         },
         {
-          id: "cc-carousel-responsiveness",
+          id: "cc-carousel-mobile",
         },
       ],
       resources: [
@@ -200,25 +200,25 @@ export default {
       id: "cc-dropdown",
       checklist: [
         {
-          id: "cc-dropdown-supports-any-type-of-content",
+          id: "cc-dropdown-content",
         },
         {
-          id: "cc-dropdown-action-menu",
+          id: "cc-dropdown-menu",
         },
         {
-          id: "cc-dropdown-focus-trapping",
+          id: "cc-dropdown-trap",
         },
         {
-          id: "cc-dropdown-close-action",
+          id: "cc-dropdown-close",
         },
         {
-          id: "cc-dropdown-keyboard-navigation",
+          id: "cc-dropdown-keyboard",
         },
         {
-          id: "cc-dropdown-dynamic-positioning",
+          id: "cc-dropdown-position",
         },
         {
-          id: "cc-dropdown-responsiveness",
+          id: "cc-dropdown-mobile",
         },
       ],
       resources: [
@@ -248,28 +248,28 @@ export default {
       ],
     },
     {
-      id: "cc-input-checkbox",
+      id: "cc-checkbox",
       checklist: [
         {
-          id: "cc-input-checkbox-checked-state",
+          id: "cc-checkbox-checked",
         },
         {
-          id: "cc-input-checkbox-disabled-state",
+          id: "cc-checkbox-disabled",
         },
         {
-          id: "cc-input-checkbox-indeterminate-state",
+          id: "cc-checkbox-indeterminate",
         },
         {
-          id: "cc-input-checkbox-label",
+          id: "cc-checkbox-label",
         },
         {
-          id: "cc-input-checkbox-error-state",
+          id: "cc-checkbox-error",
         },
         {
-          id: "cc-input-checkbox-keyboard-support",
+          id: "cc-checkbox-keyboard",
         },
         {
-          id: "cc-input-checkbox-checkbox-group",
+          id: "cc-checkbox-group",
         },
       ],
       resources: [
@@ -288,25 +288,25 @@ export default {
       ],
     },
     {
-      id: "cc-input-radio",
+      id: "cc-radio",
       checklist: [
         {
-          id: "cc-input-radio-checked-state",
+          id: "cc-radio-checked",
         },
         {
-          id: "cc-input-radio-disabled-state",
+          id: "cc-radio-disabled",
         },
         {
-          id: "cc-input-radio-label",
+          id: "cc-radio-label",
         },
         {
-          id: "cc-input-radio-error-state",
+          id: "cc-radio-error",
         },
         {
-          id: "cc-input-radio-keyboard-support",
+          id: "cc-radio-keyboard",
         },
         {
-          id: "cc-input-radio-radio-group",
+          id: "cc-radio-group",
         },
       ],
       resources: [
@@ -325,25 +325,25 @@ export default {
       ],
     },
     {
-      id: "cc-input-text",
+      id: "cc-text-field",
       checklist: [
         {
-          id: "cc-input-text-disabled-state",
+          id: "cc-text-field-disabled",
         },
         {
-          id: "cc-input-text-placeholder",
+          id: "cc-text-field-placeholder",
         },
         {
-          id: "cc-input-text-label",
+          id: "cc-text-field-label",
         },
         {
-          id: "cc-input-text-error-state",
+          id: "cc-text-field-error",
         },
         {
-          id: "cc-input-text-autocomplete",
+          id: "cc-text-field-autocomplete",
         },
         {
-          id: "cc-input-text-icon-support",
+          id: "cc-text-field-icon",
         },
       ],
       resources: [
@@ -366,19 +366,19 @@ export default {
       ],
     },
     {
-      id: "cc-input-switch",
+      id: "cc-switch",
       checklist: [
         {
-          id: "cc-input-switch-checked-state",
+          id: "cc-switch-checked",
         },
         {
-          id: "cc-input-switch-disabled-state",
+          id: "cc-switch-disabled",
         },
         {
-          id: "cc-input-switch-label",
+          id: "cc-switch-label",
         },
         {
-          id: "cc-input-switch-keyboard-support",
+          id: "cc-switch-keyboard",
         },
       ],
       resources: [
@@ -400,16 +400,16 @@ export default {
       id: "cc-list",
       checklist: [
         {
-          id: "cc-list-supports-any-type-of-content",
+          id: "cc-list-content",
         },
         {
-          id: "cc-list-horizontal-stacking",
+          id: "cc-list-horizontal",
         },
         {
-          id: "cc-list-divided-variant",
+          id: "cc-list-divided",
         },
         {
-          id: "cc-list-supports-actionable-content",
+          id: "cc-list-action",
         },
       ],
       resources: [
@@ -427,16 +427,16 @@ export default {
       id: "cc-loading-indicator",
       checklist: [
         {
-          id: "cc-loading-indicator-linear-and-non-linear-variants",
+          id: "cc-loading-indicator-variants",
         },
         {
-          id: "cc-loading-indicator-determinate-or-indeterminate-wait-time",
+          id: "cc-loading-indicator-wait",
         },
         {
-          id: "cc-loading-indicator-light-variant",
+          id: "cc-loading-indicator-light",
         },
         {
-          id: "cc-loading-indicator-reduced-motion",
+          id: "cc-loading-indicator-reduced",
         },
       ],
       resources: [
@@ -458,22 +458,22 @@ export default {
       id: "cc-modal",
       checklist: [
         {
-          id: "cc-modal-supports-any-type-of-content",
+          id: "cc-modal-supports-content",
         },
         {
-          id: "cc-modal-supplementary-actions",
+          id: "cc-modal-actions",
         },
         {
-          id: "cc-modal-close-action",
+          id: "cc-modal-close",
         },
         {
-          id: "cc-modal-information-structure",
+          id: "cc-modal-structure",
         },
         {
-          id: "cc-modal-keyboard-navigation-support",
+          id: "cc-modal-keyboard",
         },
         {
-          id: "cc-modal-focus-trapping",
+          id: "cc-modal-trap",
         },
       ],
       resources: [
@@ -495,19 +495,19 @@ export default {
       id: "cc-tabs",
       checklist: [
         {
-          id: "cc-tabs-active-button-state",
+          id: "cc-tabs-active",
         },
         {
-          id: "cc-tabs-button-icon-support",
+          id: "cc-tabs-icon",
         },
         {
-          id: "cc-tabs-equally-sized-tab-buttons",
+          id: "cc-tabs-equal",
         },
         {
-          id: "cc-tabs-keyboard-navigation",
+          id: "cc-tabs-keyboard",
         },
         {
-          id: "cc-tabs-responsiveness",
+          id: "cc-tabs-mobile",
         },
       ],
       resources: [
@@ -529,19 +529,19 @@ export default {
       id: "cc-toast",
       checklist: [
         {
-          id: "cc-toast-dismissed-automatically",
+          id: "cc-toast-auto",
         },
         {
-          id: "cc-toast-action-support",
+          id: "cc-toast-action",
         },
         {
-          id: "cc-toast-handles-multiple-instances",
+          id: "cc-toast-queue",
         },
         {
-          id: "cc-toast-accessibility",
+          id: "cc-toast-a11y",
         },
         {
-          id: "cc-toast-responsiveness",
+          id: "cc-toast-mobile",
         },
       ],
       resources: [
@@ -563,19 +563,19 @@ export default {
       id: "cc-tooltip",
       checklist: [
         {
-          id: "cc-tooltip-keyboard-hover-support",
+          id: "cc-tooltip-keyboard",
         },
         {
-          id: "cc-tooltip-dynamic-positioning",
+          id: "cc-tooltip-position",
         },
         {
-          id: "cc-tooltip-hover-timeout",
+          id: "cc-tooltip-timeout",
         },
         {
-          id: "cc-tooltip-light-variant",
+          id: "cc-tooltip-light",
         },
         {
-          id: "cc-tooltip-instant-transition-for-element-groups",
+          id: "cc-tooltip-group",
         },
       ],
       resources: [

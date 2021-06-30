@@ -8,16 +8,16 @@ export default {
           id: "dl-brand-vision",
         },
         {
-          id: "dl-brand-design-principles",
+          id: "dl-brand-principles",
         },
         {
-          id: "dl-brand-tone-of-voice",
+          id: "dl-brand-tone",
         },
         {
           id: "dl-brand-terminology",
         },
         {
-          id: "dl-brand-writing-guidelines",
+          id: "dl-brand-writing",
         },
       ],
       resources: [
@@ -39,19 +39,19 @@ export default {
       id: "dl-logo",
       checklist: [
         {
-          id: "dl-logo-monochrome-version",
+          id: "dl-logo-mono",
         },
         {
-          id: "dl-logo-small-use-guidance",
+          id: "dl-logo-small",
         },
         {
-          id: "dl-logo-placement-and-clearance-guidance",
+          id: "dl-logo-placement",
         },
         {
-          id: "dl-logo-usage-guidance",
+          id: "dl-logo-usage",
         },
         {
-          id: "dl-logo-different-file-formats",
+          id: "dl-logo-format",
         },
       ],
       resources: [
@@ -73,16 +73,16 @@ export default {
       id: "dl-guidelines",
       checklist: [
         {
-          id: "dl-guidelines-accessibility",
+          id: "dl-guidelines-a11y",
         },
         {
-          id: "dl-guidelines-user-onboarding",
+          id: "dl-guidelines-onboarding",
         },
         {
-          id: "dl-guidelines-notifications-and-permissions",
+          id: "dl-guidelines-patterns",
         },
         {
-          id: "dl-guidelines-microcopy-guidelines",
+          id: "dl-guidelines-microcopy",
         },
       ],
       resources: [

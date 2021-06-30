@@ -30,12 +30,12 @@ export default {
       description:
         "Your users play a great role in shaping your design system. Creating communication channels where they can raise their voices helps you keep track of how they’re using your system. It’ll also improve their sense of ownership and the adoption of your system.",
       checklist: {
-        "pm-communications-community-meetings": {
+        "pm-communications-meetings": {
           title: "Community meetings",
           description:
             "Arrange community meetings with everyone who uses the design system. Share your knowledge and make proposals to improve the sense of community.",
         },
-        "pm-communications-communication-channel": {
+        "pm-communications-channel": {
           title: "Communication channel",
           description:
             "Most product development work happens digitally, so create a digital channel where people can reach out and ask questions.",
@@ -57,22 +57,22 @@ export default {
       description:
         "Data isn’t the only driving factor when it comes to the development of design systems. Keeping a sharp eye on how your system’s used in the development process and the end product can inform your go-forward strategy.",
       checklist: {
-        "pm-analytics-component-analytics": {
+        "pm-analytics-component": {
           title: "Component analytics",
           description:
             "Track the usage of your components. For development you can use built-in tools like Figma’s Design System Analytics. For the end product you can have a separate way of tracking per platform depending on the technology.",
         },
-        "pm-analytics-error-logging": {
+        "pm-analytics-logging": {
           title: "Error logging",
           description:
             "Implement a way to track and pinpoint component-related outages in your product.",
         },
-        "pm-analytics-tooling-analytics": {
+        "pm-analytics-tooling": {
           title: "Tooling analytics",
           description:
             "Track what tools are being used for your design system. Find out which ones are used the most and which features are the most popular.",
         },
-        "pm-analytics-service-and-health-metrics": {
+        "pm-analytics-health": {
           title: "Service and health metrics",
           description:
             "Define service and health metrics for your design system to set a benchmark on how well you’re doing. Common examples can be the number of tickets closed, improvements made or bugs fixed.",

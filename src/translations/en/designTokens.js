@@ -8,12 +8,12 @@ export default {
       description:
         "Not only an efficient way to showcase your brand, but also an efficient way to communicate with your users. Colour palettes created with purpose over aesthetics in mind can help you create intuitive design patterns by adding meaning to your interface.",
       checklist: {
-        "dt-color-accessibility": {
+        "dt-color-a11y": {
           title: "Accessibility",
           description:
             "Make sure to have accessible pairings between the main colours in your palette. More importantly, make sure that your background and text colours have at least an AA standard contrast ratio between them.",
         },
-        "dt-color-functional-colors": {
+        "dt-color-functional": {
           title: "Functional colours",
           description:
             "Besides your brand colours, make sure to have colours defined and made into variables for functions like disabled states, backgrounds, actions and high contrast text.",
@@ -62,12 +62,12 @@ export default {
       description:
         "Typography is one of the main ways you surface content in products. A clear hierarchy and contrasting styles in your typography scale will make things easier to read and help with the overall structure of your product. It’s also an opportunity to visualise your brand character and presence.",
       checklist: {
-        "dt-typography-responsiveness": {
+        "dt-typography-mobile": {
           title: "Responsiveness",
           description:
             "Desktop devices can usually afford to have bigger font sizes compared to mobile devices. Creating a typography scale that adapts to the viewport size will help with a more meaningful hierarchy and layout.",
         },
-        "dt-typography-grid-relation": {
+        "dt-typography-grid": {
           title: "Grid relation",
           description:
             "Font sizes and leading should match your grid to allow better pairing between text and other UI elements. A good example of this is text paired with icons with bounding boxes.",
@@ -94,7 +94,7 @@ export default {
       description:
         "Icons are symbols that represent functionality or content. They’re especially recognisable and helpful in user interfaces since their meaning can be understood at a glance. hough they can be used just for decoration, their full potential can be realised when they’re used meaningfully and consistently.",
       checklist: {
-        "dt-iconography-accessibility": {
+        "dt-iconography-a11y": {
           title: "Accessibility",
           description:
             "For icons that convey a meaning or serve a function, add the necessary support for screen readers. You can skip this for decorative icons.",
@@ -109,7 +109,7 @@ export default {
           description:
             "Name your icons based on what they are, not what they represent. For instance, a trash icon should be named trash, not delete. You can still add related keywords to improve discoverability.",
         },
-        "dt-iconography-relation-with-grid": {
+        "dt-iconography-grid": {
           title: "Relation with grid",
           description:
             "Draw your icons in a bounding box that plays well with your grid. This makes for a better pairing with other UI elements. A good example of this would be icons with bounding boxes paired with text.",
@@ -124,7 +124,7 @@ export default {
           description:
             "Adding keywords will improve the discoverability of each icon and provide a better user experience for anyone using your system.",
         },
-        "dt-iconography-reserved-icons": {
+        "dt-iconography-reserved": {
           title: "Reserved icons",
           description:
             "Reserving icons that represent common actions will prevent their use in any other context. System icons for navigation or adding and deleting are a good example. This leads to a more intuitive user experience.",

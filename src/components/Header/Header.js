@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 import Link from "next/link";
 import classnames from "classnames";
 import s from "./Header.module.css";
 
 const Header = ({ tCore }) => {
-  const router = useRouter();
+  // const router = useRouter();
   const [active, setActive] = useState(false);
   const navClassName = classnames(s.nav, active && s["active"]);
   const burgerClassName = classnames(s.burger, active && s["active"]);
@@ -18,9 +18,9 @@ const Header = ({ tCore }) => {
 
   const closeMenu = () => toggleMenu(false);
 
-  const handleLanguageChange = (e) => {
-    router.push(router.basePath, router.asPath, { locale: e.target.value });
-  };
+  // const handleLanguageChange = (e) => {
+  //   router.push(router.basePath, router.asPath, { locale: e.target.value });
+  // };
 
   return (
     <header className={s.container}>
@@ -32,19 +32,19 @@ const Header = ({ tCore }) => {
 
       <nav className={navClassName}>
         <ul>
-          <li className={s.item}>
-            <select
-              className={s.language}
-              onChange={handleLanguageChange}
-              defaultValue={router.locale}
-            >
-              <option value="en">English</option>
-              <option value="cz">Czech</option>
-            </select>
-          </li>
-          <li className={s.item} role="decoration">
-            |
-          </li>
+          {/*<li className={s.item}>*/}
+          {/*  <select*/}
+          {/*    className={s.language}*/}
+          {/*    onChange={handleLanguageChange}*/}
+          {/*    defaultValue={router.locale}*/}
+          {/*  >*/}
+          {/*    <option value="en">English</option>*/}
+          {/*    <option value="cz">Czech</option>*/}
+          {/*  </select>*/}
+          {/*</li>*/}
+          {/*<li className={s.item} role="decoration">*/}
+          {/*  |*/}
+          {/*</li>*/}
           <li className={s.item}>
             <Link href="/about" onClick={closeMenu}>
               {tCore.about}

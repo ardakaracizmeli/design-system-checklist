@@ -5,10 +5,10 @@ export default {
       id: "dt-color",
       checklist: [
         {
-          id: "dt-color-accessibility",
+          id: "dt-color-a11y",
         },
         {
-          id: "dt-color-functional-colors",
+          id: "dt-color-functional",
         },
         {
           id: "dt-color-dark-mode",
@@ -63,10 +63,10 @@ export default {
       id: "dt-typography",
       checklist: [
         {
-          id: "dt-typography-responsiveness",
+          id: "dt-typography-mobile",
         },
         {
-          id: "dt-typography-grid-relation",
+          id: "dt-typography-grid",
         },
         {
           id: "dt-typography-readability",
@@ -90,7 +90,7 @@ export default {
       id: "dt-iconography",
       checklist: [
         {
-          id: "dt-iconography-accessibility",
+          id: "dt-iconography-a11y",
         },
         {
           id: "dt-iconography-style",
@@ -99,7 +99,7 @@ export default {
           id: "dt-iconography-naming",
         },
         {
-          id: "dt-iconography-relation-with-grid",
+          id: "dt-iconography-grid",
         },
         {
           id: "dt-iconography-sizes",
@@ -108,7 +108,7 @@ export default {
           id: "dt-iconography-keywords",
         },
         {
-          id: "dt-iconography-reserved-icons",
+          id: "dt-iconography-reserved",
         },
         {
           id: "dt-iconography-guidelines",

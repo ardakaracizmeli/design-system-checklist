@@ -18,8 +18,10 @@ const CategoryRoute = (props) => {
   const item = items.find((item, index) => {
     const isFound = item.id === id;
 
-    if (isFound && items[index - 1]) previous = tContent[items[index - 1].id];
-    if (isFound && items[index + 1]) next = tContent[items[index + 1].id];
+    if (isFound && items[index - 1])
+      previous = { ...tContent[items[index - 1].id], id: item.id };
+    if (isFound && items[index + 1])
+      next = { ...tContent[items[index + 1].id], id: item.id };
 
     return isFound;
   });
@@ -40,8 +42,6 @@ const CategoryRoute = (props) => {
           {sections.map((section) => {
             const sectionTranslations =
               categoryTranslations.sections[section.id];
-
-            console.log(section.checklist);
 
             const sectionData = {
               title: sectionTranslations.title,

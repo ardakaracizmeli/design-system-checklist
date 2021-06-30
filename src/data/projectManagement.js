@@ -26,19 +26,19 @@ export default {
       ],
     },
     {
-      id: "pm-task-management-communications",
+      id: "pm-communications",
       checklist: [
         {
-          id: "pm-task-management-community-meetings",
+          id: "pm-communications-meetings",
         },
         {
-          id: "pm-task-management-communication-channel",
+          id: "pm-communications-channel",
         },
         {
-          id: "pm-task-management-open-hours",
+          id: "pm-communications-open-hours",
         },
         {
-          id: "pm-task-management-faq",
+          id: "pm-communications-faq",
         },
       ],
       resources: [
@@ -56,16 +56,16 @@ export default {
       id: "pm-analytics",
       checklist: [
         {
-          id: "pm-analytics-component-analytics",
+          id: "pm-analytics-component",
         },
         {
-          id: "pm-analytics-error-logging",
+          id: "pm-analytics-logging",
         },
         {
-          id: "pm-analytics-tooling-analytics",
+          id: "pm-analytics-tooling",
         },
         {
-          id: "pm-analytics-service-and-health-metrics",
+          id: "pm-analytics-health",
         },
       ],
       resources: [

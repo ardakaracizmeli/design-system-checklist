@@ -5,16 +5,16 @@ export default {
       id: "t-design",
       checklist: [
         {
-          id: "t-design-design-editor",
+          id: "t-design-editor",
         },
         {
           id: "t-design-plugins",
         },
         {
-          id: "t-design-version-control",
+          id: "t-design-version",
         },
         {
-          id: "t-design-contribution-guidelines",
+          id: "t-design-contribution",
         },
       ],
       resources: [
@@ -35,34 +35,34 @@ export default {
       id: "t-development",
       checklist: [
         {
-          id: "t-development-component-catalog",
+          id: "t-development-catalog",
         },
         {
           id: "t-development-documentation",
         },
         {
-          id: "t-development-code-style",
+          id: "t-development-style",
         },
         {
           id: "t-development-unit-testing",
         },
         {
-          id: "t-development-accessibility-testing",
+          id: "t-development-a11y-testing",
         },
         {
-          id: "t-development-semantic-versioning",
+          id: "t-development-version",
         },
         {
-          id: "t-development-release-strategy",
+          id: "t-development-release",
         },
         {
           id: "t-development-changelog",
         },
         {
-          id: "t-development-mr-templates",
+          id: "t-development-mr",
         },
         {
-          id: "t-development-contribution-guidelines",
+          id: "t-development-contribution",
         },
       ],
       resources: [
