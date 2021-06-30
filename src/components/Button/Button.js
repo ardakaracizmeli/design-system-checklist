@@ -2,7 +2,7 @@ import React from 'react';
 import classnames from 'classnames';
 import s from './Button.module.css';
 
-const Button = (props) => {
+const Button = (props, ref) => {
   const { text, icon, feedbackText, toggled, onClick, href, attributes } = props;
   const rootClassName = classnames(s.root, toggled && s['--toggled']);
   const rootAttributes = { ...attributes };
@@ -13,7 +13,7 @@ const Button = (props) => {
   }
 
   return (
-    <TagName {...rootAttributes} href={href} className={rootClassName} onClick={onClick}>
+    <TagName {...rootAttributes} href={href} className={rootClassName} onClick={onClick} ref={ref}>
       <span className={s.inner}>
         { icon && <span className={s.icon}>{ icon }</span> }
         { text && <span className={s.text}>{ text }</span> }
@@ -23,4 +23,4 @@ const Button = (props) => {
   );
 };
 
-export default Button;
+export default React.forwardRef(Button);

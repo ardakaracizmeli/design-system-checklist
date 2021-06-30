@@ -1,12 +1,20 @@
-import React from 'react';
-import s from './Hero.module.css';
+import React from "react";
+import s from "./Hero.module.css";
 
 const Hero = ({ title, subtitle, children }) => {
+  console.log(subtitle);
   return (
     <div className={s.root}>
       <h1 className={s.title}>{title}</h1>
-      <div className={s.subtitle}>{subtitle}</div>
-      { children && <div className={s.content}>{ children }</div> }
+      {typeof subtitle === "string" ? (
+        <p
+          className={s.subtitle}
+          dangerouslySetInnerHTML={{ __html: subtitle }}
+        />
+      ) : (
+        <p className={s.subtitle}>{subtitle}</p>
+      )}
+      {children && <div className={s.content}>{children}</div>}
     </div>
   );
 };

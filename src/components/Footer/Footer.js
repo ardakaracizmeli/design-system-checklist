@@ -1,16 +1,16 @@
-import React from 'react';
-import Link from 'next/link';
-import Button from '../Button';
-import s from './Footer.module.css';
+import React from "react";
+import Link from "next/link";
+import Button from "../Button";
+import s from "./Footer.module.css";
 
-const Footer = () => {
+const Footer = ({ tCore }) => {
   return (
     <footer className={s.root}>
       <div className={s.content}>
-        <h4 className={s.title}>Need more than a checklist?</h4>
-        <p className={s.text}>We offer in-house workshops including front-end & design architecture, covering best practices and team-specific scenarios.</p>
+        <h4 className={s.title}>{tCore.footerTitle}</h4>
+        <p className={s.text}>{tCore.footerText}</p>
         <Link href="/contact">
-          <Button text="Contact us" />
+          <Button text={tCore.footerAction} />
         </Link>
       </div>
     </footer>

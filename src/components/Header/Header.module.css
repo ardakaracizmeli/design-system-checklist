@@ -27,10 +27,6 @@
   margin-right: calc(var(--spacing-12) * -1);
 }
 
-.burger:focus {
-  outline: none;
-}
-
 .line {
   position: absolute;
   left: var(--spacing-12);
@@ -57,6 +53,16 @@
 .item {
   display: inline-block;
   margin-left: var(--spacing-24);
+}
+
+.language {
+  padding: 0;
+  background: none;
+  border: 0;
+  color: var(--color-text);
+  font-size: inherit;
+  appearance: none;
+  direction: rtl;
 }
 
 @media (max-width: 640px) {
