@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import CategoryNav from "../../src/components/CategoryNav";
 import Hero from "../../src/components/Hero";
 import Section from "../../src/components/Section";
+import Layout from "../../src/components/Layout";
 import data from "../../src/data";
 import s from "./category.module.css";
 
@@ -29,46 +30,49 @@ const CategoryRoute = (props) => {
   const categoryTranslations = tContent[categoryId];
 
   return (
-    <div className={s.container}>
-      <Hero
-        title={categoryTranslations.title}
-        subtitle={categoryTranslations.description}
-      />
-      <div className={s.sections}>
-        {sections.map((section) => {
-          const sectionTranslations = categoryTranslations.sections[section.id];
-
-          console.log(section.checklist);
-
-          const sectionData = {
-            title: sectionTranslations.title,
-            description: sectionTranslations.description,
-            checklist: section.checklist.map((item) => ({
-              id: item.id,
-              title: sectionTranslations.checklist[item.id].title,
-              description: sectionTranslations.checklist[item.id].description,
-            })),
-          };
-
-          return <Section key={section.id} section={sectionData} />;
-        })}
-        <CategoryNav
-          previousLabel={tCore.previous}
-          nextLabel={tCore.next}
-          next={
-            next
-              ? { text: next.title, url: `/category/${next.id}/` }
-              : { text: "Share your progress", url: "/share/" }
-          }
-          previous={
-            previous && {
-              text: previous.title,
-              url: `/category/${previous.id}/`,
-            }
-          }
+    <Layout tCore={tCore}>
+      <div className={s.container}>
+        <Hero
+          title={categoryTranslations.title}
+          subtitle={categoryTranslations.description}
         />
+        <div className={s.sections}>
+          {sections.map((section) => {
+            const sectionTranslations =
+              categoryTranslations.sections[section.id];
+
+            console.log(section.checklist);
+
+            const sectionData = {
+              title: sectionTranslations.title,
+              description: sectionTranslations.description,
+              checklist: section.checklist.map((item) => ({
+                id: item.id,
+                title: sectionTranslations.checklist[item.id].title,
+                description: sectionTranslations.checklist[item.id].description,
+              })),
+            };
+
+            return <Section key={section.id} section={sectionData} />;
+          })}
+          <CategoryNav
+            previousLabel={tCore.previous}
+            nextLabel={tCore.next}
+            next={
+              next
+                ? { text: next.title, url: `/category/${next.id}/` }
+                : { text: tCore.exportAction, url: "/share/" }
+            }
+            previous={
+              previous && {
+                text: previous.title,
+                url: `/category/${previous.id}/`,
+              }
+            }
+          />
+        </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 

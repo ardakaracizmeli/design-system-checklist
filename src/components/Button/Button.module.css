@@ -9,7 +9,6 @@
   font-size: var(--font-size-button);
   line-height: var(--line-height-button);
   height: var(--line-height-button);
-  outline: none;
   box-sizing: border-box;
   padding: 0 var(--spacing-24);
   border-radius: var(--border-radius);

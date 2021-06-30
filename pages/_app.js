@@ -1,10 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { ChecklistsProvider } from "../src/utilities/checklistsContext";
-import Header from "../src/components/Header";
-import Footer from "../src/components/Footer";
 import "./app.css";
 
 const ScrollToTop = () => {
@@ -16,13 +13,6 @@ const ScrollToTop = () => {
 };
 
 const App = ({ Component, pageProps }) => {
-  const { pathname } = useRouter();
-  const [mounted, setMounted] = React.useState(false);
-
-  React.useEffect(() => {
-    setMounted(true);
-  }, []);
-
   return (
     <>
       <Head>
@@ -92,23 +82,7 @@ const App = ({ Component, pageProps }) => {
       <ScrollToTop />
 
       <ChecklistsProvider>
-        <Header />
-        <TransitionGroup>
-          {mounted && (
-            <CSSTransition
-              key={pathname}
-              timeout={{ enter: 600, exit: 0 }}
-              classNames="fade"
-            >
-              <div>
-                <Component {...pageProps} />
-                {pathname !== "/contact" &&
-                  pathname !== "/share" &&
-                  pathname !== "/export/[id]" && <Footer />}
-              </div>
-            </CSSTransition>
-          )}
-        </TransitionGroup>
+        <Component {...pageProps} />
       </ChecklistsProvider>
     </>
   );
