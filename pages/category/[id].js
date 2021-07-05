@@ -17,11 +17,13 @@ const CategoryRoute = (props) => {
   let next;
   const item = items.find((item, index) => {
     const isFound = item.id === id;
+    const prevItem = items[index - 1].id;
+    const nextItem = items[index + 1].id;
 
-    if (isFound && items[index - 1])
-      previous = { ...tContent[items[index - 1].id], id: item.id };
-    if (isFound && items[index + 1])
-      next = { ...tContent[items[index + 1].id], id: item.id };
+    if (isFound && prevItem)
+      previous = { ...tContent[prevItem.id], id: prevItem.id };
+    if (isFound && nextItem)
+      next = { ...tContent[nextItem.id], id: nextItem.id };
 
     return isFound;
   });
