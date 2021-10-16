@@ -79,9 +79,6 @@ export default {
           id: "dl-guidelines-onboarding",
         },
         {
-          id: "dl-guidelines-patterns",
-        },
-        {
           id: "dl-guidelines-microcopy",
         },
       ],
