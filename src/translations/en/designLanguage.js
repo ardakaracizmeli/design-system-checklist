@@ -82,11 +82,6 @@ export default {
           description:
             "How you onboard your users to your product or a new feature and give them a great experience from the start.",
         },
-        "dl-guidelines-patterns": {
-          title: "Notifications and permissions",
-          description:
-            "Guardrails for how to write for the components that make up your designs, from style and technical rules to channeling your tone of voice correctly through copy.",
-        },
         "dl-guidelines-microcopy": {
           title: "Microcopy guidelines",
           description:
