@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import splitbee from '@splitbee/web';
 import { useRouter } from "next/router";
 import { ChecklistsProvider } from "../src/utilities/checklistsContext";
 import "./app.css";
@@ -13,6 +14,7 @@ const ScrollToTop = () => {
 };
 
 const App = ({ Component, pageProps }) => {
+  React.useEffect(() => { splitbee.init() });
   return (
     <>
       <Head>
