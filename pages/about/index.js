@@ -9,11 +9,29 @@ const AboutText = () => {
       Hello, we're{" "}
       <a
         className={s.link}
-        href="https://lightweightlabs.design"
+        href="https://twitter.com/ardakaracizmeli"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Lightweight Labs
+        Arda Karacizmeli
+      </a>
+      , {" "}
+      <a
+        className={s.link}
+        href="https://twitter.com/blvdmitry"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Dmitry Belyaev
+      </a>, {" "}
+      and {" "}
+      <a
+        className={s.link}
+        href="https://www.linkedin.com/in/stevenbaguley/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Steven Baguley
       </a>
       .
       <br />

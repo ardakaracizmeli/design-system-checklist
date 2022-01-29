@@ -11,7 +11,7 @@ const ContactRoute = ({ tCore }) => {
         <Hero title={tCore.contactTitle} subtitle={tCore.contactText}>
           <Button
             text={tCore.contactAction}
-            href="mailto:admin@lightweightlabs.design"
+            href="mailto:ardakaracizmeli@gmail.com,blv.dmitry@gmail.com, steven.a.baguley@gmail.com"
           />
         </Hero>
       </div>
