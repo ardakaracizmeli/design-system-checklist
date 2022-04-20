@@ -65,8 +65,8 @@ const Header = ({ tCore }) => {
             </a>
           </li>
           <li className={s.item}>
-            <Link href="/contact" onClick={closeMenu}>
-              {tCore.contact}
+            <Link href="/more" onClick={closeMenu}>
+              {tCore.more}
             </Link>
           </li>
         </ul>

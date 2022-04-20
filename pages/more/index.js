@@ -2,16 +2,17 @@ import React from "react";
 import Button from "../../src/components/Button";
 import Hero from "../../src/components/Hero";
 import Layout from "../../src/components/Layout";
-import s from "./contact.module.css";
+import s from "./more.module.css";
 
-const ContactRoute = ({ tCore }) => {
+const MoreRoute = ({ tCore }) => {
   return (
     <Layout tCore={tCore}>
       <div className={s.container}>
-        <Hero title={tCore.contactTitle} subtitle={tCore.contactText}>
+        <Hero title={tCore.moreTitle} subtitle={tCore.moreText}>
           <Button
-            text={tCore.contactAction}
-            href="mailto:ardakaracizmeli@gmail.com,blv.dmitry@gmail.com, steven.a.baguley@gmail.com"
+            text={tCore.moreAction}
+            href="https://reshaped.so"
+            attributes={{ target: "_blank" }}
           />
         </Hero>
       </div>
@@ -27,4 +28,4 @@ export async function getStaticProps({ locale }) {
   };
 }
 
-export default ContactRoute;
+export default MoreRoute;
