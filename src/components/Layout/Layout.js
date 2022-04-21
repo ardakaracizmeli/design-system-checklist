@@ -24,7 +24,7 @@ const Layout = ({ tCore, children }) => {
           >
             <div>
               {children}
-              {pathname !== "/contact" &&
+              {pathname !== "/more" &&
                 pathname !== "/share" &&
                 pathname !== "/export/[id]" && <Footer tCore={tCore} />}
             </div>

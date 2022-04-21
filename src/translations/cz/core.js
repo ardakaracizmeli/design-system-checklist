@@ -4,7 +4,7 @@ export default {
     "An open-source checklist to help you plan, build and grow your design system.",
   heroAction: "Get started",
 
-  contact: "Contact",
+  more: "Need more?",
   about: "About",
   share: "Share",
   contribute: "Contribute",
@@ -18,13 +18,13 @@ export default {
   exportAction: "Share your progress",
   exportComplete: "Link copied",
 
-  contactTitle: "Need more guidance?",
-  contactText:
-    "We can help with the critical decisions you make when building a design system. We offer in-house workshops including front-end & design architecture, covering best practices and team-specific scenarios.<br /><br />Our past experience includes building systems for companies of all sizes and guiding their system implementations from day one — we’ll have you covered.<br /><br />Let's talk about how we can help make your design system better.",
-  contactAction: "Contact us",
+  moreTitle: "Looking for more?",
+  moreText:
+    "We've used this checklist to build Reshaped, a professionally crafted design system for Figma and React. <br /><br />Over the years, we've seen trends come and go, while core challenges stayed. So we've chosen to focus on things that will be relevant years from now and have created our own approach that works at any scale.<br /><br /> Our 10+ years expertise turned into a white-label design system that we use ourselves and now make available for others.",
+  moreAction: "Learn more",
 
   footerTitle: "Need more than a checklist?",
   footerText:
-    "We offer in-house workshops including front-end & design architecture, covering best practices and team-specific scenarios.",
-  footerAction: "Contact us",
+    "We've used this checklist to build Reshaped, a professionally crafted design system for Figma and React. Reshaped provides regular package licenses with unlimited updates, access to the source code of the system and design system focused consulting.",
+  footerAction: "Learn more",
 };
