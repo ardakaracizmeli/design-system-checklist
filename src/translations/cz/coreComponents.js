@@ -377,6 +377,11 @@ export default {
           description:
             "The error state is used for form validation errors when the error is related to the text field only. Always use a text error along with changing the colour of the field.",
         },
+        "cc-text-field-focused": {
+          title: "Focused state",
+          description:
+            "The focused state should highlight the text field when users start to interact with it. There is always only one focused field in the form.",
+        },
         "cc-text-field-autocomplete": {
           title: "Autocomplete",
           description:
