@@ -340,6 +340,9 @@ export default {
           id: "cc-text-field-error",
         },
         {
+          id: "cc-text-field-focused",
+        },
+        {
           id: "cc-text-field-autocomplete",
         },
         {
