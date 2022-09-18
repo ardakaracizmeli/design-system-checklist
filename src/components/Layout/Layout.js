@@ -3,6 +3,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { useRouter } from "next/router";
 import Header from "../Header";
 import Footer from "../Footer";
+import s from "./Layout.module.css";
 
 const Layout = ({ tCore, children }) => {
   const { pathname } = useRouter();
@@ -22,11 +23,9 @@ const Layout = ({ tCore, children }) => {
             timeout={{ enter: 600, exit: 0 }}
             classNames="fade"
           >
-            <div>
-              {children}
-              {pathname !== "/more" &&
-                pathname !== "/share" &&
-                pathname !== "/export/[id]" && <Footer tCore={tCore} />}
+            <div className={s.container}>
+              <div className={s.content}>{children}</div>
+              <Footer tCore={tCore} />
             </div>
           </CSSTransition>
         )}

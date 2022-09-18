@@ -24,6 +24,14 @@ const AboutText = () => {
       >
         Dmitry Belyaev
       </a>, {" "}
+      <a
+        className={s.link}
+        href="https://twitter.com/hi_drozdenko"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Oleksii Drozdenko
+      </a>,
       and {" "}
       <a
         className={s.link}
