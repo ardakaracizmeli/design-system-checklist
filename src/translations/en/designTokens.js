@@ -97,7 +97,7 @@ export default {
         "dt-iconography-a11y": {
           title: "Accessibility",
           description:
-            "For icons that convey a meaning or serve a function, add the necessary support for screen readers. You can skip this for decorative icons.",
+            "For icons that convey a meaning or serve a function, offer a default accessible name which expresses that same meaning or function. This name may be used by screen readers and other assistive technologies to orient the user about the interface. For purely decorative icons, a name is not required. If your design system exports front-end code, ensure that the icon name is included, for example using aria-label.",
         },
         "dt-iconography-style": {
           title: "Style",
@@ -107,7 +107,7 @@ export default {
         "dt-iconography-naming": {
           title: "Naming",
           description:
-            "Name your icons based on what they are, not what they represent. For instance, a trash icon should be named trash, not delete. You can still add related keywords to improve discoverability.",
+            "Name your icons based on their communicative purpose, rather than how they look. For instance, a triangular media player play button icon should be named 'play', not 'triangle'. You can still add related keywords to improve discoverability.",
         },
         "dt-iconography-grid": {
           title: "Relation with grid",
