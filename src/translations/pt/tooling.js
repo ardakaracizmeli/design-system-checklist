@@ -6,7 +6,7 @@ export default {
     "t-design": {
       title: "Design",
       description:
-        "A interface do usuário e a experiência do usuário em um sistema de design precisam estar relacionadas ao desenvolvimento o máximo possível. As ferramentas nesta lista de verificação devem ajudar designers e desenvolvedores a trabalhar melhor juntos.",
+        "A interface do usuário e a experiência do usuário em um sistema de design precisam estar relacionadas ao desenvolvimento o máximo possível. As ferramentas neste checklist devem ajudar designers e desenvolvedores a trabalhar melhor juntos.",
       checklist: {
         "t-design-editor": {
           title: "Editor de design",
