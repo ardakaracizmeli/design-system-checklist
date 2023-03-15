@@ -43,7 +43,7 @@ export default {
     "cc-badge": {
       title: "Crachá",
       description:
-        "Crachás são elementos que representam o status de um objeto ou valor de entrada do usuário.",
+        "Crachás (em inglês: badges) são elementos que representam o status de um objeto ou valor de entrada do usuário.",
       checklist: {
         "cc-badge-appearance": {
           title: "Aparência",
@@ -149,7 +149,7 @@ export default {
     "cc-card": {
       title: "Cartão",
       description:
-        "Os cartões são usados para agrupar informações sobre assuntos e suas ações relacionadas.",
+        "Os cartões (em inglês: cards) são usados para agrupar informações sobre assuntos e suas ações relacionadas.",
       checklist: {
         "cc-card-content": {
           title: "Suporta qualquer tipo de conteúdo",
@@ -218,7 +218,7 @@ export default {
     "cc-dropdown": {
       title: "Menu suspenso",
       description:
-        "Os menus suspensos são usados para exibir uma subvisualização contextual com uma lista de ações ou conteúdo relacionado à área onde o menu suspenso está.",
+        "Os menus suspensos (em inglês: dropdowns) são usados para exibir uma subvisualização contextual com uma lista de ações ou conteúdo relacionado à área onde o menu suspenso está.",
       checklist: {
         "cc-dropdown-content": {
           title: "Suporta qualquer tipo de conteúdo",
@@ -277,7 +277,7 @@ export default {
     "cc-checkbox": {
       title: "Caixa de seleção",
       description:
-        "Uma caixa de seleção é um elemento de formulário usado para selecionar uma ou várias opções.",
+        "Uma caixa de seleção (em inglês: checkbox) é um elemento de formulário usado para selecionar uma ou várias opções.",
       checklist: {
         "cc-checkbox-checked": {
           title: "Estado selecionado",
@@ -319,7 +319,7 @@ export default {
     "cc-radio": {
       title: "Seleção de rádio",
       description:
-        "Um campo de seleção de rádio é um elemento de formulário usado para selecionar uma opção de uma lista.",
+        "Um campo de seleção de rádio (em inglês: radio button) é um elemento de formulário usado para selecionar uma opção de uma lista.",
       checklist: {
         "cc-radio-checked": {
           title: "Estado selecionado",
@@ -397,7 +397,7 @@ export default {
     "cc-switch": {
       title: "Interruptor de entrada",
       description:
-        "Os interruptores de entrada alternam o estado de um único item. Comparados à caixa de seleção de entrada, suas alterações geralmente se aplicam sem nenhum envio adicional.",
+        "Os interruptores de entrada (em inglês: switches) alternam o estado de um único item. Comparados à caixa de seleção de entrada, suas alterações geralmente se aplicam sem nenhum envio adicional.",
       checklist: {
         "cc-switch-checked": {
           title: "Estado verificado",
@@ -450,7 +450,7 @@ export default {
     "cc-loading-indicator": {
       title: "Indicador de carregamento",
       description:
-        "O indicador de carregamento mostra que uma operação está sendo realizada e quanto tempo o processo levará.",
+        "O indicador de carregamento (em inglês: loading) mostra que uma operação está sendo realizada e quanto tempo o processo levará.",
       checklist: {
         "cc-loading-indicator-variants": {
           title: "Variantes linear e não linear",
@@ -514,7 +514,7 @@ export default {
     "cc-tabs": {
       title: "Guias",
       description:
-        "Guias organizam a navegação entre várias páginas ou seções de conteúdo.",
+        "Guias (em inglês: tabs) organizam a navegação entre várias páginas ou seções de conteúdo.",
       checklist: {
         "cc-tabs-active": {
           title: "Estado ativo do botão",
@@ -576,34 +576,34 @@ export default {
       },
     },
     "cc-tooltip": {
-      title: "Dica de ferramenta",
+      title: "Tooltip",
       description:
-        "Dicas de ferramentas são componentes exclusivos para desktop que exibem informações adicionais quando o cursor do mouse é colocado sobre ou um elemento é focado.",
+        "Tooltips são componentes exclusivos para desktop que exibem informações adicionais quando o cursor do mouse é colocado sobre ou um elemento é focado.",
       checklist: {
         "cc-tooltip-keyboard": {
           title: "Suporte para foco com teclado",
           description:
-            "As dicas de ferramentas devem ser acessíveis quando um elemento é focado usando o teclado.",
+            "Os tooltips devem ser acessíveis quando um elemento é focado usando o teclado.",
         },
         "cc-tooltip-position": {
           title: "Posicionamento dinâmico",
           description:
-            "O conteúdo da dica de ferramenta deve ser exibido com base na posição atual do elemento de gatilho na tela e sempre visível para o usuário.",
+            "O conteúdo do tooltip deve ser exibido com base na posição atual do elemento de gatilho na tela e sempre visível para o usuário.",
         },
         "cc-tooltip-timeout": {
           title: "Tempo de espera de exibição",
           description:
-            "Ter um pequeno tempo de espera antes de acionar uma dica de ferramenta ajudará a evitar a exibição ocasional de dicas de ferramentas enquanto os usuários movem o cursor do mouse.",
+            "Ter um pequeno tempo de espera antes de acionar um tooltip ajudará a evitar a exibição ocasional de tooltips enquanto os usuários movem o cursor do mouse.",
         },
         "cc-tooltip-light": {
           title: "Variante clara",
           description:
-            "A dica de ferramenta deve respeitar o plano de fundo do elemento pai e fornecer uma variante a ser usada em cores de fundo mais escuras.",
+            "O tooltip deve respeitar o plano de fundo do elemento pai e fornecer uma variante a ser usada em cores de fundo mais escuras.",
         },
         "cc-tooltip-group": {
           title: "Transição instantânea para grupos de elementos",
           description:
-            "Se houver um grupo de elementos usando dicas de ferramentas, passar o mouse sobre outro elemento enquanto uma dica de ferramenta já está ativa não deve acionar a animação.",
+            "Se houver um grupo de elementos usando tooltips, passar o mouse sobre outro elemento enquanto um tooltip já está ativa não deve acionar a animação.",
         },
       },
     },

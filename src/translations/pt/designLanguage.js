@@ -70,7 +70,7 @@ export default {
     "dl-guidelines": {
       title: "Diretrizes",
       description:
-        "Fornecer orientações sobre como abordar padrões comuns de UX permitirá que sua organização estabeleça uma abordagem consistente e uma experiência do usuário consistente em qualquer plataforma.",
+        "As diretrizes (em inglês: guidelines) fornecem orientações sobre como abordar padrões comuns de UX permitirá que sua organização estabeleça uma abordagem consistente e uma experiência do usuário consistente em qualquer plataforma.",
       checklist: {
         "dl-guidelines-a11y": {
           title: "Acessibilidade",
