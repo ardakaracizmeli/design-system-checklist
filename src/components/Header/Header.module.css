@@ -6,6 +6,7 @@
   justify-content: space-between;
   box-sizing: border-box;
   height: var(--header-height);
+  align-items: center;
 }
 
 .logo {
@@ -35,7 +36,8 @@
   height: 2px;
   width: var(--spacing-24);
   background: var(--color-text);
-  transition: opacity 0.4s cubic-bezier(0.23,1,0.32,1), transform 0.4s cubic-bezier(0.23,1,0.32,1);
+  transition: opacity 0.4s cubic-bezier(0.23, 1, 0.32, 1),
+    transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .line:nth-child(1) {
@@ -101,7 +103,8 @@
     padding: calc(var(--spacing-48) * 3) var(--spacing-32) var(--spacing-48);
     opacity: 0;
     transform: translateY(28px);
-    transition: opacity 0.45s cubic-bezier(0.23,1,0.32,1), transform 0.45s cubic-bezier(0.23,1,0.32,1);
+    transition: opacity 0.45s cubic-bezier(0.23, 1, 0.32, 1),
+      transform 0.45s cubic-bezier(0.23, 1, 0.32, 1);
     pointer-events: none;
   }
 
