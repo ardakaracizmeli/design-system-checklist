@@ -1,15 +1,24 @@
-@import '../src/assets/styles/reset.css';
-@import '../src/assets/styles/variables.css';
-@import '../src/assets/fonts/sneak.css';
+@import "../src/assets/styles/reset.css";
+@import "../src/assets/styles/variables.css";
+@import "../src/assets/fonts/sneak.css";
 
 body {
-  font-family: 'Sneak', Arial, Helvetica, sans-serif;
+  font-family: "Sneak", Arial, Helvetica, sans-serif;
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
   background: var(--color-background);
   color: var(--color-text);
   -webkit-font-smoothing: antialiased;
   font-feature-settings: "calt", "ss03";
+}
+
+*:focus {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--color-background), 0 0 0 6px var(--color-primary);
 }
 
 a {
@@ -29,7 +38,7 @@ a {
 .fade-enter.fade-enter-active {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity ease-out .4s, transform ease-out .4s;
+  transition: opacity ease-out 0.4s, transform ease-out 0.4s;
 }
 
 .fade-exit {

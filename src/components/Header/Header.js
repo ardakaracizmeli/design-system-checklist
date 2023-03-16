@@ -1,26 +1,35 @@
-import React, { useState } from "react";
-// import { useRouter } from "next/router";
+import React, { useState, useCallback } from "react";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import classnames from "classnames";
 import s from "./Header.module.css";
 
 const Header = ({ tCore }) => {
-  // const router = useRouter();
+  const router = useRouter();
   const [active, setActive] = useState(false);
   const navClassName = classnames(s.nav, active && s["active"]);
   const burgerClassName = classnames(s.burger, active && s["active"]);
 
-  const toggleMenu = (flag) => {
-    const nextActive = flag === undefined ? !active : flag;
-    setActive(nextActive);
-    document.body.style.overflow = nextActive ? "hidden" : "auto";
+  const toggleMenu = useCallback((flag) => {
+    setActive((prev) => {
+      const nextActive = flag === undefined ? !prev : flag;
+      document.body.style.overflow = nextActive ? "hidden" : "auto";
+      return nextActive;
+    });
+  }, []);
+
+  const closeMenu = useCallback(() => toggleMenu(false), []);
+
+  const navigate = (e, to) => {
+    e.preventDefault();
+    closeMenu();
+    router.push(to);
   };
 
-  const closeMenu = () => toggleMenu(false);
-
-  // const handleLanguageChange = (e) => {
-  //   router.push(router.basePath, router.asPath, { locale: e.target.value });
-  // };
+  const handleLanguageChange = (e) => {
+    closeMenu();
+    router.push(router.basePath, router.asPath, { locale: e.target.value });
+  };
 
   return (
     <header className={s.container}>
@@ -31,29 +40,26 @@ const Header = ({ tCore }) => {
       </span>
 
       <nav className={navClassName}>
-        <ul>
-          {/*<li className={s.item}>*/}
-          {/*  <select*/}
-          {/*    className={s.language}*/}
-          {/*    onChange={handleLanguageChange}*/}
-          {/*    defaultValue={router.locale}*/}
-          {/*  >*/}
-          {/*    <option value="en">English</option>*/}
-          {/*    <option value="cz">Czech</option>*/}
-          {/*  </select>*/}
-          {/*</li>*/}
-          {/*<li className={s.item} role="decoration">*/}
-          {/*  |*/}
-          {/*</li>*/}
+        <ul className={s.menu}>
+          {/* <li className={s.item}>
+            <select
+              className={s.language}
+              onChange={handleLanguageChange}
+              defaultValue={router.locale}
+            >
+              <option value="en">English</option>
+              <option value="pt">Portuguese</option>
+            </select>
+          </li> */}
           <li className={s.item}>
-            <Link href="/about" onClick={closeMenu}>
+            <a href="/about" onClick={(e) => navigate(e, "/about")}>
               {tCore.about}
-            </Link>
+            </a>
           </li>
           <li className={s.item}>
-            <Link href="/share" onClick={closeMenu}>
+            <a href="/share" onClick={(e) => navigate(e, "/share")}>
               {tCore.share}
-            </Link>
+            </a>
           </li>
           <li className={s.item}>
             <a
