@@ -2,7 +2,6 @@ import React from "react";
 import s from "./Hero.module.css";
 
 const Hero = ({ title, subtitle, children }) => {
-  console.log(subtitle);
   return (
     <div className={s.root}>
       <h1 className={s.title}>{title}</h1>
