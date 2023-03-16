@@ -5,7 +5,7 @@ import s from "./about.module.css";
 
 const AboutText = () => {
   return (
-    <p className={s.text}>
+    <span className={s.text}>
       Hello, we're{" "}
       <a
         className={s.link}
@@ -15,7 +15,7 @@ const AboutText = () => {
       >
         Arda Karacizmeli
       </a>
-      , {" "}
+      ,{" "}
       <a
         className={s.link}
         href="https://twitter.com/blvdmitry"
@@ -23,7 +23,8 @@ const AboutText = () => {
         rel="noopener noreferrer"
       >
         Dmitry Belyaev
-      </a>, {" "}
+      </a>
+      ,{" "}
       <a
         className={s.link}
         href="https://twitter.com/hi_drozdenko"
@@ -31,8 +32,8 @@ const AboutText = () => {
         rel="noopener noreferrer"
       >
         Oleksii Drozdenko
-      </a>,
-      and {" "}
+      </a>
+      , and{" "}
       <a
         className={s.link}
         href="https://www.linkedin.com/in/stevenbaguley/"
@@ -67,7 +68,7 @@ const AboutText = () => {
         contribute
       </a>
       .
-    </p>
+    </span>
   );
 };
 
