@@ -27,8 +27,8 @@ const HomeRoute = (props) => {
     });
 
     return (
-      <Link href={`/category/${item.id}/`} className={s.listItem} key={item.id}>
-        <a>
+      <Link href={`/category/${item.id}/`} key={item.id}>
+        <a className={s.listItem}>
           <SectionTitle
             title={tContent?.[item.id]?.title}
             key={item.id}

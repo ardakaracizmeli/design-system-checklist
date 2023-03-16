@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useCallback } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import classnames from "classnames";
@@ -26,9 +26,10 @@ const Header = ({ tCore }) => {
     router.push(to);
   };
 
-  // const handleLanguageChange = (e) => {
-  //   router.push(router.basePath, router.asPath, { locale: e.target.value });
-  // };
+  const handleLanguageChange = (e) => {
+    closeMenu();
+    router.push(router.basePath, router.asPath, { locale: e.target.value });
+  };
 
   return (
     <header className={s.container}>
@@ -39,20 +40,17 @@ const Header = ({ tCore }) => {
       </span>
 
       <nav className={navClassName}>
-        <ul>
-          {/*<li className={s.item}>*/}
-          {/*  <select*/}
-          {/*    className={s.language}*/}
-          {/*    onChange={handleLanguageChange}*/}
-          {/*    defaultValue={router.locale}*/}
-          {/*  >*/}
-          {/*    <option value="en">English</option>*/}
-          {/*    <option value="cz">Czech</option>*/}
-          {/*  </select>*/}
-          {/*</li>*/}
-          {/*<li className={s.item} role="decoration">*/}
-          {/*  |*/}
-          {/*</li>*/}
+        <ul className={s.menu}>
+          {/* <li className={s.item}>
+            <select
+              className={s.language}
+              onChange={handleLanguageChange}
+              defaultValue={router.locale}
+            >
+              <option value="en">English</option>
+              <option value="pt">Portuguese</option>
+            </select>
+          </li> */}
           <li className={s.item}>
             <a href="/about" onClick={(e) => navigate(e, "/about")}>
               {tCore.about}

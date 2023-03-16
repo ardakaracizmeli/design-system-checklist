@@ -12,6 +12,15 @@ body {
   font-feature-settings: "calt", "ss03";
 }
 
+*:focus {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--color-background), 0 0 0 6px var(--color-primary);
+}
+
 a {
   color: var(--color-text);
   text-decoration: none;

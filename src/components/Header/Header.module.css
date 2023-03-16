@@ -17,6 +17,11 @@
   position: relative;
 }
 
+.logo a {
+  padding: 4px;
+  border-radius: 4px;
+}
+
 .burger {
   display: none;
   padding: var(--spacing-24);
@@ -53,19 +58,27 @@
   bottom: var(--spacing-16);
 }
 
-.item {
-  display: inline-block;
-  margin-left: var(--spacing-24);
+.menu {
+  display: flex;
+  gap: var(--spacing-24);
+  align-items: center;
+}
+
+.item a {
+  padding: 4px;
+  border-radius: 4px;
 }
 
 .language {
-  padding: 0;
   background: none;
   border: 0;
   color: var(--color-text);
   font-size: inherit;
   appearance: none;
-  direction: rtl;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-align: right;
+  outline: none;
 }
 
 @media (max-width: 640px) {
