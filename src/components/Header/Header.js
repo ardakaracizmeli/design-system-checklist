@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // import { useRouter } from "next/router";
 import Link from "next/link";
 import classnames from "classnames";
@@ -10,17 +10,23 @@ const Header = ({ tCore }) => {
   const navClassName = classnames(s.nav, active && s["active"]);
   const burgerClassName = classnames(s.burger, active && s["active"]);
 
-  const toggleMenu = (flag) => {
-    const nextActive = flag === undefined ? !active : flag;
-    setActive(nextActive);
-    document.body.style.overflow = nextActive ? "hidden" : "auto";
-  };
+  const toggleMenu = React.useCallback((flag) => {
+    setActive(prev => {
+      const nextActive = flag === undefined ? !prev : flag;
+      document.body.style.overflow = nextActive ? "hidden" : "auto";
+      return nextActive;
+    });
+  }, []);
 
-  const closeMenu = () => toggleMenu(false);
+  const closeMenu = React.useCallback(() => toggleMenu(false)), []);
 
   // const handleLanguageChange = (e) => {
   //   router.push(router.basePath, router.asPath, { locale: e.target.value });
   // };
+
+  useEffect(() => {
+    return () => closeMenu();
+  }, [])
 
   return (
     <header className={s.container}>
