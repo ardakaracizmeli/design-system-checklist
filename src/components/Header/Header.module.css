@@ -127,6 +127,11 @@
     pointer-events: all;
   }
 
+  .menu {
+    flex-direction: column;
+    grid-gap: 0;
+  }
+
   .item {
     margin-left: 0;
     width: 100%;
