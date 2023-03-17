@@ -14,7 +14,7 @@ export default {
   
   exportTitle: "Compartilhe",
   exportSubtitle:
-    "Os sistemas de design são melhores construídos em conjunto. É por isso que fizemos ser possível compartilhar este checklist, incluindo os itens que você já verificou. Compartilhe seu progresso com sua equipe para que todos possam acompanhar juntos.",
+    "Os sistemas de design são melhores construídos em conjunto. É por isso que tornamos possível compartilhar este checklist, incluindo os itens que você já verificou. Compartilhe seu progresso com sua equipe para que todos possam acompanhar juntos.",
   exportAction: "Compartilhe seu progresso",
   exportComplete: "Link copiado",
   
