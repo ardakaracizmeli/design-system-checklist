@@ -1,7 +1,7 @@
 export default {
   title: "Componentes principais",
   description:
-    "Componentes são os principais blocos de construção para interfaces de usuário. A construção de uma biblioteca de componentes reutilizáveis aprimora o fluxo de trabalho de desenvolvimento do produto, reduzindo o design e a dívida tecnológica e acelerando o processo. Os componentes principais não podem ser desmembrados em peças granulares sem perder seu significado.",
+    "Componentes são os principais blocos de construção para interfaces de usuário. A construção de uma biblioteca de componentes reutilizáveis aprimora o fluxo de trabalho de desenvolvimento do produto, reduzindo dívidas técnicas de design e desenvolvimento, acelerando o processo. Os componentes principais não podem ser desmembrados em peças granulares sem perder seu significado.",
   sections: {
     "cc-avatar": {
       title: "Avatar",
@@ -78,9 +78,9 @@ export default {
             "As ações nos banners devem estar relacionadas ao seu texto e fornecer uma maneira de reagir à mensagem enviada ao usuário.",
         },
         "cc-banner-dismiss": {
-          title: "Ação dispensável",
+          title: "Ação de saída",
           description:
-            "Não sobrecarregue o usuário com banners na página e inclua uma ação dispensável. Isso pode ser um botão separado de fechar ou uma das ações fornecidas.",
+            "Não sobrecarregue o usuário com banners na página e inclua uma opção de saída. Isso pode ser um botão separado de fechar ou uma das ações fornecidas.",
         },
         "cc-banner-a11y": {
           title: "Acessibilidade",
@@ -90,7 +90,7 @@ export default {
         "cc-banner-mobile": {
           title: "Responsividade",
           description:
-            "Os banners devem se adaptar ao tamanho da tela. Isso geralmente significa que eles se tornam de largura total para dispositivos móveis para economizar espaço.",
+            "Os banners devem se adaptar ao tamanho da tela. Isso geralmente significa que eles se adaptam para ocupar largura total em dispositivos móveis para economizar espaço.",
         },
       },
     },
@@ -302,7 +302,7 @@ export default {
         "cc-checkbox-error": {
           title: "Estado de erro",
           description:
-            "O estado de erro é usado para erros de validação de formulário quando o erro está relacionado apenas ao campo da caixa de seleção. Sempre use um erro de texto junto com a mudança da cor do campo.",
+            "O estado de erro é usado para erros de validação de formulário quando o erro está relacionado apenas ao campo da caixa de seleção. Sempre use um texto de erro junto com a mudança da cor do campo.",
         },
         "cc-checkbox-keyboard": {
           title: "Suporte ao teclado",
