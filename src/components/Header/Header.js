@@ -48,7 +48,7 @@ const Header = ({ tCore }) => {
               defaultValue={router.locale}
             >
               <option value="en">English</option>
-              <option value="pt">Portuguese</option>
+              <option value="pt">Português</option>
             </select>
           </li>
           <li className={s.item}>
