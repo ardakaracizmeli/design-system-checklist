@@ -41,7 +41,7 @@ const Header = ({ tCore }) => {
 
       <nav className={navClassName}>
         <ul className={s.menu}>
-          {/* <li className={s.item}>
+          <li className={s.item}>
             <select
               className={s.language}
               onChange={handleLanguageChange}
@@ -50,7 +50,7 @@ const Header = ({ tCore }) => {
               <option value="en">English</option>
               <option value="pt">Portuguese</option>
             </select>
-          </li> */}
+          </li>
           <li className={s.item}>
             <a href="/about" onClick={(e) => navigate(e, "/about")}>
               {tCore.about}
