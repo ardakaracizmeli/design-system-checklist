@@ -84,6 +84,7 @@
   outline: none;
   width: 120px;
   border: 2px solid var(--color-grayscale-light);
+  font-family: inherit;
 }
 
 .language + svg {
