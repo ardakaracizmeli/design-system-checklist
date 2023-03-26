@@ -59,6 +59,29 @@ const AboutText = () => {
         contribute
       </a>
       .
+      <br />
+      <br />
+      <hr />
+      <br />
+      Special thanks to{" "}
+      <a
+        className={s.link}
+        href="https://janklever.work"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Jan Klever
+      </a>{" "}
+      for contributing the translation to Portuguese and to{" "}
+      <a
+        className={s.link}
+        href="https://twitter.com/lelasdiniz"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        @lelasdiniz
+      </a>{" "}
+      for reviewing it.
     </span>
   );
 };

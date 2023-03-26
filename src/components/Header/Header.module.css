@@ -69,16 +69,31 @@
   border-radius: 4px;
 }
 
+.button {
+  position: relative;
+}
+
 .language {
   background: none;
   border: 0;
   color: var(--color-text);
   font-size: inherit;
   appearance: none;
-  padding: 4px 8px;
+  padding: 8px 12px;
   border-radius: 4px;
-  text-align: right;
   outline: none;
+  width: 120px;
+  border: 2px solid var(--color-grayscale-light);
+}
+
+.language + svg {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  width: 16px;
+  color: var(--color-text);
+  z-index: 1;
 }
 
 @media (max-width: 640px) {
@@ -132,12 +147,24 @@
     grid-gap: 0;
   }
 
-  .item {
+  .item,
+  .button {
     margin-left: 0;
     width: 100%;
     padding: var(--spacing-12) 0;
     font-size: var(--font-size-title);
     line-height: var(--line-height-title);
+  }
+
+  .button {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 140px;
+  }
+
+  .language {
+    width: 100%;
   }
 
   .item a {

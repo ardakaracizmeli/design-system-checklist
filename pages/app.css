@@ -26,6 +26,11 @@ a {
   text-decoration: none;
 }
 
+hr {
+  border: none;
+  border-top: 1px solid var(--color-grayscale-light);
+}
+
 ::selection {
   color: var(--color-primary);
 }

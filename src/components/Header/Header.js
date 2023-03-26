@@ -42,16 +42,6 @@ const Header = ({ tCore }) => {
       <nav className={navClassName}>
         <ul className={s.menu}>
           <li className={s.item}>
-            <select
-              className={s.language}
-              onChange={handleLanguageChange}
-              defaultValue={router.locale}
-            >
-              <option value="en">English</option>
-              <option value="pt">Português</option>
-            </select>
-          </li>
-          <li className={s.item}>
             <a href="/about" onClick={(e) => navigate(e, "/about")}>
               {tCore.about}
             </a>
@@ -69,6 +59,28 @@ const Header = ({ tCore }) => {
             >
               {tCore.contribute}
             </a>
+          </li>
+
+          <li className={s.button}>
+            <select
+              className={s.language}
+              onChange={handleLanguageChange}
+              defaultValue={router.locale}
+            >
+              <option value="en">English</option>
+              <option value="pt">Português</option>
+            </select>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
           </li>
         </ul>
       </nav>
