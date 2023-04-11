@@ -4,7 +4,7 @@ export default {
     "组件是用户界面的主要构建块。构建一个可重复使用的组件库，通过减少设计和技术债务，加快开发进程，增强你的产品开发工作流程。核心组件被分解过于细碎会失去组件的意义。",
   sections: {
     "cc-avatar": {
-      title: "用户头像",
+      title: "用户头像 (Avatar)",
       description:
         "头像是用来显示用户照片的缩略图或任何其他类型内容的视觉表现。",
       checklist: {
@@ -41,7 +41,7 @@ export default {
       },
     },
     "cc-badge": {
-      title: "徽标",
+      title: "徽标 (Badge)",
       description:
         "徽标是代表一个对象或用户输入值状态的元素。",
       checklist: {
@@ -58,7 +58,7 @@ export default {
       },
     },
     "cc-banner": {
-      title: "横幅",
+      title: "横幅 (Banner)",
       description:
         "横幅显示一个可操作的信息，作为一种与用户沟通的显眼方式。",
       checklist: {
@@ -95,54 +95,54 @@ export default {
       },
     },
     "cc-button": {
-      title: "Button",
+      title: "按钮 (Button)",
       description:
-        "Buttons are interactive elements used for single-step actions.",
+        "按钮是用于单步操作的互动元素。",
       checklist: {
         "cc-button-hover": {
-          title: "Hover state",
+          title: "悬停状态",
           description:
-            "Clearly show that the button is interactive when it gets hovered with a mouse cursor.",
+            "在被鼠标光标悬停时，明确显示按钮是互动的。",
         },
         "cc-button-active": {
-          title: "Active state",
+          title: "作用状态",
           description:
-            "Used when a button gets pressed. The same state can be used to represent the button responsible for toggling another element on the page while that element is visibly opened.",
+            "当一个按钮被按下时使用。同样的状态可以用来表示负责切换页面上另一个元素的按钮，当该元素在视觉上已经打开。",
         },
         "cc-button-focus": {
-          title: "Focused state",
+          title: "焦点状态",
           description:
-            "Used when a button gets selected through keyboard navigation.",
+            "当一个按钮通过键盘导航被选中时使用。",
         },
         "cc-button-icon": {
-          title: "Icon support",
+          title: "图标支持",
           description:
-            "Icons easily communicate the purpose of the button when used next to its label or can be used without text when there’s not enough space. Make sure that the accessibility label is provided when used with an icon only.",
+            "当图标在其标签旁使用时，可较好传达按钮的目的，或者在没有足够的空间时可以不使用文字。当仅使用图标时，请确保提供无障碍标签。",
         },
         "cc-button-disabled": {
-          title: "Disabled",
+          title: "禁用",
           description:
-            "Visually shows that a button is not interactive and restricts it from being pressed.",
+            "从视觉上显示一个按钮不可互动，并限制它被用户按下。",
         },
         "cc-button-loading": {
-          title: "Loading",
+          title: "正在加载",
           description:
-            "Used when users have to wait for the result of their action after they press a button. If a spinner is used to display this state make sure that it’s not changing the original button width or height.",
+            "当用户在按下一个按钮后，需要等待加载结果时使用。如果使用旋转器来显示这种状态，请确保它不会改变原始按钮的宽度或高度。",
         },
         "cc-button-full-width": {
-          title: "Full-width",
+          title: "全宽",
           description:
-            "By default buttons take the width of their content, but they should also come with a full width variant that works well in mobile devices.",
+            "默认情况下，按钮的宽度为其内容的宽度，但它们也应该有一个全宽的变体，以便在移动设备上运行良好。",
         },
         "cc-button-variants": {
-          title: "Variants",
+          title: "变体",
           description:
-            "When using multiple buttons, there should be a way to differentiate between primary and secondary actions. Buttons may play different roles for the user or be used on different types of surfaces and they have to change the way they look.",
+            "当使用多个按钮时，应该有一种方法来区分主要按钮和次要按钮。按钮可能对用户起到不同的作用，或者在不同类型的设备上使用，所以必须随之改变它们的外观。",
         },
         "cc-button-sizes": {
-          title: "Sizes",
+          title: "尺寸",
           description:
-            "Buttons can be used in different areas of the website and may have multiple predefined sizes. On mobile, tappable areas have to be a minimum of 48px to be accessible according to iOS and Android accessibility guidelines.",
+            "按钮可以在网站的不同区域使用，并且可能有多种预定的尺寸。在移动设备上，根据iOS和Android的可访问性（无障碍）指南，可触摸的区域必须至少为48px，才能被访问。",
         },
       },
     },
