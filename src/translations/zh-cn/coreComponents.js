@@ -1,96 +1,96 @@
 export default {
-  title: "Core components",
+  title: "核心组件",
   description:
-    "Components are the main building blocks for user interfaces. Building a reusable component library enhances your product development workflow by reducing design and tech debt and speeding up the process. Core components can’t be broken down into granular pieces without losing their meaning.",
+    "组件是用户界面的主要构建块。构建一个可重复使用的组件库，通过减少设计和技术债务，加快开发进程，增强你的产品开发工作流程。核心组件被分解过于细碎会失去组件的意义。",
   sections: {
     "cc-avatar": {
-      title: "Avatar",
+      title: "用户头像",
       description:
-        "Avatars are used to show a thumbnail of a user photo or a visual representation of any other type of content.",
+        "头像是用来显示用户照片的缩略图或任何其他类型内容的视觉表现。",
       checklist: {
         "cc-avatar-image": {
-          title: "Image",
+          title: "图片",
           description:
-            "Avatars should mask an image into their shape and work with any image size since they may get this image from unknown data sources.",
+            "用户头像应将图片包含在其形状中，并应考虑到任意大小的图片尺寸，因为该图片可能来自未知的数据源。",
         },
         "cc-avatar-image-fallback": {
-          title: "Image fallback",
+          title: "图片加载出错",
           description:
-            "There should be fallbacks when there’s no image available. This can be done with placeholder images or initials.",
+            "当没有图片可用时，应该有备选方案。这可以通过默认图片或首字母来完成。",
         },
         "cc-avatar-a11y": {
-          title: "Accessibility",
+          title: "可访问性（无障碍）",
           description:
-            "Always provide a description for screen readers describing what’s displayed on the avatar image instead of just naming its role.",
+            "始终为屏幕阅读器提供描述，描述头像上显示的内容，而不是仅仅为其角色命名。",
         },
         "cc-avatar-sizes": {
-          title: "Sizes",
+          title: "尺寸",
           description:
-            "There are many contexts to use avatars and they all require different sizes for the component. For average projects use at least 2-3 different sizes and make sure there’s at least a small size available.",
+            "使用头像的情况很多，都需要不同尺寸的组件。对于一般的项目，至少要使用2-3种不同的尺寸，并确保至少有一个小尺寸可用。",
         },
         "cc-avatar-icon": {
-          title: "Icon",
+          title: "图标",
           description:
-            "Avatars can be used with an icon instead of an image to emphasize areas that don’t necessarily have (or need) an image associated with it.",
+            "头像可用一个图标来代替图片，以强调那些不一定有（或需要）与之相关图片的区域。",
         },
         "cc-avatar-bg": {
-          title: "Background colours",
+          title: "背景颜色",
           description:
-            "When used with icons or text, there has to be a background colour from the design system colour tokens applied to the avatar shape. Make sure that icons and text have enough contrast ratio with the background according to the WCAG AA standard.",
+            "当与图标或文本一起使用时，必须有一个来自设计系统颜色变量（design system colour tokens）的背景颜色应用于头像形状。根据WCAG AA标准，请确保图标和文本与背景色有足够的对比度。",
         },
       },
     },
     "cc-badge": {
-      title: "Badge",
+      title: "徽标",
       description:
-        "Badges are elements that represent the status of an object or user input value.",
+        "徽标是代表一个对象或用户输入值状态的元素。",
       checklist: {
         "cc-badge-appearance": {
-          title: "Appearance",
+          title: "外观",
           description:
-            "Badges may play various roles in your product and having a predefined colour for each role should help users understand their meaning. When changing colours, make sure the text has enough contrast ratio with the background according to the WCAG AA standard.",
+            "徽标在产品中可能扮演不同的角色，为每个角色预先定义一个颜色有助于用户理解其含义。当改变颜色时，根据WCAG AA标准，确保文本与背景色有足够的对比度。",
         },
         "cc-badge-dismiss": {
-          title: "Dismissible action",
+          title: "关闭状态",
           description:
-            "Badges can be used as a dynamic way to display selected values and there should be a way to dismiss them.",
+            "徽标可作为一种动态的方式来显示选定的值，应该有一种方式来取消关闭它们。",
         },
       },
     },
     "cc-banner": {
-      title: "Banner",
+      title: "横幅",
       description:
-        "Banners display an actionable message used as a prominent way of communicating with your users.",
+        "横幅显示一个可操作的信息，作为一种与用户沟通的显眼方式。",
       checklist: {
         "cc-banner-appearance": {
-          title: "Appearance",
+          title: "外观",
           description:
-            "Banners are used to display different types of messages and it’s important to differentiate their visual appearance based on the role they’re playing. If you’re using background colours for role differentiation, make sure there’s enough contrast ratio with the content according to the WCAG AA standard.",
+            "横幅用于显示不同类型的信息，根据它们所扮演的角色来区分它们的视觉外观很重要。如果使用背景色来区分它们，根据WCAG AA标准，确保与内容有足够的对比度。",
         },
         "cc-banner-image": {
-          title: "Area for icons or images",
+          title: "用于图标(icon)或图片(images)的区域",
           description:
-            "Banners can supplement their message using a supporting icon or image. They shouldn’t be used instead of text content.",
+            "横幅可以使用辅助图标或图片来补充其信息。横幅不应该被用来代替文本内容。",
         },
         "cc-banner-actions": {
-          title: "Actions",
+          title: "行为",
           description:
-            "Actions in banners should relate to its text and provide a way to react to the message sent to the user.",
+            "横幅中的行为召唤应该与文本相关，并提供一种对发送给用户的信息作出反应的方式。",
         },
         "cc-banner-dismiss": {
-          title: "Dismissible action",
+          title: "关闭状态",
           description:
-            "Don’t overwhelm the user with banners on the page and include a dismissable action. That may be either a separate close button or one of the actions provided.",
+            "不要用页面上的横幅让用户感到过于焦虑，添加一个可撤销的状态。可以是一个单独的关闭按钮或其他行动方式。",
         },
         "cc-banner-a11y": {
-          title: "Accessibility",
+          title: "可访问性（无障碍）",
           description:
-            "If a banner dynamically appears on the page, it should be announced to the user by their assistive technology.",
+            "如果一个横幅动态地出现在页面上，应该通过无障碍设计告知那些使用无障碍工具的用户。",
         },
         "cc-banner-mobile": {
-          title: "Responsiveness",
+          title: "响应性",
           description:
-            "Banners should adapt to the viewport size. This usually means that they become full-width for mobile to save some space.",
+            "横幅应该适应视口(viewport)的大小。这通常意味着在移动端为全宽(full-width)，以节省空间。",
         },
       },
     },
