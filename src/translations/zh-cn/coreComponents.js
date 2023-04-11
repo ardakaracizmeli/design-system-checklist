@@ -258,71 +258,71 @@ export default {
       },
     },
     "cc-icon": {
-      title: "Icon",
+      title: "图标 (Icon)",
       description:
-        "The icon component is a way to align the way iconography static assets are displayed in the product.",
+        "图标组件是一种将静态图标在产品中展示的方式。",
       checklist: {
         "cc-icon-sizes": {
-          title: "Sizes",
+          title: "尺寸",
           description:
-            "Icons should have a number of predefined sizes to provide a holistic experience across the product. Typography pairings may be used for these size values to ensure that they are aligned with the text sizes.",
+            "图标应该有一些预定义的尺寸，以保证整个产品的一致性体验。排版配对 (Typography pairings) 可用于这些尺寸值，以确保它们与文本尺寸保持一致。",
         },
         "cc-icon-colors": {
-          title: "Colours",
+          title: "颜色",
           description:
-            "Icons should be using values from the design system colour palette. Using parent element text colour for icon fill colour can make this automatic.",
+            "图标应使用设计系统调色板的值。使用母元素的文本颜色作为图标的填充颜色可自动化这个流程。",
         },
       },
     },
     "cc-checkbox": {
-      title: "Input checkbox",
+      title: "输入复选框 (Input checkbox)",
       description:
-        "An input checkbox is a form element used for selecting one or multiple options.",
+        "输入复选框是一个用于选择一个或多个选项的表单元素。",
       checklist: {
         "cc-checkbox-checked": {
-          title: "Checked state",
+          title: "勾选状态",
           description:
-            "Used when the checkbox is selected and will use its value for the form submission.",
+            "当复选框被选中时使用，并使用其值提交表单。",
         },
         "cc-checkbox-disabled": {
-          title: "Disabled state",
+          title: "禁用状态",
           description:
-            "Prevents checkbox interactions and removes its value from the form submission.",
+            "防止复选框交互，并从表单提交中删除其值。",
         },
         "cc-checkbox-indeterminate": {
-          title: "Indeterminate state",
+          title: "不确定状态",
           description:
-            "Used when the checkbox has children selectable elements and only some of them are selected.",
+            "当复选框有可选择的子元素，并且只有其中一些被选中时使用。",
         },
         "cc-checkbox-label": {
-          title: "Label",
+          title: "标签",
           description:
-            "There should be a text label linked with the checkbox field. Clicking the label should also trigger the checkbox selection.",
+            "应该有一个与复选框字段相连的文本标签。点击该标签也应触发复选框的选择。",
         },
         "cc-checkbox-error": {
-          title: "Error state",
+          title: "错误状态",
           description:
-            "The error state is used for form validation errors when the error is related to the checkbox field only. Always use a text error along with changing the colour of the field.",
+            "当错误只与复选框字段有关时，错误状态用于表单验证错误。使用文字提示错误，同时改变字段的颜色。",
         },
         "cc-checkbox-keyboard": {
-          title: "Keyboard support",
+          title: "键盘支持",
           description:
-            "Checkbox selections should be triggered with the Space key. Using native elements for this should provide this kind of interaction out of the box.",
+            "复选框的选择应该可用空格键来触发。使用原生元素可以提供这种交互的开箱即用体验。",
         },
         "cc-checkbox-group": {
-          title: "Checkbox group",
+          title: "复选框分组",
           description:
-            "Checkboxes can be grouped to work with multiple values at the same time.",
+            "复选框可以被分组，以便同时处理多个值。",
         },
       },
     },
     "cc-radio": {
-      title: "Input radio",
+      title: "输入单选 (Input radio)",
       description:
-        "An input radio is a form element used for selecting one option from a list.",
+        "输入单选是一种用于从列表中选择一个选项的表单元素。",
       checklist: {
         "cc-radio-checked": {
-          title: "Checked state",
+          title: "勾选状态",
           description:
             "Used when the radio is selected and will use its value for the form submission. A radio input can’t be unselected by pressing it again.",
         },
