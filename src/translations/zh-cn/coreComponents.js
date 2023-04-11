@@ -147,113 +147,113 @@ export default {
       },
     },
     "cc-card": {
-      title: "Card",
+      title: "卡片 (Card)",
       description:
-        "Cards are used to group information about subjects and their related actions.",
+        "卡片用于关于主题和其相关信息进行分组。",
       checklist: {
         "cc-card-content": {
-          title: "Supports any type of content",
+          title: "支持任何类型的内容",
           description:
-            "Cards are one of the most used components in the product, so they have to be flexible enough to support any other components placed in them.",
+            "卡片是产品中最常用的组件之一，所以它们必须足够灵活，以支持放置在其中的任何其他组件。",
         },
         "cc-card-structure": {
-          title: "Information structure",
+          title: "信息结构",
           description:
-            "No matter how flexible cards are, it’s important for cards to have a specific structure for its elements for product consistency.",
+            "不管卡片有多灵活，为了产品的一致性，卡片的元素必须有一个特定的结构。",
         },
         "cc-card-media": {
-          title: "Supports media sections",
+          title: "支持媒体部分",
           description:
-            "One of the most popular scenarios for using cards is mixing them with media content. The most popular options are having a full-width area on top of the content or full-height area at one of the card’s sides.",
+            "使用卡片的最流行的场景之一是将其与媒体内容混合。最常见的是在内容的顶部有一个全宽的区域，或者在卡片的一个侧面有全高的区域。",
         },
         "cc-card-actions": {
-          title: "Supplementary actions",
+          title: "补充行为",
           description:
-            "Cards can be used with actions usually placed at the bottom of the card, or the card itself can be tappable and represent an action.",
+            "卡片可以与通常放置在卡片底部的召唤行为一起使用，或者卡片本身可以是可触摸的，代表一个行为。",
         },
         "cc-card-mobile": {
-          title: "Responsiveness",
+          title: "响应性",
           description:
-            "On mobile viewports cards are usually full-width in order to save space for the content.",
+            "在移动视窗上，卡片通常是全宽的，为内容节省空间。",
         },
       },
     },
     "cc-carousel": {
-      title: "Carousel",
+      title: "轮播 (Carousel)",
       description:
-        "Carousels stack the same type of items and allows scrolling through them horizontally.",
+        "轮播将同一类型的项目堆叠在一起，可水平滚动浏览它们。",
       checklist: {
         "cc-carousel-controls": {
-          title: "Navigation controls",
+          title: "导航控制",
           description:
-            "Carousels should have easy-to-find navigation controls for scrolling through content.",
+            "轮播应该由可容易找到的导航来控制，以便滚动浏览内容。",
         },
         "cc-carousel-content": {
-          title: "Supports any content",
+          title: "支持任何内容",
           description:
-            "Carousels can be used in different contexts and shouldn’t be limited to a specific child component. In some scenarios you might want items within the same carousel to differ from each other.",
+            "轮播应该可用于不同背景下，不应局限于一个特定的子组件。在某些情况下，你可能希望同一个轮播中的项目彼此不同。",
         },
         "cc-carousel-width": {
-          title: "Items width customisation",
+          title: "项目宽度定制",
           description:
-            "For simple products, it might be fine to use multiple predefined sizes for carousel items. For more flexibility, it’s good to provide a way to define a custom width.",
+            "对于简单的产品，为轮播项目使用多种预定义的尺寸可能是可以的。如果需要更多的灵活性，可以提供一种方法来定义一个自定义的宽度。",
         },
         "cc-carousel-touch": {
-          title: "Touch events support",
+          title: "触摸事件支持",
           description:
-            "Carousels should be scrollable on touch devices. Some of the best practices are to use native scrolling and to make sure you’re supporting the same behaviour for all touch devices, not just mobile phones.",
+            "轮播在触摸设备上应该是可滚动的。一些最佳做法是使用原生滚动，并确保对所有触摸设备都支持相同的行为，而不仅仅是手机。",
         },
         "cc-carousel-keyboard": {
-          title: "Keyboard navigation",
+          title: "键盘导航",
           description:
-            "It should be possible to scroll through content with keyboard arrows when focused on navigation controls.",
+            "当专注于导航控件时，应该可用键盘箭头来滚动内容。",
         },
         "cc-carousel-mobile": {
-          title: "Responsiveness",
+          title: "响应性",
           description:
-            "It’s good practice to hide or reduce the size of navigation controls for mobile viewports to improve the visibility of the content.",
+            "对于移动视口来说，隐藏或缩小导航控件的大小以提高内容的可见性是一个好的做法。",
         },
       },
     },
     "cc-dropdown": {
-      title: "Dropdown",
+      title: "下拉框 (Dropdown)",
       description:
-        "Dropdowns are used to display a contextual subview with a list of actions or content related to the area where the dropdown is.",
+        "下拉菜单用于显示一个上下文子视图，其中有一个与下拉菜单所在区域相关的行动或内容的列表。",
       checklist: {
         "cc-dropdown-content": {
-          title: "Supports any type of content",
+          title: "支持任何类型的内容",
           description:
-            "Dropdowns may be used in a lot of contexts like date pickers, language selection or other product features.",
+            "下拉框可以在很多情况下使用，如日期选择器、语言选择或其他产品功能。",
         },
         "cc-dropdown-menu": {
-          title: "Action menu",
+          title: "行动菜单",
           description:
-            "One of the most used scenarios for dropdowns is providing an action menu for the user, so it’s useful to have this layout defined.",
+            "下拉框最常用的场景之一是为用户提供一个行动菜单，所以定义这个布局是很有用的。",
         },
         "cc-dropdown-trap": {
-          title: "Focus trapping",
+          title: "焦点捕捉",
           description:
-            "Once the dropdown’s opened, the focus should work only for elements inside the dropdown. When it’s closed, the focus should move to the dropdown trigger.",
+            "一旦下拉框被打开，焦点 (the focus) 应该只对下拉框内的元素起作用。当它被关闭时，焦点 (the focus) 应该移到下拉框的触发器上。",
         },
         "cc-dropdown-close": {
-          title: "Close action",
+          title: "关闭",
           description:
-            "Either some actions inside the dropdown should close it or there should be a separate close button. Also, it’s good practice to close the dropdown when a user clicks outside.",
+            "要么在下拉框中应该可以关闭它，要么有一个单独的关闭按钮。另外，当用户点击框外区域时k可关闭下拉框，也是一个好的做法。",
         },
         "cc-dropdown-keyboard": {
-          title: "Keyboard navigation",
+          title: "键盘导航",
           description:
-            "It should be possible to navigate through dropdown children elements with the keyboard and close it with an Esc key.",
+            "应该可用键盘在下拉框子元素中导航，并用Esc键来关闭它。",
         },
         "cc-dropdown-position": {
-          title: "Dynamic positioning",
+          title: "动态定位",
           description:
-            "Dropdown content should be displayed based on the current position of the trigger element on the screen and always visible to the user.",
+            "下拉框内容应该根据触发元素在屏幕上的当前位置来显示，并对用户始终可见。",
         },
         "cc-dropdown-mobile": {
-          title: "Responsiveness",
+          title: "响应性",
           description:
-            "Dropdown content should be adapted for mobile viewpoints as it may take a lot of space on desktops.",
+            "下拉式内容应该适应移动视点 (mobile viewpoints)，因为它在桌面上可能会占用大量的空间。",
         },
       },
     },
