@@ -324,32 +324,32 @@ export default {
         "cc-radio-checked": {
           title: "勾选状态",
           description:
-            "Used when the radio is selected and will use its value for the form submission. A radio input can’t be unselected by pressing it again.",
+            "当单选框被选中时使用，并将使用其值提交表单。一个单选输入不能通过再次按动它来取消选择。",
         },
         "cc-radio-disabled": {
-          title: "Disabled state",
+          title: "禁用状态",
           description:
-            "Prevents radio interactions and removes its value from the form submission.",
+            "防止单选框互动，并从表单提交中删除其值。",
         },
         "cc-radio-label": {
-          title: "Label",
+          title: "标签",
           description:
-            "There should be a text label linked with the radio field. Clicking the label should also trigger the radio selection.",
+            "应该有一个与单选字段相关的文本标签。点击该标签也应触发单选的选择。",
         },
         "cc-radio-error": {
-          title: "Error state",
+          title: "错误状态",
           description:
-            "The error state is used for form validation errors when the error is related to the radio field only. Always use a text error along with changing the colour of the field.",
+            "当错误只与单选字段有关时，错误状态用于表单验证错误。使用文字提示错误，同时改变字段的颜色。",
         },
         "cc-radio-keyboard": {
-          title: "Keyboard support",
+          title: "键盘支持",
           description:
-            "A radio selection should be triggered when the Space key is pressed. Using native elements for this should provide this kind of interaction out of the box.",
+            "单选框的选择应该可用空格键来触发。使用原生元素可以提供这种交互的开箱即用体验。",
         },
         "cc-radio-group": {
-          title: "Radio group",
+          title: "单选组",
           description:
-            "Radio inputs should always be used in a group. If  one of them is selected, it can be deselected only by choosing another radio.",
+            "单选输入应该总是在一个组中使用。如果其中一个被选中，只能通过选择另一个单选来取消选择。",
         },
       },
     },
