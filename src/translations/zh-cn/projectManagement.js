@@ -1,81 +1,81 @@
 export default {
-  title: "Project management",
+  title: "项目管理",
   description:
-    "Design systems are no different than any other project your team might take on. In order to successfully build and maintain one, you need a clear strategy that’s well executed daily, and you‘ll need to create opportunities for your colleagues to give feedback to help share your design system together.",
+    "设计系统与你的团队可能手上的任何其他项目没有什么不同。为了成功地建立和维护一个项目，需要明确的策略一以贯之，你需要为你的同事创造机会，让他们给予反馈，以帮助共同分享完善设计系统。",
   sections: {
     "pm-task-management": {
-      title: "Task management",
+      title: "任务管理 (Task management)",
       description:
-        "Solid task management and workflows are a crucial step in executing any project. Adopting a methodology like Agile or Kanban helps you cover a lot of ground.",
+        "扎实的任务管理和工作流程是执行任何项目的关键步骤。采用像敏捷或看板这样的方法论可以在许多方面起到帮助。",
       checklist: {
         "pm-task-management-roadmap": {
-          title: "Roadmap",
+          title: "路线图",
           description:
-            "Setting your short and long term vision and mapping things out helps you decide the steps to take, understand your place in the bigger picture and prioritise day-to-day tasks.",
+            "设定你的短期和长期愿景，并将事情具象出来，有助于决定要采取的步骤，了解你在整个愿景中的位置，并确定日常任务的优先次序。",
         },
         "pm-task-management-milestones": {
-          title: "Milestones",
+          title: "里程碑",
           description:
-            "Define milestones that act as bigger epics in your project management with the help of your roadmap. These will help you understand your progress.",
+            "在路线图的帮助下，定义里程碑，作为项目管理中更大的成就。这些将帮助你了解自己的进展。",
         },
         "pm-task-management-ticketing": {
-          title: "Ticketing",
+          title: "工单追踪 (Ticketing)",
           description:
-            "Make it easier to track your day-to-day progress by using ticketing software like Jira, Trello or GitHub. This’ll make it easier for others to submit feature proposals or bug reports.",
+            "通过使用Jira、Trello或GitHub等工单软件，更容易追踪日常进度。这将使他人更容易提交功能建议或错误报告。",
         },
       },
     },
     "pm-communications": {
-      title: "Communications",
+      title: "沟通 (Communications)",
       description:
-        "Your users play a great role in shaping your design system. Creating communication channels where they can raise their voices helps you keep track of how they’re using your system. It’ll also improve their sense of ownership and the adoption of your system.",
+        "用户在塑造设计系统方面发挥了巨大的作用。建立沟通渠道，让他们能够发出声音，有助于追踪他们是如何使用系统的。这也会提高他们的主人翁意识和对系统的采用。",
       checklist: {
         "pm-communications-meetings": {
-          title: "Community meetings",
+          title: "社区会议 (Community meetings)",
           description:
-            "Arrange community meetings with everyone who uses the design system. Share your knowledge and make proposals to improve the sense of community.",
+            "与每个使用设计系统的人安排社区会议。分享你的知识并提出建议，以改善社区的感觉。",
         },
         "pm-communications-channel": {
-          title: "Communication channel",
+          title: "沟通渠道",
           description:
-            "Most product development work happens digitally, so create a digital channel where people can reach out and ask questions.",
+            "大多数产品开发工作都是以数字方式进行的，所以要建立一个数字渠道，让人们可以接触到并提出问题。",
         },
         "pm-communications-open-hours": {
-          title: "Open hours",
+          title: "开放时间",
           description:
-            "Create open hours in which you can engage your audience in a more private setting where you can discuss things in more detail. You can also use these as peer coding or peer design opportunities.",
+            "创建开放时间，可以在一个更私密的环境中与你的受众接触，在那里可以更详细地讨论事情，也可以把这些作为同行编码或同行设计的机会。",
         },
         "pm-communications-faq": {
-          title: "FAQ",
+          title: "常见问题",
           description:
-            "To save everyone time, define which questions are asked frequently by your audience and document them in a discoverable place.",
+            "为了节约大家的时间，定义哪些问题是常见问题，并把它们记录在一个易于发现的地方。",
         },
       },
     },
     "pm-analytics": {
-      title: "Analytics",
+      title: "分析 (Analytics)",
       description:
-        "Data isn’t the only driving factor when it comes to the development of design systems. Keeping a sharp eye on how your system’s used in the development process and the end product can inform your go-forward strategy.",
+        "当涉及到设计系统的开发时，数据并不是唯一的驱动因素。密切关注系统在开发过程和最终产品中的使用情况，可以为未来策略提供参考。",
       checklist: {
         "pm-analytics-component": {
-          title: "Component analytics",
+          title: "组件分析",
           description:
-            "Track the usage of your components. For development you can use built-in tools like Figma’s Design System Analytics. For the end product you can have a separate way of tracking per platform depending on the technology.",
+            "追踪组件的使用情况。对于开发，可使用内置工具，如 Figma 的设计系统分析。对于最终产品，可根据技术的不同，对每个平台进行单独的跟踪。",
         },
         "pm-analytics-logging": {
-          title: "Error logging",
+          title: "错误记录",
           description:
-            "Implement a way to track and pinpoint component-related outages in your product.",
+            "实施一种方法来跟踪和确定产品中与组件相关的故障。",
         },
         "pm-analytics-tooling": {
-          title: "Tooling analytics",
+          title: "工具分析",
           description:
-            "Track what tools are being used for your design system. Find out which ones are used the most and which features are the most popular.",
+            "追踪设计系统正在使用哪些工具。找出哪些是使用最多的，哪些功能是最受欢迎的。",
         },
         "pm-analytics-health": {
-          title: "Service and health metrics",
+          title: "服务和健康度量",
           description:
-            "Define service and health metrics for your design system to set a benchmark on how well you’re doing. Common examples can be the number of tickets closed, improvements made or bugs fixed.",
+            "为设计系统定义服务和健康指标，以便为衡量做得多好设定一个基准。常见的例子可以是关闭的工单数量、做出的改进或修复的报错。",
         },
       },
     },
