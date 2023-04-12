@@ -105,7 +105,7 @@ export default {
             "在被鼠标光标悬停时，明确显示按钮是互动的。",
         },
         "cc-button-active": {
-          title: "作用状态",
+          title: "活动状态",
           description:
             "当一个按钮被按下时使用。同样的状态可以用来表示负责切换页面上另一个元素的按钮，当该元素在视觉上已经打开。",
         },
@@ -354,219 +354,219 @@ export default {
       },
     },
     "cc-text-field": {
-      title: "Input text",
-      description: "Input text lets users enter and edit text.",
+      title: "输入文字 (Input text)",
+      description: "输入文本让用户可以输入和编辑文本。",
       checklist: {
         "cc-text-field-disabled": {
-          title: "Disabled state",
+          title: "禁用状态",
           description:
-            "Prevents input interactions and removes its value from the form submission.",
+            "防止输入互动，并从表单提交中删除其值。",
         },
         "cc-text-field-placeholder": {
-          title: "Placeholder",
+          title: "占位符",
           description:
-            "When there’s no value entered, show a placeholder with a potential value example. Don’t use placeholders as labels for the inputs.",
+            "当没有输入值时，显示一个占位符，上面有一个潜在的值作为例子。不要使用占位符作为输入的标签。",
         },
         "cc-text-field-label": {
-          title: "Label",
+          title: "标签",
           description:
-            "There should be a text label linked with the text field. Clicking the label should move the focus to the field.",
+            "应该有一个与文本字段相连的文本标签。点击标签应该把焦点移到该字段。",
         },
         "cc-text-field-error": {
-          title: "Error state",
+          title: "错误状态",
           description:
-            "The error state is used for form validation errors when the error is related to the text field only. Always use a text error along with changing the colour of the field.",
+            "当错误只与文本字段有关时，错误状态用于表单验证错误。使用文字提示错误，同时改变字段的颜色。",
         },
         "cc-text-field-focused": {
-          title: "Focused state",
+          title: "聚焦状态",
           description:
-            "The focused state should highlight the text field when users start to interact with it. There is always only one focused field in the form.",
+            "当用户开始与文本字段进行交互时，焦点状态应该突出文本字段。在表单中总是只有一个焦点字段。",
         },
         "cc-text-field-autocomplete": {
-          title: "Autocomplete",
+          title: "自动完成",
           description:
-            "When applicable, adding support for the HTML autocomplete attribute will allow users to easily enter different data types.",
+            "当适用时，添加对HTML自动完成属性的支持将允许用户轻松输入不同的数据类型。",
         },
         "cc-text-field-icon": {
-          title: "Icon support",
+          title: "图标支持",
           description:
-            "Icons are used to describe input methods, express a text field state or provide additional functionality.",
+            "图标被用来描述输入方法，表达一个文本字段的状态或提供额外的功能。",
         },
       },
     },
     "cc-switch": {
-      title: "Input switch",
+      title: "输入开关 (Input switch)",
       description:
-        "Input switches toggle the state of a single item. Compared to the input checkbox, their changes usually apply without any additional submission.",
+        "输入开关可以切换单个项目的状态。与输入复选框相比，它们的变化通常无需额外提交即可应用。",
       checklist: {
         "cc-switch-checked": {
-          title: "Checked state",
+          title: "勾选状态",
           description:
-            "Used when an input switch is turned on. It’s better to provide an additional way to indicate the checked state besides changing its colour when applicable.",
+            "在输入开关被打开时使用。除了在适用时改变其颜色外，最好还能提供一种额外的方式来表示选中状态。",
         },
         "cc-switch-disabled": {
-          title: "Disabled state",
-          description: "Prevents interacting with an input switch.",
+          title: "禁用状态",
+          description: "防止与一个输入开关进行交互。",
         },
         "cc-switch-label": {
-          title: "Label",
+          title: "标签",
           description:
-            "There should be a text label linked with the switch field. Clicking the label should also trigger the input selection. ",
+            "应该有一个与开关字段相连的文本标签。点击该标签也应该触发输入选择。",
         },
         "cc-switch-keyboard": {
-          title: "Keyboard support",
+          title: "键盘支持",
           description:
-            "A switch selection should be triggered when the Space key is pressed.",
+            "当按下空格键时，应该触发开关选择。",
         },
       },
     },
     "cc-list": {
-      title: "List",
+      title: "列表 (List)",
       description:
-        "Lists define the layout of the page content or groups of elements stacking them vertically or horizontally.",
+        "列表定义了页面内容或元素组的布局，将它们垂直或水平地堆叠。",
       checklist: {
         "cc-list-content": {
-          title: "Supports any type of content",
+          title: "支持任何类型的内容",
           description:
-            "Lists can be used in any context from page-level layout to managing offsets between granular components. hey should work with any component used inside.",
+            "列表应该可以在任何情况下使用，从页面级别的布局到管理细化组件之间的偏移。它们应该可与内部使用的任何组件一起使用。",
         },
         "cc-list-horizontal": {
-          title: "Horizontal stacking",
+          title: "水平堆叠",
           description:
-            "Lists can be used for inline elements and they have to manage how they’re stacked horizontally, including handling offsets between multiple rows of elements.",
+            "Lists可以用于内联元素 (inline elements)，它们的水平堆叠方式应该可控，包括处理多行元素之间的偏移。",
         },
         "cc-list-divided": {
-          title: "Divided variant",
+          title: "分隔的变体",
           description:
-            "Lists with dividers are the best practice advised by many platform guidelines (especially on mobile).",
+            "带分隔符的列表是许多平台指南建议的最佳做法（尤其是在移动端）。",
         },
         "cc-list-action": {
-          title: "Supports actionable content",
+          title: "支持可操作的内容",
           description:
-            "Sometimes lists are used for grouping tappable components, where the whole area of the list item should be clickable.",
+            "列表有时被用来分组可触的组件，在这种情况下，列表项的整个区域都应该是可点击的。",
         },
       },
     },
     "cc-loading-indicator": {
-      title: "Loading indicator",
+      title: "加载指示器 (Loading indicator)",
       description:
-        "The loading indicator shows that an operation’s being performed and how long the process will take.",
+        "加载指示器显示正在进行的操作以及该过程将需要多长时间。",
       checklist: {
         "cc-loading-indicator-variants": {
-          title: "Linear and non-linear variants",
+          title: "线性和非线性的变体 (Linear and non-linear variants)",
           description:
-            "Depending on the context and the component it’s used for, the loading indicator can be represented either with linear or with a non-linear (e.g. circular) variant.",
+            "根据上下文和它所使用的组件，加载指示器可以用线性或非线性（如循环）变体表示。",
         },
         "cc-loading-indicator-wait": {
-          title: "Determinate or indeterminate wait time",
+          title: "确定的或不确定的等待时间",
           description:
-            "In some cases, the wait time can’t be determined. The loading indicator should be shown until the loading finishes or an error happens. In other cases, it’s better to indicate how much time’s left until the loading is done.",
+            "在某些情况下，等待时间是无法确定的。加载指示器应该显示，直到加载完成或发生错误。在其他情况下，最好显示距离加载完成还需多少时间。",
         },
         "cc-loading-indicator-light": {
-          title: "Light variant",
+          title: "浅色变体 (Light variant)",
           description:
-            "The loading indicator should respect its parent element background and provide a variant to be used on darker background colours.",
+            "加载指示器应该尊重其母元素的背景，并提供一个变体，用于较暗的背景颜色。",
         },
         "cc-loading-indicator-reduced": {
-          title: "Reduced motion",
+          title: "动画减弱 (Reduced motion)",
           description:
-            "The loading indicator should be synced with the system motion settings and reduce its animation speed when reduced motion settings are turned on.",
+            "加载指示器应该与系统的动画设置同步，并在降低动画设置时降低其动画速度。",
         },
       },
     },
     "cc-modal": {
-      title: "Modal",
+      title: "模态 (Modal)",
       description:
-        "Modals are containers appearing in front of the main content to provide critical information or an actionable piece of content.",
+        "模态是出现在主要内容前的窗口，提供关键信息或可操作的内容。",
       checklist: {
         "cc-modal-supports-content": {
-          title: "Supports any type of content",
+          title: "支持任何类型的内容",
           description:
-            "Like any other container, modals can be used in different scenarios and you should be able to use it with any other component inside.",
+            "像其他的窗口一样，模态可以用在不同的场景中，你应该可以在里面使用任何其他组件。",
         },
         "cc-modal-actions": {
-          title: "Supplementary actions",
+          title: "补充行动",
           description:
-            "Since content in the modal may be actionable, it’s important to have an area for action elements. This area is usually located at the bottom of the modal container.",
+            "由于模态中的内容可能是可操作的，所以有一个操作元素的区域很重要。这个区域通常位于模态窗口的底部。",
         },
         "cc-modal-close": {
-          title: "Close action",
+          title: "关闭",
           description:
-            "Modals should provide a clear way to be closed as they’re blocking content when open. This may be either a separate close button or one of the supplementary actions.",
+            "模态应该提供一个明确的方式来关闭，因为它们在打开时挡住了内容。这可以是一个单独的关闭按钮或补充动作之一。",
         },
         "cc-modal-structure": {
-          title: "Information structure",
+          title: "信息结构",
           description:
-            "Even though modals can be used as an empty container for the content, they need a defined information structure to provide a holistic experience. It may include defining how titles and subtitles look by default or where an action element’s area is.",
+            "即使模态可以作为内容的空容器，它们也需要一个定义好的信息结构来提供整体的体验。它可能包括定义标题和字幕的默认外观或动态元素的区域位置。",
         },
         "cc-modal-keyboard": {
-          title: "Keyboard navigation support",
+          title: "键盘导航支持",
           description:
-            "It should be possible to close a modal by pressing the Esc key and all the focusable elements inside the modal container should be accessible with keyboard navigation.",
+            "应该可以通过按Esc键来关闭模态，而且模态窗口内的所有可聚焦元素都应该可以通过键盘导航来访问。",
         },
         "cc-modal-trap": {
-          title: "Focus trapping",
+          title: "焦点捕捉",
           description:
-            "Once a modal is opened, the focus should be moved to the first element inside the modal and should be looped within the modal container. Closing the modal should return the focus to the last focused element on the page.",
+            "一旦一个模态被打开，焦点应该被移动到模态中的第一个元素，并且应该在模态窗口中循环。关闭模态应该将焦点返回到页面上的最后一个焦点元素。",
         },
       },
     },
     "cc-tabs": {
-      title: "Tabs",
+      title: "选项卡 (Tabs)",
       description:
-        "Tabs organise navigation between multiple pages or content sections.",
+        "选项卡组织了多个页面或内容部分之间的导航。",
       checklist: {
         "cc-tabs-active": {
-          title: "Active button state",
+          title: "活动按钮状态",
           description:
-            "There should be a clear differentiation between selected and unselected tab buttons.",
+            "选定和未选定的标签按钮之间应该有明显的区别。",
         },
         "cc-tabs-icon": {
-          title: "Button icon support",
+          title: "支持按钮图标",
           description:
-            "Icons help show the purpose of the tab buttons when used next to its label.",
+            "当在标签旁使用时，图标有助于显示标签按钮的目的。",
         },
         "cc-tabs-equal": {
-          title: "Equally-sized tab buttons",
+          title: "同样大小的选项卡按钮",
           description:
-            "Tabs can be used in a relatively small-sized container where you need to switch between a definite number of sections. For such scenarios, it’s better to support a variant where the button’s area is divided equally.",
+            "选项卡可以用在一个相对较小的容器中，你需要在一定数量的部分之间切换。对于这种情况，最好是支持一个变体，即按钮的区域被平均分配。 For such scenarios, it’s better to support a variant where the button’s area is divided equally.",
         },
         "cc-tabs-keyboard": {
-          title: "Keyboard navigation",
+          title: "键盘导航",
           description:
-            "All tab buttons should be focusable and navigation between the tab’s component should be accessible from the keyboard.",
+            "所有的标签按钮都应该是可聚焦的，标签组件之间的导航应该可以通过键盘来实现。",
         },
         "cc-tabs-mobile": {
-          title: "Responsiveness",
+          title: "响应性",
           description:
-            "If all tabs on mobile don’t fit into the viewport, users should still have access to all tab buttons. Ways to solve this can be making the button area scrollable for mobile or showing a More button containing a dropdown with the rest of the buttons.",
+            "如果移动端的所有选项卡不适合在视口中显示，用户仍然应该可以访问所有的选项卡按钮。解决这个问题的方法可以是让按钮区域在移动端可滚动，或者显示一个包含下拉的更多按钮与其他的按钮。",
         },
       },
     },
     "cc-toast": {
-      title: "Toast",
+      title: "吐司反馈 (Toast)",
       description:
-        "Toasts provide short meaningful feedback messages about the action results.",
+        "Toasts 提供关于行动结果的简短的有意义的反馈信息。",
       checklist: {
         "cc-toast-auto": {
-          title: "Dismissed automatically",
+          title: "自动消散",
           description:
-            "Toast messages shouldn’t interrupt the user flow, block the screen for a long time or require additional action from the user.",
+            "Toast信息不应打断用户流程，不应长时间阻塞屏幕，也不应要求用户采取额外的行动。",
         },
         "cc-toast-action": {
-          title: "Action support",
+          title: "行动支持",
           description:
-            "Besides displaying the message, toasts may also provide an action related to the message like undoing an action.",
+            "除了显示消息，Toast还可以提供与消息相关的操作，比如撤销一个操作。",
         },
         "cc-toast-queue": {
-          title: "Handles multiple instances",
+          title: "处理多个实例",
           description:
-            "Even though it doesn’t happen often, toasts can be called from multiple sources at the same time and all resulting toasts should be queued. It’s good practice not to show all the messages at the same time.",
+            "尽管这并不经常发生，但Toast可以同时从多个来源被调用，所有产生的Toast应该被排序。不应在同一时间显示所有的Toast消息。",
         },
         "cc-toast-a11y": {
-          title: "Accessibility",
+          title: "响应性",
           description:
-            "Toast messages should be announced by the voice assistive technology and their action should be easily accessible from the keyboard.",
+            "Toast 应该与移动视窗保持一致，其操作应易于触摸到。",
         },
         "cc-toast-mobile": {
           title: "Responsiveness",
@@ -576,34 +576,34 @@ export default {
       },
     },
     "cc-tooltip": {
-      title: "Tooltip",
+      title: "工具提示 (Tooltip)",
       description:
-        "Tooltips are desktop-only components that display additional information when hovering over or focusing on an element.",
+        "工具提示是仅适用于桌面的组件，当悬停在一个元素上或聚焦在一个元素上时显示额外的信息。",
       checklist: {
         "cc-tooltip-keyboard": {
-          title: "Keyboard hover support",
+          title: "支持键盘悬停",
           description:
-            "Tooltips should be accessible when an element is focused using the keyboard.",
+            "当使用键盘聚焦一个元素时，工具提示应该可以被访问。",
         },
         "cc-tooltip-position": {
-          title: "Dynamic positioning",
+          title: "动态定位 (Dynamic positioning)",
           description:
-            "Tooltip content should be displayed based on the current position of the trigger element on the screen and always visible to the user.",
+            "工具提示的内容应该根据触发元素在屏幕上的当前位置来显示，并始终对用户可见。",
         },
         "cc-tooltip-timeout": {
-          title: "Hover timeout",
+          title: "悬停超时",
           description:
-            "Having a small timeout before triggering a tooltip will help to prevent occasionally showing tooltips while users move their mouse cursor.",
+            "在触发工具提示之前有一个小的超时，将有助于防止在用户移动鼠标指针时误触而显示工具提示。",
         },
         "cc-tooltip-light": {
-          title: "Light variant",
+          title: "轻度变体 (Light variant)",
           description:
-            "The tooltip should respect its parent element background and provide a variant to be used on darker background colours.",
+            "工具提示应该尊重其母元素的背景，并提供一个变体，以用于较深的背景颜色。",
         },
         "cc-tooltip-group": {
-          title: "Instant transition for element groups",
+          title: "元素组的即时过渡 (Instant transition for element groups)",
           description:
-            "If there’s a group of elements using tooltips, hovering over another element while a tooltip’s already active shouldn’t trigger the animation.",
+            "如果有一组元素使用工具提示，当工具提示已经激活时，将鼠标悬停在另一个元素上不应触发动画。",
         },
       },
     },
