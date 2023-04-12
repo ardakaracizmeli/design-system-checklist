@@ -9,8 +9,8 @@ export default {
   share: "分享",
   contribute: "贡献",
 
-  previous: "Previous",
-  next: "Next",
+  previous: "上一页",
+  next: "下一页",
 
   exportTitle: "传播信息",
   exportSubtitle:
