@@ -1,138 +1,138 @@
 export default {
-  title: "Design tokens",
+  title: "设计变量 (Design tokens)",
   description:
-    "Variables that store values for the base layer of your design system, like colour and typography. They’re used in components, so changes on this level will resonate throughout the whole system.",
+    "为你的设计系统的基础层储存数值的变量，如颜色和排版。它们在组件中使用，所以在这一层的变化会对整个系统产生影响。",
   sections: {
     "dt-color": {
-      title: "Colour",
+      title: "颜色 (Colour)",
       description:
-        "Not only an efficient way to showcase your brand, but also an efficient way to communicate with your users. Colour palettes created with purpose over aesthetics in mind can help you create intuitive design patterns by adding meaning to your interface.",
+        "不仅是展示品牌的有效方式，也是与用户沟通的有效方式。考虑到目的而非美学的调色板,可以通过为界面增加意义帮助创造直观的设计模式。",
       checklist: {
         "dt-color-a11y": {
-          title: "Accessibility",
+          title: "可访问性（无障碍）",
           description:
-            "Make sure to have accessible pairings between the main colours in your palette. More importantly, make sure that your background and text colours have at least an AA standard contrast ratio between them.",
+            "确保你的调色板中的主要颜色之间有无障碍的搭配。更重要的是，确保你的背景和文本颜色之间至少有一个AA标准的对比度。",
         },
         "dt-color-functional": {
-          title: "Functional colours",
+          title: "功能性色彩",
           description:
-            "Besides your brand colours, make sure to have colours defined and made into variables for functions like disabled states, backgrounds, actions and high contrast text.",
+            "除了品牌颜色外，确保为禁用状态、背景、行为和高对比度文本等功能定义颜色并将其做成变量。",
         },
         "dt-color-dark-mode": {
-          title: "Dark mode",
+          title: "深色模式",
           description:
-            "Preparing a dark mode version of your colour palette will allow your design system to adapt to dark mode and respect what your user wants to see.",
+            "为你的调色板准备一个暗夜模式的版本，将使你的设计系统能够适应暗夜模式，并尊重你的用户想要看到的东西。",
         },
         "dt-color-guidelines": {
-          title: "Guidelines",
+          title: "指导原则",
           description:
-            "Provide guidelines on how and when to use the colours in your palette, what to keep in mind when working with them and how not to use them.",
+            "提供关于如何以及何时使用调色板中颜色的指南，在使用这些颜色时应注意什么，以及如何不使用它们。",
         },
       },
     },
     "dt-layout": {
-      title: "Layout",
+      title: "布局 (Layout)",
       description:
-        "A well thought out layout goes a long way. Consistent use of a grid and spacing makes it easier for your users to scan the user interface and grasp the content.",
+        "一个经过深思熟虑的布局可长久。统一使用网格和间距使你的用户更容易扫视用户界面和掌握内容。",
       checklist: {
         "dt-layout-units": {
-          title: "Units",
+          title: "单位",
           description:
-            "Units are the most granular building blocks for layout. Defining a set of values with consistent increments (such as 4, 8, 12 and 16 for a 4-point system) will provide you with the foundation when you’re designing your grid and spacing values.",
+            "单位是布局中最细化的构件。定义一组具有一致增量的数值（例如4、8、12和16的4点系统）将为你设计网格和间距数值提供基础。",
         },
         "dt-layout-grid": {
-          title: "Grid",
+          title: "网格",
           description:
-            "Every layout should sit on a grid that brings order and hierarchy to the interface. Define a grid separately for mobile, tablet and desktop devices with columns, gutters, and margins so your interface can adapt to any platform easily.",
+            "每个布局都应有一个网格，为界面带来秩序和层次感。为移动设备、平板电脑和桌面设备分别定义一个网格，包括列、槽和边距，这样界面能轻松适应任何平台。",
         },
         "dt-layout-breakpoints": {
-          title: "Breakpoints",
+          title: "分割点",
           description:
-            "Predefine the screen sizes and orientations your grid will adapt to.",
+            "预定义网格将适应的屏幕尺寸和方向。",
         },
         "dt-layout-spacing": {
-          title: "Spacing",
+          title: "间距",
           description:
-            "Horizontal and vertical rhythm plays a big role in a layout. You should provide easy methods for adding space between interface elements independent of your grid.",
+            "在布局设计中，水平和垂直的节奏对于界面的整体效果非常重要。除了网格系统外，应提供易于实现的方法来为不同的界面元素添加间距。",
         },
       },
     },
     "dt-typography": {
-      title: "Typography",
+      title: "排版学 (Typography)",
       description:
-        "Typography is one of the main ways you surface content in products. A clear hierarchy and contrasting styles in your typography scale will make things easier to read and help with the overall structure of your product. It’s also an opportunity to visualise your brand character and presence.",
+        "排版是你在产品中展现内容的主要方式之一。在排版规模中，清晰的层次和对比的风格会更易于阅读，并有助于产品的整体结构。这也是一个将品牌特征和存在可视化的机会。",
       checklist: {
         "dt-typography-mobile": {
-          title: "Responsiveness",
+          title: "响应性响应性",
           description:
-            "Desktop devices can usually afford to have bigger font sizes compared to mobile devices. Creating a typography scale that adapts to the viewport size will help with a more meaningful hierarchy and layout.",
+            "与移动设备相比，桌面设备通常可以承受更大的字体尺寸。创建一个适应视口大小的排版比例将有助于形成更有意义的层次和布局。",
         },
         "dt-typography-grid": {
-          title: "Grid relation",
+          title: "网格关系",
           description:
-            "Font sizes and leading should match your grid to allow better pairing between text and other UI elements. A good example of this is text paired with icons with bounding boxes.",
+            "字体大小和行间距应该与网格相匹配，以便让文本和其他UI元素之间有更好的搭配。这方面的一个很好的例子是文本与带有边界框的图标相配。",
         },
         "dt-typography-readability": {
-          title: "Readability",
+          title: "可读性",
           description:
-            "Optimising the letter spacing (tracking), line height (leading) and line length for your typography scale will help with the readability of text.",
+            "优化字母间距（tracking）、行高（leading）和行长的排版比例将有助于提高文本的可读性。",
         },
         "dt-typography-performance": {
-          title: "Performance",
+          title: "性能",
           description:
-            "Custom fonts need to be downloaded before they can be displayed, especially on the web. Make sure that you have sensible fallbacks and fast loading time for your typography assets. Using system fonts solves this performance problem.",
+            "自定义字体在显示之前需要下载，特别是在网络上。请确保你的排版资源具备合理的备选方案和快速的加载时间。使用系统字体可以解决这个性能问题。",
         },
         "dt-typography-guidelines": {
-          title: "Guidelines",
+          title: "准则",
           description:
-            "Provide guidelines on how and when to use the pairings in your typography scale, what to keep in mind when working with them and how not to use them.",
+            "提供关于如何以及何时在你的排版规模中使用这些配对的指南，在使用它们时应注意什么，以及如何不使用它们。",
         },
       },
     },
     "dt-iconography": {
-      title: "Iconography",
+      title: "图形学 (Iconography)",
       description:
-        "Icons are symbols that represent functionality or content. They’re especially recognisable and helpful in user interfaces since their meaning can be understood at a glance. hough they can be used just for decoration, their full potential can be realised when they’re used meaningfully and consistently.",
+        "图标是代表功能或内容的符号。它们在用户界面中特别容易辨认，也很有帮助，因为它们的含义可以一目了然。虽然它们可以仅仅用于装饰，但当它们被有意义地、持续地使用时，它们的潜力就可以完全发挥出来。",
       checklist: {
         "dt-iconography-a11y": {
-          title: "Accessibility",
+          title: "可访问性（无障碍）",
           description:
-            "For icons that convey a meaning or serve a function, offer a default accessible name which expresses that same meaning or function. This name may be used by screen readers and other assistive technologies to orient the user about the interface. For purely decorative icons, a name is not required. If your design system exports front-end code, ensure that the icon name is included, for example using aria-label.",
+            "对于传达某种意义或服务于某种功能的图标，提供一个默认的可访问名称，以表达相同的意义或功能。这个名字可以被屏幕阅读器和其他辅助技术用来引导用户了解界面。对于纯粹的装饰性图标，不需要名称。如果你的设计系统导出了前端代码，请确保包含图标的名称，例如，使用aria-label。",
         },
         "dt-iconography-style": {
-          title: "Style",
+          title: "风格",
           description:
-            "Make sure that your icon family makes visual sense as a whole. Picking an outlined or filled style and sticking with it will lead to better visual consistency and predictability.",
+            "确保图标系列作为一个整体具有视觉意义。挑选一种勾勒或填充的风格并坚持下去，会带来更好的视觉一致性和可预测性。",
         },
         "dt-iconography-naming": {
-          title: "Naming",
+          title: "命名",
           description:
-            "Name your icons based on their communicative purpose, rather than how they look. For instance, a triangular media player play button icon should be named 'play', not 'triangle'. You can still add related keywords to improve discoverability.",
+            "根据图标的目的，而不是它们的外观来命名。例如，一个三角形的媒体播放器播放按钮图标应该被命名为 ‘播放’，而不是 ‘三角形’。仍然可添加相关的关键词来提高可发现性。",
         },
         "dt-iconography-grid": {
-          title: "Relation with grid",
+          title: "与网格的关系",
           description:
-            "Draw your icons in a bounding box that plays well with your grid. This makes for a better pairing with other UI elements. A good example of this would be icons with bounding boxes paired with text.",
+            "在一个与网格x相得益彰的边界框中绘制你的图标。这使之与其他UI元素有更好的搭配。一个很好的例子是：带有边界框的图标与文本配对。",
         },
         "dt-iconography-sizes": {
-          title: "Sizes",
+          title: "尺寸",
           description:
-            "Provide different sizes for icons that correlate to your grid. Provide a minimum size and remove unnecessary detail for your icons for smaller sizes.",
+            "为与网格相关的图标提供不同的尺寸。为图标提供一个最小的尺寸，并为小尺寸的图标去除不必要的细节。",
         },
         "dt-iconography-keywords": {
-          title: "Keywords",
+          title: "关键词",
           description:
-            "Adding keywords will improve the discoverability of each icon and provide a better user experience for anyone using your system.",
+            "添加关键词将提高每个图标的可发现性，并为设计系统的使用者提供更好的用户体验。",
         },
         "dt-iconography-reserved": {
-          title: "Reserved icons",
+          title: "保留图标",
           description:
-            "Reserving icons that represent common actions will prevent their use in any other context. System icons for navigation or adding and deleting are a good example. This leads to a more intuitive user experience.",
+            "保留代表常见操作的图标将阻止它们在任何其他情况下使用。用于导航或添加和删除的系统图标就是一个例子，这将提供一个更直观的用户体验。",
         },
         "dt-iconography-guidelines": {
-          title: "Guidelines",
+          title: "指南",
           description:
-            "Provide guidelines on how and when to use icons, what to keep in mind when working with them and how not to use them.",
+            "提供关于如何和何时使用图标的指南，在使用它们时要注意什么，以及如何不使用它们。",
         },
       },
     },
