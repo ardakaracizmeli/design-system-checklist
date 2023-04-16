@@ -63,25 +63,51 @@ const AboutText = () => {
       <br />
       <hr />
       <br />
-      Special thanks to{" "}
-      <a
-        className={s.link}
-        href="https://janklever.work"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Jan Klever
-      </a>{" "}
-      for contributing the translation to Portuguese and to{" "}
-      <a
-        className={s.link}
-        href="https://twitter.com/lelasdiniz"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        @lelasdiniz
-      </a>{" "}
-      for reviewing it.
+      Special thanks:
+      <br />
+      <br />
+      <ul className={s.list}>
+        <li>
+          <a
+            className={s.link}
+            href="https://twitter.com/Arlene_UX"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Arlene Xu
+          </a>{" "}
+          for contributing the translation to Simplified Chinese and to{" "}
+          <a
+            className={s.link}
+            href="https://twitter.com/gabrlyg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Gabriel Yang
+          </a>{" "}
+          for reviewing it.
+        </li>
+        <li>
+          <a
+            className={s.link}
+            href="https://janklever.work"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Jan Klever
+          </a>{" "}
+          for contributing the translation to Portuguese and to{" "}
+          <a
+            className={s.link}
+            href="https://twitter.com/lelasdiniz"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @lelasdiniz
+          </a>{" "}
+          for reviewing it.
+        </li>
+      </ul>
     </span>
   );
 };
