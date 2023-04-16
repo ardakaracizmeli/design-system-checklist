@@ -69,6 +69,7 @@ const Header = ({ tCore }) => {
             >
               <option value="en">English</option>
               <option value="pt">Português</option>
+              <option value="zh-cn">简体中文</option>
             </select>
             <svg
               xmlns="http://www.w3.org/2000/svg"
