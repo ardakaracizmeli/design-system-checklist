@@ -1,5 +1,5 @@
 export default {
-  heroTitle: "建立更好的设计系统",
+  heroTitle: "构建更好的设计系统",
   heroSubtitle:
     "一份帮助您计划、建立和发展您的设计系统的开源检查清单。",
   heroAction: "开始使用",
