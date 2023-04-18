@@ -1,7 +1,7 @@
 export default {
   title: "Gerenciamento de projetos",
   description:
-    "Sistemas de design não são diferentes de qualquer outro projeto que sua equipe possa assumir. Para construir e manter um com sucesso, é preciso uma estratégia clara que seja bem executada diariamente e você precisará criar oportunidades para seus colegas darem feedback para ajudar a compartilhar seu sistema de design juntos.",
+    "Um Design System não é diferente de qualquer outro projeto que sua equipe possa aceitar. Para construir e mantê-lo com sucesso, é preciso adotar uma estratégia clara que seja bem executada diariamente, além de criar oportunidades para seus colegas darem feedback e ajudarem a compartilhar o Design System.",
   sections: {
     "pm-task-management": {
       title: "Gerenciamento de tarefas",
@@ -9,14 +9,14 @@ export default {
         "Um gerenciamento de tarefas e fluxos de trabalho sólidos são um passo crucial para executar qualquer projeto. Adotar uma metodologia como Agile ou Kanban ajuda você a cobrir muito terreno.",
       checklist: {
         "pm-task-management-roadmap": {
-          title: "Mapa de trabalho",
+          title: "Roadmap",
           description:
-            "Definir sua visão de curto e longo prazo e mapear as coisas ajuda você a decidir as etapas a seguir, entender seu lugar no quadro geral e priorizar as tarefas do dia a dia.",
+            "Definir tarefas de curto e longo prazo podem te ajudar a decidir os próximos passos, entender seu lugar no quadro geral e priorizar as tarefas do dia a dia.",
         },
         "pm-task-management-milestones": {
-          title: "Milestones",
+          title: "Objetivos",
           description:
-            "Defina marcos que atuem como grandes épicos em seu gerenciamento de projetos com a ajuda de seu mapa de trabalho. Isso ajudará você a entender seu progresso.",
+            "Defina marcos que atuem como grandes épicos em seu gerenciamento de projetos com a ajuda de seu roadmap. Isso ajudará você a entender seu progresso.",
         },
         "pm-task-management-ticketing": {
           title: "Acompanhamento de tarefas",
@@ -28,12 +28,12 @@ export default {
     "pm-communications": {
       title: "Comunicação",
       description:
-        "Seus usuários desempenham um grande papel na formação do seu sistema de design. Criar canais de comunicação onde eles possam levantar suas vozes ajuda você a acompanhar como estão usando seu sistema. Também melhorará seu senso de propriedade e adoção do seu sistema.",
+        "Seus usuários desempenham um grande papel na formação do seu Design System. Criar canais de comunicação onde eles possam levantar suas vozes ajuda você a acompanhar como estão usando o DS. Esta ação também pode melhorar seu senso de propriedade e a adoção do sistema por parte dos seus colegas.",
       checklist: {
         "pm-communications-meetings": {
           title: "Reuniões com a comunidade",
           description:
-            "Agende reuniões com todos que usam o sistema de design. Compartilhe seu conhecimento e faça propostas para melhorar o senso de comunidade.",
+            "Agende reuniões com todos que usam o Design System. Compartilhe seu conhecimento e faça propostas para melhorar o senso de comunidade.",
         },
         "pm-communications-channel": {
           title: "Canal de comunicação",
@@ -43,39 +43,39 @@ export default {
         "pm-communications-open-hours": {
           title: "Horário livre",
           description:
-            "Crie horários livres nos quais você possa envolver sua audiência em um ambiente mais privado, onde possa discutir as coisas com mais detalhes. Você também pode usar esses horários como oportunidades de codificação ou design em equipe.",
+            "Crie horários livres nos quais você possa envolver sua audiência em um ambiente mais privado e discutir as coisas com mais detalhes. Você também pode usar esses horários como oportunidades de criar componentes em equipe, seja na ferramenta de design ou no código.",
         },
         "pm-communications-faq": {
           title: "FAQ",
           description:
-            "Para economizar tempo de todos, defina quais perguntas são frequentemente feitas por seu público e documente-as em um local acessível.",
+            "Para economizar tempo de todos, defina quais perguntas são frequentemente feitas por seu público e as documente em um local de fácil acesso.",
         },
       },
     },
     "pm-analytics": {
       title: "Análise de dados",
       description:
-        "Dados não são o único fator de condução quando se trata do desenvolvimento de sistemas de design. Manter um olhar atento sobre como o sistema é usado no processo de desenvolvimento e no produto final pode informar sua estratégia para o futuro.",
+        "Manter um olhar atento sobre como o sistema é usado por designers e desenvolvedores pode ajudar a informar sua estratégia para o futuro.",
       checklist: {
         "pm-analytics-component": {
           title: "Análise de componentes",
           description:
-            "Acompanhe o uso de seus componentes. Para o desenvolvimento, você pode usar ferramentas integradas como o Design System Analytics do Figma. Para o produto final, você pode ter uma maneira separada de rastrear por plataforma, dependendo da tecnologia.",
+            "Acompanhe o uso de seus componentes. Você pode usar ferramentas integradas como o Design System Analytics do Figma ou ter uma maneira separada de rastrear por plataforma, dependendo da tecnologia.",
         },
         "pm-analytics-logging": {
           title: "Registro de erros",
           description:
-            "Implemente uma maneira de rastrear e identificar interrupções relacionadas a componentes em seu produto.",
+            "Implemente uma maneira de rastrear e identificar erros relacionados a componentes em seu produto.",
         },
         "pm-analytics-tooling": {
           title: "Análise de ferramentas",
           description:
-            "Acompanhe quais ferramentas estão sendo usadas para o seu sistema de design. Descubra quais são as mais usadas e quais recursos são os mais populares.",
+            "Acompanhe quais ferramentas estão sendo usadas para o seu Design System. Descubra quais são as mais usadas e quais recursos são os mais populares.",
         },
         "pm-analytics-health": {
           title: "Métricas de serviço e saúde",
           description:
-            "Defina métricas de serviço e saúde para seu sistema de design para estabelecer uma referência sobre o quão bem você está indo. Exemplos comuns podem ser o número de tickets fechados, melhorias realizadas ou bugs corrigidos.",
+            "Defina métricas de serviço e saúde para seu Design System para estabelecer uma referência sobre o quão bem você está indo. Exemplos comuns podem ser o número de tickets fechados, melhorias realizadas ou bugs corrigidos.",
         },
       },
     },
