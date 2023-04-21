@@ -63,7 +63,7 @@ const AboutText = () => {
       <br />
       <hr />
       <br />
-      Special thanks:
+      Special thanks to:
       <br />
       <br />
       <ul className={s.list}>
@@ -96,16 +96,16 @@ const AboutText = () => {
           >
             Jan Klever
           </a>{" "}
-          for contributing the translation to Portuguese and to{" "}
+          and{" "}
           <a
             className={s.link}
-            href="https://twitter.com/lelasdiniz"
+            href="https://www.linkedin.com/in/raphaela-diniz/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            @lelasdiniz
+            Raphaela Diniz
           </a>{" "}
-          for reviewing it.
+          for contributing the translation to Portuguese.
         </li>
       </ul>
     </span>
