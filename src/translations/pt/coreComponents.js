@@ -1,22 +1,22 @@
 export default {
   title: "Componentes principais",
   description:
-    "Componentes são os principais blocos de construção para interfaces de usuário. A construção de uma biblioteca de componentes reutilizáveis aprimora o fluxo de trabalho de desenvolvimento do produto, reduzindo dívidas técnicas de design e desenvolvimento, acelerando o processo. Os componentes principais não podem ser desmembrados em peças granulares sem perder seu significado.",
+    "Componentes são os principais blocos de construção para interfaces de usuário. A construção de uma biblioteca de componentes reutilizáveis aprimora e acelera o fluxo de trabalho e contribui para redução das dívidas técnicas de design e desenvolvimento. Os componentes principais não podem ser desmembrados em peças granulares sem perder seu significado.",
   sections: {
     "cc-avatar": {
       title: "Avatar",
       description:
-        "Avatares são usados para mostrar uma miniatura de uma foto do usuário ou uma representação visual de qualquer outro tipo de conteúdo.",
+        "Avatares são usados para mostrar uma miniatura de uma foto do usuário ou uma uma representação visual de outro tipo de conteúdo.",
       checklist: {
         "cc-avatar-image": {
           title: "Imagem",
           description:
-            "Os avatares devem mascarar uma imagem em sua forma e funcionar com qualquer tamanho de imagem, já que podem receber essa imagem de fontes de dados desconhecidas.",
+            "Os avatares devem adequar a imagem ao seu formato e funcionar com qualquer tamanho de imagem, já que podem receber essa imagem de fontes de dados desconhecidas.",
         },
         "cc-avatar-image-fallback": {
-          title: "Fallback de imagem",
+          title: "Substituto de imagem",
           description:
-            "Deve haver fallbacks quando não há imagem disponível. Isso pode ser feito com imagens de espaço reservado ou iniciais.",
+            "Quando não há imagem disponível, o substituto deve ser exibido. Isso pode ser feito com imagens definidas anteriormente ou com iniciais.",
         },
         "cc-avatar-a11y": {
           title: "Acessibilidade",
@@ -36,31 +36,31 @@ export default {
         "cc-avatar-bg": {
           title: "Cores de fundo",
           description:
-            "Quando usados com ícones ou texto, deve haver uma cor de fundo dos tokens de cor do sistema de design aplicada à forma do avatar. Certifique-se de que ícones e texto tenham uma relação de contraste suficiente com o fundo de acordo com o padrão WCAG AA.",
+            "Quando usados com ícones ou texto, a cor de fundo do avatar deve ser uma das que foram definidas nos tokens de cor do Design System. Certifique-se de que ícones e texto tenham uma relação de contraste suficiente com o fundo de acordo com o padrão WCAG AA.",
         },
       },
     },
     "cc-badge": {
-      title: "Crachá",
+      title: "Badge",
       description:
-        "Crachás (em inglês: badges) são elementos que representam o status de um objeto ou valor de entrada do usuário.",
+        "Também conhecido como tag, os badges são elementos que representam o status de um objeto ou trazem informações complementares sobre um outro elemento.",
       checklist: {
         "cc-badge-appearance": {
           title: "Aparência",
           description:
-            "Os crachás podem desempenhar vários papéis em seu produto e ter uma cor predefinida para cada papel deve ajudar os usuários a entender seu significado. Ao alterar as cores, certifique-se de que o texto tenha relação de contraste suficiente com o fundo de acordo com o padrão WCAG AA.",
+            "Os badges podem desempenhar vários papéis em seu produto e ter uma cor predefinida para cada papel ajuda os usuários a entender seu significado. Ao alterar as cores, certifique-se de que o texto tenha relação de contraste suficiente com o fundo de acordo com o padrão WCAG AA.",
         },
         "cc-badge-dismiss": {
-          title: "Ação de dispensar",
+          title: "Ação de fechar",
           description:
-            "Os crachás podem ser usados como uma maneira dinâmica de exibir valores selecionados e deve haver uma maneira de dispensá-los.",
+            "Quando os badges são usados como uma maneira dinâmica de exibir informações, deve haver uma maneira de fechá-los.",
         },
       },
     },
     "cc-banner": {
       title: "Banner",
       description:
-        "Banners exibem uma mensagem acionável usada como forma proeminente de comunicação com seus usuários.",
+        "Banners exibem mensagens normalmente acompanhadas de uma ação e são utilizados de forma destacada na interface para se comunicar com o usuário.",
       checklist: {
         "cc-banner-appearance": {
           title: "Aparência",
@@ -78,9 +78,9 @@ export default {
             "As ações nos banners devem estar relacionadas ao seu texto e fornecer uma maneira de reagir à mensagem enviada ao usuário.",
         },
         "cc-banner-dismiss": {
-          title: "Ação de saída",
+          title: "Ação de fechar",
           description:
-            "Não sobrecarregue o usuário com banners na página e inclua uma opção de saída. Isso pode ser um botão separado de fechar ou uma das ações fornecidas.",
+            "Inclua uma opção de fechar no banner para não sobrecarregue o usuário com muitas informações na página. Isso pode ser feito com um botão separado de fechar ou com uma das ações fornecidas.",
         },
         "cc-banner-a11y": {
           title: "Acessibilidade",
@@ -90,7 +90,7 @@ export default {
         "cc-banner-mobile": {
           title: "Responsividade",
           description:
-            "Os banners devem se adaptar ao tamanho da tela. Isso geralmente significa que eles se adaptam para ocupar largura total em dispositivos móveis para economizar espaço.",
+            "Os banners devem se adaptar ao tamanho da tela. Isso geralmente significa que eles se adaptam para ocupar largura total em dispositivos móveis para fornecer mais espaço.",
         },
       },
     },
@@ -100,14 +100,14 @@ export default {
         "Botões são elementos interativos usados ​​para ações de um único passo.",
       checklist: {
         "cc-button-hover": {
-          title: "Estado de destaque",
+          title: "Estado de hover",
           description:
-            "Mostre claramente que o botão é interativo quando ele é destacado com um cursor de mouse.",
+            "Do inglês, hover significa flutuar. Por isso, este estado é ativado quando o cursor do mouse está passando por cima do botão. Essa interação mostra para o usuário que o botão é interativo.",
         },
         "cc-button-active": {
           title: "Estado ativo",
           description:
-            "Usado quando um botão é pressionado. O mesmo estado pode ser usado para representar o botão responsável por alternar outro elemento na página enquanto esse elemento estiver visivelmente aberto.",
+            "Usado quando um botão é pressionado.",
         },
         "cc-button-focus": {
           title: "Estado de foco",
@@ -115,9 +115,9 @@ export default {
             "Usado quando um botão é selecionado por meio da navegação pelo teclado.",
         },
         "cc-button-icon": {
-          title: "Suporte a ícones",
+          title: "Ícones",
           description:
-            "Os ícones comunicam facilmente o propósito do botão quando usados ​​ao lado de seu rótulo ou podem ser usados ​​sem texto quando não há espaço suficiente. Certifique-se de que a etiqueta de acessibilidade seja fornecida quando usado com um ícone apenas.",
+            "Os ícones comunicam facilmente o propósito do botão quando usados ​​ao lado do texto da ação, ou podem ser usados ​​sem texto quando não há espaço suficiente. Certifique-se de que a etiqueta de acessibilidade seja fornecida quando usada com um ícone apenas.",
         },
         "cc-button-disabled": {
           title: "Desativado",
@@ -132,7 +132,7 @@ export default {
         "cc-button-full-width": {
           title: "Largura total",
           description:
-            "Por padrão, os botões têm a largura de seu conteúdo, mas eles também devem ter uma variante de largura total que funcione bem em dispositivos móveis.",
+            "Por padrão, os botões têm a largura de seu conteúdo, mas eles também devem ter uma variante de ocupar a largura total que funcione bem em dispositivos móveis.",
         },
         "cc-button-variants": {
           title: "Variantes",
@@ -147,34 +147,34 @@ export default {
       },
     },
     "cc-card": {
-      title: "Cartão",
+      title: "Cards",
       description:
-        "Os cartões (em inglês: cards) são usados para agrupar informações sobre assuntos e suas ações relacionadas.",
+        "Cards são usados para agrupar informações sobre assuntos e suas ações relacionadas. Seu nome em inglês remete a cartões que agrupam conteúdos.",
       checklist: {
         "cc-card-content": {
           title: "Suporta qualquer tipo de conteúdo",
           description:
-            "Os cartões são um dos componentes mais usados no produto, então eles devem ser flexíveis o suficiente para suportar quaisquer outros componentes colocados neles.",
+            "Os cards são um dos componentes mais usados no produto, então eles devem ser flexíveis o suficiente para suportar quaisquer outros componentes colocados neles.",
         },
         "cc-card-structure": {
           title: "Estrutura de informações",
           description:
-            "Não importa o quão flexíveis os cartões são, é importante que eles tenham uma estrutura específica para seus elementos para consistência do produto.",
+            "Não importa o quão flexíveis os cards são, é importante que eles tenham uma estrutura específica para seus elementos, buscando manter a consistência do produto.",
         },
         "cc-card-media": {
-          title: "Suporta seções de mídia",
+          title: "Mídia",
           description:
-            "Um dos cenários mais populares para usar cartões é misturá-los com conteúdo de mídia. As opções mais populares são ter uma área de largura total na parte superior do conteúdo ou uma área de altura total em um dos lados do cartão.",
+            "Um dos cenários de uso mais populares quando falamos de cards envolve conteúdo de mídia. As opções mais comuns são ter uma área ocupando a largura total na parte superior do conteúdo ou uma área ocupando a altura total em um dos lados do card.",
         },
         "cc-card-actions": {
           title: "Ações complementares",
           description:
-            "Os cartões podem ser usados com ações geralmente colocadas na parte inferior do cartão, ou o próprio cartão pode ser tocável e representar uma ação.",
+            "Os cards podem ser usados com ações geralmente colocadas na parte inferior do cartão, ou o próprio card pode ser tocável e representar uma ação.",
         },
         "cc-card-mobile": {
           title: "Responsividade",
           description:
-            "Em viewports móveis, os cartões geralmente têm largura total para economizar espaço para o conteúdo.",
+            "Em telas móveis, os cards geralmente têm largura total para fornecer espaço para o conteúdo.",
         },
       },
     },
@@ -201,7 +201,7 @@ export default {
         "cc-carousel-touch": {
           title: "Suporte a eventos de toque",
           description:
-            "Carrosséis devem ser roláveis em dispositivos de toque. Algumas das melhores práticas são usar rolagem nativa e garantir que você esteja suportando o mesmo comportamento para todos os dispositivos de toque, não apenas telefones móveis.",
+            "Carrosséis devem ser roláveis em dispositivos de toque. Algumas das melhores práticas são usar rolagem nativa e garantir que você esteja suportando o mesmo comportamento para todos os dispositivos de toque, não apenas telefones.",
         },
         "cc-carousel-keyboard": {
           title: "Navegação por teclado",
@@ -216,51 +216,51 @@ export default {
       },
     },
     "cc-dropdown": {
-      title: "Menu suspenso",
+      title: "Dropdown",
       description:
-        "Os menus suspensos (em inglês: dropdowns) são usados para exibir uma subvisualização contextual com uma lista de ações ou conteúdo relacionado à área onde o menu suspenso está.",
+        "Este componente é utilizado para exibir uma lista de opções ou ações por cima da interface, mas ancorada à área de origem. Também é conhecido como menu suspenso, em português.",
       checklist: {
         "cc-dropdown-content": {
           title: "Suporta qualquer tipo de conteúdo",
           description:
-            "Os menus suspensos podem ser usados em muitos contextos, como seleção de datas, seleção de idioma ou outras características do produto.",
+            "Os dropdowns podem ser usados em muitos contextos, como seleção de datas, seleção de idioma ou outras características do produto.",
         },
         "cc-dropdown-menu": {
           title: "Menu de ações",
           description:
-            "Um dos cenários mais usados para menus suspensos é fornecer um menu de ações para o usuário, portanto, é útil ter esse layout definido.",
+            "Um dos cenários mais usados para dropdowns é fornecer um menu de ações para o usuário, portanto, é útil ter esse layout definido.",
         },
         "cc-dropdown-trap": {
           title: "Foco restrito",
           description:
-            "Uma vez que o menu suspenso é aberto, o foco deve funcionar apenas para os elementos dentro do próprio menu. Quando ele é fechado, o foco deve ir para o botão de abrir o menu suspenso.",
+            "Uma vez que o dropdown é aberto, o foco deve funcionar apenas para os elementos dentro do próprio componente. Quando ele é fechado, o foco deve ir para o botão de abrir o dropdown.",
         },
         "cc-dropdown-close": {
           title: "Ação de fechar",
           description:
-            "Algumas ações dentro do menu suspenso devem fechá-lo ou deve haver um botão separado de fechar. Também é uma boa prática fechar o menu suspenso quando o usuário clica fora dele.",
+            "Algumas ações dentro do dropdown  devem fechá-lo ou deve haver um botão separado de fechar. Também é uma boa prática fechar o dropdown quando o usuário clica fora dele.",
         },
         "cc-dropdown-keyboard": {
           title: "Navegação por teclado",
           description:
-            "Deve ser possível navegar pelos elementos do menu suspenso com o teclado e fechá-lo com a tecla Esc.",
+            "Deve ser possível navegar pelos elementos do dropdown com o teclado e fechá-lo com a tecla Esc.",
         },
         "cc-dropdown-position": {
           title: "Posicionamento dinâmico",
           description:
-            "O conteúdo do menu suspenso deve ser exibido com base na posição atual do botão de abrir o menu na tela e sempre visível para o usuário.",
+            "O conteúdo deve ser exibido com base na posição atual do botão de abrir o dropdown na tela e sempre estar visível para o usuário.",
         },
         "cc-dropdown-mobile": {
           title: "Responsividade",
           description:
-            "O conteúdo do menu suspenso deve ser adaptado para dispositivos móveis, pois pode ocupar muito espaço em desktops.",
+            "O conteúdo do dropdown deve ser adaptado para dispositivos móveis, pois pode ocupar muito espaço.",
         },
       },
     },
     "cc-icon": {
       title: "Ícone",
       description:
-        "O componente de ícone é uma forma de alinhar a exibição de ativos estáticos de ícones no produto.",
+        "O componente de ícone é uma forma de padronizar a exibição de diferentes ícones no produto independente do momento.",
       checklist: {
         "cc-icon-sizes": {
           title: "Tamanhos",
@@ -275,87 +275,87 @@ export default {
       },
     },
     "cc-checkbox": {
-      title: "Caixa de seleção",
+      title: "Checkbox",
       description:
-        "Uma caixa de seleção (em inglês: checkbox) é um elemento de formulário usado para selecionar uma ou várias opções.",
+        "É um elemento de formulário usado para selecionar uma ou várias opções.",
       checklist: {
         "cc-checkbox-checked": {
           title: "Estado selecionado",
           description:
-            "Usado quando a caixa de seleção está selecionada e utilizará seu valor para a submissão do formulário.",
+            "Usado quando o checkbox está selecionado e utilizará seu valor para a submissão do formulário.",
         },
         "cc-checkbox-disabled": {
           title: "Estado desabilitado",
           description:
-            "Impede interações com a caixa de seleção e remove seu valor da submissão do formulário.",
+            "Impede interações com o checkbox e remove seu valor da submissão do formulário.",
         },
         "cc-checkbox-indeterminate": {
           title: "Estado indeterminado",
           description:
-            "Usado quando a caixa de seleção tem elementos selecionáveis filhos e somente alguns deles estão selecionados.",
+            "Usado quando o checkbox tem elementos selecionáveis filhos e somente alguns deles estão selecionados.",
         },
         "cc-checkbox-label": {
-          title: "Rótulo",
+          title: "Texto descritivo",
           description:
-            "Deve haver um rótulo de texto vinculado ao campo da caixa de seleção. Clicar no rótulo também deve acionar a seleção da caixa de seleção.",
+            "Deve haver um texto descritivo de texto vinculado ao campo do checkbox. Clicar no texto também deve acionar o checkbox.",
         },
         "cc-checkbox-error": {
           title: "Estado de erro",
           description:
-            "O estado de erro é usado para erros de validação de formulário quando o erro está relacionado apenas ao campo da caixa de seleção. Sempre use um texto de erro junto com a mudança da cor do campo.",
+            "O estado de erro é usado para erros de validação de formulário quando o erro está relacionado apenas ao checkbox. Sempre use um texto de erro junto com a mudança da cor do campo.",
         },
         "cc-checkbox-keyboard": {
           title: "Suporte ao teclado",
           description:
-            "As seleções da caixa de seleção devem ser acionadas com a tecla de Espaço. Usar elementos nativos para isso deve fornecer esse tipo de interação pronta para uso.",
+            "As seleções do checkbox devem ser acionadas com a tecla de Espaço. Usar elementos nativos para isso deve fornecer esse tipo de interação pronta para uso.",
         },
         "cc-checkbox-group": {
           title: "Grupo de caixas de seleção",
           description:
-            "As caixas de seleção podem ser agrupadas para funcionar com múltiplos valores ao mesmo tempo.",
+            "Os checkbox podem ser agrupados para funcionar com múltiplos valores ao mesmo tempo.",
         },
       },
     },
     "cc-radio": {
-      title: "Seleção de rádio",
+      title: "Radio button",
       description:
-        "Um campo de seleção de rádio (em inglês: radio button) é um elemento de formulário usado para selecionar uma opção de uma lista.",
+        "É um elemento de formulário usado para selecionar apenas uma opção de uma lista.",
       checklist: {
         "cc-radio-checked": {
           title: "Estado selecionado",
           description:
-            "Usado quando a opção de rádio é selecionada e seu valor é enviado com o envio do formulário. Uma opção de rádio não pode ser desselecionada ao clicar novamente nela.",
+            "Usado quando o radio button é selecionado e seu valor é enviado com o formulário. O radio button não pode ser desselecionado ao clicar novamente nele.",
         },
         "cc-radio-disabled": {
           title: "Estado desativado",
           description:
-            "Impede a interação com a opção de rádio e remove seu valor do envio do formulário.",
+            "Impede a interação com o radio button e remove seu valor do envio do formulário.",
         },
         "cc-radio-label": {
-          title: "Rótulo",
+          title: "Texto descritivo",
           description:
-            "Deve haver um rótulo de texto vinculado ao campo de seleção de rádio. Clicar no rótulo também deve selecionar a opção de rádio.",
+            "Deve haver um texto descritivo vinculado ao radio button. Clicar no texto também deve selecionar o radio button.",
         },
         "cc-radio-error": {
           title: "Estado de erro",
           description:
-            "O estado de erro é usado para erros de validação de formulário quando o erro está relacionado apenas ao campo de seleção de rádio. Sempre use uma mensagem de erro de texto juntamente com a alteração da cor do campo.",
+            "O estado de erro é usado para erros de validação de formulário quando o erro está relacionado apenas ao campo do radio button. Sempre use uma mensagem de erro de texto juntamente com a alteração da cor do campo.",
         },
         "cc-radio-keyboard": {
           title: "Suporte ao teclado",
           description:
-            "A seleção de uma opção de rádio deve ser feita quando a tecla Espaço é pressionada. O uso de elementos nativos deve fornecer esse tipo de interação.",
+            "A seleção de um radio button deve ser feita quando a tecla Espaço é pressionada. O uso de elementos nativos deve fornecer esse tipo de interação.",
         },
         "cc-radio-group": {
           title: "Grupo de rádio",
           description:
-            "As opções de rádio devem sempre ser usadas em grupo. Se uma delas for selecionada, só poderá ser desmarcada escolhendo outra opção de rádio.",
+            "Os radio button devem sempre ser usados em grupo. Se um deles for selecionado, só poderá ser desmarcado escolhendo outro radio button.",
         },
       },
     },
     "cc-text-field": {
       title: "Campo de texto",
-      description: "Campo de texto permite que os usuários insiram e editem texto.",
+      description: "Também conhecidos como inputs, permite que os usuários insiram e editem texto.",
       checklist: {
         "cc-text-field-disabled": {
           title: "Estado desativado",
@@ -363,14 +363,14 @@ export default {
             "Impede interações de entrada e remove seu valor do envio do formulário.",
         },
         "cc-text-field-placeholder": {
-          title: "Marcador de posição",
+          title: "Conteúdo provisório",
           description:
-            "Quando nenhum valor é inserido, mostrar um marcador de posição com um exemplo de valor potencial. Não use marcadores de posição como rótulos para os campos.",
+            "Quando nenhum valor é inserido, é possível mostrar um conteúdo provisório com um exemplo de valor potencial. Não use conteúdos provisórios como rótulos para os campos.",
         },
         "cc-text-field-label": {
-          title: "Rótulo",
+          title: "Título descritivo",
           description:
-            "Deve haver um rótulo de texto vinculado ao campo de texto. Clicar no rótulo deve mover o foco para o campo.",
+            "Deve haver um título descritivo vinculado ao campo de texto. Clicar no título deve mover o foco para o campo.",
         },
         "cc-text-field-error": {
           title: "Estado de erro",
@@ -388,69 +388,69 @@ export default {
             "Quando aplicável, adicionar suporte para o atributo de autocompletar do HTML permitirá que os usuários insiram facilmente diferentes tipos de dados.",
         },
         "cc-text-field-icon": {
-          title: "Suporte a ícones",
+          title: "Ícones",
           description:
-            "Ícones são usados para descrever métodos de entrada, expressar o estado de um campo de texto ou fornecer funcionalidade adicional.",
+            "Ícones são usados para expressar o estado de um campo de texto ou fornecer contexto adicional.",
         },
       },
     },
     "cc-switch": {
-      title: "Interruptor de entrada",
+      title: "Switches",
       description:
-        "Os interruptores de entrada (em inglês: switches) alternam o estado de um único item. Comparados à caixa de seleção de entrada, suas alterações geralmente se aplicam sem nenhum envio adicional.",
+        "Do inglês, os switches funcionam como interruptores que alternam o estado de um único item. A interação com o switch gera uma resposta imediata na interface, ao invés de depender do envio do formulário como em outros componentes.",
       checklist: {
         "cc-switch-checked": {
-          title: "Estado verificado",
+          title: "Estado ativo",
           description:
-            "Usado quando um interruptor de entrada é ativado. É melhor fornecer uma maneira adicional de indicar o estado verificado além de alterar sua cor quando aplicável.",
+            "Usado quando um switch é ativado. É uma boa prática uma maneira adicional de indicar o estado ativo além de apenas alterar a cor.",
         },
         "cc-switch-disabled": {
           title: "Estado desativado",
-          description: "Impede a interação com um interruptor de entrada.",
+          description: "Impede a interação com um switch.",
         },
         "cc-switch-label": {
-          title: "Etiqueta",
+          title: "Texto descritivo",
           description:
-            "Deve haver uma etiqueta de texto vinculada ao campo do interruptor. Clicar na etiqueta também deve acionar a seleção de entrada.",
+            "Deve haver um texto descritivo vinculado ao switch. Clicar no texto também deve acionar o switch.",
         },
         "cc-switch-keyboard": {
           title: "Suporte de teclado",
           description:
-            "Uma seleção de interruptor deve ser acionada quando a tecla Espaço é pressionada.",
+            "Um switch deve ser acionada quando a tecla Espaço é pressionada.",
         },
       },
     },
     "cc-list": {
       title: "Lista",
       description:
-        "As listas definem o layout do conteúdo da página ou grupos de elementos, empilhando-os vertical ou horizontalmente.",
+        "As listas definem o layout do conteúdo da página ou grupos de elementos, empilhando-os vertical ou horizontalmente..",
       checklist: {
         "cc-list-content": {
           title: "Suporta qualquer tipo de conteúdo",
           description:
-            "As listas podem ser usadas em qualquer contexto, desde o layout em nível de página até a gestão de compensações entre componentes granulares. Elas devem funcionar com qualquer componente usado dentro.",
+            "Podem ser usadas em qualquer contexto e devem ter uma estrutura funcional para aceitar outros componentes dentro do seu layout.",
         },
         "cc-list-horizontal": {
           title: "Empilhamento horizontal",
           description:
-            "As listas podem ser usadas para elementos inline e devem gerenciar como eles são empilhados horizontalmente, incluindo o gerenciamento de compensações entre várias linhas de elementos.",
+            "É importante gerenciar como os elementos das listas são empilhados horizontalmente, mantendo o padrão de espaçamento do seu Design System e garantindo que as linhas tenham um bom respiro entre si.",
         },
         "cc-list-divided": {
-          title: "Variante dividida",
+          title: "Divisores",
           description:
-            "Listas com divisores são as melhores práticas aconselhadas por muitas diretrizes de plataforma (especialmente em dispositivos móveis).",
+            "É uma boa prática incluir divisores entre as linhas da sua lista, sendo aconselhada por muitas diretrizes de plataforma (especialmente em dispositivos móveis).",
         },
         "cc-list-action": {
-          title: "Suporta conteúdo acionável",
+          title: "Suporta conteúdo interativo",
           description:
-            "Às vezes, as listas são usadas para agrupar componentes acionáveis, onde toda a área do item da lista deve ser clicável.",
+            "Às vezes, as listas são usadas para agrupar componentes interativos, onde toda a área do item da lista deve ser clicável.",
         },
       },
     },
     "cc-loading-indicator": {
       title: "Indicador de carregamento",
       description:
-        "O indicador de carregamento (em inglês: loading) mostra que uma operação está sendo realizada e quanto tempo o processo levará.",
+        "O indicador de carregamento mostra que uma operação está sendo realizada e quanto tempo o processo levará.",
       checklist: {
         "cc-loading-indicator-variants": {
           title: "Variantes linear e não linear",
@@ -463,9 +463,9 @@ export default {
             "Em alguns casos, o tempo de espera não pode ser determinado. O indicador de carregamento deve ser mostrado até que o carregamento seja concluído ou ocorra um erro. Em outros casos, é melhor indicar quanto tempo falta para que o carregamento seja concluído.",
         },
         "cc-loading-indicator-light": {
-          title: "Variante clara",
+          title: "Variante de cor",
           description:
-            "O indicador de carregamento deve respeitar o fundo do elemento pai e fornecer uma variante a ser usada em cores de fundo mais escuras.",
+            "O indicador de carregamento deve respeitar o fundo do elemento pai e fornecer uma variante a ser usada em cores de fundo mais claras e mais escuras.",
         },
         "cc-loading-indicator-reduced": {
           title: "Movimento reduzido",
@@ -477,27 +477,27 @@ export default {
     "cc-modal": {
       title: "Modal",
       description:
-        "Modais são contêineres que aparecem na frente do conteúdo principal para fornecer informações críticas ou um conteúdo acionável.",
+        "Modais são contêineres que aparecem na frente do conteúdo principal para fornecer informações importantes ou um conteúdo interativo.",
       checklist: {
         "cc-modal-supports-content": {
           title: "Suporta qualquer tipo de conteúdo",
           description:
-            "Assim como qualquer outro contêiner, os modais podem ser usados em diferentes cenários e você deve ser capaz de usá-los com qualquer outro componente interno.",
+            "Os modais podem ser usados em diferentes cenários e deve ser possível usá-los com qualquer outro componente interno.",
         },
         "cc-modal-actions": {
-          title: "Ações suplementares",
+          title: "Suporta conteúdo interativo",
           description:
-            "Como o conteúdo no modal pode ser acionável, é importante ter uma área para elementos de ação. Esta área geralmente fica localizada na parte inferior do contêiner modal.",
+            "Como o conteúdo no modal pode ser interativo, é importante ter uma área para estes elementos, como botões. Esta área geralmente fica localizada na parte inferior do modal.",
         },
         "cc-modal-close": {
-          title: "Ação de fechamento",
+          title: "Ação de fechar",
           description:
-            "Os modais devem fornecer uma maneira clara de serem fechados, pois bloqueiam o conteúdo quando estão abertos. Isso pode ser um botão de fechar separado ou uma das ações suplementares.",
+            "Os modais devem fornecer uma maneira clara de serem fechados, pois bloqueiam o conteúdo principal quando estão abertos. Isso pode ser um botão de fechar separado ou uma das ações apresentadas.",
         },
         "cc-modal-structure": {
           title: "Estrutura de informações",
           description:
-            "Embora os modais possam ser usados como um contêiner vazio para o conteúdo, eles precisam de uma estrutura de informações definida para fornecer uma experiência holística. Isso pode incluir a definição de como os títulos e subtítulos parecem por padrão ou onde fica a área do elemento de ação.",
+            "Embora os modais possam ser usados como um contêiner vazio para o conteúdo, eles precisam de uma estrutura de informações definida para fornecer uma experiência holística. Isso pode incluir a definição de como os títulos e subtítulos parecem por padrão ou onde fica a área do elemento de interação.",
         },
         "cc-modal-keyboard": {
           title: "Suporte à navegação por teclado",
@@ -505,7 +505,7 @@ export default {
             "Deve ser possível fechar um modal pressionando a tecla Esc e todos os elementos com foco dentro do contêiner do modal devem ser acessíveis por navegação por teclado.",
         },
         "cc-modal-trap": {
-          title: "Captura de foco",
+          title: "Foco",
           description:
             "Uma vez que um modal é aberto, o foco deve ser movido para o primeiro elemento dentro do modal e deve ser mantido dentro do contêiner do modal. Fechar o modal deve retornar o foco para o último elemento com foco na página.",
         },
@@ -514,54 +514,54 @@ export default {
     "cc-tabs": {
       title: "Guias",
       description:
-        "Guias (em inglês: tabs) organizam a navegação entre várias páginas ou seções de conteúdo.",
+        "Também conhecidas como tabs, esses componentes organizam a navegação entre várias páginas ou seções de conteúdo.",
       checklist: {
         "cc-tabs-active": {
-          title: "Estado ativo do botão",
+          title: "Estado ativo",
           description:
-            "Deve haver uma diferenciação clara entre os botões de guia selecionados e não selecionados.",
+            "Deve haver uma diferenciação clara entre as guias ativas e não ativas.",
         },
         "cc-tabs-icon": {
-          title: "Suporte a ícones nos botões",
+          title: "Ícones",
           description:
-            "Ícones ajudam a mostrar o propósito dos botões de guia quando usados ao lado de sua etiqueta.",
+            "Ícones ajudam a mostrar o propósito das guias quando usados ao lado do texto.",
         },
         "cc-tabs-equal": {
-          title: "Botões de guia com tamanho igual",
+          title: "Guias com mesmo tamanho ",
           description:
-            "Guias podem ser usadas em um contêiner de tamanho relativamente pequeno, onde você precisa alternar entre um número definido de seções. Para esses cenários, é melhor suportar uma variante em que a área do botão é dividida igualmente.",
+            "Guias podem ser usadas em um espaço relativamente pequeno, onde você precisa alternar entre um número definido de seções. Para esses cenários, é recomendado ter uma variante em que a área do botão é dividida igualmente.",
         },
         "cc-tabs-keyboard": {
           title: "Navegação por teclado",
           description:
-            "Todos os botões de guia devem ser focalizáveis e a navegação entre os componentes de guia deve ser acessível pelo teclado.",
+            "Deve ser possível navegar entre as guias pelas teclas do teclado.",
         },
         "cc-tabs-mobile": {
           title: "Responsividade",
           description:
-            "Se todas as guias em dispositivos móveis não couberem na janela de visualização, os usuários ainda devem ter acesso a todos os botões de guia. As formas de resolver isso podem ser tornar a área do botão rolável para dispositivos móveis ou mostrar um botão Mais contendo um menu suspenso com o restante dos botões.",
+            "Se não for possível exibir todas em uma tela com espaço reduzido, como a de dispositivos móveis, os usuários ainda devem ter acesso a todos os botões de guia. É possível resolver isso permitindo uma rolagem lateral no grupo de guias ou mostrar um botão “Mais” contendo um dropdown com o restante dos botões.",
         },
       },
     },
     "cc-toast": {
       title: "Toast",
       description:
-        "Toasts fornecem mensagens curtas e significativas sobre os resultados das ações.",
+        "Toasts fornecem mensagens curtas e significativas sobre os resultados das ações. Seu nome vem de um movimento comum que ele faz ao aparecer na tela, aparecendo de baixo para cima, como uma torrada na torradeira.",
       checklist: {
         "cc-toast-auto": {
           title: "Dispensado automaticamente",
           description:
-            "Mensagens de toast não devem interromper o fluxo do usuário, bloquear a tela por muito tempo ou exigir uma ação adicional do usuário.",
+            "Mensagens de toast devem ter um tempo definido para aparecer, uma vez que não devem interromper o fluxo do usuário, bloquear a tela por muito tempo ou exigir uma ação adicional do usuário.",
         },
         "cc-toast-action": {
-          title: "Suporte a ação",
+          title: "Suporta conteúdo interativo",
           description:
             "Além de exibir a mensagem, os toasts também podem fornecer uma ação relacionada à mensagem, como desfazer uma ação.",
         },
         "cc-toast-queue": {
-          title: "Lida com múltiplas instâncias",
+          title: "Empilhamento de toasts",
           description:
-            "Embora não aconteça com frequência, os toasts podem ser chamados de várias fontes ao mesmo tempo e todos os toasts resultantes devem ser enfileirados. É uma boa prática não mostrar todas as mensagens ao mesmo tempo.",
+            "Embora não aconteça com frequência, os toasts podem ser chamados de várias fontes ao mesmo tempo e todos os toasts resultantes devem ser empilhados. É uma boa prática não mostrar todas as mensagens ao mesmo tempo.",
         },
         "cc-toast-a11y": {
           title: "Acessibilidade",
@@ -571,7 +571,7 @@ export default {
         "cc-toast-mobile": {
           title: "Responsividade",
           description:
-            "Os toasts devem estar alinhados com a viewport móvel e sua ação deve ser facilmente acessível para tocar.",
+            "Os toasts devem estar otimizados para telas menores, como de dispositivos móveis, facilitando a leitura e a interação com o componente.",
         },
       },
     },
@@ -596,14 +596,14 @@ export default {
             "Ter um pequeno tempo de espera antes de acionar um tooltip ajudará a evitar a exibição ocasional de tooltips enquanto os usuários movem o cursor do mouse.",
         },
         "cc-tooltip-light": {
-          title: "Variante clara",
+          title: "Variante de cor",
           description:
-            "O tooltip deve respeitar o plano de fundo do elemento pai e fornecer uma variante a ser usada em cores de fundo mais escuras.",
+            "O tooltip deve respeitar o fundo do elemento pai e fornecer uma variante a ser usada em cores de fundo mais claras e mais escuras.",
         },
         "cc-tooltip-group": {
-          title: "Transição instantânea para grupos de elementos",
+          title: "Transição instantânea",
           description:
-            "Se houver um grupo de elementos usando tooltips, passar o mouse sobre outro elemento enquanto um tooltip já está ativa não deve acionar a animação.",
+            "Se houver um grupo de elementos usando tooltips, passar o mouse sobre outro elemento enquanto um tooltip já está ativo não deve acionar a animação.",
         },
       },
     },

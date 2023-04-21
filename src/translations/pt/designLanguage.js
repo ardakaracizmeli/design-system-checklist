@@ -1,12 +1,12 @@
 export default {
   title: "Linguagem de design",
   description:
-    "Assim como qualquer idioma, uma linguagem de design é uma maneira sistemática de se comunicar com o público por meio da abordagem do design de produtos. É o alicerce de experiências consistentes para o cliente.",
+    "Assim como qualquer idioma, uma linguagem de design é uma metodologia de comunicação com os usuários por meio de teorias e termos do design de produtos. É a fundação que trará consistência para as suas experiências.",
   sections: {
     "dl-brand": {
       title: "Marca",
       description:
-        "A marca conduz cada decisão que você toma ao criar novos produtos ou recursos. Uma boa marca é muito mais do que um nome e um logotipo. São os valores que definem sua identidade única e o que o torna diferente dos outros.",
+        "A marca conduz cada decisão que você toma ao criar novos produtos ou features. Uma boa marca é muito mais do que um nome e um logotipo. São os valores que definem sua identidade única e o que o torna diferente dos outros.",
       checklist: {
         "dl-brand-vision": {
           title: "Visão",
@@ -31,14 +31,14 @@ export default {
         "dl-brand-writing": {
           title: "Diretrizes de escrita",
           description:
-            "Toda experiência consistente precisa de uma escrita impecável. Estabelecer as bases para o estilo da sua casa desde o início mantém tudo alinhado com a gramática consistente, escolhas de estilo e linguagem orientada para a ação para ajudar no design.",
+            "Toda experiência consistente precisa de uma escrita clara e específica. Por isso, estabelecer as bases desde o início ajuda a manter o estilo e a gramática consistentes, orientando as ações do usuário e melhorando o design como um todo.",
         },
       },
     },
     "dl-logo": {
       title: "Logotipo",
       description:
-        "A maioria dos clientes forma uma opinião sobre um produto em segundos. Em muitos casos, o seu logotipo será o primeiro elemento da marca que alguém vê. É tudo sobre causar a impressão certa no primeiro momento. Um logotipo distintivo ajuda os usuários a reconhecerem um produto imediatamente e transmite a essência da sua marca.",
+        "A maioria dos clientes forma uma opinião sobre um produto em segundos. Em muitos casos, o seu logotipo será o primeiro elemento da marca que alguém vê. É tudo sobre causar a impressão certa no primeiro momento. Um logotipo notável ajuda os usuários a reconhecerem um produto imediatamente e transmite a essência da sua marca.",
       checklist: {
         "dl-logo-mono": {
           title: "Versão monocromática",
@@ -48,7 +48,7 @@ export default {
         "dl-logo-small": {
           title: "Orientação para uso em tamanhos pequenos",
           description:
-            "Seu logotipo deve funcionar bem e ser reconhecível em todos os tamanhos. Dicas para usar seu logotipo nesses casos minimizarão o risco de uso incorreto.",
+            "Seu logotipo deve funcionar bem e ser reconhecível em todos os tamanhos. Proporcionar dicas para usar seu logotipo nesses casos minimizarão o risco de uso incorreto.",
         },
         "dl-logo-placement": {
           title: "Orientação para posicionamento e espaçamento",
@@ -58,7 +58,7 @@ export default {
         "dl-logo-usage": {
           title: "Orientação de uso",
           description:
-            "São os crimes do logotipo, fornecendo exemplos contextuais do que fazer (ou não) com seu logotipo.",
+            "São os crimes de uso, fornecendo exemplos contextuais do que (não) fazer com seu logotipo.",
         },
         "dl-logo-format": {
           title: "Diferentes formatos de arquivo",
@@ -70,7 +70,7 @@ export default {
     "dl-guidelines": {
       title: "Diretrizes",
       description:
-        "As diretrizes (em inglês: guidelines) fornecem orientações sobre como abordar padrões comuns de UX permitirá que sua organização estabeleça uma abordagem consistente e uma experiência do usuário consistente em qualquer plataforma.",
+        "Fornecer diretrizes (ou guidelines) sobre como abordar padrões comuns de UX permitirá que sua organização estabeleça abordagens e experiências consistentes em qualquer plataforma.",
       checklist: {
         "dl-guidelines-a11y": {
           title: "Acessibilidade",
@@ -80,12 +80,12 @@ export default {
         "dl-guidelines-onboarding": {
           title: "Onboarding do usuário",
           description:
-            "Como você integra seus usuários ao seu produto ou a um novo recurso e lhes proporciona uma ótima experiência desde o início.",
+            "Como você apresenta seus usuários ao seu produto ou a um novo recurso pode proporcionar uma ótima experiência desde o início.",
         },
         "dl-guidelines-microcopy": {
           title: "Diretrizes de microcopy",
           description:
-            "A maneira padrão de escrever para os componentes em seu sistema de design. Isso leva em consideração convenções de plataforma e as melhores práticas de escrita.",
+            "A maneira padrão de escrever para os componentes em seu Design System. Isso leva em consideração convenções de plataforma e as melhores práticas de escrita.",
         },
       },
     },
