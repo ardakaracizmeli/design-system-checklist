@@ -1,5 +1,5 @@
 export default {
-  id: "m",
+  id: "maintenance",
   sections: [
     {
       id: "m-documentation",
@@ -21,7 +21,7 @@ export default {
       checklist: [
         "m-local-when",
         "m-local-types",
-        "m-local-exprecations",
+        "m-local-expectations",
         "m-local-release",
       ],
     },

@@ -124,58 +124,58 @@ export default {
             "Define the timelines for how long it takes you to handle incoming requests and bug reports to help product teams understand if they should wait for your release or find a temporary workaround.",
         },
       },
-      "m-community": {
-        title: "Community support",
-        description:
-          "It’s crucial to help product designers and developers get more productive with the design system, fix the bugs they find in the products, and address their needs. To make sure you get that feedback – your goal is to make it easy and safe for everyone to share their findings.",
-        checklist: {
-          "m-community-channels": {
-            title: "Support channels",
-            description:
-              "Create support channels in the tools you use for communication. It’s a good idea to separate them by the platform to make it comfortable for everyone to share platform-specific details of their issues.",
-          },
-          "m-community-template": {
-            title: "Templates",
-            description:
-              "Prepare templates for creating feature requests and bug reports. Use them to ask for reproduction links, design proposals, and other contextual information you need to make decisions instead of manually looking for that information.",
-          },
-          "m-community-updates": {
-            title: "Regular updates",
-            description:
-              "You’re risking the adoption of the new features if you’re only focusing on the implementation but never talking about it with the community. Defining a cadence for your updates helps build a habit for product teams to come and check what’s new in the system and how they can leverage it.",
-          },
-          "m-community-slots": {
-            title: "Open hours",
-            description:
-              "There will be questions that can’t be resolved in a single ticket or chat. Keep a few bookable calendar slots for other teams to receive a consultation or discuss their feature implementation with your team.",
-          },
+    },
+    "m-community": {
+      title: "Community support",
+      description:
+        "It’s crucial to help product designers and developers get more productive with the design system, fix the bugs they find in the products, and address their needs. To make sure you get that feedback – your goal is to make it easy and safe for everyone to share their findings.",
+      checklist: {
+        "m-community-channels": {
+          title: "Support channels",
+          description:
+            "Create support channels in the tools you use for communication. It’s a good idea to separate them by the platform to make it comfortable for everyone to share platform-specific details of their issues.",
+        },
+        "m-community-template": {
+          title: "Templates",
+          description:
+            "Prepare templates for creating feature requests and bug reports. Use them to ask for reproduction links, design proposals, and other contextual information you need to make decisions instead of manually looking for that information.",
+        },
+        "m-community-updates": {
+          title: "Regular updates",
+          description:
+            "You’re risking the adoption of the new features if you’re only focusing on the implementation but never talking about it with the community. Defining a cadence for your updates helps build a habit for product teams to come and check what’s new in the system and how they can leverage it.",
+        },
+        "m-community-slots": {
+          title: "Open hours",
+          description:
+            "There will be questions that can’t be resolved in a single ticket or chat. Keep a few bookable calendar slots for other teams to receive a consultation or discuss their feature implementation with your team.",
         },
       },
-      "m-contribution": {
-        title: "Contribution",
-        description:
-          "Building design systems is a team game. Make sure to include product teams in the journey, help them contribute to the system and let them advocate for it across the company.",
-        checklist: {
-          "m-contribution-rules": {
-            title: "House rules for the system",
-            description:
-              "Explain how your design and development process works to the product teams. Design system teams usually move slower than product teams since there is more responsibility on making scalable decisions in the components affecting the whole product.",
-          },
-          "m-contribution-guidelines": {
-            title: "Contribution guidelines",
-            description:
-              "Explain what contributors need to set up to prepare their design and development environment for adding and testing new features.",
-          },
-          "m-contribution-template": {
-            title: "Feature proposal template",
-            description:
-              "Prepare a standard template for initiating the work on a new feature. This template should ensure that proposed changes will be applied across all platforms and won’t break the existing component usage in the product.",
-          },
-          "m-contribution-engagement": {
-            title: "Engagment",
-            description:
-              "Make sure to highlight and reward contributors' work when making announcements about the new features and help them get support from their managers when they contribute. ",
-          },
+    },
+    "m-contribution": {
+      title: "Contribution",
+      description:
+        "Building design systems is a team game. Make sure to include product teams in the journey, help them contribute to the system and let them advocate for it across the company.",
+      checklist: {
+        "m-contribution-rules": {
+          title: "House rules for the system",
+          description:
+            "Explain how your design and development process works to the product teams. Design system teams usually move slower than product teams since there is more responsibility on making scalable decisions in the components affecting the whole product.",
+        },
+        "m-contribution-guidelines": {
+          title: "Contribution guidelines",
+          description:
+            "Explain what contributors need to set up to prepare their design and development environment for adding and testing new features.",
+        },
+        "m-contribution-template": {
+          title: "Feature proposal template",
+          description:
+            "Prepare a standard template for initiating the work on a new feature. This template should ensure that proposed changes will be applied across all platforms and won’t break the existing component usage in the product.",
+        },
+        "m-contribution-engagement": {
+          title: "Engagment",
+          description:
+            "Make sure to highlight and reward contributors' work when making announcements about the new features and help them get support from their managers when they contribute. ",
         },
       },
     },

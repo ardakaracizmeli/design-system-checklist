@@ -1,5 +1,5 @@
 export default {
-  id: "dl",
+  id: "design-language",
   sections: [
     {
       id: "dl-brand",
@@ -31,7 +31,7 @@ export default {
         "dl-guidelines-a11y",
         "dl-guidelines-writing",
         "dl-guidelines-microcopy",
-        "dl-guidelines-termiology",
+        "dl-guidelines-terminology",
         "dl-guidelines-i18n",
       ],
       resources: [

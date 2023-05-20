@@ -1,13 +1,13 @@
 export default {
-  id: "df",
+  id: "foundations",
   sections: [
     {
       id: "df-color",
       checklist: [
-        "dt-color-a11y",
-        "dt-color-semantic",
-        "dt-color-dark-mode",
-        "dt-color-guidelines",
+        "df-color-a11y",
+        "df-color-semantic",
+        "df-color-dark-mode",
+        "df-color-guidelines",
       ],
       resources: [
         {

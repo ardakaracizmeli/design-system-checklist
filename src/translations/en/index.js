@@ -5,9 +5,9 @@ import maintenance from "./maintenance";
 import core from "./core";
 
 export default {
-  dl: designLanguage,
-  df: designFoundations,
-  c: components,
-  m: maintenance,
+  "design-language": designLanguage,
+  foundations: designFoundations,
+  components,
+  maintenance,
   core,
 };

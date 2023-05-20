@@ -1013,26 +1013,26 @@ export default {
             "Reduce or altogether remove the animation for the reduced motion user preference.",
         },
       },
-      "c-tooltip": {
-        title: "Tooltip",
-        description:
-          "Contextual text information display on element hover or focus.",
-        checklist: {
-          "c-tooltip-positioning": {
-            title: "Positioning",
-            description:
-              "When the tooltip default position doesn’t let it fit into the viewport – make sure to dynamically switch its position to another value.",
-          },
-          "c-tooltip-timeout": {
-            title: "Timeout",
-            description:
-              "Wait briefly before opening the Tooltip to ensure they don’t open while the user moves their cursor around the screen.",
-          },
-          "c-tooltip-a11y-keyboard": {
-            title: "Keyboard support",
-            description:
-              "Tooltips should be accessible not only on mouse hover but also on the trigger element focus. ",
-          },
+    },
+    "c-tooltip": {
+      title: "Tooltip",
+      description:
+        "Contextual text information display on element hover or focus.",
+      checklist: {
+        "c-tooltip-positioning": {
+          title: "Positioning",
+          description:
+            "When the tooltip default position doesn’t let it fit into the viewport – make sure to dynamically switch its position to another value.",
+        },
+        "c-tooltip-timeout": {
+          title: "Timeout",
+          description:
+            "Wait briefly before opening the Tooltip to ensure they don’t open while the user moves their cursor around the screen.",
+        },
+        "c-tooltip-a11y-keyboard": {
+          title: "Keyboard support",
+          description:
+            "Tooltips should be accessible not only on mouse hover but also on the trigger element focus. ",
         },
       },
     },

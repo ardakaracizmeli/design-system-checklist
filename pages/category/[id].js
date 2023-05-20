@@ -25,7 +25,6 @@ const CategoryRoute = (props) => {
 
     return isFound;
   });
-
   if (!item) return null;
 
   const { id: categoryId, sections } = item;
@@ -43,14 +42,24 @@ const CategoryRoute = (props) => {
             const sectionTranslations =
               categoryTranslations.sections[section.id];
 
+            if (!sectionTranslations) {
+              throw new Error(`Can't find section: ${section.id}`);
+            }
+
             const sectionData = {
               title: sectionTranslations.title,
               description: sectionTranslations.description,
-              checklist: section.checklist.map((item) => ({
-                id: item.id,
-                title: sectionTranslations.checklist[item.id].title,
-                description: sectionTranslations.checklist[item.id].description,
-              })),
+              checklist: section.checklist.map((id) => {
+                if (!sectionTranslations.checklist[id]) {
+                  throw new Error(`Can't find item: ${id}`);
+                }
+
+                return {
+                  id,
+                  title: sectionTranslations.checklist[id].title,
+                  description: sectionTranslations.checklist[id].description,
+                };
+              }),
             };
 
             return <Section key={section.id} section={sectionData} />;
@@ -80,10 +89,9 @@ export async function getStaticPaths() {
   return {
     paths: [
       "/category/design-language",
-      "/category/design-tokens",
-      "/category/core-components",
-      "/category/tooling",
-      "/category/project-management",
+      "/category/foundations",
+      "/category/components",
+      "/category/maintenance",
     ],
     fallback: true,
   };

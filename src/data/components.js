@@ -1,5 +1,5 @@
 export default {
-  id: "c",
+  id: "components",
   sections: [
     {
       id: "c-accordion",
