@@ -36,12 +36,16 @@ export default {
       ],
       resources: [
         {
-          title: "Human Interface Guidelines: Notifications",
-          url: "https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/notifications/",
+          title: "Atlassian Design System: Writing guidelines",
+          url: "https://atlassian.design/content/writing-guidelines/",
         },
         {
-          title: "Material Design: Onboarding",
-          url: "https://material.io/design/communication/onboarding.html#self-select-model",
+          title: "Material Design: Glossary",
+          url: "https://m3.material.io/foundations/glossary",
+        },
+        {
+          title: "Material Design: Accessibility",
+          url: "https://m3.material.io/foundations/accessible-design/overview",
         },
       ],
     },

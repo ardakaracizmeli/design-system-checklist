@@ -15,6 +15,16 @@ export default {
         "m-documentation-env",
         "m-documentation-release",
       ],
+      resources: [
+        {
+          title: "Reshaped: Core principles",
+          url: "https://reshaped.so/content/docs/getting-started/principles",
+        },
+        {
+          title: "Chakra: Design principles",
+          url: "https://chakra-ui.com/getting-started/principles",
+        },
+      ],
     },
     {
       id: "m-local",
@@ -23,6 +33,16 @@ export default {
         "m-local-types",
         "m-local-expectations",
         "m-local-release",
+      ],
+      resources: [
+        {
+          title: "Building a local design system",
+          url: "https://ux.shopify.com/building-a-local-design-system-b2810c6e01f2",
+        },
+        {
+          title: "Reimagining design systems at Spotify",
+          url: "https://spotify.design/article/reimagining-design-systems-at-spotify",
+        },
       ],
     },
     {
@@ -34,6 +54,16 @@ export default {
         "m-process-analytics",
         "m-process-shifts",
         "m-process-sla",
+      ],
+      resources: [
+        {
+          title: "Opening up the data behind your design systems",
+          url: "https://www.figma.com/blog/introducing-design-system-analytics/",
+        },
+        {
+          title: "Measuring the Impact of a Design System",
+          url: "https://medium.com/@didoo/measuring-the-impact-of-a-design-system-7f925af090f7",
+        },
       ],
     },
     {
@@ -52,6 +82,16 @@ export default {
         "m-contribution-guidelines",
         "m-contribution-template",
         "m-contribution-engagement",
+      ],
+      resources: [
+        {
+          title: "Polaris: Contribution guidelines",
+          url: "https://polaris.shopify.com/contributing",
+        },
+        {
+          title: "Chakra: Contributing",
+          url: "https://chakra-ui.com/getting-started/contributing",
+        },
       ],
     },
   ],
