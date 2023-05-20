@@ -49,6 +49,7 @@ const CategoryRoute = (props) => {
             const sectionData = {
               title: sectionTranslations.title,
               description: sectionTranslations.description,
+              resources: section.resources,
               checklist: section.checklist.map((id) => {
                 if (!sectionTranslations.checklist[id]) {
                   throw new Error(`Can't find item: ${id}`);

@@ -21,9 +21,9 @@ const HomeRoute = (props) => {
 
     item.sections.forEach((section) => {
       total += section.checklist.length;
-      completed += section.checklist.filter((item) =>
-        checkedIds.includes(item.id)
-      ).length;
+      completed += section.checklist.filter((id) => {
+        return checkedIds.includes(id);
+      }).length;
     });
 
     return (
