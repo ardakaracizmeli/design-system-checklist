@@ -1,91 +1,70 @@
 export default {
-  title: "Linguagem de design",
+  title: "Design language",
   description:
-    "Assim como qualquer idioma, uma linguagem de design é uma metodologia de comunicação com os usuários por meio de teorias e termos do design de produtos. É a fundação que trará consistência para as suas experiências.",
+    "Like any language, a design language is a methodical way of communicating with your audience through your approach to product design. It’s the cornerstone of consistent customer experiences.",
+
   sections: {
     "dl-brand": {
-      title: "Marca",
+      title: "Brand",
       description:
-        "A marca conduz cada decisão que você toma ao criar novos produtos ou features. Uma boa marca é muito mais do que um nome e um logotipo. São os valores que definem sua identidade única e o que o torna diferente dos outros.",
+        "Brand drives every single decision you make when building new products or features. A good brand is much more than a name and a logo. It’s the values that define your unique identity and what makes you stand out from others.",
       checklist: {
         "dl-brand-vision": {
-          title: "Visão",
+          title: "Vision",
           description:
-            "Por que você existe, quais são seus valores e como eles ajudarão a guiar o futuro do seu produto.",
+            "Why you exist, what your values are, and how they’ll help guide the future of your product.",
         },
         "dl-brand-principles": {
-          title: "Princípios de design",
+          title: "Design principles",
           description:
-            "As considerações que orientam a base da sua prática. Eles delineiam como você aborda o design de uma perspectiva filosófica e ajudam nas decisões cotidianas.",
+            "The considerations that guide the basis of your practice. They outline how you approach design philosophically and help with everyday decisions.",
         },
         "dl-brand-tone": {
-          title: "Tom de voz",
+          title: "Tone of voice",
           description:
-            "Um tom de voz claro define como você fala com seu público em cada momento da jornada, ajudando-os a chegar onde querem.",
+            "A clear tone of voice defines how you speak to your audience at every moment of their journey, helping them get wherever they want to go.",
         },
         "dl-brand-terminology": {
-          title: "Terminologia",
+          title: "Terminology",
           description:
-            "Crie os termos e frases padronizados que precisam ser mantidos iguais em toda a experiência do usuário, acelerando o processo de design e unificando sua voz.",
+            "Create the standard terms and phrases that need to be kept the same throughout the user experience, speeding up the design process and unifying your voice.",
         },
-        "dl-brand-writing": {
-          title: "Diretrizes de escrita",
+        "dl-brand-assets": {
+          title: "Brand assets",
           description:
-            "Toda experiência consistente precisa de uma escrita clara e específica. Por isso, estabelecer as bases desde o início ajuda a manter o estilo e a gramática consistentes, orientando as ações do usuário e melhorando o design como um todo.",
-        },
-      },
-    },
-    "dl-logo": {
-      title: "Logotipo",
-      description:
-        "A maioria dos clientes forma uma opinião sobre um produto em segundos. Em muitos casos, o seu logotipo será o primeiro elemento da marca que alguém vê. É tudo sobre causar a impressão certa no primeiro momento. Um logotipo notável ajuda os usuários a reconhecerem um produto imediatamente e transmite a essência da sua marca.",
-      checklist: {
-        "dl-logo-mono": {
-          title: "Versão monocromática",
-          description:
-            "Uma versão monocromática do seu logotipo que fica boa em cima de fotografias ou quando é impressa com uma impressora de baixa qualidade.",
-        },
-        "dl-logo-small": {
-          title: "Orientação para uso em tamanhos pequenos",
-          description:
-            "Seu logotipo deve funcionar bem e ser reconhecível em todos os tamanhos. Proporcionar dicas para usar seu logotipo nesses casos minimizarão o risco de uso incorreto.",
-        },
-        "dl-logo-placement": {
-          title: "Orientação para posicionamento e espaçamento",
-          description:
-            "Seu logotipo deve ter orientações claras sobre como posicioná-lo e como preservar seu espaço, já que ele convive com outros conteúdos.",
-        },
-        "dl-logo-usage": {
-          title: "Orientação de uso",
-          description:
-            "São os crimes de uso, fornecendo exemplos contextuais do que (não) fazer com seu logotipo.",
-        },
-        "dl-logo-format": {
-          title: "Diferentes formatos de arquivo",
-          description:
-            "Fornecer uma variedade de formatos para a versão vetorial do seu logotipo facilitará o trabalho de outras pessoas e evitará que alguém o redesenhe.",
+            "Using a consistent set of brand assets aligns the user experience across your product and marketing campaigns. These assets include your logo, fonts, icons, illustrations, etc.",
         },
       },
     },
     "dl-guidelines": {
-      title: "Diretrizes",
+      title: "Guidelines",
       description:
-        "Fornecer diretrizes (ou guidelines) sobre como abordar padrões comuns de UX permitirá que sua organização estabeleça abordagens e experiências consistentes em qualquer plataforma.",
+        "Understanding how to approach common UX patterns will allow your organization to establish a consistent approach and user experience on any platform.",
       checklist: {
         "dl-guidelines-a11y": {
-          title: "Acessibilidade",
+          title: "Accessibility",
           description:
-            "Diretrizes sobre como abordar a acessibilidade e como aproveitar a cor, hierarquia e tecnologias assistivas para ajudar seus usuários.",
+            "Guidelines for how you approach accessibility and how you leverage color, hierarchy, and assistive technologies to help your users.",
         },
-        "dl-guidelines-onboarding": {
-          title: "Onboarding do usuário",
+        "dl-guidelines-writing": {
+          title: "Writing guidelines",
           description:
-            "Como você apresenta seus usuários ao seu produto ou a um novo recurso pode proporcionar uma ótima experiência desde o início.",
+            "Every consistent experience needs watertight writing. Laying down the foundations for your house style early keeps everything in line with consistent grammar, style choices, and action-oriented language to help your design.",
         },
         "dl-guidelines-microcopy": {
-          title: "Diretrizes de microcopy",
+          title: "Microcopy guidelines",
           description:
-            "A maneira padrão de escrever para os componentes em seu Design System. Isso leva em consideração convenções de plataforma e as melhores práticas de escrita.",
+            "The standard way to write for the components in your design system. These take platform conventions and best practices for writing all into consideration.",
+        },
+        "dl-guidelines-terminology": {
+          title: "Terminology",
+          description:
+            "Create the standard terms and phrases that need to be kept the same throughout the user experience, speeding up the design process and unifying your voice.",
+        },
+        "dl-guidelines-i18n": {
+          title: "Internationalisation",
+          description:
+            "Define standards for handling content translated into various languages supported by the product. It includes handling translation edge cases and content bi-directionality.",
         },
       },
     },

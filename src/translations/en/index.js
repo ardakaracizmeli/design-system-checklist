@@ -4,8 +4,8 @@ import components from "./components";
 import maintenance from "./maintenance";
 
 export default {
-  designLanguage,
-  designFoundations,
-  components,
-  maintenance,
+  dl: designLanguage,
+  df: designFoundations,
+  c: components,
+  m: maintenance,
 };
