@@ -8,7 +8,7 @@ import data from "../../src/data";
 import s from "./category.module.css";
 
 const CategoryRoute = (props) => {
-  const { tCore, tContent } = props;
+  const { t } = props;
   const { query } = useRouter();
   const { id } = query;
   const keys = Object.keys(data);
@@ -20,10 +20,8 @@ const CategoryRoute = (props) => {
     const prevItem = items[index - 1];
     const nextItem = items[index + 1];
 
-    if (isFound && prevItem)
-      previous = { ...tContent[prevItem.id], id: prevItem.id };
-    if (isFound && nextItem)
-      next = { ...tContent[nextItem.id], id: nextItem.id };
+    if (isFound && prevItem) previous = { ...t[prevItem.id], id: prevItem.id };
+    if (isFound && nextItem) next = { ...t[nextItem.id], id: nextItem.id };
 
     return isFound;
   });
@@ -31,10 +29,10 @@ const CategoryRoute = (props) => {
   if (!item) return null;
 
   const { id: categoryId, sections } = item;
-  const categoryTranslations = tContent[categoryId];
+  const categoryTranslations = t[categoryId];
 
   return (
-    <Layout tCore={tCore}>
+    <Layout t={t}>
       <div className={s.container}>
         <Hero
           title={categoryTranslations.title}
@@ -58,12 +56,12 @@ const CategoryRoute = (props) => {
             return <Section key={section.id} section={sectionData} />;
           })}
           <CategoryNav
-            previousLabel={tCore.previous}
-            nextLabel={tCore.next}
+            previousLabel={t.core.previous}
+            nextLabel={t.core.next}
             next={
               next
                 ? { text: next.title, url: `/category/${next.id}/` }
-                : { text: tCore.exportAction, url: "/share/" }
+                : { text: t.core.exportAction, url: "/share/" }
             }
             previous={
               previous && {
@@ -92,12 +90,10 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ locale }) {
-  const tCore = (await import(`../../src/translations/${locale}/core`)).default;
-  const tContent = (await import(`../../src/translations/${locale}/content`))
-    .default;
+  const t = (await import(`../../src/translations/${locale}/index`)).default;
 
   return {
-    props: { tContent, tCore },
+    props: { t },
   };
 }
 

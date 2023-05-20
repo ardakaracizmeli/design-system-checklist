@@ -3,14 +3,17 @@ import Link from "next/link";
 import Button from "../Button";
 import s from "./Footer.module.css";
 
-const Footer = ({ tCore }) => {
+const Footer = ({ t }) => {
   return (
     <footer className={s.root}>
       <div className={s.content}>
-        <h4 className={s.title}>{tCore.footerTitle}</h4>
-        <p className={s.text}>{tCore.footerText}</p>
+        <h4 className={s.title}>{t.core.footerTitle}</h4>
+        <p className={s.text}>{t.core.footerText}</p>
         <Link href="https://reshaped.so" passHref>
-          <Button text={tCore.footerAction} attributes={{ target: "_blank" }} />
+          <Button
+            text={t.core.footerAction}
+            attributes={{ target: "_blank" }}
+          />
         </Link>
       </div>
     </footer>

@@ -112,9 +112,9 @@ const AboutText = () => {
   );
 };
 
-const AboutRoute = ({ tCore }) => {
+const AboutRoute = ({ t }) => {
   return (
-    <Layout tCore={tCore}>
+    <Layout t={t}>
       <div className={s.container}>
         <Hero title="About" subtitle={<AboutText />} />
       </div>
@@ -123,10 +123,10 @@ const AboutRoute = ({ tCore }) => {
 };
 
 export async function getStaticProps({ locale }) {
-  const tCore = (await import(`../../src/translations/${locale}/core`)).default;
+  const t = (await import(`../../src/translations/${locale}/index`)).default;
 
   return {
-    props: { tCore },
+    props: { t },
   };
 }
 

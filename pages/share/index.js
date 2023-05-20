@@ -4,14 +4,14 @@ import ExportButton from "../../src/components/ExportButton";
 import Layout from "../../src/components/Layout";
 import s from "./share.module.css";
 
-const ShareRoute = ({ tCore }) => {
+const ShareRoute = ({ t }) => {
   return (
-    <Layout tCore={tCore}>
+    <Layout t={t}>
       <div className={s.container}>
-        <Hero title={tCore.exportTitle} subtitle={tCore.exportSubtitle}>
+        <Hero title={t.core.exportTitle} subtitle={t.core.exportSubtitle}>
           <ExportButton
-            text={tCore.exportAction}
-            feedbackText={tCore.exportComplete}
+            text={t.core.exportAction}
+            feedbackText={t.core.exportComplete}
           />
         </Hero>
       </div>
@@ -20,10 +20,10 @@ const ShareRoute = ({ tCore }) => {
 };
 
 export async function getStaticProps({ locale }) {
-  const tCore = (await import(`../../src/translations/${locale}/core`)).default;
+  const t = (await import(`../../src/translations/${locale}/index`)).default;
 
   return {
-    props: { tCore },
+    props: { t },
   };
 }
 
