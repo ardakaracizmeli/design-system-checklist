@@ -1,70 +1,69 @@
 export default {
-  title: "Design language",
+  title: "Linguagem de design",
   description:
-    "Like any language, a design language is a methodical way of communicating with your audience through your approach to product design. It’s the cornerstone of consistent customer experiences.",
-
+    "Assim como qualquer linguagem, uma linguagem de design é uma metodologia de comunicação com os usuários por meio de teorias e termos do design de produto. É a base que proporcionará consistência às suas experiências.",
   sections: {
     "dl-brand": {
-      title: "Brand",
+      title: "Marca",
       description:
-        "Brand drives every single decision you make when building new products or features. A good brand is much more than a name and a logo. It’s the values that define your unique identity and what makes you stand out from others.",
+        "A marca orienta cada decisão que você toma ao criar novos produtos ou funcionalidades. Uma boa marca é muito mais do que um nome e um logotipo. São os valores que definem sua identidade única e o que faz você se destacar dos outros.",
       checklist: {
         "dl-brand-vision": {
-          title: "Vision",
+          title: "Visão",
           description:
-            "Why you exist, what your values are, and how they’ll help guide the future of your product.",
+            "Por que você existe, quais são os seus valores e como eles ajudarão a guiar o futuro do seu produto.",
         },
         "dl-brand-principles": {
-          title: "Design principles",
+          title: "Princípios de design",
           description:
-            "The considerations that guide the basis of your practice. They outline how you approach design philosophically and help with everyday decisions.",
+            "As considerações que orientam a base da sua prática. Eles delineiam como você aborda o design filosóficamente e auxiliam nas decisões cotidianas.",
         },
         "dl-brand-tone": {
-          title: "Tone of voice",
+          title: "Tom de voz",
           description:
-            "A clear tone of voice defines how you speak to your audience at every moment of their journey, helping them get wherever they want to go.",
+            "Um tom de voz claro define como você fala com seu público em cada momento da sua jornada, ajudando-os a chegar onde querem.",
         },
         "dl-brand-terminology": {
-          title: "Terminology",
+          title: "Terminologia",
           description:
-            "Create the standard terms and phrases that need to be kept the same throughout the user experience, speeding up the design process and unifying your voice.",
+            "Crie termos e frases padronizados que devem ser mantidos consistentes em toda a experiência do usuário, agilizando o processo de design e unificando sua linguagem.",
         },
         "dl-brand-assets": {
-          title: "Brand assets",
+          title: "Elementos da marca",
           description:
-            "Using a consistent set of brand assets aligns the user experience across your product and marketing campaigns. These assets include your logo, fonts, icons, illustrations, etc.",
+            "O uso de um conjunto consistente de elementos da marca unifica a experiência do usuário em todos os seus produtos e campanhas de marketing. Esses elementos englobam seu logotipo, fontes, ícones, ilustrações, etc.",
         },
       },
     },
     "dl-guidelines": {
-      title: "Guidelines",
+      title: "Diretrizes",
       description:
-        "Understanding how to approach common UX patterns will allow your organization to establish a consistent approach and user experience on any platform.",
+        "Entender como abordar padrões comuns de UX permitirá que sua organização estabeleça abordagens e experiências consistentes em qualquer plataforma.",
       checklist: {
         "dl-guidelines-a11y": {
-          title: "Accessibility",
+          title: "Acessibilidade",
           description:
-            "Guidelines for how you approach accessibility and how you leverage color, hierarchy, and assistive technologies to help your users.",
+            "Diretrizes sobre como abordar a acessibilidade e como utilizar cor, hierarquia e tecnologias assistivas para ajudar seus usuários.",
         },
         "dl-guidelines-writing": {
-          title: "Writing guidelines",
+          title: "Diretrizes de escrita",
           description:
-            "Every consistent experience needs watertight writing. Laying down the foundations for your house style early keeps everything in line with consistent grammar, style choices, and action-oriented language to help your design.",
+            "Toda experiência consistente requer uma escrita clara e precisa. Portanto, estabelecer bases sólidas desde o início auxilia na manutenção de um estilo e gramática consistentes, orientando as ações do usuário e aprimorando o design como um todo.",
         },
         "dl-guidelines-microcopy": {
-          title: "Microcopy guidelines",
+          title: "Diretrizes de microcopy",
           description:
-            "The standard way to write for the components in your design system. These take platform conventions and best practices for writing all into consideration.",
+            "A abordagem padrão de escrita para os componentes em seu design system, levando em consideração as convenções da plataforma e as melhores práticas de escrita.",
         },
         "dl-guidelines-terminology": {
-          title: "Terminology",
+          title: "Terminologia",
           description:
-            "Create the standard terms and phrases that need to be kept the same throughout the user experience, speeding up the design process and unifying your voice.",
+            "Crie termos e frases padronizados que devem ser mantidos consistentes em toda a experiência do usuário, agilizando o processo de design e unificando sua linguagem.",
         },
         "dl-guidelines-i18n": {
-          title: "Internationalisation",
+          title: "Internacionalização",
           description:
-            "Define standards for handling content translated into various languages supported by the product. It includes handling translation edge cases and content bi-directionality.",
+            "Defina padrões para lidar com o conteúdo traduzido em diferentes idiomas suportados pelo produto. Isso inclui lidar com casos especiais de tradução e com a bidirecionalidade do conteúdo.",
         },
       },
     },
