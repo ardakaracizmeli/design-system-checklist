@@ -1,180 +1,179 @@
 export default {
-  title: "Maintenance",
+  title: "Manutenção",
   description:
-    "Design systems are no different than any other project your team might take on. In order to successfully build and maintain one, you need a clear strategy that’s well executed daily, and you‘ll need to create opportunities for your colleagues to give feedback to help share your design system together.",
-
+    "Design systems não são diferentes de qualquer outro projeto que sua equipe possa assumir. Para construir e manter um com sucesso, é necessário ter uma estratégia clara que seja bem executada diariamente, além de criar oportunidades para que seus colegas possam fornecer feedback e colaborar no desenvolvimento do design system.",
   sections: {
     "m-documentation": {
-      title: "Documentation",
+      title: "Documentação",
       description:
-        "Documentation resources are a core part of any design system as it saves time and effort for the team and everyone using the design system. It allows people to learn the ropes and find answers to the most commonly asked questions without contacting the team.",
+        "Documentação é uma parte fundamental de qualquer design system, pois economiza tempo e esforço da equipe e de todos que utilizam o sistema.  Isso possibilita que as pessoas aprendam os detalhes e encontrem respostas para as perguntas mais frequentes sem precisar entrar em contato direto com a equipe",
       checklist: {
         "m-documentation-principles": {
-          title: "Design system principles",
+          title: "Princípios do design system",
           description:
-            "List your core principles when building a design system to let designers and developers know your values and which are the main factors for the decision-making in your team.",
+            "Liste seus princípios fundamentais ao construir um design system, a fim de comunicar aos designers e desenvolvedores quais são seus valores e quais são os principais fatores considerados em sua equipe para tomada de decisões.",
         },
         "m-documentation-start": {
-          title: "Getting started",
+          title: "Primeiros passos",
           description:
-            "Guide others through the first steps of setting up and using your design system, which can help them build their first feature or product without contacting you directly.",
+            "Auxilie os outros nos primeiros passos de configuração e uso do seu design system, o que permitirá que eles possam desenvolver suas primeiras funcionalidades ou produtos sem precisar contatar você diretamente.",
         },
         "m-documentation-design": {
-          title: "Design best practices",
+          title: "Melhores práticas de design",
           description:
-            "Share tips on how to design products using the design system in a scalable way, avoid common pitfalls and use your design tool to its max potential.",
+            "Compartilhe dicas sobre como projetar produtos de forma escalável utilizando o design system, evitando armadilhas comuns e como aproveitar ao máximo o potencial da sua ferramenta de design.",
         },
         "m-documentation-dev": {
-          title: "Development best practices",
+          title: "Melhores práticas de desenvolvimento",
           description:
-            "Share tips on developing products using the design system, the recommended technical dependencies, and avoiding common pitfalls.",
+            "Compartilhe dicas sobre o desenvolvimento de produtos utilizando o design system, as dependências técnicas recomendadas e como evitar armadilhas comuns.",
         },
         "m-documentation-anatomy": {
-          title: "Component anatomy",
+          title: "Anatomia do componente",
           description:
-            "Provide an overview of the components' design anatomy to help everyone understand the limitations of the component layout and which parts of it are customizable.",
+            "Forneça uma visão geral da anatomia de design dos componentes para auxiliar na compreensão das limitações do layout do componente e quais partes dele podem ser personalizadas.",
         },
         "m-documentation-props": {
-          title: "Component properties",
+          title: "Propriedades do componente",
           description:
-            "Document properties your components support in both design and code. We recommend aligning most of them across platforms for a smoother design handoff process.",
+            "Documente as propriedades suportadas pelos seus componentes tanto no design quanto no código. Recomendamos alinhar a maioria delas entre as plataformas para facilitar o processo de transição do design.",
         },
         "m-documentation-composition": {
-          title: "Component composition examples",
+          title: "Exemplos de composição do componente",
           description:
-            "When building low-level components supporting slots for inserting other content – provide examples of how to use them to create more advanced compositions.",
+            "Ao construir componentes de baixo nível que possuam slots para inserção de outros conteúdos, forneça exemplos que demonstrem como utilizá-los para criar composições mais avançadas.",
         },
         "m-documentation-sandbox": {
-          title: "Sandbox product example",
+          title: "Ambiente de teste do produto",
           description:
-            "If you don’t have a way to test your components in the product yourself, you can build a simple application that simulates actual product layouts to test how your components behave in the wild and try out new design system features before releasing them.",
+            "Se você não tem uma forma de testar seus componentes no próprio produto, você pode construir uma aplicação simples que simula layouts reais do produto. Assim, você poderá avaliar o comportamento dos seus componentes e experimentar novas funcionalidades do sistema de design antes de lançá-las.",
         },
         "m-documentation-env": {
-          title: "Browser / OS support",
+          title: "Compatibilidade com navegadores e sistemas operacionais",
           description:
-            "Define the level of support you provide for various operating systems and browsers, and make sure you align with the product on this topic.",
+            "Estabeleça o nível de suporte que você oferece para diferentes sistemas operacionais e navegadores, e assegure-se de estar alinhado com o produto nesse aspecto.",
         },
         "m-documentation-release": {
-          title: "Release cycle",
+          title: "Ciclo de lançamento",
           description:
-            "Establish and document a predictable release cycle for the major versions that include breaking changes. This way, product teams can plan the migrations on their side.",
+            "Estabeleça e documente um ciclo de lançamento previsível para as versões principais que envolvam alterações significativas. Isso permitirá que as equipes de produto planejem as migrações em seu próprio ambiente de forma adequada.",
         },
       },
     },
     "m-local": {
-      title: "Local libraries",
+      title: "Bibliotecas locais",
       description:
-        "The scope of the design system is usually to build the core repeating patterns to increase the velocity of product teams. That means you won't implement all UI elements yourself. Product teams will still build local components using the design system to solve their specific scenarios.",
+        "O objetivo do design system é, geralmente, construir os padrões centrais e recorrentes para acelerar as equipes de produto. Isso significa que você não precisa implementar todos os elementos de interface por conta própria. As equipes de produto ainda criarão componentes locais utilizando o sistema de design para resolver seus cenários específicos.",
       checklist: {
         "m-local-when": {
-          title: "When to build",
+          title: "Quando construir",
           description:
-            "Share your expectations on when product teams should build custom components instead of requesting a new feature in the design system or using an existing component.",
+            "Compartilhe suas expectativas sobre quando as equipes de produto devem construir componentes personalizados em vez de solicitar um novo recurso no design system ou usar um componente existente.",
         },
         "m-local-types": {
-          title: "Horizontal and vertical libraries",
+          title: "Bibliotecas horizontais e verticais",
           description:
-            "Outline the difference between the horizontal libraries used across multiple products and vertical libraries only used by the team building it.",
+            "Explicite a distinção entre as bibliotecas horizontais, que são empregadas em diversos produtos, e as bibliotecas verticais, que são usadas apenas pela equipe que as constrói.",
         },
         "m-local-expectations": {
-          title: "Library expectations",
+          title: "Expectativas em relação à biblioteca",
           description:
-            "Document the minimum set of requirements for shipping a local library. Describe your expectations on the library quality, documentation, and maintenance.",
+            "Documente o conjunto mínimo de requisitos para lançar uma biblioteca local. Descreva suas expectativas em relação à qualidade, documentação e manutenção da biblioteca.",
         },
         "m-local-release": {
-          title: "Release cycle alignment",
+          title: "Alinhamento do ciclo de lançamento",
           description:
-            "Ensure that local libraries are in sync with the design system release cycle. They should support your newly published major releases of the system to avoid blocking the product from updating.",
+            "Assegure que as bibliotecas locais estejam alinhadas com o ciclo de lançamento do design system. Elas devem ser compatíveis com as novas versões principais recentemente publicadas do sistema, evitando assim impedimentos na atualização do produto.",
         },
       },
     },
     "m-process": {
-      title: "Team processes",
+      title: "Processos da equipe",
       description:
-        "All teams that have successfully scaled their design system did this by establishing robust processes for working with their stakeholders and the community. As you keep developing the system, they will save you endless hours and let you avoid answering the same questions repeatedly.",
+        "Equipes que alcançaram sucesso na escalabilidade de seus sistemas de design o fizeram estabelecendo processos sólidos para trabalhar com seus stakeholders e a comunidade. À medida que você continua desenvolvendo o sistema, esses processos pouparão inúmeras horas e evitarão que você precise responder repetidamente às mesmas perguntas.",
       checklist: {
         "m-process-log": {
-          title: "Decision-making log",
+          title: "Registro de tomada de decisões",
           description:
-            "For the topics you have to handle repeatedly – make logs on how you make those decisions. You won’t miss any contextual requirements and will avoid having additional alignment meetings.",
+            "Para os tópicos que você precisa lidar repetidamente, faça registros sobre como você toma essas decisões. Isso permitirá que você não perca nenhum requisito contextual e evitará a necessidade de reuniões adicionais para alinhamento.",
         },
         "m-process-roadmap": {
-          title: "Roadmap",
+          title: "Cronograma",
           description:
-            "Try planning your long-term work and allocating only a part of your time for community support. This will help you evolve the system over time instead of only focusing on smaller bug fixes and feature requests.",
+            "Tente planejar seu trabalho a longo prazo e destinar apenas uma parte do seu tempo para o suporte à comunidade. Isso ajudará você a evoluir o sistema ao longo do tempo, em vez de se concentrar apenas em correções de pequenos bugs e solicitações de novas funcionalidades.",
         },
         "m-process-stakeholder": {
-          title: "Stakeholder mapping",
+          title: "Mapeamento dos stakeholders",
           description:
-            "List out the main stakeholders across all products you’re supporting. Those could be people working in the development and design but also don’t miss the people leadership who can help you grow the adoption.",
+            "Faça uma lista dos principais stakeholders envolvidos em todos os produtos que você está apoiando. Isso inclui pessoas que trabalham no desenvolvimento e design, mas também não se esqueça dos líderes que podem ajudar a impulsionar a adoção do sistema.",
         },
         "m-process-analytics": {
-          title: "Analytics",
+          title: "Análises",
           description:
-            "Define a way to track the usage and the value of the libraries and tooling you provide. You can start with easy-to-set-up metrics, like analytics for your documentation website, feedback surveys, or components usage analytics in your design tool.",
+            "Estabeleça um método para acompanhar o uso e o valor das bibliotecas e ferramentas que você disponibiliza. Você pode começar com métricas fáceis de configurar, como análises do site de documentação, pesquisas de feedback e análises do uso dos componentes na sua ferramenta de design.",
         },
         "m-process-shifts": {
-          title: 'Ongoing support "shifts"',
+          title: "Rotação contínua de suporte",
           description:
-            "If multiple people work on the same platform, distribute and plan the community support work for them. That will let team members focus on the planned work instead of being distracted by the requests and questions.",
+            "Se várias pessoas trabalham na mesma plataforma, distribua e planeje as responsabilidades de suporte à comunidade entre elas. Isso permitirá que os membros da equipe se concentrem nas tarefas planejadas, evitando distrações com solicitações e perguntas.",
         },
         "m-process-sla": {
-          title: "SLA",
+          title: "SLA (Acordo de nível de serviço)",
           description:
-            "Define the timelines for how long it takes you to handle incoming requests and bug reports to help product teams understand if they should wait for your release or find a temporary workaround.",
+            "Defina prazos para o tempo de resposta às solicitações recebidas e aos relatórios de bugs, a fim de ajudar as equipes de produto a decidir se devem aguardar o lançamento oficial ou buscar uma solução temporária.",
         },
       },
       "m-community": {
-        title: "Community support",
+        title: "Suporte à comunidade",
         description:
-          "It’s crucial to help product designers and developers get more productive with the design system, fix the bugs they find in the products, and address their needs. To make sure you get that feedback – your goal is to make it easy and safe for everyone to share their findings.",
+          "É fundamental auxiliar os designers e desenvolvedores de produto a aumentarem sua produtividade com o sistema de design, solucionar os bugs encontrados nos produtos e atender às suas necessidades. Para garantir que você obtenha esse feedback, o seu objetivo é tornar fácil e seguro para todos compartilharem suas descobertas.",
         checklist: {
           "m-community-channels": {
-            title: "Support channels",
+            title: "Canais de suporte",
             description:
-              "Create support channels in the tools you use for communication. It’s a good idea to separate them by the platform to make it comfortable for everyone to share platform-specific details of their issues.",
+              "Crie canais de suporte nas ferramentas que você utiliza para comunicação. É uma boa ideia separá-los por plataforma, para que todos possam compartilhar de maneira confortável os detalhes específicos da plataforma relacionados aos seus problemas.",
           },
           "m-community-template": {
             title: "Templates",
             description:
-              "Prepare templates for creating feature requests and bug reports. Use them to ask for reproduction links, design proposals, and other contextual information you need to make decisions instead of manually looking for that information.",
+              "Elabore templates para criar solicitações de funcionalidade e relatórios de bugs. Utilize-os para solicitar links de reprodução, propostas de design e outras informações contextuais necessárias para tomar decisões, em vez de procurar manualmente por essas informações.",
           },
           "m-community-updates": {
-            title: "Regular updates",
+            title: "Atualizações regulares",
             description:
-              "You’re risking the adoption of the new features if you’re only focusing on the implementation but never talking about it with the community. Defining a cadence for your updates helps build a habit for product teams to come and check what’s new in the system and how they can leverage it.",
+              "Você está arriscando a adoção das novas funcionalidades se estiver apenas focado na implementação, sem nunca discuti-las com a comunidade. Estabelecer uma frequência para suas atualizações ajuda a criar o hábito das equipes de produto de conferir regularmente o que há de novo no sistema e como podem aproveitá-lo ao máximo.",
           },
           "m-community-slots": {
-            title: "Open hours",
+            title: "Horários de disponibilidade",
             description:
-              "There will be questions that can’t be resolved in a single ticket or chat. Keep a few bookable calendar slots for other teams to receive a consultation or discuss their feature implementation with your team.",
+              "Haverá perguntas que não podem ser resolvidas em um único ticket ou chat. Reserve alguns horários disponíveis em seu calendário para que outras equipes possam agendar consultas ou discutir a implementação de funcionalidades com a sua equipe.",
           },
         },
       },
       "m-contribution": {
-        title: "Contribution",
+        title: "Contribuição",
         description:
-          "Building design systems is a team game. Make sure to include product teams in the journey, help them contribute to the system and let them advocate for it across the company.",
+          "Construir design systems é um trabalho em equipe. Certifique-se de incluir as equipes de produto nessa jornada, auxiliando-as a contribuir para o sistema e permitindo que elas o defendam em toda a empresa.",
         checklist: {
           "m-contribution-rules": {
-            title: "House rules for the system",
+            title: "Regras da casa para o sistema",
             description:
-              "Explain how your design and development process works to the product teams. Design system teams usually move slower than product teams since there is more responsibility on making scalable decisions in the components affecting the whole product.",
+              "Explique às equipes de produto como funciona o seu processo de design e desenvolvimento. As equipes de design system geralmente trabalham em um ritmo mais lento do que as equipes de produto, pois há maior responsabilidade em tomar decisões escaláveis nos componentes que afetam o produto como um todo.",
           },
           "m-contribution-guidelines": {
-            title: "Contribution guidelines",
+            title: "Orientações de contribuição",
             description:
-              "Explain what contributors need to set up to prepare their design and development environment for adding and testing new features.",
+              "Explique o que os colaboradores precisam configurar para preparar seu ambiente de design e desenvolvimento para adicionar e testar novas funcionalidades.",
           },
           "m-contribution-template": {
-            title: "Feature proposal template",
+            title: "Template para proposta de nova funcionalidade",
             description:
-              "Prepare a standard template for initiating the work on a new feature. This template should ensure that proposed changes will be applied across all platforms and won’t break the existing component usage in the product.",
+              "Elabore um template padrão para iniciar o trabalho em uma nova funcionalidade. Esse modelo deve garantir que as alterações propostas sejam aplicadas em todas as plataformas e não comprometam a utilização atual dos componentes no produto.",
           },
           "m-contribution-engagement": {
-            title: "Engagment",
+            title: "Engajamento",
             description:
-              "Make sure to highlight and reward contributors' work when making announcements about the new features and help them get support from their managers when they contribute. ",
+              "Assegure-se de destacar e recompensar o trabalho dos colaboradores ao fazer anúncios sobre as novas funcionalidades e ajude-os a obter apoio de seus gerentes quando eles contribuírem.",
           },
         },
       },
