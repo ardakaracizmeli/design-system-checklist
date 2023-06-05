@@ -1,1037 +1,1044 @@
 export default {
-  title: "Core components",
+  title: "Componentes principais",
   description:
-    "Components are the main building blocks for user interfaces. Building a reusable component library enhances your product development workflow by reducing design and tech debt and speeding up the process. Core components can’t be broken down into granular pieces without losing their meaning.",
+    "Os componentes são os principais elementos de construção das interfaces de usuário. Criar uma biblioteca de componentes reutilizáveis aprimora o fluxo de trabalho de desenvolvimento do seu produto, reduzindo a dívida de design e tecnologia e acelerando o processo. Os componentes centrais não podem ser decompostos em partes menores sem perder seu significado.",
   sections: {
     "c-accordion": {
       title: "Accordion",
       description:
-        "Accordion toggles the visibility of content regions when the trigger element gets pressed.",
+        "O Accordion alterna a visibilidade das regiões de conteúdo quando o elemento de acionamento é pressionado.",
       checklist: {
         "c-accordion-active": {
-          title: "Active state",
+          title: "Estado ativo",
           description:
-            "Accordion comes in two states for toggling its content visibility. If an accordion trigger displays an icon, it should be visually distinct between states.",
+            "O Accordion possui dois estados para alternar a visibilidade do seu conteúdo. Se um acionador de accordion exibe um ícone, ele deve ser visualmente distinto entre os estados.",
         },
         "c-accordion-composition": {
-          title: "Composition",
+          title: "Composição",
           description:
-            "Content area should be flexible enough to support various types of content, including other components.",
+            "A área de conteúdo deve ser flexível o suficiente para suportar vários tipos de conteúdo, incluindo outros componentes.",
         },
         "c-accordion-transition": {
-          title: "Toggle transition",
+          title: "Transição de alternância",
           description:
-            "Add a subtle animation to help users understand and follow the component behavior when switching between states.",
+            "Adicione uma animação sutil para ajudar os usuários a compreender e acompanhar o comportamento do componente ao alternar entre os estados.",
         },
         "c-accordion-a11y-relation": {
-          title: "Content and trigger relation",
+          title: "Relação entre o conteúdo e o acionador",
           description:
-            "Focusing the content area with assistive technologies should announce additional context from the trigger element.",
+            "Quando a área de conteúdo recebe foco por meio de tecnologias assistivas, ela deve anunciar um contexto adicional do elemento de acionamento.",
         },
       },
     },
     "c-alert": {
-      title: "Alert",
+      title: "Alerta",
       description:
-        "Alert displays a prominent message about the whole page or its specific area.",
+        "Os alertas exibem uma mensagem proeminente sobre toda a página ou uma área específica dela.",
       checklist: {
         "c-alert-colors": {
-          title: "Colors",
+          title: "Cores",
           description:
-            "It's crucial to differentiate the alert's visual appearance based on its role. If you're using background colors for role differentiation, ensure there's enough contrast ratio with the content displayed inside the alert.",
+            "É fundamental diferenciar a aparência visual do alerta com base em sua função. Se estiver utilizando cores de fundo para diferenciá-los, assegure-se de que haja um contraste suficiente em relação ao conteúdo exibido dentro do alerta.",
         },
         "c-alert-title": {
-          title: "Title support",
+          title: "Suporte a titulo",
           description:
-            "Supporting a title can help your user understand the context of the message faster for longer alert messages.",
+            "Oferecer suporte à título pode ajudar o usuário a compreender o contexto da mensagem mais rapidamente, especialmente em casos de mensagens de alerta mais longas.",
         },
         "c-alert-icon": {
-          title: "Icon support",
+          title: "Suporte a ícones",
           description:
-            "Icon illustrates the role of the alert and provides an additional hint about it for colorblind people.",
+            "O ícone ilustra o papel do alerta e oferece uma dica adicional para auxiliar pessoas com daltonismo a compreendê-lo.",
         },
         "c-alert-actions": {
-          title: "Supplementary actions",
+          title: "Ações suplementares",
           description:
-            "Actions in the alert should relate to their text and provide a way to react to the message sent to the user.",
+            "As ações nos alertas devem estar relacionadas ao seu texto e proporcionar uma forma de reagir à mensagem enviada ao usuário.",
         },
         "c-alert-responsive": {
-          title: "Responsiveness",
+          title: "Responsividade",
           description:
-            "Alert can adapt to the viewport size, usually becoming full-width for mobile to save some space.",
+            "Os alertas podem se ajustar ao tamanho da tela, geralmente ocupando a largura total em dispositivos móveis para economizar espaço.",
         },
         "c-alert-a11y-roles": {
-          title: "Accessibility roles",
+          title: "Role de acessibilidade",
           description:
-            "When using assistive technologies, alerts should announce their accessibility role correctly.",
+            "Ao utilizar tecnologias assistivas, os alertas devem anunciar corretamente sua role de acessibilidade.",
         },
       },
     },
     "c-avatar": {
       title: "Avatar",
       description:
-        "Thumbnail of a user photo, organization, or a visual representation of other types of content.",
+        "Miniatura de uma foto do usuário, organização ou uma representação visual de outros tipos de conteúdo.",
       checklist: {
         "c-avatar-image": {
-          title: "Image",
+          title: "Imagem",
           description:
-            "Avatars should mask an image into their shape and work with any image size since they may get this image from unknown data sources.",
+            "Os avatares devem mascarar uma imagem em sua forma e funcionar com qualquer tamanho de imagem, uma vez que podem obter essa imagem de fontes de dados desconhecidas.",
         },
         "c-avatar-image-fallback": {
-          title: "Image fallback",
+          title: "Recurso alternativo de imagem",
           description:
-            "When not passing an image or there is an image loading error, avatars should be able to show a fallback with a different image, icon, or text initials.",
+            "Quando não for fornecida uma imagem ou ocorrer um erro ao carregar a imagem, os avatares devem ser capazes de exibir um recurso alternativo com uma imagem, ícone ou iniciais de texto diferentes.",
         },
         "c-avatar-sizes": {
-          title: "Sizes",
+          title: "Tamanhos",
           description:
-            "There are many contexts to use an avatar, which require different sizes for the component. Use at least 2-3 different sizes for average projects and ensure there’s at least a small size available.",
+            "Há vários contextos nos quais é necessário utilizar um avatar, exigindo diferentes tamanhos para o componente. Em projetos comuns, é recomendado utilizar pelo menos 2-3 tamanhos distintos e garantir que haja pelo menos um tamanho pequeno disponível.",
         },
         "c-avatar-colors": {
-          title: "Colors",
+          title: "Cores",
           description:
-            "A background color should be applied to the avatar shape when used without an image. Make sure that icons and text have enough contrast ratio with the background according to the WCAG AA standard.",
+            "Quando utilizado sem uma imagem, o avatar deve ter uma cor de fundo aplicada à sua forma. Certifique-se de que os ícones e o texto possuam um contraste adequado em relação ao fundo, seguindo o padrão WCAG AA.",
         },
         "c-avatar-shape": {
-          title: "Shape",
+          title: "Formas",
           description:
-            "Avatars might support multiple shapes, like square or circle, based on the area they are used in.",
+            "Os avatares podem ter suporte a múltiplas formas, como quadrado ou círculo, dependendo da área em que são utilizados.",
         },
         "c-avatar-group": {
-          title: "Avatar groups",
+          title: "Grupos de avatares",
           description:
-            "Multiple avatars can be stacked together to represent a group of users.",
+            "Múltiplos avatares podem ser empilhados juntos para representar um grupo de usuários.",
         },
         "c-avatar-a11y-label": {
-          title: "Accessibility label",
+          title: "Label de acessibilidade",
           description:
-            "Avatar should provide an accessibility label when used for non-decorative images and has no text representation of its contents.",
+            "O avatar deve fornecer uma label acessível quando utilizado para imagens não decorativas e não possui uma representação textual de seus conteúdos.",
         },
       },
     },
     "c-badge": {
       title: "Badge",
       description:
-        "Compact element that represents the status of an object or user input.",
+        "Elemento compacto que representa o status de um objeto ou entrada do usuário.",
       checklist: {
         "c-badge-colors": {
-          title: "Colors",
+          title: "Cores",
           description:
-            "Badges may play various roles in your product, and having a predefined color for each role should help users understand their meaning. When changing colors, make sure the text has enough contrast ratio with the background according to the WCAG AA standard.",
+            "Os badges podem desempenhar várias funções em seu produto, e ter uma cor pré-definida para cada função deve ajudar os usuários a entender seu significado. Ao alterar as cores, certifique-se de que o texto tenha uma proporção de contraste adequada com o fundo, de acordo com o padrão WCAG AA.",
         },
         "c-badge-variants": {
-          title: "Variants",
+          title: "Variantes",
           description:
-            "Based on where in the product badges are rendered, you might support multiple component variants. For example, you can have some badges using a faded background to avoid drawing too much attention.",
+            "Com base no local em que os badges são exibidos no produto, é possível oferecer várias variantes do componente. Por exemplo, é possível ter alguns badges com um fundo desbotado para evitar chamar muita atenção.",
         },
         "c-badge-sizes": {
-          title: "Sizes",
+          title: "Tamanhos",
           description:
-            "Badges can come in multiple sizes depending on where a badge is used. For example, you can use the large size for marketing pages.",
+            "Os badges podem ser apresentados em vários tamanhos, dependendo de onde são utilizados. Por exemplo, você pode usar o tamanho grande em páginas de marketing.",
         },
         "c-badge-icon-support": {
-          title: "Icon support",
+          title: "Suporte a ícones",
           description:
-            "To better illustrate the meaning of a badge, you can display an icon next to the text. Make sure that for small badges, icon contents are still recognizable.",
+            "Para ilustrar melhor o significado de um badge, você pode exibir um ícone ao lado do texto. Certifique-se de que, para badges pequenos, o conteúdo do ícone ainda seja reconhecível.",
         },
         "c-badge-dismiss": {
-          title: "Dismissible action",
+          title: "Ação de descarte",
           description:
-            "Badges can be used as a dynamic way to display selected values, and there should be a way to dismiss them.",
+            "Os badges podem ser usados como uma forma dinâmica de exibir valores selecionados, e deve haver uma maneira de descartá-los.",
         },
         "c-badge-empty": {
-          title: "Empty state",
+          title: "Estado vazio",
           description:
-            "Badges can be used without any text content inside. That usually requires changing their styles to preserve the correct shape.",
+            "Os distintivos podem ser utilizados sem nenhum conteúdo de texto interno. Isso geralmente requer a alteração de seus estilos para preservar a forma correta.",
         },
         "c-badge-positioning": {
-          title: "Positioning",
+          title: "Posicionamento",
           description:
-            "When used as a status badge, like a notification indicator – you should be able to position it relative to those elements.",
+            "Quando usado como um distintivo de status, como um indicador de notificação, você deve ser capaz de posicioná-lo em relação a esses elementos.",
         },
       },
     },
     "c-button": {
-      title: "Button",
-      description: "Interactive element used for single-step actions.",
+      title: "Botão",
+      description:
+        "Elemento interativo utilizado para ações de um único passo.",
       checklist: {
         "c-button-colors": {
-          title: "Colors",
+          title: "Cores",
           description:
-            "Buttons may play various roles in your product, and having a predefined color for each role should help users understand their meaning. When changing colors, make sure the text has enough contrast ratio with the background according to the WCAG AA standard.",
+            "Botões podem desempenhar diferentes papéis em seu produto, e ter uma cor pré-definida para cada papel deve ajudar os usuários a entender seu significado. Ao alterar as cores, certifique-se de que o texto tenha uma proporção de contraste adequada com o fundo, de acordo com o padrão WCAG AA.",
         },
         "c-button-variants": {
-          title: "Variants",
+          title: "Variantes",
           description:
-            "When using multiple buttons, there should be a way to differentiate between primary and secondary actions. Buttons may play different roles for the user or be used on various surfaces, and they have to change how they look.",
+            "Ao utilizar múltiplos botões, deve haver uma forma de diferenciar entre ações primárias e secundárias. Os botões podem desempenhar diferentes papéis para o usuário ou serem utilizados em diferentes superfícies, e é necessário que eles alterem sua aparência de acordo.",
         },
         "c-button-sizes": {
-          title: "Sizes",
+          title: "Tamanhos",
           description:
-            "Depending on where a button will be used, it can come in multiple sizes. For example, you can use the small size for dense areas of your application.",
+            "Dependendo de onde um botão será usado, ele pode ter vários tamanhos. Por exemplo, você pode usar o tamanho pequeno para áreas densas da sua aplicação.",
         },
         "c-button-icon": {
-          title: "Icon support",
+          title: "Suporte a ícones",
           description:
-            "Icons easily communicate the button's purpose when used next to its label or can be used without text when there's insufficient space. Ensure the accessibility label is provided when used with an icon only.",
+            "Ícones comunicam facilmente o propósito do botão quando utilizados ao lado de uma label ou podem ser usados sem texto quando há pouco espaço disponível. Certifique-se de fornecer uma label acessível quando utilizar apenas o ícone.",
         },
         "c-button-hover": {
-          title: "Hover state",
+          title: "Estado de hover",
           description:
-            "Clearly show that the button is interactive when hovered with a mouse cursor.",
+            "Mostre claramente que o botão é interativo quando o cursor do mouse estiver sobre ele.",
         },
         "c-button-active": {
-          title: "Active state",
+          title: "Estado ativo",
           description:
-            "Provide a visual cue when a button is pressed, used for selecting a value, or toggles other elements on the page.",
+            "Forneça uma indicação visual quando um botão for pressionado, usado para selecionar um valor ou alternar outros elementos na página.",
         },
         "c-button-loading": {
-          title: "Loading state",
+          title: "Estado de carregamento",
           description:
-            "Indicate when users have to wait for the result of their action after pressing a button. If a spinner is used to display this state, ensure it’s not changing the original button width or height.",
+            "Indique quando os usuários devem esperar pelo resultado de sua ação após pressionar um botão. Se um indicador de progresso (spinner) for usado para exibir esse estado, certifique-se de que ele não altere a largura ou altura original do botão.",
         },
         "c-button-disabled": {
-          title: "Disabled state",
+          title: "Estado desabilitado",
           description:
-            "Visually shows that the button is not interactive and restricts it from being pressed.",
+            "Mostre visualmente que o botão não é interativo e impeça que ele seja pressionado.",
         },
         "c-button-a11y-role": {
-          title: "Accessibility role",
+          title: "Role de acessibilidade",
           description:
-            "Button should correctly announce the button or link accessibility roles and automatically resolve it based on the properties passed to it.",
+            "O botão deve anunciar corretamente as roles de acessibilidade do botão ou do link e resolvê-los automaticamente com base nas propriedades passadas para ele.",
         },
         "c-button-a11y-focus": {
-          title: "Focus indicator",
+          title: "Indicador de foco",
           description:
-            "Button should have a visible focus indicator when it’s focused using the keyboard or assistive technologies.",
+            "O botão deve ter um indicador de foco visível quando estiver em foco utilizando o teclado ou tecnologias assistivas.",
         },
       },
     },
     "c-breadcrumbs": {
       title: "Breadcrumbs",
       description:
-        "Top-level product navigation that helps user understand the location of the current page and navigate back to its parents.",
+        "Navegação principal do produto que ajuda o usuário a compreender a localização da página atual e navegar de volta aos seus respectivos níveis superiores.",
       checklist: {
         "c-breadcrumbs-icon": {
-          title: "Icon support",
+          title: "Suporte a ícones",
           description:
-            "Icons help to communicate the roles of the pages to which breadcrumbs items link. Most of the time, you want to ensure they’re used consistently, not only for random items in the list.",
+            "Ícones ajudam a comunicar os papéis das páginas às quais os itens do menu de navegação apontam. Na maioria das vezes, é importante garantir que sejam usados de forma consistente, não apenas para itens aleatórios na lista.",
         },
         "c-breadcrumbs-disabled": {
-          title: "Disabled state",
+          title: "Estado desabilitado",
           description:
-            "Each item in the list can be disabled separately to prevent users from navigating to the page.",
+            "Cada item da lista pode ser desabilitado individualmente para impedir que os usuários naveguem para a página.",
         },
         "c-breadcrumbs-collapsed": {
-          title: "Collapsed state",
+          title: "Estado colapsado",
           description:
-            "If breadcrumbs items don’t fit into the parent container, the list should support collapsing items only to keep the relevant ones visible to the user.",
+            "Se os itens do menu de navegação não couberem no contêiner pai, a lista deve oferecer suporte ao colapso de itens apenas para manter visíveis aqueles relevantes para o usuário.",
         },
         "c-breadcrumbs-separator": {
-          title: "Custom separator",
+          title: "Separador personalizado",
           description:
-            "Depending on the usage context, items in the breadcrumbs list can use different separator styles.",
+            "Dependendo do contexto de uso, os itens na lista de breadcrumbs podem utilizar diferentes estilos de separadores.",
         },
       },
     },
     "c-calendar": {
-      title: "Calendar",
+      title: "Calendário",
       description:
-        "Grid displaying days in one or more months and allow users to select a single date or a date range",
+        "Grid que exibe os dias de um ou mais meses e permite que os usuários selecionem uma única data ou um intervalo de datas.",
       checklist: {
         "c-calendar-modes": {
-          title: "Display modes",
+          title: "Modos de exibição",
           description:
-            "Calendar might be used in various product areas and viewports. Make sure to support different display modes for rendering more than one month or a vertical layout.",
+            "O calendário pode ser utilizado em diversas áreas e tamanhos de tela do produto. Certifique-se de suportar diferentes modos de exibição para mostrar mais de um mês ou um layout vertical.",
         },
         "c-calendar-selected": {
-          title: "Selected state",
+          title: "Estado selecionado",
           description:
-            "Calendar should support a single date and a selection range. Selected dates should be visually highlighted, and the range between selected dates should be visible to the users.",
+            "O calendário deve suportar a seleção de uma única data e um intervalo de datas. As datas selecionadas devem ser destacadas visualmente, e o intervalo entre as datas selecionadas deve ser visível para os usuários.",
         },
         "c-calendar-month-selection": {
-          title: "Month selection",
+          title: "Seleção de mês",
           description:
-            "To help users navigate longer date ranges, the calendar should provide an easy way to switch displayed months.",
+            "Para ajudar os usuários a navegar por intervalos de datas mais longos, o calendário deve fornecer uma maneira fácil de alternar entre os meses exibidos.",
         },
         "c-calendar-day-names": {
-          title: "Day names",
+          title: "Nomes dos dias",
           description:
-            "Provide short labels for the weekday names in addition to the date numbers to let users easier navigate the date selection.",
+            "Fornecer labels curtas para os nomes dos dias da semana, além dos números das datas, para facilitar a navegação na seleção de datas pelos usuários.",
         },
         "c-calendar-i18n": {
-          title: "Internationalisation",
+          title: "Internacionalização",
           description:
-            "Calendars should be localized for all country regions supported by the product. That includes date formats and correct ordering of the weekdays.",
+            "Os calendários devem ser adaptados para todas as regiões e países suportados pelo produto. Isso inclui formatos de data e a correta ordenação dos dias da semana, de acordo com as convenções locais.",
         },
         "c-calendar-a11y-keyboard": {
-          title: "Keyboard navigation",
+          title: "Navegação por teclado",
           description:
-            "Calendar dates should be focusable with keyboard and assistive technologies. Further navigation on the dates should happen with keyboard arrows or screen reader navigation and support switching the month by navigating out of a column or a row.",
+            "As datas do calendário devem ser acessíveis pelo teclado e por tecnologias assistivas. A navegação nas datas pode ser feita usando as setas do teclado ou as opções de navegação do leitor de tela. Além disso, é importante permitir a troca de mês ao navegar para fora de uma coluna ou linha.",
         },
         "c-calendar-a11y-state": {
-          title: "State announcement",
+          title: "Anúncio de estado",
           description:
-            "Selected dates should be announced by the assistive technologies when they get focused.",
+            "As datas selecionadas devem ser anunciadas pelas tecnologias assistivas quando recebem foco.",
         },
       },
     },
     "c-card": {
       title: "Card",
       description:
-        "Container to group information about subjects and their related actions.",
+        "Container para agrupar informações sobre assuntos e suas ações relacionadas.",
+
       checklist: {
         "c-card-composition": {
-          title: "Content composition",
+          title: "Composição de conteúdo",
           description:
-            "Content area should be flexible enough to support various types of content, including other components.",
+            "A área de conteúdo deve ser flexível o suficiente para suportar vários tipos de conteúdo, incluindo outros componentes.",
         },
         "c-card-media-sections": {
-          title: "Media sections",
+          title: "Seções de mídia",
           description:
-            "Cards are frequently used with media content. The most popular options are having a full-width area on top of the content or an area at one of the card’s sides.",
+            "Os cards são frequentemente utilizados em conjunto com conteúdo de mídia. As opções mais populares são ter uma área de largura total acima do conteúdo ou uma área em um dos lados do card.",
         },
         "c-card-actions": {
-          title: "Supplementary actions",
+          title: "Ações suplementares",
           description:
-            "Cards can be used with actions usually placed at the bottom of the card, or the card itself can be tappable and represent an action.",
+            "Os cards podem ser utilizados com ações geralmente posicionadas na parte inferior do card, ou o próprio card pode ser clicável, representando uma ação.",
         },
         "c-card-responsive": {
-          title: "Responsiveness",
+          title: "Responsividade",
           description:
-            "On mobile viewports, cards are usually full-width to save space for the content.",
+            "Nos dispositivos móveis, os cards geralmente ocupam toda a largura da tela para economizar espaço para o conteúdo.",
         },
         "c-card-groups": {
-          title: "Card groups",
+          title: "Grupos de cards",
           description:
-            "Multiple cards can be grouped in a single list of content sections.",
+            "Vários cards podem ser agrupados em uma única lista de seções de conteúdo.",
         },
       },
     },
     "c-carousel": {
-      title: "Carousel",
+      title: "Carrossel",
       description:
-        "Horizontal scrollable areas used for displaying grouped content.",
+        "Áreas com rolagem horizontal usadas para exibir conteúdo agrupado.",
       checklist: {
         "c-carousel-navigation": {
-          title: "Navigation controls",
+          title: "Controles de navegação",
           description:
-            "Carousels should be accessible for navigating its content on devices that work with the mouse instead of touch events.",
+            "Os carrosséis devem ser acessíveis para navegar seu conteúdo em dispositivos que utilizam o mouse em vez de eventos de toque.",
         },
         "c-carousel-composition": {
-          title: "Item composition",
+          title: "Composição de itens",
           description:
-            "Content area of the carousel items should be flexible enough to support various types of content, including other components.",
+            "A área de conteúdo dos itens do carrossel deve ser flexível o suficiente para suportar vários tipos de conteúdo, incluindo outros componentes.",
         },
         "c-carousel-item-size": {
-          title: "Item sizes",
+          title: "Tamanhos dos itens",
           description:
-            "Layout of the items should be flexible to support different types of content. For mobile devices, make sure to show a part of the carousel item that doesn’t fit into the viewport to indicate the scrollable area.",
+            "O layout dos itens deve ser flexível para suportar diferentes tipos de conteúdo. Para dispositivos móveis, certifique-se de mostrar uma parte do item do carrossel que não cabe na tela para indicar a área rolável.",
         },
         "c-carousel-touch": {
-          title: "Touch navigation",
+          title: "Navegação por toque",
           description:
-            "Carousel content should be rendered inside a scrollable area to support touch events.",
+            "O conteúdo do carrossel deve ser renderizado dentro de uma área rolável para suportar eventos de toque.",
         },
         "c-carousel-responsive": {
-          title: "Responsiveness",
+          title: "Responsividade",
           description:
-            "Carousel items layout might require adjustments based on the available space.",
+            "O layout dos itens do carrossel pode exigir ajustes com base no espaço disponível.",
         },
         "c-carousel-a11y-keyboard-navigation": {
-          title: "Keyboard navigation",
+          title: "Navegação por teclado",
           description:
-            "Keyboard and assistive technologies users should be able to navigate the carousel content without clicking on the navigation controls.",
+            "Usuários de teclado e tecnologias assistivas devem ser capazes de navegar pelo conteúdo do carrossel sem depender dos controles de navegação por clique.",
         },
       },
     },
     "c-checkbox": {
       title: "Checkbox",
       description:
-        "Form field used to select one or multiple values from the list.",
+        "Campo de formulário usado para selecionar um ou vários valores da lista.",
       checklist: {
         "c-checkbox-label": {
           title: "Label",
           description:
-            "There should be a text label linked with the checkbox field. Clicking the label should also trigger the checkbox selection. If the label is not rendered on the page, assistive technologies should still announce it.",
+            "Deve haver uma label de texto vinculada ao campo de checkbox. Clicar no rótulo também deve acionar a seleção do checkbox. Se o rótulo não for exibido na página, as tecnologias assistivas ainda devem anunciá-lo.",
         },
         "c-checkbox-checked": {
-          title: "Checked state",
+          title: "Estado selecionado",
           description:
-            "Display when the checkbox gets selected and is used for the form submission.",
+            "Exiba quando o checkbox for selecionado e utilizado para a submissão do formulário.",
         },
         "c-checkbox-error": {
-          title: "Error state",
+          title: "Estado de erro",
           description:
-            "Use an error state for form validation when the error is related to the checkbox field. Always use a text error along with a different field color.",
+            "Utilize um estado de erro para a validação do formulário quando o erro estiver relacionado ao campo de checkbox. Sempre utilize um texto de erro juntamente com uma cor de campo diferente.",
         },
         "c-checkbox-disabled": {
-          title: "Disabled state",
+          title: "Estado desabilitado",
           description:
-            "Use a disabled state to prevent checkbox interactions and remove its value from the submitted form values.",
+            "Utilize um estado desabilitado para impedir interações com o checkbox e remover o seu valor dos valores enviados pelo formulário.",
         },
         "c-checkbox-indeterminate": {
-          title: "Indeterminate state",
+          title: "Estado indeterminado",
           description:
-            "Visually display when the checkbox has children selectable elements and only some are selected.",
+            "Visualmente, indique quando a checkbox possui elementos filhos selecionáveis e somente alguns estão selecionados.",
         },
         "c-checkbox-group": {
-          title: "Checkbox group",
+          title: "Grupo de checkboxes",
           description:
-            "Checkboxes can be grouped to work with multiple values at the same time.",
+            "Os checkboxes podem ser agrupados para trabalhar com múltiplos valores ao mesmo tempo.",
         },
         "c-checkbox-a11y-keyboard": {
-          title: "Keyboard support",
+          title: "Suporte ao teclado",
           description:
-            "Checkbox selections should be triggered with the keyboard. Using native elements for this should provide this kind of interaction automatically.",
+            "As seleções dos checkboxes devem ser acionados com o teclado. Usar elementos nativos para isso deve fornecer esse tipo de interação automaticamente.",
         },
       },
     },
     "c-divider": {
-      title: "Divider",
-      description: "Element for visual content separation",
+      title: "Divisor",
+      description: "Elemento para separação visual de conteúdo",
       checklist: {
         "c-divider-direction": {
-          title: "Direction",
+          title: "Direção",
           description:
-            "Dividers should separate both horizontal and vertical lists of content.",
+            "Divisores devem separar tanto listas de conteúdo horizontal quanto vertical.",
         },
         "c-divider-a11y-role": {
-          title: "Accessibility role",
+          title: "Role de acessibilidade",
           description:
-            "If the divider is playing a non-decorative role in the layout, its role should be announced by the assistive technologies.",
+            "Se o divisor desempenha um papel funcional no layout, além do papel decorativo, seu papel deve ser anunciado pelas tecnologias assistivas.",
         },
       },
     },
     "c-dropdown": {
       title: "Dropdown",
-      description: "List of contextual actions that users can trigger.",
+      description: "Lista de ações contextuais que os usuários podem acionar.",
       checklist: {
         "c-dropdown-composition": {
-          title: "Content composition",
+          title: "Composição de conteúdo",
           description:
-            "Dropdowns may be used for context menus, product navigation, and other purposes. Their content area should be flexible enough to support various types of content, including other components.",
+            "Dropdowns podem ser usados para menus contextuais, navegação de produtos e outros fins. A área de conteúdo deles deve ser flexível o suficiente para suportar vários tipos de conteúdo, incluindo outros componentes.",
         },
         "c-dropdown-hover": {
-          title: "Hover trigger",
+          title: "Acionamento por hover",
           description:
-            "Dropdown should support displaying its content on hover events. The same behavior should happen for keyboard users once its trigger gets focused.",
+            "O dropdown deve suportar a exibição do seu conteúdo em eventos de hover. O mesmo comportamento deve ocorrer para usuários de teclado quando o seu acionador recebe foco.",
         },
         "c-dropdown-positioning": {
-          title: "Dynamic positioning",
+          title: "Posicionamento dinâmico",
           description:
-            "Dropdown content should be displayed based on the current position of the trigger element on the screen and always stay visible to the user.",
+            "O conteúdo do dropdown deve ser exibido com base na posição atual do elemento de gatilho na tela e sempre permanecer visível para o usuário.",
         },
         "c-dropdown-responsive": {
-          title: "Responsiveness",
+          title: "Responsividade",
           description:
-            "Dropdown content should be adjusted if it doesn’t fit the screen the same way on mobile devices as on desktop.",
+            "O conteúdo do dropdown deve ser ajustado se não couber na tela da mesma forma em dispositivos móveis como em desktop.",
         },
         "c-dropdown-a11y-focus": {
-          title: "Focus trapping",
+          title: "Captura de foco",
           description:
-            "Once dropdown content is opened, the focus ring should move inside its content area and return to the trigger element when closed.",
+            "Quando o conteúdo do dropdown é aberto, o foco deve ser movido para dentro da área de conteúdo e retornar ao elemento acionador quando fechado.",
         },
         "c-dropdown-a11y-keyboard": {
-          title: "Keyboard navigation",
+          title: "Suporte ao teclado",
           description:
-            "Dropdown should be accessible for keyboard and assistive technologies. Users should be able to close the dropdown using a separate close action, or once they tab outside the content area.",
+            "O dropdown deve ser acessível para teclado e tecnologias assistivas. Os usuários devem ser capazes de fechar o dropdown usando uma ação separada de fechamento ou ao pressionar uma área fora do conteúdo do dropdown.",
         },
       },
     },
     "c-icon": {
-      title: "Icon",
-      description: "Wrapper for SVG assets to control their appearance",
+      title: "Ícone",
+      description:
+        "Wrapper para elementos SVG para controlar sua apresentação visual",
       checklist: {
         "c-icon-colors": {
-          title: "Colors",
+          title: "Cores",
           description:
-            "Icons should support color values available in design system tokens. Additionally, it’s a good practice to support color inheritance from their parent element.",
+            "Os ícones devem suportar os valores de cor disponíveis nos tokens do design system. Além disso, é uma boa prática permitir a herança de cor a partir do elemento pai.",
         },
         "c-icon-sizes": {
-          title: "Sizes",
+          title: "Tamanhos",
           description:
-            "Icons should have several predefined sizes to provide a holistic experience across the product. Typography pairings may be used for these size values to ensure they align with the text sizes.",
+            "Os ícones devem possuir diversos tamanhos pré-definidos para oferecer uma experiência completa em todo o produto. É recomendável utilizar combinações tipográficas para esses valores de tamanho, assegurando que estejam alinhados com os tamanhos do texto.",
         },
         "c-icon-a11y-decoration": {
-          title: "Interactivity",
+          title: "Interatividade",
           description:
-            "Icons are used as decorative elements most of the time. If an icon is meant to be interactive – that functionality should be included using buttons, links, or other interactive components.",
+            "A maioria das vezes, os ícones são usados como elementos decorativos. Se um ícone tiver a intenção de ser interativo, essa funcionalidade deve ser incluída usando botões, links ou outros componentes interativos.",
         },
       },
     },
     "c-image": {
-      title: "Image",
+      title: "Imagem",
       description:
-        "Utility for displaying images and controlling their behavior.",
+        "Utilitário para exibir imagens e controlar o seu comportamento.",
       checklist: {
         "c-image-sizes": {
-          title: "Sizes",
+          title: "Tamanhos",
           description:
-            "Image should be flexible in terms of supported sizes. Besides just supporting width and height – add support for aspect ratio to scale its proportions based on the parent element dynamically.",
+            "A imagem deve ser flexível em termos de tamanhos suportados. Além de suportar apenas largura e altura, adicione suporte para proporção de aspecto para dimensionar suas proporções com base no elemento pai de forma dinâmica.",
         },
         "c-image-fallback": {
-          title: "Image fallback",
+          title: "Recurso alternativo de imagem",
           description:
-            "Display a fallback when the image URL is incorrect or undefined. That can be an empty box with a background, an icon, or a static placeholder image.",
+            "Exiba um recurso alternativo quando a URL da imagem estiver incorreta ou indefinida. Isso pode ser uma caixa vazia com um fundo, um ícone ou uma imagem estática de substituição.",
         },
         "c-image-density": {
-          title: "Screen density support",
+          title: "Suporte à densidade de tela",
           description:
-            "Depending on the screen density, you should support loading multiple image assets of different sizes and serve the relevant one to the user.",
+            "Para atender à densidade de tela, é recomendado suportar o carregamento de múltiplos recursos de imagem em tamanhos diferentes e servir o mais adequado ao usuário.",
         },
         "c-image-a11y-alt": {
-          title: "Alt text",
+          title: "Texto alternativo",
           description:
-            "When the image is non-decorative, it should provide an alt text describing the picture contents.",
+            "Quando a imagem não for apenas decorativa, é importante fornecer um texto alternativo (alt text) descrevendo o conteúdo da imagem.",
         },
       },
     },
     "c-link": {
       title: "Link",
       description:
-        "Interactive text element used for navigation within the text paragraphs.",
+        "Elemento de texto interativo usado para navegação dentro dos parágrafos de texto.",
       checklist: {
         "c-link-icon": {
-          title: "Icon support",
+          title: "Suporte a ícones",
           description:
-            "An icon can be used next to the link to communicate the purpose of the link. Icons shouldn’t be used inside a link without a text label.",
+            "Um ícone pode ser usado ao lado do link para comunicar o propósito do link. Ícones não devem ser usados dentro de um link sem uma label de texto.",
         },
         "c-link-colors": {
-          title: "Colors",
+          title: "Cores",
           description:
-            "Links may play various roles in your product, and having a predefined color for each role should help users understand their meaning. Since the link is a text element, it should be able to automatically inherit the color defined by its parent element, the same as other text content.",
+            "Os links podem desempenhar diversos papéis no seu produto, e ter uma cor pré-definida para cada papel deve ajudar os usuários a entender o seu significado. Como o link é um elemento de texto, ele deve ser capaz de herdar automaticamente a cor definida pelo seu elemento pai, assim como outros conteúdos de texto.",
         },
         "c-link-disabled": {
-          title: "Disabled state",
+          title: "Estado desabilitado",
           description:
-            "Visually shows that the link is not interactive and restricts it from being pressed.",
+            "Indique visualmente que o link não é interativo e impeça que seja pressionado.",
         },
         "c-link-font-inheritance": {
-          title: "Font inheritance",
+          title: "Herança de fonte",
           description:
-            "Links should be able to inherit the typography styles when used as a part of the text element.",
+            "Os links devem ser capazes de herdar os estilos tipográficos quando usados como parte do elemento de texto.",
         },
         "c-link-multiline": {
-          title: "Multiline display",
+          title: "Exibição de várias linhas",
           description:
-            "When used inside a text paragraph, links should support multiline display without breaking the text flow.",
+            "Quando usados dentro de um parágrafo de texto, os links devem suportar a exibição de várias linhas sem interromper o fluxo do texto.",
         },
         "c-link-a11y-role": {
-          title: "Accessibility role",
+          title: "Role de acessibilidade",
           description:
-            "Links should correctly announce the button or link accessibility roles automatically resolve it based on the properties passed to it.",
+            "Os links devem anunciar corretamente as funções de acessibilidade do botão ou do link, resolvendo-as automaticamente com base nas propriedades passadas para ele.",
         },
       },
     },
     "c-list": {
-      title: "List",
-      description: "List is used to display a list of items.",
+      title: "Lista",
+      description: "A lista é usada para exibir uma lista de itens.",
       checklist: {
         "c-list-order": {
-          title: "Order",
+          title: "Ordem",
           description:
-            "List items can use bulleted, numbered, and other styles and types of ordering.",
+            "Os itens da lista podem utilizar estilos e tipos de ordenação como marcadores, numerados e outros.",
         },
         "c-list-composition": {
-          title: "Content cmposition",
+          title: "Composição de conteúdo",
           description:
-            "List item content areas should be flexible enough to support various types of content, including other components.",
+            "As áreas de conteúdo dos itens da lista devem ser flexíveis o suficiente para suportar vários tipos de conteúdo, incluindo outros componentes.",
         },
         "c-list-a11y-role": {
-          title: "Accessibility role",
+          title: "Role acessível",
           description:
-            "Assistive technologies should announce lists with the correct role and number of items displayed.",
+            "As tecnologias assistivas devem anunciar listas com a role correta e o número de itens exibidos.",
         },
       },
     },
     "c-loading-indicator": {
-      title: "Loading indicator",
+      title: "Indicador de carregamento",
       description:
-        "Animated element that communicates progress without telling how long the process will take.",
+        "Elemento animado que indica o progresso sem informar a duração exata do processo.",
       checklist: {
         "c-loading-indicator-colors": {
-          title: "Colors",
+          title: "Cores",
           description:
-            "Loading indicators might be used inside the elements with various roles and follow their color scheme.",
+            "Os indicadores de carregamento podem ser utilizados em elementos com diferentes funções e devem seguir o esquema de cores correspondente a esses elementos.",
         },
         "c-loading-indicators-sizes": {
-          title: "Sizes",
+          title: "Tamanhos",
           description:
-            "Loading indicators might provide multiple sizes, depending on the size of the areas where the loading indicator is rendered.",
+            "Os indicadores de carregamento podem oferecer diferentes tamanhos, de acordo com o tamanho das áreas em que são exibidos.",
         },
         "c-loading-indicator-time": {
-          title: "Loading duration",
+          title: "Duração do carregamento",
           description:
-            "In some cases, the wait time can’t be determined. The loading indicator should be shown until the loading finishes or an error happens. In other cases, it’s better to indicate the time left until the loading is finished.",
+            "Em alguns casos, o tempo de espera não pode ser determinado. O indicador de carregamento deve ser exibido até que o carregamento seja concluído ou ocorra um erro. Em outros casos, é melhor indicar o tempo restante até que o carregamento seja concluído.",
         },
         "c-loading-indicator-a11y-reduced-motion": {
-          title: "Reduced motion",
+          title: "Animação reduzida",
           description:
-            "The loading indicator should be synced with the system motion settings and reduce its animation speed when reduced motion settings are turned on.",
+            "O indicador de carregamento deve estar sincronizado com as configurações de movimento do sistema e reduzir a velocidade de animação quando as configurações de movimento reduzido estiverem ativadas.",
         },
         "c-loading-indicator-a11y-label": {
-          title: "Accessibility label",
+          title: "Label de acessibilidade",
           description:
-            "If the loading indicator is standalone – provide an accessibility label for the content area it’s loading.",
+            "Se o indicador de carregamento estiver isolado, forneça uma label acessível para a área de conteúdo que está sendo carregada.",
         },
       },
     },
     "c-modal": {
       title: "Modal",
       description:
-        "Container appearing in front of the main content to provide critical information or an actionable piece of content.",
+        "Contêiner que aparece na frente do conteúdo principal para fornecer informações críticas ou um conteúdo acionável.",
       checklist: {
         "c-modal-composition": {
-          title: "Content composition",
+          title: "Composição de conteúdo",
           description:
-            "The main content area should be flexible enough to support various types of content, including other components.",
+            "A área de conteúdo principal deve ser flexível o suficiente para suportar vários tipos de conteúdo, incluindo outros componentes.",
         },
         "c-modal-actions": {
-          title: "Supplementary actions",
+          title: "Ações suplementares",
           description:
-            "Since content in the modal may be actionable, it’s essential to have an area for action elements. This area is usually located at the bottom of the modal container.",
+            "Como o conteúdo no modal pode ser acionável, é essencial ter uma área para elementos de ação. Essa área geralmente está localizada na parte inferior do contêiner modal.",
         },
         "c-modal-close": {
-          title: "Close action",
+          title: "Ação de fechar",
           description:
-            "Modals should provide a straightforward way to close, as they block content when open. This may be either a separate close button or one of the supplementary actions.",
+            "Os modais devem oferecer uma forma direta de fechamento, pois eles bloqueiam o conteúdo quando estão abertos. Isso pode ser feito através de um botão de fechar separado ou como uma das ações complementares disponíveis.",
         },
         "c-modal-positioning": {
-          title: "Positioning",
+          title: "Posicionamento",
           description:
-            "Modals can be positioned in the center of the screen or displayed as sliding sheets on either side of the screen.",
+            "Os modais podem ser posicionados no centro da tela ou exibidos como painéis deslizantes em um dos lados da tela.",
         },
         "c-modal-sizes": {
-          title: "Sizes",
+          title: "Tamanhos",
           description:
-            "Provide support for changing the modal height and width based on the content you display.",
+            "Forneça suporte para alterar a altura e largura do modal com base no conteúdo que você exibe.",
         },
         "c-modal-a11y-focus": {
-          title: "Focus trapping",
+          title: "Captura de foco",
           description:
-            "When the modal gets opened, the user focus should move to the first focusable element and stay trapped inside it. When the modal is closed, the focus should return to the last active element.",
+            "Ao abrir o modal, o foco do usuário deve ser movido para o primeiro elemento com foco e permanecer restrito a ele. Quando o modal for fechado, o foco deve retornar ao último elemento ativo.",
         },
         "c-modal-a11y-keyboard": {
-          title: "Keyboard navigation",
+          title: "Navegação por teclado",
           description:
-            "It should be possible to close a modal by pressing the Esc key, and all the focusable elements inside the modal container should be accessible with keyboard navigation.",
+            "Deve ser possível fechar um modal ao pressionar a tecla Esc, e todos os elementos com foco dentro do contêiner do modal devem ser acessíveis por meio da navegação pelo teclado.",
         },
         "c-modal-a11y-labels": {
-          title: "Title and subtitle labeling",
+          title: "Título e subtítulo",
           description:
-            "Modals should use the correct accessibility role, and they should be labeled by the title and subtitle elements. If there is no visible title or subtitle, it may use an accessibility label instead.",
+            "Os modais devem usar a role de acessibilidade correta e devem ser caracterizados pelos elementos de título e subtítulo. Se não houver título ou subtítulo visível, a modal pode usar uma label acessível.",
         },
       },
     },
     "c-pagination": {
-      title: "Pagination",
-      description: "Pagination enables a selection from a range of pages",
+      title: "Paginação",
+      description:
+        "A paginação permite a seleção de uma variedade de páginas dentro de um intervalo.",
       checklist: {
         "c-pagination-selected": {
-          title: "Selected page state",
+          title: "Estado da página selecionada",
           description:
-            "Visually highlight the selected page in the list and make it non-interactive.",
+            "Destaque visualmente a página selecionada na lista e torne-a não interativa.",
         },
         "c-pagination-ranges": {
-          title: "Page display ranges",
+          title: "Intervalos de exibição de páginas",
           description:
-            "Define the ranges for pages rendered around the selected page. It helps render only a limited number of pages but lets the users navigate faster than moving by 1 page at a time.",
+            "Defina os intervalos de páginas a serem renderizadas ao redor da página selecionada. Isso ajuda a exibir apenas um número limitado de páginas, permitindo que os usuários naveguem mais rapidamente do que se tivessem que avançar uma página de cada vez.",
         },
         "c-pagination-amount": {
-          title: "Amount of items per page",
+          title: "Quantidade de itens por página",
           description:
-            "Provide an option to select the number of paginated items displayed on the page.",
+            "Forneça uma opção para selecionar o número de itens paginados exibidos na página.",
         },
         "c-pagination-indeterminate": {
-          title: "Indeterminate amount of pages",
+          title: "Quantidade indeterminada de páginas",
           description:
-            "When you don’t know the total number of available pages beforehand, use a different display mode to navigate pages individually.",
+            "Quando você não conhece antecipadamente o número total de páginas disponíveis, utilize um modo de exibição diferente que permita navegar pelas páginas individualmente.",
         },
         "c-pagination-a11y-label": {
-          title: "Full page label announcements",
+          title: "Labels de paginação",
           description:
-            "Pagination should provide clear, dynamic labels for each page for assistive technologies instead of just announcing the number without context.",
+            "A paginação deve fornecer labels claras e dinâmicas para cada página, a fim de oferecer informações contextuais às tecnologias assistivas, em vez de apenas anunciar o número da página sem contexto.",
         },
         "c-pagination-a11y-state": {
-          title: "State announcement",
+          title: "Anúncio de estado",
           description:
-            "Pagination should announce when a selected page is focused.",
+            "A paginação deve anunciar quando uma página selecionada está em foco.",
         },
       },
     },
     "c-progress": {
-      title: "Progress bar",
+      title: "Barra de progresso",
       description:
-        "Bar displaying progress for a task that takes a long time or consists of several steps.",
+        "Barra de progresso que exibe o avanço de uma tarefa que leva muito tempo ou consiste em várias etapas.",
       checklist: {
         "c-progress-label": {
           title: "Label",
           description:
-            "Provide support for visually displaying a label explaining what a progress bar is responsible for.",
+            "Ofereça suporte para exibir visualmente uma label que explique qual é a responsabilidade da barra de progresso.",
         },
         "c-progress-sizes": {
-          title: "Sizes",
+          title: "Tamanhos",
           description:
-            "Loading indicators might provide multiple sizes, depending on the size of the areas where the loading indicator is rendered.",
+            "Os indicadores de carregamento podem oferecer diferentes tamanhos, dependendo do tamanho das áreas em que são renderizados.",
         },
         "c-progress-duration": {
-          title: "Duration",
+          title: "Duração",
           description:
-            "In some cases, the wait time can’t be determined. The loading indicator should be shown until the loading finishes or an error happens. In other cases, it’s better to indicate the time left until the loading is complete.",
+            "Em alguns casos, o tempo de espera não pode ser determinado. O indicador de carregamento deve ser exibido até que o carregamento seja concluído ou ocorra um erro. Em outras situações, é preferível indicar o tempo restante até que o carregamento seja concluído.",
         },
         "c-progress-a11y-label": {
-          title: "Accessibility label",
+          title: "Label de acessibilidade",
           description:
-            "Provide support for adding an accessibility label in case you can’t display a label in the interface.",
+            "Forneça suporte para adicionar uma label acessível caso não seja possível exibir um rótulo na interface.",
         },
       },
     },
     "c-radio": {
-      title: "Input radio",
+      title: "Radio",
       description:
-        "Radio is a form element used for selecting one option from a list.",
+        "O radio é um elemento de formulário usado para selecionar uma opção em uma lista.",
       checklist: {
         "c-radio-label": {
           title: "Label",
           description:
-            "There should be a text label linked with the radio field. Clicking the label should also trigger the checkbox selection. If the label is not rendered on the page, assistive technologies should still announce it.",
+            "Deve haver uma label de texto vinculada ao radio. Clicar na label também deve acionar a marcação do checkbox. Se a label não for renderizada na página, as tecnologias assistivas ainda devem anunciá-la.",
         },
         "c-radio-checked": {
-          title: "Checked state",
+          title: "Estado selecionado",
           description:
-            "Display when the radio gets selected and is used for the form submission.",
+            "Exiba quando o radio está selecionado e é utilizado para o envio do formulário",
         },
         "c-radio-error": {
-          title: "Error state",
+          title: "Estado de erro",
           description:
-            "Use an error state for form validation when the error is related to the radio field. Always use a text error along with a different field color.",
+            "Use um estado de erro para validação de formulário quando o erro estiver relacionado ao componente de radio. Sempre use um texto de erro junto com uma cor de campo diferente.",
         },
         "c-radio-disabled": {
-          title: "Disabled state",
+          title: "Estado desativado",
           description:
-            "Use a disabled state to prevent radio interactions and remove its value from the submitted form values.",
+            "Utilize um estado desativado para evitar interações com os botões de radio e remova o seu valor dos valores enviados pelo formulário.",
         },
         "c-radio-group": {
-          title: "Radio group",
+          title: "Grupo de radios",
           description:
-            "Radio buttons are always used as a group to avoid locking the selection after one of the radio buttons is checked.",
+            "Os botões de radio são sempre usados em grupo para evitar a fixação da seleção após um dos botões de radio ser marcado.",
         },
         "c-radio-a11y-keyboard": {
-          title: "Keyboard support",
+          title: "Suporte ao teclado",
           description:
-            "Radio selection should be triggered with the keyboard. Using native elements for this should provide this kind of interaction automatically.",
+            "A seleção do radio deve ser acionada com o teclado. O uso de elementos nativos para isso deve proporcionar esse tipo de interação automaticamente.",
         },
       },
     },
     "c-select": {
       title: "Select",
       description:
-        "Select lets you choose a single value from a list of options.",
+        "O select permite que você escolha um único valor em uma lista de opções.",
       checklist: {
         "c-select-label": {
           title: "Label",
           description:
-            "Text labels linked with the Select field can provide users with additional context. Clicking the label should also trigger the select dropdown.",
+            "Labels de texto vinculadas ao campo de select podem fornecer aos usuários um contexto adicional. Clicar na label também deve abrir o dropdown.",
         },
         "c-select-error": {
-          title: "Error state",
+          title: "Estado de erro",
           description:
-            "Use an error state for form validation when the error is related to the select only. Display an additional error icon for better accessibility.",
+            "Utilize um estado de erro para validação do formulário quando o erro estiver relacionado apenas à seleção. Exiba um ícone de erro adicional para melhor a acessibilidade.",
         },
         "c-select-disabled": {
-          title: "Disabled state",
+          title: "Estado desativado",
           description:
-            "Use the disabled state to prevent Select interactions and remove its value from the submitted form values.",
+            "Utilize um estado desativado para impedir interações com o select e remova o seu valor dos valores enviados pelo formulário.",
         },
         "c-select-placeholder": {
           title: "Placeholder",
           description:
-            "When no value is selected – display a placeholder value. You can use the same placeholder value to let users reset the select value back to the default.",
+            "Quando nenhum valor é selecionado, exiba um placeholder. Você pode usar o mesmo valor do placeholder para permitir que os usuários redefinam o valor da seleção de volta para o padrão.",
         },
         "c-select-helper": {
-          title: "Helper text",
+          title: "Texto auxiliar",
           description:
-            "Provide users with additional context about the select purpose and the requirements for the selection.",
+            "Forneça aos usuários um contexto adicional sobre o propósito da seleção e os requisitos para a escolha.",
         },
         "c-select-icon": {
-          title: "Icon support",
+          title: "Suporte a ícones",
           description:
-            "Add an area for displaying an icon at the start of the field to communicate the purpose of the Select as a component or the selected value.",
+            "Adicione uma área para exibir um ícone no início do campo para comunicar o propósito do select como um componente ou o valor selecionado.",
         },
         "c-select-prefix": {
-          title: "Prefix",
+          title: "Prefixo",
           description:
-            "Add an area for custom content to make the selection more contextual for the user. For example, you can display country flags in your country code selection.",
+            "Adicione uma área para conteúdo personalizado para tornar a seleção mais contextual para o usuário. Por exemplo, você pode exibir bandeiras de países na seleção de códigos de país.",
         },
         "c-select-sizes": {
-          title: "Sizes",
+          title: "Tamanhos",
           description:
-            "Depending on where select is going to be used, it can come in multiple sizes. For example, you can use the small size for dense areas of your application.",
+            "Dependendo de onde a seleção será usada, ela pode ter vários tamanhos. Por exemplo, você pode usar o tamanho pequeno para áreas mais densas da sua aplicação.",
         },
         "c-select-a11y-label": {
-          title: "Accessibility label",
+          title: "Label de acessibilidade",
           description:
-            "In case you don’t provide a visual text label for select, make sure to provide an accessibility label still describing the purpose of the component.",
+            "Se você não fornecer uma label de texto visual para a seleção, certifique-se de fornecer uma label acessível que ainda descreva o propósito do componente.",
         },
       },
     },
     "c-skeleton": {
       title: "Skeleton",
       description:
-        "Placeholder replacing page elements while their data is loading.",
+        "Placeholder que substitui elementos da página enquanto os dados estão sendo carregados.",
       checklist: {
         "c-skeleton-sizes": {
-          title: "Sizes",
+          title: "Tamanhos",
           description:
-            "Skeleton should be able to match components of various sizes available in your design system to avoid unnecessary layout shifts once data is loaded.",
+            "O skeleton deve ser capaz de se adaptar aos componentes de vários tamanhos disponíveis no seu design system, evitando deslocamentos de layout desnecessários assim que os dados forem carregados.",
         },
         "c-skeleton-shapes": {
-          title: "Shapes",
+          title: "Formatos",
           description:
-            "Skeleton should be able to match components of various shapes available in your design system to keep the loading state aligned with the actual components' layout.",
+            "O Skeleton deve ser capaz de se adequar aos componentes de várias formas disponíveis no seu design system, garantindo que o estado de carregamento esteja alinhado com o layout real dos componentes.",
         },
         "c-skeleton-composition": {
-          title: "Composition",
+          title: "Composição",
           description:
-            "You can compose simple skeletons into more advanced layouts. You don’t have to 1:1 map your application interface with skeletons.",
+            "Você pode compor skeletons simples em layouts mais avançados. Você não precisa mapear a interface do seu aplicativo 1:1 com os skeletons.",
         },
         "c-skeleton-a11y-motion": {
-          title: "Reduced motion",
+          title: "Animação reduzida",
           description:
-            "Reduce or altogether remove the animation for the reduced motion user preference.",
+            "Reduza ou remova completamente a animação para a preferência do usuário com movimento reduzido.",
         },
       },
     },
     "c-switch": {
       title: "Switch",
       description:
-        "Toggle for immediately changing the state of a single item.",
+        "Toggle para alterar imediatamente o estado de um único item.",
       checklist: {
         "c-switch-label": {
           title: "Label",
           description:
-            "There should be a text label linked with the switch. Clicking the label should also trigger the switch selection. If the label is not rendered on the page, assistive technologies should still announce it.",
+            "Deve haver uma label de texto associada ao switch. Clicar na label também deve ativar a seleção do switch. Se a label não estiver visível na página, as tecnologias assistivas ainda devem anunciá-la.",
         },
         "c-switch-checked": {
-          title: "Checked state",
+          title: "Estado selecionado",
           description:
-            "Display when the switch gets selected and activates the underlying functionality. Often, a switch is used to immediately update the data after it’s selected.",
+            "Exiba quando o switch é selecionado e ative a funcionalidade subjacente. Frequentemente, um switch é usado para atualizar imediatamente os dados após ser selecionado.",
         },
         "c-switch-disabled": {
-          title: "Disabled state",
-          description: "Use a disabled state to prevent switch interactions.",
+          title: "Estado desativado",
+          description:
+            "Utilize o estado desativado para impedir interações com o switch.",
         },
         "c-switch-a11y-keyboard": {
-          title: "Keyboard navigation",
+          title: "Navegação por teclado",
           description:
-            "Switch selection should be triggered with the keyboard. Using native elements for this should provide this kind of interaction automatically.",
+            "A seleção do switch deve ser acionada pelo teclado. O uso de elementos nativos para isso deve fornecer esse tipo de interação automaticamente.",
         },
         "c-switch-a11y-label": {
-          title: "Accessibility label",
+          title: "Label de acessibilidade",
           description:
-            "In case you don’t provide a visual text label for Switch, make sure to provide an accessibility label still describing the purpose of the component.",
+            "Caso você não forneça uma label de texto visual para o switch, certifique-se de fornecer uma label acessível que descreva o propósito do componente.",
         },
       },
     },
     "c-tabs": {
       title: "Tabs",
-      description: "Navigation between multiple pages or content sections.",
+      description: "Navegação entre várias páginas ou seções de conteúdo.",
       checklist: {
         "c-tabs-composition": {
-          title: "Content composition",
+          title: "Composição de conteúdo",
           description:
-            "Content area should be flexible enough to support various types of content, including other components.",
+            "A área de conteúdo deve ser flexível o suficiente para suportar diversos tipos de conteúdo, incluindo outros componentes.",
         },
         "c-tabs-variants": {
-          title: "Variants",
+          title: "Variantes",
           description:
-            "To support different rendering contexts, tabs might support multiple variants. For example, they might be rendered as pills when used directly on the page while using an underlined variant for tabs rendered inside cards.",
+            "Para suportar diferentes contextos de renderização, as tabs podem ter várias variantes. Por exemplo, elas podem ser renderizadas como pills quando usadas diretamente na página, enquanto utilizam uma variante sublinhada para abas renderizadas dentro de cards.",
         },
         "c-tabs-selected": {
-          title: "Selected state",
+          title: "Estado selecionado",
           description:
-            "Since tabs always display the content from one of their panels, one of the tab triggers should always be selected and highlighted visually.",
+            "Como as tabs sempre exibem o conteúdo de um de seus painéis, um dos acionadores da tab deve estar sempre selecionado e destacado visualmente.",
         },
         "c-tabs-disabled": {
-          title: "Disabled state",
+          title: "Estado desativado",
           description:
-            "Tab triggers can be disabled to prevent users from switching to a specific tab panel.",
+            "Os acionadores das tabs podem ser desativados para evitar que os usuários alterem para um painel de tab específico.",
         },
         "c-tabs-icon": {
-          title: "Icon support",
+          title: "Suporte a ícones",
           description:
-            "To better illustrate the meaning of each tab, you can display an icon next to the tab trigger text.",
+            "Para ilustrar melhor o significado de cada tab, você pode exibir um ícone ao lado do texto do acionador da tab.",
         },
         "c-tabs-equal": {
-          title: "Equal width layout",
+          title: "Layout de largura igual",
           description:
-            "When used to take the entire width of the parent container, tab triggers can be stretched to take equal horizontal space.",
+            "Quando usados para ocupar toda a largura do contêiner pai, os acionadores das tabs podem ser esticados para ocupar espaços horizontais iguais.",
         },
         "c-tabs-a11y-keyboard": {
-          title: "Keyboard suppoort",
+          title: "Suporte ao teclado",
           description:
-            "When interacting with tabs using the keyboard, they should support arrow navigation to switch between the previous and next panels. The Home and End buttons should also move the selection to the first and last panels, respectively.",
+            "Ao interagir com as tabs usando o teclado, elas devem suportar a navegação com as setas para alternar entre os painéis anterior e próximo. Os botões Home e End também devem mover a seleção para o primeiro e último painéis, respectivamente.",
         },
       },
     },
     "c-text-area": {
-      title: "Text area",
-      description: "Form field to enter and edit multiline text.",
+      title: "Área de texto",
+      description:
+        "Campo de formulário para inserir e editar texto multilinha.",
       checklist: {
         "c-text-area-label": {
           title: "Label",
           description:
-            "Text labels linked with the text area can provide users with additional context. Clicking the label should move the focus to the field.",
+            "Labels de texto vinculadas à área de texto podem fornecer aos usuários um contexto adicional. Clicar na label deve mover o foco para o campo.",
         },
         "c-text-area-error": {
-          title: "Error state",
+          title: "Estado de erro",
           description:
-            "Use an error state for form validation when the error is related only to the Text area.",
+            "Use um estado de erro para a validação do formulário quando o erro estiver relacionado apenas à área de texto.",
         },
         "c-text-area-disabled": {
-          title: "Disabled state",
+          title: "Estado desativado",
           description:
-            "Use a disabled state to prevent text area interactions and remove its value from the submitted form values.",
+            "Use o estado desabilitado para impedir interações com a área de texto e remover o seu valor dos valores do formulário enviados.",
         },
         "c-text-area-placeholder": {
           title: "Placeholder",
           description:
-            "When the text area value is empty – display a placeholder value. Make sure that it’s not used instead of the label.",
+            "Quando o valor da área de texto estiver vazio, exiba um valor placeholder. Certifique-se de que ele não seja usado no lugar da label.",
         },
         "c-text-area-helper": {
-          title: "Helper text",
+          title: "Texto auxiliar",
           description:
-            "Provide users with additional context about the Text area purpose and the requirements for the expected value.",
+            "Forneça aos usuários um contexto adicional sobre o objetivo da área de texto e os requisitos para o valor esperado.",
         },
         "c-text-area-sizes": {
-          title: "Sizes",
+          title: "Tamanhos",
           description:
-            "Depending on where the text area will be used, it can come in multiple sizes. For example, you can use the large size for the forms on marketing pages.",
+            "Dependendo de onde a text rea será usada, ela pode ter vários tamanhos. Por exemplo, você pode usar o tamanho grande para os formulários em páginas de marketing.",
         },
         "c-text-area-a11y-label": {
-          title: "Accessibility label",
+          title: "Label de acessibilidade",
           description:
-            "In case you don’t provide a visual text label for the text area, make sure to provide an accessibility label still describing the purpose of the component.",
+            "Caso não seja fornecida uma label de texto visual para a área de texto, certifique-se de fornecer uma label acessível que descreva o propósito do componente.",
         },
       },
     },
     "c-text-field": {
-      title: "Text field",
-      description: "Form field to enter and edit single-line text.",
+      title: "Campo de texto",
+      description:
+        "Campo de formulário para inserir e editar texto de uma única linha.",
       checklist: {
         "c-text-field-label": {
           title: "Label",
           description:
-            "Text labels linked with the text field can provide users with additional context. Clicking the label should move the focus to the field.",
+            "Labels de texto vinculadas ao campo de texto podem fornecer aos usuários um contexto adicional. Clicar na label deve mover o foco para o campo.",
         },
         "c-text-field-error": {
-          title: "Error state",
+          title: "Estado de erro",
           description:
-            "Use an error state for form validation when the error is related only to the text field.",
+            "Use um estado de erro para a validação do formulário quando o erro estiver relacionado apenas ao campo de texto.",
         },
         "c-text-field-disabled": {
-          title: "Disabled state",
+          title: "Estado desativado",
           description:
-            "Use a disabled state to prevent text field interactions and remove its value from the submitted form values.",
+            "Use o estado desabilitado para impedir interações com o campo de texto e remover o seu valor dos valores do formulário enviados.",
         },
         "c-text-field-placeholder": {
           title: "Placeholder",
           description:
-            "When the text field value is empty – display a placeholder value. Make sure that it’s not used instead of the label.",
+            "Quando o valor do campo de texto estiver vazio, exiba um valor placeholder. Certifique-se de que ele não seja usado no lugar da label.",
         },
         "c-text-field-helper": {
-          title: "Helper text",
+          title: "Texto auxiliar",
           description:
-            "Provide users with additional context about the text field purpose and the requirements for the expected value.",
+            "Forneça aos usuários um contexto adicional sobre o objetivo do campo de texto e os requisitos para o valor esperado.",
         },
         "c-text-field-icon": {
-          title: "Icon support",
+          title: "Suporte a ícones",
           description:
-            "Add an area for displaying an icon at the start of the field to communicate the purpose of the text field as a component or the field value.",
+            "Adicione uma área para exibir um ícone no início do campo para comunicar o objetivo do campo de texto como um componente ou o valor do campo.",
         },
         "c-text-field-affix": {
-          title: "Prefix / Suffix",
+          title: "Prefixo / Sufixo",
           description:
-            "Add an area for custom content to make the selection more contextual for the user. For example, you can display payment providers in the text field for credit card numbers.",
+            "Adicione uma área para conteúdo personalizado para tornar a seleção mais contextual para o usuário. Por exemplo, você pode exibir provedores de pagamento no campo de texto para números de cartão de crédito.",
         },
         "c-text-field-sizes": {
-          title: "Sizes",
+          title: "Tamanhos",
           description:
-            "Depending on where the text field will be used, it can come in multiple sizes. For example, you can use the large size for the forms on marketing pages.",
+            "Dependendo de onde o campo de texto será usado, ele pode ter vários tamanhos. Por exemplo, você pode usar o tamanho grande para os formulários em páginas de marketing.",
         },
         "c-text-field-a11y-label": {
-          title: "Accessibility label",
+          title: "Label de acessibilidade",
           description:
-            "In case you don’t provide a visual text label for the text field, make sure to provide an accessibility label still describing the purpose of the component.",
+            "Caso você não forneça uma etiqueta visual de texto para o campo de texto, certifique-se de fornecer uma label acessível que descreva o propósito do componente.",
         },
       },
     },
     "c-toast": {
       title: "Toast",
       description:
-        "Notification message or a piece of information displayed above the page content.",
+        "Mensagem de notificação ou uma informação exibida acima do conteúdo da página.",
       checklist: {
         "c-toast-composition": {
-          title: "Content composition",
+          title: "Composição de conteúdo",
           description:
-            "Content area should be flexible enough to support various types of content, including other components.",
+            "A área de conteúdo deve ser flexível o suficiente para suportar vários tipos de conteúdo, incluindo outros componentes.",
         },
         "c-toast-colors": {
-          title: "Colors",
+          title: "Cores",
           description:
-            "Depending on the role of the notification displayed in the toast, it can come in multiple colors. For example, it can be colored red for error notifications.",
+            "Dependendo da função da notificação exibida no toast, ela pode ter cores diferentes. Por exemplo, pode ser vermelha para notificações de erro.",
         },
         "c-toast-icon": {
-          title: "Icon support",
+          title: "Suporte a ícones",
           description:
-            "Add an area for displaying an icon at the start of the toast to communicate the purpose of the notification.",
+            "Adicione uma área para exibir um ícone no início do toast para comunicar o objetivo da notificação. Isso ajudará os usuários a identificarem rapidamente o tipo de notificação e sua finalidade.",
         },
         "c-toast-timeout": {
           title: "Timeout",
           description:
-            "Toasts are usually dismissed after a timeout. Make sure to provide a long enough timeout to let the users read the message. If there is no timeout – provide a button to close the notification.",
+            "Os toasts geralmente são fechados automaticamente após um determinado período de tempo. Certifique-se de fornecer um tempo de duração suficientemente longo para que os usuários possam ler a mensagem. Caso não haja um tempo de duração definido, inclua um botão para fechar a notificação.",
         },
         "c-toast-stacking": {
-          title: "Stacking",
+          title: "Empilhamento",
           description:
-            "When multiple toasts have been triggered, stack them on top of each other to avoid cluttering the screen.",
+            "Quando vários toasts são acionados, empilhe-os um sobre o outro para evitar a desordem na tela.",
         },
         "c-toast-action": {
-          title: "Supplementary action",
+          title: "Ação suplementar",
           description:
-            "Actions in the notifications should be contextual to the notification purpose. For example, if you notify the user about deleting content, an action element can help them undo this operation.",
+            "As ações nas notificações devem ser contextuais ao propósito da notificação. Por exemplo, se você notificar o usuário sobre a exclusão de conteúdo, um elemento de ação pode ajudá-lo a desfazer essa operação.",
         },
         "c-toast-a11y-focus": {
-          title: "Focus management",
+          title: "Gerenciamento de foco",
           description:
-            "When toasts have actions, they should be focusable from the keyboard to trigger them. While the focus is inside the toast container – timeout should get disabled.",
+            "Quando os toasts possuem ações, elas devem ser acessíveis por meio do teclado para serem acionadas. Enquanto o foco estiver dentro do contêiner do toast, o timeout deve ser desabilitado.",
         },
         "c-toast-a11y-motion": {
-          title: "Reduced motion",
+          title: "Animação reduzida",
           description:
-            "Reduce or altogether remove the animation for the reduced motion user preference.",
+            "Reduza ou remova completamente a animação para a preferência do usuário com movimento reduzido.",
         },
       },
       "c-tooltip": {
         title: "Tooltip",
         description:
-          "Contextual text information display on element hover or focus.",
+          "Exibição de informações textuais contextuais ao passar o mouse ou focar em um elemento.",
         checklist: {
           "c-tooltip-positioning": {
-            title: "Positioning",
+            title: "Posicionamento",
             description:
-              "When the tooltip default position doesn’t let it fit into the viewport – make sure to dynamically switch its position to another value.",
+              "Quando a posição padrão da tooltip não permite que ela caiba na tela, certifique-se de alternar dinamicamente sua posição para outro valor.",
           },
           "c-tooltip-timeout": {
             title: "Timeout",
             description:
-              "Wait briefly before opening the Tooltip to ensure they don’t open while the user moves their cursor around the screen.",
+              "Aguarde brevemente antes de abrir a tooltip para garantir que ela não seja aberta enquanto o usuário move o cursor pela tela.",
           },
           "c-tooltip-a11y-keyboard": {
-            title: "Keyboard support",
+            title: "Suporte ao teclado",
             description:
-              "Tooltips should be accessible not only on mouse hover but also on the trigger element focus. ",
+              "As tooltips devem ser acessíveis não apenas ao passar o mouse sobre o elemento acionador, mas também ao focar nele.",
           },
         },
       },
