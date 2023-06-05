@@ -1020,26 +1020,26 @@ export default {
             "Reduza ou remova completamente a animação para a preferência do usuário com movimento reduzido.",
         },
       },
-      "c-tooltip": {
-        title: "Tooltip",
-        description:
-          "Exibição de informações textuais contextuais ao passar o mouse ou focar em um elemento.",
-        checklist: {
-          "c-tooltip-positioning": {
-            title: "Posicionamento",
-            description:
-              "Quando a posição padrão da tooltip não permite que ela caiba na tela, certifique-se de alternar dinamicamente sua posição para outro valor.",
-          },
-          "c-tooltip-timeout": {
-            title: "Timeout",
-            description:
-              "Aguarde brevemente antes de abrir a tooltip para garantir que ela não seja aberta enquanto o usuário move o cursor pela tela.",
-          },
-          "c-tooltip-a11y-keyboard": {
-            title: "Suporte ao teclado",
-            description:
-              "As tooltips devem ser acessíveis não apenas ao passar o mouse sobre o elemento acionador, mas também ao focar nele.",
-          },
+    },
+    "c-tooltip": {
+      title: "Tooltip",
+      description:
+        "Exibição de informações textuais contextuais ao passar o mouse ou focar em um elemento.",
+      checklist: {
+        "c-tooltip-positioning": {
+          title: "Posicionamento",
+          description:
+            "Quando a posição padrão da tooltip não permite que ela caiba na tela, certifique-se de alternar dinamicamente sua posição para outro valor.",
+        },
+        "c-tooltip-timeout": {
+          title: "Timeout",
+          description:
+            "Aguarde brevemente antes de abrir a tooltip para garantir que ela não seja aberta enquanto o usuário move o cursor pela tela.",
+        },
+        "c-tooltip-a11y-keyboard": {
+          title: "Suporte ao teclado",
+          description:
+            "As tooltips devem ser acessíveis não apenas ao passar o mouse sobre o elemento acionador, mas também ao focar nele.",
         },
       },
     },

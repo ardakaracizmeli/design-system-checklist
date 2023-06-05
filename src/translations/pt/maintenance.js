@@ -123,58 +123,58 @@ export default {
             "Defina prazos para o tempo de resposta às solicitações recebidas e aos relatórios de bugs, a fim de ajudar as equipes de produto a decidir se devem aguardar o lançamento oficial ou buscar uma solução temporária.",
         },
       },
-      "m-community": {
-        title: "Suporte à comunidade",
-        description:
-          "É fundamental auxiliar os designers e desenvolvedores de produto a aumentarem sua produtividade com o sistema de design, solucionar os bugs encontrados nos produtos e atender às suas necessidades. Para garantir que você obtenha esse feedback, o seu objetivo é tornar fácil e seguro para todos compartilharem suas descobertas.",
-        checklist: {
-          "m-community-channels": {
-            title: "Canais de suporte",
-            description:
-              "Crie canais de suporte nas ferramentas que você utiliza para comunicação. É uma boa ideia separá-los por plataforma, para que todos possam compartilhar de maneira confortável os detalhes específicos da plataforma relacionados aos seus problemas.",
-          },
-          "m-community-template": {
-            title: "Templates",
-            description:
-              "Elabore templates para criar solicitações de funcionalidade e relatórios de bugs. Utilize-os para solicitar links de reprodução, propostas de design e outras informações contextuais necessárias para tomar decisões, em vez de procurar manualmente por essas informações.",
-          },
-          "m-community-updates": {
-            title: "Atualizações regulares",
-            description:
-              "Você está arriscando a adoção das novas funcionalidades se estiver apenas focado na implementação, sem nunca discuti-las com a comunidade. Estabelecer uma frequência para suas atualizações ajuda a criar o hábito das equipes de produto de conferir regularmente o que há de novo no sistema e como podem aproveitá-lo ao máximo.",
-          },
-          "m-community-slots": {
-            title: "Horários de disponibilidade",
-            description:
-              "Haverá perguntas que não podem ser resolvidas em um único ticket ou chat. Reserve alguns horários disponíveis em seu calendário para que outras equipes possam agendar consultas ou discutir a implementação de funcionalidades com a sua equipe.",
-          },
+    },
+    "m-community": {
+      title: "Suporte à comunidade",
+      description:
+        "É fundamental auxiliar os designers e desenvolvedores de produto a aumentarem sua produtividade com o sistema de design, solucionar os bugs encontrados nos produtos e atender às suas necessidades. Para garantir que você obtenha esse feedback, o seu objetivo é tornar fácil e seguro para todos compartilharem suas descobertas.",
+      checklist: {
+        "m-community-channels": {
+          title: "Canais de suporte",
+          description:
+            "Crie canais de suporte nas ferramentas que você utiliza para comunicação. É uma boa ideia separá-los por plataforma, para que todos possam compartilhar de maneira confortável os detalhes específicos da plataforma relacionados aos seus problemas.",
+        },
+        "m-community-template": {
+          title: "Templates",
+          description:
+            "Elabore templates para criar solicitações de funcionalidade e relatórios de bugs. Utilize-os para solicitar links de reprodução, propostas de design e outras informações contextuais necessárias para tomar decisões, em vez de procurar manualmente por essas informações.",
+        },
+        "m-community-updates": {
+          title: "Atualizações regulares",
+          description:
+            "Você está arriscando a adoção das novas funcionalidades se estiver apenas focado na implementação, sem nunca discuti-las com a comunidade. Estabelecer uma frequência para suas atualizações ajuda a criar o hábito das equipes de produto de conferir regularmente o que há de novo no sistema e como podem aproveitá-lo ao máximo.",
+        },
+        "m-community-slots": {
+          title: "Horários de disponibilidade",
+          description:
+            "Haverá perguntas que não podem ser resolvidas em um único ticket ou chat. Reserve alguns horários disponíveis em seu calendário para que outras equipes possam agendar consultas ou discutir a implementação de funcionalidades com a sua equipe.",
         },
       },
-      "m-contribution": {
-        title: "Contribuição",
-        description:
-          "Construir design systems é um trabalho em equipe. Certifique-se de incluir as equipes de produto nessa jornada, auxiliando-as a contribuir para o sistema e permitindo que elas o defendam em toda a empresa.",
-        checklist: {
-          "m-contribution-rules": {
-            title: "Regras da casa para o sistema",
-            description:
-              "Explique às equipes de produto como funciona o seu processo de design e desenvolvimento. As equipes de design system geralmente trabalham em um ritmo mais lento do que as equipes de produto, pois há maior responsabilidade em tomar decisões escaláveis nos componentes que afetam o produto como um todo.",
-          },
-          "m-contribution-guidelines": {
-            title: "Orientações de contribuição",
-            description:
-              "Explique o que os colaboradores precisam configurar para preparar seu ambiente de design e desenvolvimento para adicionar e testar novas funcionalidades.",
-          },
-          "m-contribution-template": {
-            title: "Template para proposta de nova funcionalidade",
-            description:
-              "Elabore um template padrão para iniciar o trabalho em uma nova funcionalidade. Esse modelo deve garantir que as alterações propostas sejam aplicadas em todas as plataformas e não comprometam a utilização atual dos componentes no produto.",
-          },
-          "m-contribution-engagement": {
-            title: "Engajamento",
-            description:
-              "Assegure-se de destacar e recompensar o trabalho dos colaboradores ao fazer anúncios sobre as novas funcionalidades e ajude-os a obter apoio de seus gerentes quando eles contribuírem.",
-          },
+    },
+    "m-contribution": {
+      title: "Contribuição",
+      description:
+        "Construir design systems é um trabalho em equipe. Certifique-se de incluir as equipes de produto nessa jornada, auxiliando-as a contribuir para o sistema e permitindo que elas o defendam em toda a empresa.",
+      checklist: {
+        "m-contribution-rules": {
+          title: "Regras da casa para o sistema",
+          description:
+            "Explique às equipes de produto como funciona o seu processo de design e desenvolvimento. As equipes de design system geralmente trabalham em um ritmo mais lento do que as equipes de produto, pois há maior responsabilidade em tomar decisões escaláveis nos componentes que afetam o produto como um todo.",
+        },
+        "m-contribution-guidelines": {
+          title: "Orientações de contribuição",
+          description:
+            "Explique o que os colaboradores precisam configurar para preparar seu ambiente de design e desenvolvimento para adicionar e testar novas funcionalidades.",
+        },
+        "m-contribution-template": {
+          title: "Template para proposta de nova funcionalidade",
+          description:
+            "Elabore um template padrão para iniciar o trabalho em uma nova funcionalidade. Esse modelo deve garantir que as alterações propostas sejam aplicadas em todas as plataformas e não comprometam a utilização atual dos componentes no produto.",
+        },
+        "m-contribution-engagement": {
+          title: "Engajamento",
+          description:
+            "Assegure-se de destacar e recompensar o trabalho dos colaboradores ao fazer anúncios sobre as novas funcionalidades e ajude-os a obter apoio de seus gerentes quando eles contribuírem.",
         },
       },
     },
