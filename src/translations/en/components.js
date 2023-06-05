@@ -869,7 +869,7 @@ export default {
             "When used to take the entire width of the parent container, tab triggers can be stretched to take equal horizontal space.",
         },
         "c-tabs-a11y-keyboard": {
-          title: "Keyboard suppoort",
+          title: "Keyboard support",
           description:
             "When interacting with tabs using the keyboard, they should support arrow navigation to switch between the previous and next panels. The Home and End buttons should also move the selection to the first and last panels, respectively.",
         },

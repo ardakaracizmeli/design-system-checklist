@@ -173,7 +173,7 @@ export default {
             "Prepare a standard template for initiating the work on a new feature. This template should ensure that proposed changes will be applied across all platforms and won’t break the existing component usage in the product.",
         },
         "m-contribution-engagement": {
-          title: "Engagment",
+          title: "Engagement",
           description:
             "Make sure to highlight and reward contributors' work when making announcements about the new features and help them get support from their managers when they contribute. ",
         },
