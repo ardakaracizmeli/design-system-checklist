@@ -11,6 +11,7 @@ export default {
 
   previous: "Anterior",
   next: "Próximo",
+  completed: "Completado",
 
   exportTitle: "Compartilhe",
   exportSubtitle:

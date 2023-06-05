@@ -63,7 +63,13 @@ const CategoryRoute = (props) => {
               }),
             };
 
-            return <Section key={section.id} section={sectionData} />;
+            return (
+              <Section
+                key={section.id}
+                section={sectionData}
+                completedLabel={t.core.completed}
+              />
+            );
           })}
           <CategoryNav
             previousLabel={t.core.previous}

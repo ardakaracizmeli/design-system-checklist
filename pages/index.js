@@ -34,6 +34,7 @@ const HomeRoute = (props) => {
             key={item.id}
             total={total}
             completed={completed}
+            completedLabel={t.core.completed}
           />
           <div className={s.arrowRight}>
             <ArrowRightIcon />

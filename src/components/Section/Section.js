@@ -6,7 +6,8 @@ import { useCheckedIds } from "../../utilities/checklistsContext";
 import s from "./Section.module.css";
 
 const Section = ({ section }) => {
-  const { title, id, description, checklist, resources } = section;
+  const { title, id, description, checklist, resources, completedLabel } =
+    section;
   const { checkedIds } = useCheckedIds();
   const total = section.checklist.length;
   const completed = section.checklist.filter((item) =>
@@ -20,6 +21,7 @@ const Section = ({ section }) => {
         total={total}
         completed={completed}
         className={s.title}
+        completedLabel={completedLabel}
       />
       <p className={s.description}>{description}</p>
       <Checklist checklist={checklist} />
