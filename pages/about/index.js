@@ -90,6 +90,15 @@ const AboutText = () => {
         <li>
           <a
             className={s.link}
+            href="https://twitter.com/laisrlobato"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Laís Lobato
+          </a>
+          ,
+          <a
+            className={s.link}
             href="https://janklever.work"
             target="_blank"
             rel="noopener noreferrer"
