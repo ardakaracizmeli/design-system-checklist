@@ -1,7 +1,6 @@
 export default {
   heroTitle: "构建更好的设计系统",
-  heroSubtitle:
-    "一份帮助您计划、建立和发展您的设计系统的开源检查清单。",
+  heroSubtitle: "一份帮助您计划、建立和发展您的设计系统的开源检查清单。",
   heroAction: "开始使用",
 
   more: "了解更多?",
@@ -11,6 +10,7 @@ export default {
 
   previous: "上一页",
   next: "下一页",
+  completed: "完成",
 
   exportTitle: "传播信息",
   exportSubtitle:

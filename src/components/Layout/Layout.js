@@ -5,7 +5,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 import s from "./Layout.module.css";
 
-const Layout = ({ tCore, children }) => {
+const Layout = ({ t, children }) => {
   const { pathname } = useRouter();
   const [mounted, setMounted] = React.useState(false);
 
@@ -15,7 +15,7 @@ const Layout = ({ tCore, children }) => {
 
   return (
     <>
-      <Header tCore={tCore} />
+      <Header t={t} />
       <TransitionGroup>
         {mounted && (
           <CSSTransition
@@ -25,7 +25,7 @@ const Layout = ({ tCore, children }) => {
           >
             <div className={s.container}>
               <div className={s.content}>{children}</div>
-              <Footer tCore={tCore} />
+              <Footer t={t} />
             </div>
           </CSSTransition>
         )}

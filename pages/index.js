@@ -10,7 +10,7 @@ import { useCheckedIds } from "../src/utilities/checklistsContext";
 import s from "./index.module.css";
 
 const HomeRoute = (props) => {
-  const { tCore, tContent } = props;
+  const { t } = props;
   const keys = Object.keys(data);
   const items = keys.map((k) => data[k]);
   const { checkedIds } = useCheckedIds();
@@ -21,19 +21,20 @@ const HomeRoute = (props) => {
 
     item.sections.forEach((section) => {
       total += section.checklist.length;
-      completed += section.checklist.filter((item) =>
-        checkedIds.includes(item.id)
-      ).length;
+      completed += section.checklist.filter((id) => {
+        return checkedIds.includes(id);
+      }).length;
     });
 
     return (
       <Link href={`/category/${item.id}/`} key={item.id}>
         <a className={s.listItem}>
           <SectionTitle
-            title={tContent?.[item.id]?.title}
+            title={t?.[item.id]?.title}
             key={item.id}
             total={total}
             completed={completed}
+            completedLabel={t.core.completed}
           />
           <div className={s.arrowRight}>
             <ArrowRightIcon />
@@ -44,11 +45,11 @@ const HomeRoute = (props) => {
   };
 
   return (
-    <Layout tCore={tCore}>
+    <Layout t={t}>
       <div className={s.container}>
-        <Hero title={tCore.heroTitle} subtitle={tCore.heroSubtitle}>
+        <Hero title={t.core.heroTitle} subtitle={t.core.heroSubtitle}>
           <Link href="/category/design-language">
-            <Button text={tCore.heroAction} />
+            <Button text={t.core.heroAction} />
           </Link>
         </Hero>
         <ul className={s.list}>{items.map(renderItem)}</ul>
@@ -58,12 +59,10 @@ const HomeRoute = (props) => {
 };
 
 export async function getStaticProps({ locale }) {
-  const tCore = (await import(`../src/translations/${locale}/core`)).default;
-  const tContent = (await import(`../src/translations/${locale}/content`))
-    .default;
+  const t = (await import(`../src/translations/${locale}/index`)).default;
 
   return {
-    props: { tCore, tContent },
+    props: { t },
   };
 }
 

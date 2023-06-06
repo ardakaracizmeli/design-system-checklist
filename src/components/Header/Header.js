@@ -4,7 +4,7 @@ import Link from "next/link";
 import classnames from "classnames";
 import s from "./Header.module.css";
 
-const Header = ({ tCore }) => {
+const Header = ({ t }) => {
   const router = useRouter();
   const [active, setActive] = useState(false);
   const navClassName = classnames(s.nav, active && s["active"]);
@@ -43,12 +43,12 @@ const Header = ({ tCore }) => {
         <ul className={s.menu}>
           <li className={s.item}>
             <a href="/about" onClick={(e) => navigate(e, "/about")}>
-              {tCore.about}
+              {t.core.about}
             </a>
           </li>
           <li className={s.item}>
             <a href="/share" onClick={(e) => navigate(e, "/share")}>
-              {tCore.share}
+              {t.core.share}
             </a>
           </li>
           <li className={s.item}>
@@ -57,7 +57,7 @@ const Header = ({ tCore }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {tCore.contribute}
+              {t.core.contribute}
             </a>
           </li>
 
