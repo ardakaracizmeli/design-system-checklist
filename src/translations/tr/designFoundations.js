@@ -1,177 +1,177 @@
 export default {
-  title: "Foundations",
+  title: "Temeller",
   description:
-    "Design assets and tokens that store values for the base layer of your design system, like color and typography. They’re used in components, so changes on this level will resonate throughout the whole system.",
+    "Renk ve tipografi gibi tasarım sisteminizin temel katmanları için değerleri depolayan ve bileşenlerde kullanılan tasarım varlıkları ve sembollerdir. Bu seviyedeki değişiklikler tüm sisteme yansıyacaktır.",
   sections: {
     "df-color": {
-      title: "Color",
+      title: "Renk",
       description:
-        "Not only an efficient way to showcase your brand but also an efficient way to communicate with your users. Color palettes created with purpose over aesthetics in mind can help you develop intuitive design patterns by adding meaning to your interface.",
+        "Markanızı sergilemenin yanı sıra kullanıcılarınızla etkili bir şekilde iletişim kurmanın da bir yoludur. Estetik yerine amaç odaklı oluşturulan renk paletleri, arayüzünüze anlam katmanıza yardımcı olarak sezgisel tasarım desenleri geliştirmenize yardımcı olur.",
       checklist: {
         "df-color-a11y": {
-          title: "Accessibility",
+          title: "Erişilebilirlik",
           description:
-            "Make sure to have accessible pairings between the primary colors in your palette. More importantly, ensure that your background and text colors have at least an AA standard contrast ratio.",
+            "Paletinizdeki ana renkler arasında erişilebilir eşleşmeler olduğundan emin olun. Daha önemlisi, arka plan ve metin renklerinin en az bir AA standart kontrast oranına sahip olduğundan emin olun.",
         },
         "df-color-semantic": {
-          title: "Semantic colors",
+          title: "Anlamsal Renkler",
           description:
-            "Besides your brand colors, make sure to have colors defined and made into variables for functions like disabled states, backgrounds, actions, and high-contrast text.",
+            "Marka renklerinizin yanı sıra devre dışı durumlar, arka planlar, eylemler ve yüksek kontrastlı metin gibi işlevler için renkleri tanımlayın ve değişkenlere dönüştürün.",
         },
         "df-color-dark-mode": {
-          title: "Dark mode",
+          title: "Karanlık Mod",
           description:
-            "Preparing a dark mode version of your color palette will allow your design system to adapt to the user's OS color preferences.",
+            "Renk paletinizin karanlık mod sürümünü hazırlamak, tasarım sisteminizin kullanıcının işletim sistemi renk tercihlerine uyum sağlamasını sağlar.",
         },
         "df-color-guidelines": {
-          title: "Guidelines",
+          title: "Kılavuzlar",
           description:
-            "Provide guidelines on how and when to use the colors in your palette, what to keep in mind when working with them, and how not to use them.",
+            "Paletinizdeki renkleri nasıl ve ne zaman kullanacakları, onlarla çalışırken nelere dikkat edecekleri ve nasıl kullanmayacakları konusunda kılavuzlar sağlayın.",
         },
       },
     },
     "df-layout": {
-      title: "Layout",
+      title: "Düzen",
       description:
-        "A well-thought-out layout goes a long way. Consistent use of a grid and spacing makes it easier for your users to scan the user interface and grasp the content.",
+        "İyi düşünülmüş bir düzen uzun bir yol kat eder. Düzeninizde sürekli bir kılavuz ve boşluk kullanmak, kullanıcıların arayüzü taramasını ve içeriği anlamasını kolaylaştırır.",
       checklist: {
         "df-layout-units": {
-          title: "Units",
+          title: "Birimler",
           description:
-            "Units are the most granular building blocks for layout. Defining a set of values with consistent increments (such as 4, 8, 12, and 16 for a 4-point system) will provide the foundation for designing your grid and spacing values.",
+            "Birimler, düzen için en ayrıntılı yapı taşlarıdır. Bir 4 birimli sistem için (örneğin 4, 8, 12 ve 16) tutarlı artışlarla bir dizi değeri tanımlamak, ızgara ve boşluk değerlerinizi tasarlamanız için temel oluşturacaktır.",
         },
         "df-layout-grid": {
-          title: "Grid",
+          title: "Izgara",
           description:
-            "Every layout should sit on a grid that brings order and hierarchy to the interface. Define a grid separately for mobile, tablet, and desktop devices with columns, gutters, and margins so your interface can adapt to any platform quickly.",
+            "Her düzen, arayüzde düzen ve hiyerarşi getiren bir ızgara üzerine oturmalıdır. Mobil, tablet ve masaüstü cihazlar için ayrı ayrı sütunlar, aralıklar ve kenar boşlukları belirleyerek arayüzünüzü hızlı bir şekilde herhangi bir platforma uyumlu hale getirin.",
         },
         "df-layout-breakpoints": {
-          title: "Breakpoints",
+          title: "Ayrıştırıcı Noktalar",
           description:
-            "Predefine the screen sizes and orientations your grid will adapt to.",
+            "Izgaranızın uyum sağlayacağı ekran boyutlarını ve yönelimleri önceden tanımlayın.",
         },
         "df-layout-spacing": {
-          title: "Spacing",
+          title: "Boşluk",
           description:
-            "Horizontal and vertical rhythm plays a significant role in a layout. You should provide straightforward methods for adding space between interface elements independent of your grid.",
+            "Yatay ve dikey ritim, bir düzen içinde önemli bir rol oynar. Izgaranızdan bağımsız olarak arayüz öğeleri arasına boşluk eklemek için basit yöntemler sağlamalısınız.",
         },
       },
     },
     "df-typography": {
-      title: "Typography",
+      title: "Tipografi",
       description:
-        "Typography is one of the main ways you surface content in products. A clear hierarchy and contrasting styles in your typography scale will make things easier to read and help with the overall structure of your product. It’s also an opportunity to visualize your brand character and presence.",
+        "Tipografi, içeriği ürünlerde yüzeye çıkaran ana yollardan biridir. Tipografinizde açık bir hiyerarşi ve karşıtlık sağlayan ölçeklemeler, şeyleri daha okunabilir hale getirecek ve ürününüzün genel yapısına yardımcı olacaktır. Ayrıca marka karakterinizi ve varlığınızı görselleştirmek için bir fırsattır.",
       checklist: {
         "df-typography-mobile": {
-          title: "Responsiveness",
+          title: "Duyarlılık",
           description:
-            "Desktop devices can usually afford to have bigger font sizes compared to mobile devices. Creating a typography scale that adapts to the viewport size will help with a more meaningful hierarchy and layout.",
+            "Masaüstü cihazlar genellikle mobil cihazlara göre daha büyük font boyutlarına sahip olabilir. Görünüm boyutuna uyum sağlayan bir tipografi ölçeği oluşturmak, daha anlamlı bir hiyerarşi ve düzen oluşturmanıza yardımcı olur.",
         },
         "df-typography-grid": {
-          title: "Grid relation",
+          title: "Izgara İlişkisi",
           description:
-            "Font sizes and leading should match your grid to allow better pairing between text and other UI elements. A good example of this is text paired with icons with bounding boxes.",
+            "Yazı tipi boyutları ve çizgi aralığı, metni ve diğer UI öğelerini daha iyi eşleştirmek için ızgaranıza uymalıdır. İyi bir örnek, metni sınırlayıcı kutularla eşleştirilen simgelerle eşleştirmektir.",
         },
         "df-typography-readability": {
-          title: "Readability",
+          title: "Okunabilirlik",
           description:
-            "Optimizing the letter spacing (tracking), line height (leading) and line length for your typography scale will help with the readability of text.",
+            "Tipografi ölçeğiniz için harf aralığını (izleme), satır yüksekliğini (çizgi aralığı) ve satır uzunluğunu optimize ederek metnin okunabilirliğine yardımcı olun.",
         },
         "df-typography-performance": {
-          title: "Performance",
+          title: "Performans",
           description:
-            "Custom fonts need to be downloaded before they can be displayed, especially on the web. Make sure that you have sensible fallbacks and fast loading time for your typography assets. Using system fonts solves this performance problem.",
+            "Özellikle web üzerinde özel yazı tipleri görüntülenmeden önce indirilmelidir. Tipografi varlıklarınız için mantıklı yedekler ve hızlı yükleme süresine sahip olduğunuzdan emin olun. Sistem yazı tipleri kullanmak, bu performans sorununu çözer.",
         },
         "df-typography-guidelines": {
-          title: "Guidelines",
+          title: "Kılavuzlar",
           description:
-            "Provide guidelines on how and when to use the pairings in your typography scale, what to keep in mind when working with them, and how not to use them.",
+            "Tipografi ölçeğinizdeki eşleştirmeleri nasıl ve ne zaman kullanacakları, onlarla çalışırken nelere dikkat edecekleri ve nasıl kullanmayacakları konusunda kılavuzlar sağlayın.",
         },
       },
     },
     "df-elevation": {
-      title: "Elevation",
+      title: "Yükseltme",
       description:
-        "Elevation controls the relative distance between two surfaces along the z-axis. In light mode, it’s usually highlighted by the shadow value applied to a surface, while in dark mode, it’s communicated using the background color value.",
+        "Yükseltme, z ekseninde iki yüzey arasındaki göreli mesafeyi kontrol eder. Işık modunda, genellikle yüzeye uygulanan gölge değeri ile vurgulanırken, karanlık modda, arka plan rengi değeri kullanılarak iletilir.",
       checklist: {
         "df-elevation-shadows": {
-          title: "Shadows",
+          title: "Gölge",
           description:
-            "Provide multiple shadow values based on the supported elevation levels. Most of the time, you will need 3 to 4 elevation levels in your product.",
+            "Desteklenen yükseltme seviyelerine dayanarak birden çok gölge değeri sağlayın. Çoğu zaman, ürününüzde 3 ila 4 yükseltme seviyesine ihtiyacınız olacaktır.",
         },
         "df-elevation-background": {
-          title: "Background colors",
+          title: "Arka Plan Renkleri",
           description:
-            "Each shadow value should have a linked background color. In light mode, these colors might all resolve to the white color since it’s used together with the shadow. In dark mode, they will be used instead of the shadow to communicate the z-axis distance of a surface.",
+            "Her gölge değeri bir bağlantılı arka plan rengi içermelidir. Işık modunda, bu renkler genellikle gölgeyle birlikte beyaz renge çözümlenir. Karanlık modda, yüzeyin z eksen uzaklığını iletmek için gölge yerine kullanılacaklardır.",
         },
         "df-elevation-z": {
-          title: "Z-index",
+          title: "Z-indeks",
           description:
-            "Define a system of z-index values to control which elements have priority to be rendered on top of the others.",
+            "Öğelerin önceliğini kontrol etmek için bir z-indeks değeri sistemi tanımlayın.",
         },
       },
     },
     "df-motion": {
-      title: "Motion",
+      title: "Hareket",
       description:
-        "Shared motion values provide a more coherent user experience and better alignment with the brand.",
+        "Paylaşılan hareket değerleri daha tutarlı bir kullanıcı deneyimi ve markayla daha iyi bir uyum sağlar.",
       checklist: {
         "df-motion-easing": {
-          title: "Easing",
+          title: "Hafifletme",
           description:
-            "Provide standard easing functions used across the system for component transitions. As a start, you can use standard, accelerated and decelerated functions that should cover common component use cases.",
+            "Bileşen geçişleri için sistem genelinde kullanılan standart hafifletme işlevlerini sağlayın. Başlangıç olarak, genellikle yaygın bileşen kullanım durumlarını kapsayan standart, hızlandırılmış ve yavaşlatılmış işlevler kullanabilirsiniz.",
         },
         "df-motion-duration": {
-          title: "Duration",
+          title: "Süre",
           description:
-            "Define multiple values for your animation duration to keep the component transitions consistent across the product",
+            "Bileşen geçişlerini ürününüzde tutarlı tutmak için birden çok süre değeri tanımlayın.",
         },
         "df-motion-a11y": {
-          title: "Accessibility",
+          title: "Erişilebilirlik",
           description:
-            "Pay attention to the user's reduced motion preferences and either make the animations less prominent or remove them altogether.",
+            "Kullanıcının azaltılmış hareket tercihlerine dikkat edin ve animasyonları daha az belirgin hale getirin veya tamamen kaldırın.",
         },
       },
     },
     "df-iconography": {
-      title: "Iconography",
+      title: "Simgeler",
       description:
-        "Icons are symbols that represent functionality or content. They’re especially recognizable and helpful in user interfaces since their meaning can be understood at a glance. Though they can be used just for decoration, their full potential can be realized when they’re used meaningfully and consistently.",
+        "Simgeler, işlevselliği veya içeriği temsil eden sembollerdir. Anlamı bir bakışta anlaşılabilir ve kullanıcı arayüzlerinde tanınması kolay ve faydalıdır. Dekorasyon için kullanılabilirler, ancak tam potansiyelleri anlamlı ve tutarlı bir şekilde kullanıldığında ortaya çıkar.",
       checklist: {
         "df-iconography-a11y": {
-          title: "Accessibility",
+          title: "Erişilebilirlik",
           description:
-            "For icons that convey a meaning or serve a function, offer a default accessible name that expresses that same meaning or function. Screen readers and other assistive technologies may use this name to orient the user about the interface. For purely decorative icons, a name is not required. If your design system exports front-end code, ensure that the icon name is included, for example, using an aria-label.",
+            "Anlam taşıyan veya işlev gören simgeler için, bu anlamı veya işlevi ifade eden bir varsayılan erişilebilir ad sunun. Ekran okuyucular ve diğer yardımcı teknolojiler, kullanıcıyı arayüz hakkında bilgilendirmek için bu adı kullanabilir. Tamamen dekoratif simgeler için bir ad gerekli değildir. Tasarım sisteminiz ön uç kodu dışa aktarıyorsa, simge adının aria-etiketi kullanılarak dahil edildiğinden emin olun.",
         },
         "df-iconography-style": {
-          title: "Style",
+          title: "Stil",
           description:
-            "Make sure that your icon family makes visual sense as a whole. Picking an outlined or filled style and sticking with it will lead to better visual consistency and predictability.",
+            "Simgelerinizi bir bütün olarak görsel açıdan mantıklı hale getirin. Çizgili veya dolu bir stil seçmek ve ona sadık kalmak, daha iyi görsel tutarlılık ve tahmin edilebilirlik sağlar.",
         },
         "df-iconography-naming": {
-          title: "Naming",
+          title: "Adlandırma",
           description:
-            "Name your icons based on their communicative purpose rather than how they look. For instance, a triangular media player plays button icon should be named 'play,' not 'triangle.' You can still add related keywords to improve discoverability.",
+            "Simgelerinizi görünüşlerine göre değil, iletişimsel amacına dayanarak adlandırın. Örneğin, üçgen bir ortam oynatıcı düğmesi simgesi 'oynat' olarak adlandırılmalıdır, 'üçgen' olarak değil. Keşfedilebilirliği artırmak için ilgili anahtar kelimeler ekleyebilirsiniz.",
         },
         "df-iconography-grid": {
-          title: "Relation with grid",
+          title: "Izgara İlişkisi",
           description:
-            "Draw your icons in a bounding box that plays well with your grid. This makes for a better pairing with other UI elements. A good example would be icons with bounding boxes paired with text.",
+            "Simgelerinizi ızgaranızla uyumlu bir sınırlayıcı kutu içinde çizin. Bu, diğer UI öğeleriyle daha iyi eşleşmeleri sağlar. İyi bir örnek, metinlerle eşleştirilen sınırlayıcı kutular içindeki simgelerdir.",
         },
         "df-iconography-keywords": {
-          title: "Keywords",
+          title: "Anahtar Kelimeler",
           description:
-            "Adding keywords will improve the discoverability of each icon and provide a better user experience for anyone using your system.",
+            "Her simgeyi keşfedilebilirliği artırmak için anahtar kelimeler eklemek daha iyi bir kullanıcı deneyimi sağlar.",
         },
         "df-iconography-reserved": {
-          title: "Reserved icons",
+          title: "Ayrılmış Simgeler",
           description:
-            "Reserving icons representing common actions will prevent their use in any other context. System icons for navigation or adding and deleting are good examples. This leads to a more intuitive user experience.",
+            "Yaygın işlemleri temsil eden simgeleri ayırmak, bunların başka bir bağlamda kullanılmasını önler. Navigasyon, ekleme ve silme için sistem simgeleri iyi örneklerdir. Bu, daha sezgisel bir kullanıcı deneyimi sağlar.",
         },
         "df-iconography-guidelines": {
-          title: "Guidelines",
+          title: "Kılavuzlar",
           description:
-            "Provide guidelines on how and when to use icons, what to keep in mind when working with them, and how not to use them.",
+            "Simgeleri nasıl ve ne zaman kullanacakları, onlarla çalışırken nelere dikkat edecekleri ve nasıl kullanmayacakları konusunda kılavuzlar sağlayın.",
         },
       },
     },

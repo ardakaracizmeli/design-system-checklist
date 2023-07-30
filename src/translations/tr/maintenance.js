@@ -1,181 +1,181 @@
 export default {
-  title: "Maintenance",
+  title: "Bakım",
   description:
-    "Design systems are no different than any other project your team might take on. In order to successfully build and maintain one, you need a clear strategy that’s well executed daily, and you‘ll need to create opportunities for your colleagues to give feedback to help share your design system together.",
+    "Tasarım sistemleri, takımınızın üstlenebileceği diğer herhangi bir projeyle farklı değildir. Bir tasarım sistemi başarıyla oluşturmak ve sürdürmek için günlük olarak iyi bir şekilde uygulanan net bir stratejiye ve tasarım sistemini birlikte paylaşmaya yardımcı olmak için meslektaşlarınızın geri bildirim vermesine olanak sağlayacak fırsatlar yaratmanız gerekecektir.",
 
   sections: {
     "m-documentation": {
-      title: "Documentation",
+      title: "Belgeleme",
       description:
-        "Documentation resources are a core part of any design system as it saves time and effort for the team and everyone using the design system. It allows people to learn the ropes and find answers to the most commonly asked questions without contacting the team.",
+        "Belgeleme kaynakları, tasarım sistemlerinin temel bir parçasıdır çünkü takım ve tasarım sistemini kullanan herkes için zaman ve çaba tasarrufu sağlar. İnsanların ipuçlarını öğrenmelerine ve sıkça sorulan sorulara yanıtlar bulmalarına, takım ile iletişime geçmeden önce yardımcı olur.",
       checklist: {
         "m-documentation-principles": {
-          title: "Design system principles",
+          title: "Tasarım sistem prensipleri",
           description:
-            "List your core principles when building a design system to let designers and developers know your values and which are the main factors for the decision-making in your team.",
+            "Bir tasarım sistemini oluştururken temel prensiplerinizi listelemek, tasarımcıların ve geliştiricilerin değerlerinizi ve takımınızdaki karar verme süreçlerinin temel faktörlerini bilmelerine yardımcı olur.",
         },
         "m-documentation-start": {
-          title: "Getting started",
+          title: "Başlarken",
           description:
-            "Guide others through the first steps of setting up and using your design system, which can help them build their first feature or product without contacting you directly.",
+            "Takımın tasarım sistemini kurup kullanmaya başlama sürecini diğerleri için rehberlik edin, bu da doğrudan sizinle iletişime geçmeden ilk özelliklerini veya ürünlerini oluşturmalarına yardımcı olabilir.",
         },
         "m-documentation-design": {
-          title: "Design best practices",
+          title: "Tasarım en iyi uygulamaları",
           description:
-            "Share tips on how to design products using the design system in a scalable way, avoid common pitfalls and use your design tool to its max potential.",
+            "Tasarım sistemi kullanarak ürünleri ölçeklendirilebilir bir şekilde tasarlama, yaygın hatalardan kaçınma ve tasarım aracınızı maksimum potansiyele çıkarma ipuçlarını paylaşın.",
         },
         "m-documentation-dev": {
-          title: "Development best practices",
+          title: "Geliştirme en iyi uygulamaları",
           description:
-            "Share tips on developing products using the design system, the recommended technical dependencies, and avoiding common pitfalls.",
+            "Tasarım sistemi kullanarak ürünleri geliştirme konusunda ipuçları paylaşın, önerilen teknik bağımlılıklar ve yaygın hatalardan kaçının.",
         },
         "m-documentation-anatomy": {
-          title: "Component anatomy",
+          title: "Bileşen anatomisi",
           description:
-            "Provide an overview of the components' design anatomy to help everyone understand the limitations of the component layout and which parts of it are customizable.",
+            "Herkesin bileşen düzeninin sınırlamalarını anlamasına yardımcı olmak için bileşenlerin tasarım anatomisine genel bir bakış sunun ve hangi kısımlarının özelleştirilebilir olduğunu belirtin.",
         },
         "m-documentation-props": {
-          title: "Component properties",
+          title: "Bileşen özellikleri",
           description:
-            "Document properties your components support in both design and code. We recommend aligning most of them across platforms for a smoother design handoff process.",
+            "Bileşenlerinizin tasarım ve kod tarafında desteklediği özellikleri belgeleyin. Daha düzgün bir tasarım devri teslim süreci için çoğunun platformlar arası uyumlu olmasını öneririz.",
         },
         "m-documentation-composition": {
-          title: "Component composition examples",
+          title: "Bileşen kompozisyon örnekleri",
           description:
-            "When building low-level components supporting slots for inserting other content – provide examples of how to use them to create more advanced compositions.",
+            "Daha gelişmiş kompozisyonlar oluşturmak için diğer içerikleri eklemek için yuvalar destekleyen düşük seviye bileşenler oluştururken, bunları nasıl kullanacaklarına dair örnekler sağlayın.",
         },
         "m-documentation-sandbox": {
-          title: "Sandbox product example",
+          title: "Kum havuzu ürün örneği",
           description:
-            "If you don’t have a way to test your components in the product yourself, you can build a simple application that simulates actual product layouts to test how your components behave in the wild and try out new design system features before releasing them.",
+            "Bileşenlerinizi üründe kendiniz test etme yönteminiz yoksa, bileşenlerinizin nasıl davrandığını ve yeni tasarım sistemi özelliklerini çıkarmadan önce vahşi doğada nasıl kullanıldığını denemek için basit bir uygulama oluşturabilirsiniz.",
         },
         "m-documentation-env": {
-          title: "Browser / OS support",
+          title: "Tarayıcı / İşletim sistemi desteği",
           description:
-            "Define the level of support you provide for various operating systems and browsers, and make sure you align with the product on this topic.",
+            "Farklı işletim sistemleri ve tarayıcılar için sunduğunuz desteği tanımlayın ve bu konuda ürünle uyumlu olduğunuzdan emin olun.",
         },
         "m-documentation-release": {
-          title: "Release cycle",
+          title: "Yayın döngüsü",
           description:
-            "Establish and document a predictable release cycle for the major versions that include breaking changes. This way, product teams can plan the migrations on their side.",
+            "Kırılma değişiklikleri içeren önemli sürümler için tahmin edilebilir bir yayın döngüsü oluşturun ve belgeleyin. Bu şekilde, ürün takımları göçleri planlayabilir.",
         },
       },
     },
     "m-local": {
-      title: "Local libraries",
+      title: "Yerel kütüphaneler",
       description:
-        "The scope of the design system is usually to build the core repeating patterns to increase the velocity of product teams. That means you won't implement all UI elements yourself. Product teams will still build local components using the design system to solve their specific scenarios.",
+        "Tasarım sisteminin kapsamı genellikle ürün takımlarının hızını artırmak için temel tekrarlanan desenleri oluşturmaktır. Bu, tüm UI öğelerini kendiniz uygulamayacağınız anlamına gelir. Ürün takımları, özel senaryolarını çözmek için tasarım sistemi kullanarak yerel bileşenler oluşturmaya devam edeceklerdir.",
       checklist: {
         "m-local-when": {
-          title: "When to build",
+          title: "Ne zaman oluşturulmalı",
           description:
-            "Share your expectations on when product teams should build custom components instead of requesting a new feature in the design system or using an existing component.",
+            "Ürün takımlarının, tasarım sisteminde yeni bir özellik istemek veya mevcut bir bileşen kullanmak yerine özel bileşenler oluşturması gerektiği konusundaki beklentilerinizi paylaşın.",
         },
         "m-local-types": {
-          title: "Horizontal and vertical libraries",
+          title: "Yatay ve dikey kütüphaneler",
           description:
-            "Outline the difference between the horizontal libraries used across multiple products and vertical libraries only used by the team building it.",
+            "Çoklu ürünlerde kullanılan yatay kütüphaneler ile yalnızca oluşturan takım tarafından kullanılan dikey kütüphaneler arasındaki farkı açıklayın.",
         },
         "m-local-expectations": {
-          title: "Library expectations",
+          title: "Kütüphane beklentileri",
           description:
-            "Document the minimum set of requirements for shipping a local library. Describe your expectations on the library quality, documentation, and maintenance.",
+            "Yerel kütüphane yayınlamak için minimum gereksinimleri belgeleyin. Kütüphane kalitesi, belgeleme ve bakımı için beklentilerinizi açıklayın.",
         },
         "m-local-release": {
-          title: "Release cycle alignment",
+          title: "Yayın döngüsü uyumu",
           description:
-            "Ensure that local libraries are in sync with the design system release cycle. They should support your newly published major releases of the system to avoid blocking the product from updating.",
+            "Yerel kütüphanelerin, tasarım sistem yayın döngüsüyle senkronize olduğundan emin olun. Ürünün güncellemelerini engellememek için sistem yeni yayınlanan önemli sürümleri desteklemelidir.",
         },
       },
     },
     "m-process": {
-      title: "Team processes",
+      title: "Takım süreçleri",
       description:
-        "All teams that have successfully scaled their design system did this by establishing robust processes for working with their stakeholders and the community. As you keep developing the system, they will save you endless hours and let you avoid answering the same questions repeatedly.",
+        "Tasarım sistemini başarıyla ölçeklendiren tüm takımlar, paydaşları ve topluluğuyla çalışma süreçleri konusunda sağlam bir süreç belirleyerek bunu başarmıştır. Sistemi geliştirmeye devam ettikçe, size sonsuz saat tasarrufu sağlayacak ve aynı sorulara tekrar tekrar yanıt vermenizi engelleyecektir.",
       checklist: {
         "m-process-log": {
-          title: "Decision-making log",
+          title: "Karar alma kaydı",
           description:
-            "For the topics you have to handle repeatedly – make logs on how you make those decisions. You won’t miss any contextual requirements and will avoid having additional alignment meetings.",
+            "Tekrar tekrar ele almanız gereken konular için nasıl karar verdiğinize dair kayıtlar tutun. Herhangi bir bağlamsal gereksinimi kaçırmayacak ve ek hizalama toplantıları yapmaktan kaçınacaksınız.",
         },
         "m-process-roadmap": {
-          title: "Roadmap",
+          title: "Yol haritası",
           description:
-            "Try planning your long-term work and allocating only a part of your time for community support. This will help you evolve the system over time instead of only focusing on smaller bug fixes and feature requests.",
+            "Uzun vadeli çalışmanızı planlayın ve yalnızca bir kısmını topluluk desteği için ayırın. Bu, yalnızca küçük hata düzeltmeleri ve özellik taleplerine odaklanmak yerine sistemini zaman içinde geliştirmenize yardımcı olur.",
         },
         "m-process-stakeholder": {
-          title: "Stakeholder mapping",
+          title: "Paydaş haritalama",
           description:
-            "List out the main stakeholders across all products you’re supporting. Those could be people working in the development and design but also don’t miss the people leadership who can help you grow the adoption.",
+            "Desteklediğiniz tüm ürünlerdeki ana paydaşları listeleyin. Bu, geliştirme ve tasarım çalışanları olabilir, ayrıca ürünü benimsemeye yardımcı olabilecek liderlik kadrosunu da unutmayın.",
         },
         "m-process-analytics": {
-          title: "Analytics",
+          title: "Analitikler",
           description:
-            "Define a way to track the usage and the value of the libraries and tooling you provide. You can start with easy-to-set-up metrics, like analytics for your documentation website, feedback surveys, or components usage analytics in your design tool.",
+            "Sağladığınız kütüphanelerin ve araçların kullanımını ve değerini izlemek için bir yöntem belirleyin. Basit kurulumu yapılabilecek metriklerle başlayabilirsiniz, belgelendirme web siteniz için analitikler, geri bildirim anketleri veya tasarım aracınızdaki bileşen kullanım analitiği gibi.",
         },
         "m-process-shifts": {
-          title: 'Ongoing support "shifts"',
+          title: "Sürekli destek \"vardiyaları\"",
           description:
-            "If multiple people work on the same platform, distribute and plan the community support work for them. That will let team members focus on the planned work instead of being distracted by the requests and questions.",
+            "Aynı platform üzerinde birden fazla kişi çalışıyorsa, topluluk desteği için bu işi dağıtın ve planlayın. Böylece, takım üyeleri planlanan işe odaklanabilir ve taleplere ve sorulara dikkat dağıtmaktan kaçınabilir.",
         },
         "m-process-sla": {
-          title: "SLA",
+          title: "Hizmet Seviyesi Sözleşmesi (SLA)",
           description:
-            "Define the timelines for how long it takes you to handle incoming requests and bug reports to help product teams understand if they should wait for your release or find a temporary workaround.",
+            "Gelen talepleri ve hata raporlarını ele almanızın ne kadar süreceğini belirleyin, böylece ürün takımları sizin yayınınızı beklemeli mi, yoksa geçici bir çözüm mü bulmalı?",
         },
       },
     },
     "m-community": {
-      title: "Community support",
+      title: "Topluluk desteği",
       description:
-        "It’s crucial to help product designers and developers get more productive with the design system, fix the bugs they find in the products, and address their needs. To make sure you get that feedback – your goal is to make it easy and safe for everyone to share their findings.",
+        "Tasarım sistemini kullanan ürün tasarımcılarına ve geliştiricilere daha üretken olmalarına, ürünlerde buldukları hataları düzeltmelerine ve ihtiyaçlarını ele almalarına yardımcı olmak önemlidir. Bu geri bildirimi almanın emin bir yolunu oluşturmak amacınızdır.",
       checklist: {
         "m-community-channels": {
-          title: "Support channels",
+          title: "Destek kanalları",
           description:
-            "Create support channels in the tools you use for communication. It’s a good idea to separate them by the platform to make it comfortable for everyone to share platform-specific details of their issues.",
+            "İletişimde kullandığınız araçlarda destek kanalları oluşturun. Onları platforma göre ayırmak, sorunlarının platforma özgü ayrıntılarını paylaşmalarını kolaylaştırır.",
         },
         "m-community-template": {
-          title: "Templates",
+          title: "Şablonlar",
           description:
-            "Prepare templates for creating feature requests and bug reports. Use them to ask for reproduction links, design proposals, and other contextual information you need to make decisions instead of manually looking for that information.",
+            "Özellik talepleri ve hata raporları oluşturmak için şablonlar hazırlayın. Bu şablonları kullanarak, karar vermek için ihtiyaç duyduğunuz çoğu bağlamsal bilgiyi talep edebilirsiniz, böylece bu bilgileri manuel olarak aramak zorunda kalmazsınız.",
         },
         "m-community-updates": {
-          title: "Regular updates",
+          title: "Düzenli güncellemeler",
           description:
-            "You’re risking the adoption of the new features if you’re only focusing on the implementation but never talking about it with the community. Defining a cadence for your updates helps build a habit for product teams to come and check what’s new in the system and how they can leverage it.",
+            "Yalnızca uygulamaya odaklanırsanız, yeni özelliklerin benimsenme riski altında olursunuz. Güncellemeleriniz için bir düzen belirleyerek, ürün takımlarının sisteminizde nelerin yeni olduğunu ve onu nasıl kullanabileceklerini öğrenmelerine yardımcı olursunuz.",
         },
         "m-community-slots": {
-          title: "Open hours",
+          title: "Açık saatler",
           description:
-            "There will be questions that can’t be resolved in a single ticket or chat. Keep a few bookable calendar slots for other teams to receive a consultation or discuss their feature implementation with your team.",
+            "Bir bilet veya sohbetle çözülemeyecek sorular olacak. Diğer takımların sizi danışmak veya özellik uygulamalarını tartışmak için birkaç randevu takvim yuvası tutun.",
         },
       },
     },
     "m-contribution": {
-      title: "Contribution",
+      title: "Katkı",
       description:
-        "Building design systems is a team game. Make sure to include product teams in the journey, help them contribute to the system and let them advocate for it across the company.",
+        "Tasarım sistemleri, bir ekip oyunudur. Ürün takımlarını yolculuğa dahil etmeye, sisteme katkıda bulunmalarına ve şirket içinde savunmalarına yardımcı olmayı unutmayın.",
       checklist: {
         "m-contribution-rules": {
-          title: "House rules for the system",
+          title: "Sistem için kurallar",
           description:
-            "Explain how your design and development process works to the product teams. Design system teams usually move slower than product teams since there is more responsibility on making scalable decisions in the components affecting the whole product.",
+            "Ürün takımlarına, nasıl tasarım ve geliştirme sürecinin çalıştığını açıklayın. Tasarım sistem takımları genellikle tüm ürünü etkileyen ölçeklenebilir kararlar verme sorumluluğu olduğu için ürün takımlarından daha yavaş hareket eder.",
         },
         "m-contribution-guidelines": {
-          title: "Contribution guidelines",
+          title: "Katkı kuralları",
           description:
-            "Explain what contributors need to set up to prepare their design and development environment for adding and testing new features.",
+            "Katkıda bulunanların, yeni özellikler eklemek ve test etmek için tasarım ve geliştirme ortamını hazırlamaları gerekenleri açıklayın.",
         },
         "m-contribution-template": {
-          title: "Feature proposal template",
+          title: "Özellik teklifi şablonu",
           description:
-            "Prepare a standard template for initiating the work on a new feature. This template should ensure that proposed changes will be applied across all platforms and won’t break the existing component usage in the product.",
+            "Yeni bir özellik üzerinde çalışmaya başlamak için standart bir şablon hazırlayın. Bu şablon, önerilen değişikliklerin tüm platformlara uygulanacağından ve mevcut bileşen kullanımını bozmayacağından emin olacaktır.",
         },
         "m-contribution-engagement": {
-          title: "Engagement",
+          title: "Katılım",
           description:
-            "Make sure to highlight and reward contributors' work when making announcements about the new features and help them get support from their managers when they contribute. ",
+            "Yeni özelliklerle ilgili duyurular yaparken ve katkıda bulunanların çalışmalarını öne çıkarırken onların işlerini vurgulayın ve katkıda bulunmaları için yöneticilerinden destek almalarına yardımcı olun.",
         },
       },
     },
