@@ -1,689 +1,690 @@
 export default {
-  title: "Ana bileşenler",
+  title: "Ana Bileşenler",
   description:
-    "Components are the main building blocks for user interfaces. Building a reusable component library enhances your product development workflow by reducing design and tech debt and speeding up the process. Core components can’t be broken down into granular pieces without losing their meaning.",
+    "Bileşenler, kullanıcı arayüzleri için temel yapı taşlarıdır. Yeniden kullanılabilir bir bileşen kütüphanesi oluşturmak, ürün geliştirme iş akışınızı iyileştirerek tasarım ve teknik borcu azaltır ve süreci hızlandırır. Temel bileşenler, anlamını kaybetmeden granüler parçalara ayrılamaz.",
   sections: {
     "c-accordion": {
-      title: "Accordion",
+      title: "Akordeon (Accordion)",
       description:
-        "Accordion toggles the visibility of content regions when the trigger element gets pressed.",
+        "Akordeon, tetikleyici elemanın basılmasıyla içerik bölgelerinin görünürlüğünü değiştiren bir yapıdır.",
       checklist: {
         "c-accordion-active": {
-          title: "Active state",
+          title: "Etkin durum",
           description:
-            "Accordion comes in two states for toggling its content visibility. If an accordion trigger displays an icon, it should be visually distinct between states.",
+            "Akordeon, içerik görünürlüğünü değiştirmek için iki farklı durumda gelmelidir. Eğer bir akordeon tetikleyici bir simge görüntülerse, durumlar arasında görsel olarak fark olmalıdır.",
         },
         "c-accordion-composition": {
-          title: "Composition",
+          title: "Bileşim",
           description:
-            "Content area should be flexible enough to support various types of content, including other components.",
+            "İçerik alanı, diğer bileşenleri de içerecek şekilde çeşitli içerik türlerini destekleyecek kadar esnek olmalıdır.",
         },
         "c-accordion-transition": {
-          title: "Toggle transition",
+          title: "Geçiş animasyonu",
           description:
-            "Add a subtle animation to help users understand and follow the component behavior when switching between states.",
+            "Kullanıcıların durumlar arasında geçiş yaparken bileşen davranışını anlamalarına yardımcı olacak hafif bir animasyon eklenmelidir.",
         },
         "c-accordion-a11y-relation": {
-          title: "Content and trigger relation",
+          title: "İçerik ve tetikleyici ilişkisi",
           description:
-            "Focusing the content area with assistive technologies should announce additional context from the trigger element.",
+            "Yardımcı teknolojilerle içerik alanına odaklandığında, tetikleyici elemandan ilave bağlam bildirilmelidir.",
         },
       },
     },
     "c-alert": {
-      title: "Alert",
+      title: "Uyarı (Alert)",
       description:
-        "Alert displays a prominent message about the whole page or its specific area.",
+        "Uyarı, sayfanın tamamı veya belirli bir alanı hakkında önemli bir mesajı gösterir.",
       checklist: {
         "c-alert-colors": {
-          title: "Colors",
+          title: "Renkler",
           description:
-            "It's crucial to differentiate the alert's visual appearance based on its role. If you're using background colors for role differentiation, ensure there's enough contrast ratio with the content displayed inside the alert.",
+            "Uyarının görsel görünümünü rolüne göre ayırt etmek önemlidir. Rol ayrımı için arka plan renkleri kullanılıyorsa, uyarı içindeki içerikle yeterli kontrast oranının sağlandığından emin olunmalıdır.",
         },
         "c-alert-title": {
-          title: "Title support",
+          title: "Başlık desteği",
           description:
-            "Supporting a title can help your user understand the context of the message faster for longer alert messages.",
+            "Başlık kullanmak, uzun uyarı mesajlarında kullanıcının mesajın bağlamını daha hızlı anlamasına yardımcı olabilir.",
         },
         "c-alert-icon": {
-          title: "Icon support",
+          title: "Simge desteği",
           description:
-            "Icon illustrates the role of the alert and provides an additional hint about it for colorblind people.",
+            "Simge, uyarının rolünü gösterir ve renk körü insanlar için ek bir ipucu sağlar.",
         },
         "c-alert-actions": {
-          title: "Supplementary actions",
+          title: "Ek işlemler",
           description:
-            "Actions in the alert should relate to their text and provide a way to react to the message sent to the user.",
+            "Uyarı içindeki işlemler, metinleriyle ilgili olmalı ve kullanıcıya gönderilen mesaja tepki verme imkanı sağlamalıdır.",
         },
         "c-alert-responsive": {
-          title: "Responsiveness",
+          title: "Duyarlılık",
           description:
-            "Alert can adapt to the viewport size, usually becoming full-width for mobile to save some space.",
+            "Uyarı, görüntüleme alanına göre uyum sağlayabilmeli ve mobil cihazlarda genellikle tam genişlikli hale gelerek alan tasarrufu sağlamalıdır.",
         },
         "c-alert-a11y-roles": {
-          title: "Accessibility roles",
+          title: "Erişilebilirlik rolleri",
           description:
-            "When using assistive technologies, alerts should announce their accessibility role correctly.",
+            "Yardımcı teknolojiler kullanıldığında uyarılar, erişilebilirlik rollerini doğru bir şekilde bildirmelidir.",
         },
       },
     },
     "c-avatar": {
       title: "Avatar",
       description:
-        "Thumbnail of a user photo, organization, or a visual representation of other types of content.",
+        "Kullanıcı fotoğrafının küçük bir özeti, kuruluş veya diğer içerik türlerinin görsel temsili.",
       checklist: {
         "c-avatar-image": {
-          title: "Image",
+          title: "Görüntü (Image)",
           description:
-            "Avatars should mask an image into their shape and work with any image size since they may get this image from unknown data sources.",
+            "Avatarlar, görüntüyü şekillerine uydurmalı ve bu görüntüyü bilinmeyen veri kaynaklarından alabilir, bu nedenle herhangi bir görüntü boyutu ile çalışabilmelidir.",
         },
         "c-avatar-image-fallback": {
-          title: "Image fallback",
+          title: "Görüntü yedekleme",
           description:
-            "When not passing an image or there is an image loading error, avatars should be able to show a fallback with a different image, icon, or text initials.",
+            "Görüntü geçilmemesi durumunda veya bir görüntü yüklenme hatası olduğunda, avatarlar farklı bir görüntü, simge veya metin başlangıcı ile yedek gösterebilmelidir.",
         },
         "c-avatar-sizes": {
-          title: "Sizes",
+          title: "Boyutlar",
           description:
-            "There are many contexts to use an avatar, which require different sizes for the component. Use at least 2-3 different sizes for average projects and ensure there’s at least a small size available.",
+            "Avataru kullanmak için birçok bağlam vardır ve bileşen için farklı boyutları desteklemek önemlidir. Ortalama projeler için en az 2-3 farklı boyut kullanmalı ve en azından küçük bir boyutun bulunması sağlanmalıdır.",
         },
         "c-avatar-colors": {
-          title: "Colors",
+          title: "Renkler",
           description:
-            "A background color should be applied to the avatar shape when used without an image. Make sure that icons and text have enough contrast ratio with the background according to the WCAG AA standard.",
+            "Bir arka plan rengi, görüntü olmadan kullanıldığında avatar şekline uygulanmalıdır. Simge ve metnin arka planla yeterli kontrast oranına sahip olduğundan emin olunmalıdır (WCAG AA standardına göre).",
         },
         "c-avatar-shape": {
-          title: "Shape",
+          title: "Şekil",
           description:
-            "Avatars might support multiple shapes, like square or circle, based on the area they are used in.",
+            "Avatarlar, kullanıldıkları alanlara bağlı olarak kare veya daire gibi birden fazla şekli destekleyebilir.",
         },
         "c-avatar-group": {
-          title: "Avatar groups",
+          title: "Avatar grupları",
           description:
-            "Multiple avatars can be stacked together to represent a group of users.",
+            "Birden fazla avatar, bir kullanıcı grubunu temsil etmek için bir araya getirilebilir.",
         },
         "c-avatar-a11y-label": {
-          title: "Accessibility label",
+          title: "Erişilebilirlik etiketi",
           description:
-            "Avatar should provide an accessibility label when used for non-decorative images and has no text representation of its contents.",
+            "Avatar, dekoratif olmayan görüntüler için kullanıldığında ve içeriğinin metin temsili olmadığında bir erişilebilirlik etiketi sağlamalıdır.",
         },
       },
     },
     "c-badge": {
-      title: "Badge",
+      title: "Rozet (Badge)",
       description:
-        "Compact element that represents the status of an object or user input.",
+        "Nesnenin veya kullanıcı girdisinin durumunu temsil eden kompakt bir öğe.",
       checklist: {
         "c-badge-colors": {
-          title: "Colors",
+          title: "Renkler",
           description:
-            "Badges may play various roles in your product, and having a predefined color for each role should help users understand their meaning. When changing colors, make sure the text has enough contrast ratio with the background according to the WCAG AA standard.",
+            "Rozetler, ürününüzde çeşitli rolleri oynayabilir ve her rol için önceden belirlenmiş bir renge sahip olmak, kullanıcıların anlamlarını anlamalarına yardımcı olmalıdır. Renkleri değiştirirken, metnin arka planla yeterli kontrast oranına sahip olduğundan emin olunmalıdır (WCAG AA standardına göre).",
         },
         "c-badge-variants": {
-          title: "Variants",
+          title: "Çeşitler",
           description:
-            "Based on where in the product badges are rendered, you might support multiple component variants. For example, you can have some badges using a faded background to avoid drawing too much attention.",
+            "Rozetlerin üründe hangi yerde göründüğüne bağlı olarak, birden fazla bileşen çeşidini destekleyebilir. Örneğin, dikkat çekmeyecek şekilde bazı rozetlerin soluk bir arka plan kullanmasını sağlayabilirsiniz.",
         },
         "c-badge-sizes": {
-          title: "Sizes",
+          title: "Boyutlar",
           description:
-            "Badges can come in multiple sizes depending on where a badge is used. For example, you can use the large size for marketing pages.",
+            "Rozetler, nerede kullanılacaklarına bağlı olarak birden fazla boyutta olabilir. Örneğin, pazarlama sayfalarında büyük boyut kullanılabilir.",
         },
         "c-badge-icon-support": {
-          title: "Icon support",
+          title: "Simge desteği",
           description:
-            "To better illustrate the meaning of a badge, you can display an icon next to the text. Make sure that for small badges, icon contents are still recognizable.",
+            "Bir rozetin anlamını daha iyi açıklamak için metnin yanında bir simge görüntüleyebilirsiniz. Küçük rozetler için, simge içeriğinin hala tanınabilir olmasından emin olunmalıdır.",
         },
         "c-badge-dismiss": {
-          title: "Dismissible action",
+          title: "Kapatılabilir işlem",
           description:
-            "Badges can be used as a dynamic way to display selected values, and there should be a way to dismiss them.",
+            "Rozetler, seçili değerleri dinamik olarak göstermek için kullanılabilir ve kapatılabilecek bir yol olmalıdır.",
         },
         "c-badge-empty": {
-          title: "Empty state",
+          title: "Boş durum",
           description:
-            "Badges can be used without any text content inside. That usually requires changing their styles to preserve the correct shape.",
+            "Rozetler, içeride herhangi bir metin içermeksizin kullanılabilir. Bu durumda, doğru şekli korumak için stillerini değiştirmek gerekebilir.",
         },
         "c-badge-positioning": {
-          title: "Positioning",
+          title: "Konumlandırma",
           description:
-            "When used as a status badge, like a notification indicator – you should be able to position it relative to those elements.",
+            "Bir bildirim göstergesi gibi bir durum rozeti olarak kullanıldığında, bunu ilgili öğelere göre konumlandırabilmelisiniz.",
         },
       },
     },
+
     "c-button": {
-      title: "Button",
-      description: "Interactive element used for single-step actions.",
+      title: "Buton",
+      description: "Tek adımlı işlemler için kullanılan etkileşimli öğe.",
       checklist: {
         "c-button-colors": {
-          title: "Colors",
+          title: "Renkler",
           description:
-            "Buttons may play various roles in your product, and having a predefined color for each role should help users understand their meaning. When changing colors, make sure the text has enough contrast ratio with the background according to the WCAG AA standard.",
+            "Butonlar ürününüzde çeşitli rolleri oynayabilir ve her rol için önceden belirlenmiş bir rengin olması, kullanıcıların anlamlarını anlamalarına yardımcı olmalıdır. Renkleri değiştirirken, metnin arka planla yeterli kontrast oranına sahip olduğundan emin olunmalıdır (WCAG AA standardına göre).",
         },
         "c-button-variants": {
-          title: "Variants",
+          title: "Çeşitler",
           description:
-            "When using multiple buttons, there should be a way to differentiate between primary and secondary actions. Buttons may play different roles for the user or be used on various surfaces, and they have to change how they look.",
+            "Birden fazla buton kullanıyorsanız, birincil ve ikincil işlemler arasında ayrım yapılmalıdır. Butonlar, kullanıcı için farklı roller oynayabilir veya çeşitli yüzeylerde kullanılabilir ve görünümleri değişmelidir.",
         },
         "c-button-sizes": {
-          title: "Sizes",
+          title: "Boyutlar",
           description:
-            "Depending on where a button will be used, it can come in multiple sizes. For example, you can use the small size for dense areas of your application.",
+            "Bir butonun nerede kullanılacağına bağlı olarak birden fazla boyutta olabilir. Örneğin, yoğun alanlarda küçük boyut kullanılabilir.",
         },
         "c-button-icon": {
-          title: "Icon support",
+          title: "Simge desteği",
           description:
-            "Icons easily communicate the button's purpose when used next to its label or can be used without text when there's insufficient space. Ensure the accessibility label is provided when used with an icon only.",
+            "Simge, buton etiketinin yanında kullanıldığında butonun amacını kolayca iletebilir veya yetersiz alan olduğunda metin olmadan kullanılabilir. Yalnızca simge ile kullanıldığında erişilebilirlik etiketinin sağlandığından emin olunmalıdır.",
         },
         "c-button-hover": {
-          title: "Hover state",
+          title: "Üzerine gelme durumu",
           description:
-            "Clearly show that the button is interactive when hovered with a mouse cursor.",
+            "Fare imleciyle üzerine gelindiğinde butonun etkileşimli olduğu açıkça gösterilmelidir.",
         },
         "c-button-active": {
-          title: "Active state",
+          title: "Etkin durum",
           description:
-            "Provide a visual cue when a button is pressed, used for selecting a value, or toggles other elements on the page.",
+            "Butona basıldığında, bir değer seçmek veya sayfadaki diğer öğeleri değiştirmek için görsel bir işaret sağlanmalıdır.",
         },
         "c-button-loading": {
-          title: "Loading state",
+          title: "Yükleniyor durumu",
           description:
-            "Indicate when users have to wait for the result of their action after pressing a button. If a spinner is used to display this state, ensure it’s not changing the original button width or height.",
+            "Kullanıcıların bir butona bastıktan sonra sonuç için beklemesi gerektiği durumları belirtmelidir. Bu durumu göstermek için bir dönme simgesi kullanılıyorsa, simgenin orijinal buton genişliğini veya yüksekliğini değiştirmemesine dikkat edilmelidir.",
         },
         "c-button-disabled": {
-          title: "Disabled state",
+          title: "Devre dışı durum",
           description:
-            "Visually shows that the button is not interactive and restricts it from being pressed.",
+            "Butonun etkileşimli olmadığını ve basılmasını engellediğini görsel olarak göstermelidir.",
         },
         "c-button-a11y-role": {
-          title: "Accessibility role",
+          title: "Erişilebilirlik rolü",
           description:
-            "Button should correctly announce the button or link accessibility roles and automatically resolve it based on the properties passed to it.",
+            "Buton, buton veya bağlantı erişilebilirlik rollerini doğru bir şekilde bildirmeli ve özelliklere göre otomatik olarak çözümlenmelidir.",
         },
         "c-button-a11y-focus": {
-          title: "Focus indicator",
+          title: "Odak göstergesi",
           description:
-            "Button should have a visible focus indicator when it’s focused using the keyboard or assistive technologies.",
+            "Buton, klavye veya yardımcı teknolojiler kullanılarak odaklandığında görünür bir odak göstergesi olmalıdır.",
         },
       },
     },
     "c-breadcrumbs": {
-      title: "Breadcrumbs",
+      title: "Ekmek Kırıntısı (Breadcrumbs)",
       description:
-        "Top-level product navigation that helps user understand the location of the current page and navigate back to its parents.",
+        "Kullanıcının mevcut sayfanın konumunu anlamasına ve üst sayfalara geri dönmesine yardımcı olan üst düzey ürün gezinmesi.",
       checklist: {
         "c-breadcrumbs-icon": {
-          title: "Icon support",
+          title: "Simge desteği",
           description:
-            "Icons help to communicate the roles of the pages to which breadcrumbs items link. Most of the time, you want to ensure they’re used consistently, not only for random items in the list.",
+            "Simge, ekmek kırıntısı öğelerinin bağlandığı sayfaların rollerini iletmeye yardımcı olur. Genellikle, rastgele öğeler için değil, sürekli olarak kullanılmalarını sağlamak önemlidir.",
         },
         "c-breadcrumbs-disabled": {
-          title: "Disabled state",
+          title: "Devre dışı durum",
           description:
-            "Each item in the list can be disabled separately to prevent users from navigating to the page.",
+            "Listedeki her öğe ayrı ayrı devre dışı bırakılabilir, böylece kullanıcıların ilgili sayfaya gezinmesi engellenir.",
         },
         "c-breadcrumbs-collapsed": {
-          title: "Collapsed state",
+          title: "Daraltılmış durum",
           description:
-            "If breadcrumbs items don’t fit into the parent container, the list should support collapsing items only to keep the relevant ones visible to the user.",
+            "Ekmek kırıntısı öğeleri üst öğe içine sığmazsa, liste daraltmayı desteklemeli ve kullanıcıya ilgili öğeleri görünür tutmalıdır.",
         },
         "c-breadcrumbs-separator": {
-          title: "Custom separator",
+          title: "Özel ayraç",
           description:
-            "Depending on the usage context, items in the breadcrumbs list can use different separator styles.",
+            "Ekmek kırıntısı listesindeki öğeler, kullanım bağlamına göre farklı ayraç stillerini kullanabilir.",
         },
       },
     },
     "c-calendar": {
-      title: "Calendar",
+      title: "Takvim (Calendar)",
       description:
-        "Grid displaying days in one or more months and allow users to select a single date or a date range",
+        "Bir veya daha fazla ayda günleri gösteren ve kullanıcıların tek bir tarih veya tarih aralığı seçmesine izin veren ızgara.",
       checklist: {
         "c-calendar-modes": {
-          title: "Display modes",
+          title: "Görüntüleme modları",
           description:
-            "Calendar might be used in various product areas and viewports. Make sure to support different display modes for rendering more than one month or a vertical layout.",
+            "Takvim, çeşitli ürün alanlarında ve görüntüleme alanlarında kullanılabilir. Birden fazla ayı veya dikey bir düzeni görüntülemek için farklı görüntüleme modlarını desteklemek önemlidir.",
         },
         "c-calendar-selected": {
-          title: "Selected state",
+          title: "Seçili durum",
           description:
-            "Calendar should support a single date and a selection range. Selected dates should be visually highlighted, and the range between selected dates should be visible to the users.",
+            "Takvim, tek bir tarihi ve bir seçim aralığını desteklemelidir. Seçilen tarihler görsel olarak vurgulanmalı ve seçilen tarihler arasındaki aralık kullanıcılar tarafından görülebilmelidir.",
         },
         "c-calendar-month-selection": {
-          title: "Month selection",
+          title: "Ay seçimi",
           description:
-            "To help users navigate longer date ranges, the calendar should provide an easy way to switch displayed months.",
+            "Kullanıcıların daha uzun tarih aralıklarına geçişi kolaylaştırmak için takvim, görüntülenen ayları değiştirmek için kolay bir yol sağlamalıdır.",
         },
         "c-calendar-day-names": {
-          title: "Day names",
+          title: "Gün adları",
           description:
-            "Provide short labels for the weekday names in addition to the date numbers to let users easier navigate the date selection.",
+            "Kullanıcıların tarih seçimini daha kolay yapabilmesi için tarih numaralarının yanı sıra haftanın kısa etiketlerini sağlamak önemlidir.",
         },
         "c-calendar-i18n": {
-          title: "Internationalisation",
+          title: "Ulusal Dille Uyum",
           description:
-            "Calendars should be localized for all country regions supported by the product. That includes date formats and correct ordering of the weekdays.",
+            "Takvimler, ürün tarafından desteklenen tüm ülke bölgeleri için yerelleştirilmelidir. Bu, tarih biçimleri ve haftanın günlerinin doğru sıralanmasını içerir.",
         },
         "c-calendar-a11y-keyboard": {
-          title: "Keyboard navigation",
+          title: "Klavye gezinmesi",
           description:
-            "Calendar dates should be focusable with keyboard and assistive technologies. Further navigation on the dates should happen with keyboard arrows or screen reader navigation and support switching the month by navigating out of a column or a row.",
+            "Takvim tarihleri, klavye ve yardımcı teknolojilerle odaklanabilir olmalıdır. Tarihlerdeki daha fazla gezinme, klavye okları veya ekran okuyucu gezinme kullanılarak olmalı ve bir sütundan veya satırdan çıkılarak ay değiştirme desteği sağlamalıdır.",
         },
         "c-calendar-a11y-state": {
-          title: "State announcement",
+          title: "Durum bildirimi",
           description:
-            "Selected dates should be announced by the assistive technologies when they get focused.",
+            "Seçilen tarihler, odaklandıklarında yardımcı teknolojiler tarafından bildirilmelidir.",
         },
       },
     },
     "c-card": {
-      title: "Card",
+      title: "Kart (Card)",
       description:
-        "Container to group information about subjects and their related actions.",
+        "Konu ve ilgili eylemler hakkında bilgileri gruplamak için kullanılan bir kap.",
       checklist: {
         "c-card-composition": {
-          title: "Content composition",
+          title: "İçerik bileşimi",
           description:
-            "Content area should be flexible enough to support various types of content, including other components.",
+            "İçerik alanı, diğer bileşenleri de içerecek şekilde esnek olmalıdır.",
         },
         "c-card-media-sections": {
-          title: "Media sections",
+          title: "Medya bölümleri",
           description:
-            "Cards are frequently used with media content. The most popular options are having a full-width area on top of the content or an area at one of the card’s sides.",
+            "Kartlar genellikle medya içeriğiyle birlikte kullanılır. En popüler seçeneklerden biri, içeriğin üzerinde tam genişlikte bir alanın veya kartın bir tarafında bir alanın bulunmasıdır.",
         },
         "c-card-actions": {
-          title: "Supplementary actions",
+          title: "Ek eylemler",
           description:
-            "Cards can be used with actions usually placed at the bottom of the card, or the card itself can be tappable and represent an action.",
+            "Kartlar, genellikle kartın alt kısmında yer alan eylemlerle kullanılabilir, veya kartın kendisi tıklanabilir ve bir eylemi temsil edebilir.",
         },
         "c-card-responsive": {
-          title: "Responsiveness",
+          title: "Duyarlılık",
           description:
-            "On mobile viewports, cards are usually full-width to save space for the content.",
+            "Mobil görünümlerde, kartlar genellikle içerik için alanı korumak için tam genişlikte olmalıdır.",
         },
         "c-card-groups": {
-          title: "Card groups",
+          title: "Kart grupları",
           description:
-            "Multiple cards can be grouped in a single list of content sections.",
+            "Birden çok kart, tek bir içerik bölümleri listesini temsil etmek için gruplandırılabilir.",
         },
       },
     },
     "c-carousel": {
-      title: "Carousel",
+      title: "Karousel (Carousel)",
       description:
-        "Horizontal scrollable areas used for displaying grouped content.",
+        "Gruplanmış içeriği göstermek için kullanılan yatay kaydırılabilir alanlar.",
       checklist: {
         "c-carousel-navigation": {
-          title: "Navigation controls",
+          title: "Navigasyon kontrolleri",
           description:
-            "Carousels should be accessible for navigating its content on devices that work with the mouse instead of touch events.",
+            "Karousel, fare yerine dokunma olayları ile içeriğini gezinmek için erişilebilir olmalıdır.",
         },
         "c-carousel-composition": {
-          title: "Item composition",
+          title: "Öğe bileşimi",
           description:
-            "Content area of the carousel items should be flexible enough to support various types of content, including other components.",
+            "Karousel öğelerinin içerik alanı, diğer bileşenleri de içerecek şekilde esnek olmalıdır.",
         },
         "c-carousel-item-size": {
-          title: "Item sizes",
+          title: "Öğe boyutları",
           description:
-            "Layout of the items should be flexible to support different types of content. For mobile devices, make sure to show a part of the carousel item that doesn’t fit into the viewport to indicate the scrollable area.",
+            "Öğelerin düzeni, farklı içerik türlerini desteklemek için esnek olmalıdır. Mobil cihazlar için, görüntülenebilen alanı göstermek için karusel öğesinin bir kısmını göstermeye dikkat edin.",
         },
         "c-carousel-touch": {
-          title: "Touch navigation",
+          title: "Dokunma navigasyonu",
           description:
-            "Carousel content should be rendered inside a scrollable area to support touch events.",
+            "Karousel içeriği, dokunma olaylarını desteklemek için bir kaydırılabilir alan içinde olmalıdır.",
         },
         "c-carousel-responsive": {
-          title: "Responsiveness",
+          title: "Duyarlılık",
           description:
-            "Carousel items layout might require adjustments based on the available space.",
+            "Karousel öğelerinin düzeni, mevcut alanın büyüklüğüne bağlı olarak ayarlamalar gerektirebilir.",
         },
         "c-carousel-a11y-keyboard-navigation": {
-          title: "Keyboard navigation",
+          title: "Klavye gezinmesi",
           description:
-            "Keyboard and assistive technologies users should be able to navigate the carousel content without clicking on the navigation controls.",
+            "Klavye ve yardımcı teknolojileri kullanan kullanıcılar, navigasyon kontrollerine tıklamadan karusel içeriğini gezinebilmelidir.",
         },
       },
     },
     "c-checkbox": {
-      title: "Checkbox",
+      title: "Onay Kutusu (Checkbox)",
       description:
-        "Form field used to select one or multiple values from the list.",
+        "Listeden bir veya birden fazla değer seçmek için kullanılan form alanı.",
       checklist: {
         "c-checkbox-label": {
-          title: "Label",
+          title: "Etiket",
           description:
-            "There should be a text label linked with the checkbox field. Clicking the label should also trigger the checkbox selection. If the label is not rendered on the page, assistive technologies should still announce it.",
+            "Onay kutusu alanı ile bağlantılı bir metin etiket olmalıdır. Etikete tıklamak, onay kutusunu da seçmelidir. Etiket sayfada görüntülenmiyorsa, yardımcı teknolojiler yine de etiketi açıklamalıdır.",
         },
         "c-checkbox-checked": {
-          title: "Checked state",
+          title: "Seçili durum",
           description:
-            "Display when the checkbox gets selected and is used for the form submission.",
+            "Onay kutusu seçildiğinde ve form gönderiminde kullanıldığında gösterilmelidir.",
         },
         "c-checkbox-error": {
-          title: "Error state",
+          title: "Hata durumu",
           description:
-            "Use an error state for form validation when the error is related to the checkbox field. Always use a text error along with a different field color.",
+            "Form doğrulamasında onay kutusu alanı ile ilgili bir hata oluştuğunda hata durumu kullanılmalıdır. Hatalı durum, farklı bir alan rengi ve metin hata mesajı ile gösterilmelidir.",
         },
         "c-checkbox-disabled": {
-          title: "Disabled state",
+          title: "Devre dışı durum",
           description:
-            "Use a disabled state to prevent checkbox interactions and remove its value from the submitted form values.",
+            "Devre dışı durum, onay kutusu etkileşimlerini engellemek ve gönderilen form değerlerinden kaldırmak için kullanılmalıdır.",
         },
         "c-checkbox-indeterminate": {
-          title: "Indeterminate state",
+          title: "Belirsiz durum",
           description:
-            "Visually display when the checkbox has children selectable elements and only some are selected.",
+            "Onay kutusu, altında seçilebilir öğeleri olan durumları görsel olarak gösterebilir.",
         },
         "c-checkbox-group": {
-          title: "Checkbox group",
+          title: "Onay Kutusu Grubu",
           description:
-            "Checkboxes can be grouped to work with multiple values at the same time.",
+            "Onay kutuları, aynı anda birden fazla değeri işlemek için gruplandırılabilir.",
         },
         "c-checkbox-a11y-keyboard": {
-          title: "Keyboard support",
+          title: "Klavye desteği",
           description:
-            "Checkbox selections should be triggered with the keyboard. Using native elements for this should provide this kind of interaction automatically.",
+            "Onay kutusu seçimleri, klavyeyle tetiklenmelidir. Bunun için doğal öğeler kullanmak, bu tür etkileşimleri otomatik olarak sağlar.",
         },
       },
     },
     "c-divider": {
-      title: "Divider",
-      description: "Element for visual content separation",
+      title: "Bölücü (Divider)",
+      description: "Görsel içerik ayırma elemanı.",
       checklist: {
         "c-divider-direction": {
-          title: "Direction",
+          title: "Yön",
           description:
-            "Dividers should separate both horizontal and vertical lists of content.",
+            "Bölücüler, hem yatay hem de dikey içerik listelerini ayırmalıdır.",
         },
         "c-divider-a11y-role": {
-          title: "Accessibility role",
+          title: "Erişilebilirlik rolü",
           description:
-            "If the divider is playing a non-decorative role in the layout, its role should be announced by the assistive technologies.",
+            "Bölücü, düzen içinde dekoratif olmayan bir rol oynuyorsa, rolü yardımcı teknolojiler tarafından duyurulmalıdır.",
         },
       },
     },
     "c-dropdown": {
-      title: "Dropdown",
-      description: "List of contextual actions that users can trigger.",
+      title: "Açılır Menü (Dropdown)",
+      description: "Kullanıcıların tetikleyebileceği bağlamsal eylemlerin listesi.",
       checklist: {
         "c-dropdown-composition": {
-          title: "Content composition",
+          title: "İçerik bileşimi",
           description:
-            "Dropdowns may be used for context menus, product navigation, and other purposes. Their content area should be flexible enough to support various types of content, including other components.",
+            "Açılır menüler, bağlam menüleri, ürün gezintisi ve diğer amaçlar için kullanılabilir. İçerik alanı, diğer bileşenleri de içerecek şekilde esnek olmalıdır.",
         },
         "c-dropdown-hover": {
-          title: "Hover trigger",
+          title: "Üzerine gelme tetikleyici",
           description:
-            "Dropdown should support displaying its content on hover events. The same behavior should happen for keyboard users once its trigger gets focused.",
+            "Açılır menü, içeriğini üzerine gelme olaylarıyla görüntülemeyi desteklemelidir. Aynı davranış, klavye kullanıcıları için tetikleyici odaklandığında da gerçekleşmelidir.",
         },
         "c-dropdown-positioning": {
-          title: "Dynamic positioning",
+          title: "Dinamik konumlandırma",
           description:
-            "Dropdown content should be displayed based on the current position of the trigger element on the screen and always stay visible to the user.",
+            "Açılır menü içeriği, tetikleyici öğenin ekran üzerindeki mevcut konumuna göre görüntülenmeli ve her zaman kullanıcı tarafından görülebilir olmalıdır.",
         },
         "c-dropdown-responsive": {
-          title: "Responsiveness",
+          title: "Duyarlılık",
           description:
-            "Dropdown content should be adjusted if it doesn’t fit the screen the same way on mobile devices as on desktop.",
+            "Açılır menü içeriği, mobil cihazlarda masaüstünde olduğu gibi ekrana sığmazsa düzenlenmelidir.",
         },
         "c-dropdown-a11y-focus": {
-          title: "Focus trapping",
+          title: "Odak kapatma",
           description:
-            "Once dropdown content is opened, the focus ring should move inside its content area and return to the trigger element when closed.",
+            "Açılır menü içeriği açıldığında, kullanıcı odakı içerik alanının içine almalı ve kapatıldığında odakı en son etkin öğeye geri dönmelidir.",
         },
         "c-dropdown-a11y-keyboard": {
-          title: "Keyboard navigation",
+          title: "Klavye gezinmesi",
           description:
-            "Dropdown should be accessible for keyboard and assistive technologies. Users should be able to close the dropdown using a separate close action, or once they tab outside the content area.",
+            "Açılır menü, klavye ve yardımcı teknolojiler için erişilebilir olmalıdır. Kullanıcılar, içerik alanının dışına çıktıktan sonra açılır menüyü kapatmak için ayrı bir kapatma eylemi kullanabilmelidir.",
         },
       },
     },
     "c-icon": {
-      title: "Icon",
-      description: "Wrapper for SVG assets to control their appearance",
+      title: "Simge (Icon)",
+      description: "Görünümünü kontrol etmek için SVG varlıklarını saran bileşen.",
       checklist: {
         "c-icon-colors": {
-          title: "Colors",
+          title: "Renkler",
           description:
-            "Icons should support color values available in design system tokens. Additionally, it’s a good practice to support color inheritance from their parent element.",
+            "Simge, tasarım sistemine ait renk değerlerini desteklemelidir. Ayrıca, ebeveyn öğesinden renk mirası alma özelliğini desteklemek iyi bir uygulamadır.",
         },
         "c-icon-sizes": {
-          title: "Sizes",
+          title: "Boyutlar",
           description:
-            "Icons should have several predefined sizes to provide a holistic experience across the product. Typography pairings may be used for these size values to ensure they align with the text sizes.",
+            "Simge, ürününüzde tutarlı bir deneyim sağlamak için birkaç önceden tanımlanmış boyuta sahip olmalıdır. Bu boyut değerleri için tipografi eşlemeleri kullanılabilir, böylece metin boyutları ile uyumlu olacak şekilde ayarlanır.",
         },
         "c-icon-a11y-decoration": {
-          title: "Interactivity",
+          title: "Etkileşim",
           description:
-            "Icons are used as decorative elements most of the time. If an icon is meant to be interactive – that functionality should be included using buttons, links, or other interactive components.",
+            "Simge, genellikle dekoratif öğeler olarak kullanılır. Bir simge etkileşimli olacak şekilde tasarlanmışsa, bu işlevsellik düğmeler, bağlantılar veya diğer etkileşimli bileşenler kullanılarak sağlanmalıdır.",
         },
       },
     },
     "c-image": {
-      title: "Image",
+      title: "Resim (Image)",
       description:
-        "Utility for displaying images and controlling their behavior.",
+        "Resimleri görüntülemek ve davranışlarını kontrol etmek için kullanılan bir yardımcı bileşen.",
       checklist: {
         "c-image-sizes": {
-          title: "Sizes",
+          title: "Boyutlar",
           description:
-            "Image should be flexible in terms of supported sizes. Besides just supporting width and height – add support for aspect ratio to scale its proportions based on the parent element dynamically.",
+            "Resim, desteklenen boyutlar açısından esnek olmalıdır. Yalnızca genişlik ve yükseklik desteği sağlamakla kalmamalı, aynı zamanda ebeveyn öğeye göre oranını dinamik olarak ölçeklendirecek şekilde en boy oranı desteği de eklemelisiniz.",
         },
         "c-image-fallback": {
-          title: "Image fallback",
+          title: "Resim yedekleme",
           description:
-            "Display a fallback when the image URL is incorrect or undefined. That can be an empty box with a background, an icon, or a static placeholder image.",
+            "Resim URL'si yanlış veya tanımsız olduğunda bir yedekleme görüntüsü gösterilmelidir. Bu, arka planı boş bir kutu, bir simge veya statik bir yer tutucu resim olabilir.",
         },
         "c-image-density": {
-          title: "Screen density support",
+          title: "Ekran yoğunluğu desteği",
           description:
-            "Depending on the screen density, you should support loading multiple image assets of different sizes and serve the relevant one to the user.",
+            "Ekran yoğunluğuna bağlı olarak, farklı boyutlarda birden fazla resim varlığını yüklemeyi desteklemeli ve kullanıcıya uygun olanı sunmalısınız.",
         },
         "c-image-a11y-alt": {
-          title: "Alt text",
+          title: "Alternatif metin",
           description:
-            "When the image is non-decorative, it should provide an alt text describing the picture contents.",
+            "Resim dekoratif değilse, içeriğini açıklayan bir alternatif metin sağlamalıdır.",
         },
       },
     },
     "c-link": {
-      title: "Link",
+      title: "Bağlantı (Link)",
       description:
-        "Interactive text element used for navigation within the text paragraphs.",
+        "Metin paragrafları içinde gezinme için kullanılan etkileşimli metin öğesi.",
       checklist: {
         "c-link-icon": {
-          title: "Icon support",
+          title: "Simge desteği",
           description:
-            "An icon can be used next to the link to communicate the purpose of the link. Icons shouldn’t be used inside a link without a text label.",
+            "Bir bağlantının yanında simge kullanılabilir ve simgeler metin etiketi olmadan bir bağlantı içinde kullanılmamalıdır.",
         },
         "c-link-colors": {
-          title: "Colors",
+          title: "Renkler",
           description:
-            "Links may play various roles in your product, and having a predefined color for each role should help users understand their meaning. Since the link is a text element, it should be able to automatically inherit the color defined by its parent element, the same as other text content.",
+            "Bağlantılar, ürününüzde farklı rolleri oynayabilir ve her rol için önceden tanımlanmış bir renge sahip olmak, kullanıcıların anlamalarına yardımcı olabilir. Bağlantı, bir metin öğesi olduğu için, diğer metin içeriğiyle aynı renk mirasını otomatik olarak alabilmelidir.",
         },
         "c-link-disabled": {
-          title: "Disabled state",
+          title: "Devre dışı durum",
           description:
-            "Visually shows that the link is not interactive and restricts it from being pressed.",
+            "Görsel olarak bağlantının etkileşime geçilemediğini göstermeli ve tıklanmasını engellemelidir.",
         },
         "c-link-font-inheritance": {
-          title: "Font inheritance",
+          title: "Yazı tipi mirası",
           description:
-            "Links should be able to inherit the typography styles when used as a part of the text element.",
+            "Bağlantılar, bir metin öğesi olarak kullanıldığında tipografi stillerini miras alabilmelidir.",
         },
         "c-link-multiline": {
-          title: "Multiline display",
+          title: "Çok satırlı görüntü",
           description:
-            "When used inside a text paragraph, links should support multiline display without breaking the text flow.",
+            "Metin paragrafı içinde kullanıldığında, bağlantılar çok satırlı görüntüyü desteklemelidir ve metin akışını bozmamalıdır.",
         },
         "c-link-a11y-role": {
-          title: "Accessibility role",
+          title: "Erişilebilirlik rolü",
           description:
-            "Links should correctly announce the button or link accessibility roles automatically resolve it based on the properties passed to it.",
+            "Bağlantılar, düğme veya bağlantı erişilebilirlik rollerini doğru bir şekilde duyurmalı ve bu özelliklere dayalı olarak otomatik olarak çözümlenmelidir.",
         },
       },
     },
     "c-list": {
-      title: "List",
-      description: "List is used to display a list of items.",
+      title: "Liste (List)",
+      description: "Öğelerin bir listesini göstermek için kullanılır.",
       checklist: {
         "c-list-order": {
-          title: "Order",
+          title: "Sıralama",
           description:
-            "List items can use bulleted, numbered, and other styles and types of ordering.",
+            "Liste öğeleri, benzer şekillerde sıralamaları ve türleri kullanarak sıralanabilir.",
         },
         "c-list-composition": {
-          title: "Content cmposition",
+          title: "İçerik bileşimi",
           description:
-            "List item content areas should be flexible enough to support various types of content, including other components.",
+            "Liste öğesi içerik alanları, diğer bileşenleri de içerecek şekilde esnek olmalıdır.",
         },
         "c-list-a11y-role": {
-          title: "Accessibility role",
+          title: "Erişilebilirlik rolü",
           description:
-            "Assistive technologies should announce lists with the correct role and number of items displayed.",
+            "Yardımcı teknolojiler, doğru rol ve görüntülenen öğe sayısı ile listeleri duyurmalıdır.",
         },
       },
     },
     "c-loading-indicator": {
-      title: "Loading indicator",
+      title: "Yükleniyor Göstergesi (Loading Indicator)",
       description:
-        "Animated element that communicates progress without telling how long the process will take.",
+        "Uzun süren veya birkaç adımdan oluşan bir görev için ilerlemeyi ileten animasyonlu bir öğe.",
       checklist: {
         "c-loading-indicator-colors": {
-          title: "Colors",
+          title: "Renkler",
           description:
-            "Loading indicators might be used inside the elements with various roles and follow their color scheme.",
+            "Yükleniyor göstergeleri, çeşitli rollerdeki öğelerin içine yerleştirilebilir ve onların renk şemasını takip etmelidir.",
         },
         "c-loading-indicators-sizes": {
-          title: "Sizes",
+          title: "Boyutlar",
           description:
-            "Loading indicators might provide multiple sizes, depending on the size of the areas where the loading indicator is rendered.",
+            "Yükleniyor göstergeleri, gösterildikleri alana bağlı olarak birden fazla boyut sağlayabilir.",
         },
         "c-loading-indicator-time": {
-          title: "Loading duration",
+          title: "Yükleme süresi",
           description:
-            "In some cases, the wait time can’t be determined. The loading indicator should be shown until the loading finishes or an error happens. In other cases, it’s better to indicate the time left until the loading is finished.",
+            "Bazı durumlarda, bekleme süresi belirlenemez. Yükleniyor göstergesi, yükleme tamamlandığında veya bir hata oluştuğunda gösterilmelidir. Diğer durumlarda, yükleme süresinin bitimine kadar kalan zamanı göstermek daha iyi olabilir.",
         },
         "c-loading-indicator-a11y-reduced-motion": {
-          title: "Reduced motion",
+          title: "Azaltılmış hareket",
           description:
-            "The loading indicator should be synced with the system motion settings and reduce its animation speed when reduced motion settings are turned on.",
+            "Yükleniyor göstergesi, sistem hareket ayarları ile senkronize olmalı ve azaltılmış hareket ayarları etkin olduğunda animasyon hızını azaltmalıdır.",
         },
         "c-loading-indicator-a11y-label": {
-          title: "Accessibility label",
+          title: "Erişilebilirlik etiketi",
           description:
-            "If the loading indicator is standalone – provide an accessibility label for the content area it’s loading.",
+            "Yükleniyor göstergesi yalnızca bağımsız bir göstergesi ise, yüklenmekte olan içerik alanı için erişilebilirlik etiketi sağlanmalıdır.",
         },
       },
     },
     "c-modal": {
       title: "Modal",
       description:
-        "Container appearing in front of the main content to provide critical information or an actionable piece of content.",
+        "Ana içeriğin önünde görünen ve kritik bilgi veya etkileşimli içerik sağlayan bir bileşen.",
       checklist: {
         "c-modal-composition": {
-          title: "Content composition",
+          title: "İçerik bileşimi",
           description:
-            "The main content area should be flexible enough to support various types of content, including other components.",
+            "Ana içerik alanı, diğer bileşenleri de içerecek şekilde esnek olmalıdır.",
         },
         "c-modal-actions": {
-          title: "Supplementary actions",
+          title: "Ek eylemler",
           description:
-            "Since content in the modal may be actionable, it’s essential to have an area for action elements. This area is usually located at the bottom of the modal container.",
+            "Modal içindeki içerik, etkileşimli olabileceğinden, eylem öğeleri için bir alan sağlamak önemlidir. Bu alan genellikle modal kutusunun altında bulunur.",
         },
         "c-modal-close": {
-          title: "Close action",
+          title: "Kapatma eylemi",
           description:
-            "Modals should provide a straightforward way to close, as they block content when open. This may be either a separate close button or one of the supplementary actions.",
+            "Modal, açık olduğunda içeriği engellediğinden, basit bir kapatma yolunun olması önemlidir. Bu ya ayrı bir kapatma düğmesi olabilir veya ek eylemlerden biri olabilir.",
         },
         "c-modal-positioning": {
-          title: "Positioning",
+          title: "Konumlandırma",
           description:
-            "Modals can be positioned in the center of the screen or displayed as sliding sheets on either side of the screen.",
+            "Modal, ekranın ortasında konumlandırılabilir veya ekranın her iki yanında kayan paneller olarak görüntülenebilir.",
         },
         "c-modal-sizes": {
-          title: "Sizes",
+          title: "Boyutlar",
           description:
-            "Provide support for changing the modal height and width based on the content you display.",
+            "Modalin içinde gösterilecek içeriğe göre modal yüksekliğini ve genişliğini değiştirme desteği sağlamalısınız.",
         },
         "c-modal-a11y-focus": {
-          title: "Focus trapping",
+          title: "Odak hapsi",
           description:
-            "When the modal gets opened, the user focus should move to the first focusable element and stay trapped inside it. When the modal is closed, the focus should return to the last active element.",
+            "Modal açıldığında, kullanıcı odaklanabilir öğe, içerik alanının ilk odaklanabilir öğesine taşınmalı ve kapatıldığında odak en son etkin öğeye geri dönmelidir.",
         },
         "c-modal-a11y-keyboard": {
-          title: "Keyboard navigation",
+          title: "Klavye gezinmesi",
           description:
-            "It should be possible to close a modal by pressing the Esc key, and all the focusable elements inside the modal container should be accessible with keyboard navigation.",
+            "Modali kapatmak için Esc tuşuna basarak kapatabilmek ve modal kutusunun içindeki tüm odaklanabilir öğelere klavye gezinmesi ile erişilebilir olması önemlidir.",
         },
         "c-modal-a11y-labels": {
-          title: "Title and subtitle labeling",
+          title: "Başlık ve alt başlık etiketleme",
           description:
-            "Modals should use the correct accessibility role, and they should be labeled by the title and subtitle elements. If there is no visible title or subtitle, it may use an accessibility label instead.",
+            "Modaller, doğru erişilebilirlik rolünü kullanmalı ve başlık ve alt başlık öğeleri tarafından etiketlenmelidir. Eğer görünür bir başlık veya alt başlık yoksa, bunun yerine bir erişilebilirlik etiketi kullanılabilir.",
         },
       },
     },
     "c-pagination": {
-      title: "Pagination",
-      description: "Pagination enables a selection from a range of pages",
+      title: "Sayfalandırma (Pagination)",
+      description: "Bir sayfa aralığından seçim yapmayı sağlar.",
       checklist: {
         "c-pagination-selected": {
-          title: "Selected page state",
+          title: "Seçili sayfa durumu",
           description:
-            "Visually highlight the selected page in the list and make it non-interactive.",
+            "Seçili sayfayı liste içinde görsel olarak vurgulayın ve etkileşime geçilemeyecek hale getirin.",
         },
         "c-pagination-ranges": {
-          title: "Page display ranges",
+          title: "Sayfa aralığı",
           description:
-            "Define the ranges for pages rendered around the selected page. It helps render only a limited number of pages but lets the users navigate faster than moving by 1 page at a time.",
+            "Seçilen sayfanın etrafında render edilecek sayfa aralıklarını tanımlayın. Bu, sadece sınırlı sayıda sayfayı render etmenize, ancak kullanıcıların birer birer gitmekten daha hızlı gezinmelerine olanak tanır.",
         },
         "c-pagination-amount": {
-          title: "Amount of items per page",
+          title: "Sayfa başına öğe sayısı",
           description:
-            "Provide an option to select the number of paginated items displayed on the page.",
+            "Sayfalara bölünecek öğe sayısını seçme olanağı sağlayın.",
         },
         "c-pagination-indeterminate": {
-          title: "Indeterminate amount of pages",
+          title: "Belirsiz sayfa sayısı",
           description:
-            "When you don’t know the total number of available pages beforehand, use a different display mode to navigate pages individually.",
+            "Toplamda kaç sayfa olduğu önceden bilinmiyorsa, sayfaları bireysel olarak gezinmek için farklı bir görüntüleme modu kullanın.",
         },
         "c-pagination-a11y-label": {
-          title: "Full page label announcements",
+          title: "Tam sayfa etiketi bildirimleri",
           description:
-            "Pagination should provide clear, dynamic labels for each page for assistive technologies instead of just announcing the number without context.",
+            "Sayfalandırma, yardımcı teknolojiler için her sayfa için açıklayıcı, dinamik etiketler sağlamalıdır, yalnızca numarayı duyurmak yeterli olmamalıdır.",
         },
         "c-pagination-a11y-state": {
-          title: "State announcement",
+          title: "Durum bildirimi",
           description:
-            "Pagination should announce when a selected page is focused.",
+            "Sayfalandırma, seçili sayfa odaklandığında bildirimde bulunmalıdır.",
         },
       },
     },
     "c-progress": {
-      title: "Progress bar",
+      title: "İlerleme Çubuğu (Progress Bar)",
       description:
-        "Bar displaying progress for a task that takes a long time or consists of several steps.",
+        "Uzun süren bir iş veya birkaç adımdan oluşan bir görev için ilerlemeyi gösteren bir çubuk.",
       checklist: {
         "c-progress-label": {
-          title: "Label",
+          title: "Etiket",
           description:
-            "Provide support for visually displaying a label explaining what a progress bar is responsible for.",
+            "İlerleme çubuğunun ne hakkında olduğunu açıklayan bir etiketin görsel olarak desteklenmesini sağlayın.",
         },
         "c-progress-sizes": {
-          title: "Sizes",
+          title: "Boyutlar",
           description:
-            "Loading indicators might provide multiple sizes, depending on the size of the areas where the loading indicator is rendered.",
+            "Yükleniyor göstergeleri, gösterildikleri alana bağlı olarak birden fazla boyut sağlayabilir.",
         },
         "c-progress-duration": {
-          title: "Duration",
+          title: "Süre",
           description:
-            "In some cases, the wait time can’t be determined. The loading indicator should be shown until the loading finishes or an error happens. In other cases, it’s better to indicate the time left until the loading is complete.",
+            "Bazı durumlarda, bekleme süresi belirlenemez. Yükleniyor göstergesi, yükleme tamamlandığında veya bir hata oluştuğunda gösterilmelidir. Diğer durumlarda, yükleme süresinin bitimine kadar kalan zamanı göstermek daha iyi olabilir.",
         },
         "c-progress-a11y-label": {
-          title: "Accessibility label",
+          title: "Erişilebilirlik etiketi",
           description:
-            "Provide support for adding an accessibility label in case you can’t display a label in the interface.",
+            "Arayüzde etiket gösterilemiyorsa, bir erişilebilirlik etiketi eklemek için destek sağlamalısınız.",
         },
       },
     },

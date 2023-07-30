@@ -1,70 +1,70 @@
 export default {
-  title: "Design language",
+  title: "Tasarım Dili",
   description:
-    "Like any language, a design language is a methodical way of communicating with your audience through your approach to product design. It’s the cornerstone of consistent customer experiences.",
+    "Herhangi bir dil gibi, tasarım dili, ürün tasarım yaklaşımınız aracılığıyla hedef kitlenizle yöntemli bir iletişim kurma şeklidir. Tutumlu müşteri deneyimlerinin temelidir.",
 
   sections: {
     "dl-brand": {
-      title: "Brand",
+      title: "Marka",
       description:
-        "Brand drives every single decision you make when building new products or features. A good brand is much more than a name and a logo. It’s the values that define your unique identity and what makes you stand out from others.",
+        "Marka, yeni ürünler veya özellikler oluştururken yaptığınız her kararı yönlendirir. İyi bir marka, sadece bir isim ve bir logodan çok daha fazlasıdır. Benzersiz kimliğinizi tanımlayan değerlerdir ve sizi diğerlerinden farklı kılan şeydir.",
       checklist: {
         "dl-brand-vision": {
-          title: "Vision",
+          title: "Vizyon",
           description:
-            "Why you exist, what your values are, and how they’ll help guide the future of your product.",
+            "Neden var olduğunuz, değerleriniz ve bunların ürününüzün geleceğini nasıl yönlendireceği.",
         },
         "dl-brand-principles": {
-          title: "Design principles",
+          title: "Tasarım prensipleri",
           description:
-            "The considerations that guide the basis of your practice. They outline how you approach design philosophically and help with everyday decisions.",
+            "Pratik temelinizi yönlendiren düşünceler. Tasarıma nasıl yaklaştığınızı felsefi olarak belirlerler ve günlük kararlarınıza yardımcı olurlar.",
         },
         "dl-brand-tone": {
-          title: "Tone of voice",
+          title: "Ses tonu",
           description:
-            "A clear tone of voice defines how you speak to your audience at every moment of their journey, helping them get wherever they want to go.",
+            "Net bir ses tonu, hedef kitlenizle her anında nasıl konuştuğunuzu tanımlar ve onları istedikleri yere nasıl ulaştırdığınıza yardımcı olur.",
         },
         "dl-brand-terminology": {
-          title: "Terminology",
+          title: "Terminoloji",
           description:
-            "Create the standard terms and phrases that need to be kept the same throughout the user experience, speeding up the design process and unifying your voice.",
+            "Kullanıcı deneyimi boyunca aynı tutulması gereken standart terimler ve ifadeler oluşturarak tasarım sürecini hızlandırır ve sesinizi birleştirir.",
         },
         "dl-brand-assets": {
-          title: "Brand assets",
+          title: "Marka varlıkları",
           description:
-            "Using a consistent set of brand assets aligns the user experience across your product and marketing campaigns. These assets include your logo, fonts, icons, illustrations, etc.",
+            "Tutarlı bir marka varlık seti kullanmak, ürününüz ve pazarlama kampanyalarınızdaki kullanıcı deneyimini uyumlu hale getirir. Bu varlıklar, logonuz, yazı tipleriniz, simgeleriniz, illüstrasyonlarınız vb. içerir.",
         },
       },
     },
     "dl-guidelines": {
-      title: "Guidelines",
+      title: "Kılavuzlar",
       description:
-        "Understanding how to approach common UX patterns will allow your organization to establish a consistent approach and user experience on any platform.",
+        "Ortak kullanıcı deneyimi kalıplarına nasıl yaklaşacağınızı anlamak, kuruluşunuzun herhangi bir platformda tutarlı bir yaklaşım ve kullanıcı deneyimi sağlamasına olanak tanır.",
       checklist: {
         "dl-guidelines-a11y": {
-          title: "Accessibility",
+          title: "Erişilebilirlik",
           description:
-            "Guidelines for how you approach accessibility and how you leverage color, hierarchy, and assistive technologies to help your users.",
+            "Erişilebilirliğe nasıl yaklaşacağınız ve kullanıcılarınıza yardımcı olmak için renk, hiyerarşi ve yardımcı teknolojileri nasıl kullandığınızla ilgili kılavuzlar.",
         },
         "dl-guidelines-writing": {
-          title: "Writing guidelines",
+          title: "Yazı rehberleri",
           description:
-            "Every consistent experience needs watertight writing. Laying down the foundations for your house style early keeps everything in line with consistent grammar, style choices, and action-oriented language to help your design.",
+            "Her tutarlı deneyimin su geçirmez bir yazıya ihtiyacı vardır. Ev stilinizin temellerini erken koymak, tutarlı dilbilgisi, stil tercihleri ve eylem odaklı dil ile her şeyi sıraya koymaya yardımcı olur.",
         },
         "dl-guidelines-microcopy": {
-          title: "Microcopy guidelines",
+          title: "Mikro metin kılavuzları",
           description:
-            "The standard way to write for the components in your design system. These take platform conventions and best practices for writing all into consideration.",
+            "Tasarım sisteminizdeki bileşenler için yazma standartı. Bu, platform normlarını ve yazma için en iyi uygulamaları dikkate alır.",
         },
         "dl-guidelines-terminology": {
-          title: "Terminology",
+          title: "Terminoloji",
           description:
-            "Create the standard terms and phrases that need to be kept the same throughout the user experience, speeding up the design process and unifying your voice.",
+            "Kullanıcı deneyimi boyunca aynı tutulması gereken standart terimler ve ifadeler oluşturarak tasarım sürecini hızlandırır ve sesinizi birleştirir.",
         },
         "dl-guidelines-i18n": {
-          title: "Internationalisation",
+          title: "Ulusal Düzenlemeler",
           description:
-            "Define standards for handling content translated into various languages supported by the product. It includes handling translation edge cases and content bi-directionality.",
+            "Ürün tarafından desteklenen çeşitli dillere çevrilen içeriğin nasıl ele alınacağına ilişkin standartları tanımlar. Bu, çeviri kenar durumlarını ve içerik iki yönlülüğünü ele almayı içerir.",
         },
       },
     },
