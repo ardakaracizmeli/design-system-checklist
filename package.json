@@ -5,8 +5,10 @@
   "private": true,
   "dependencies": {
     "@splitbee/web": "^0.3.0",
+    "@vercel/analytics": "^1.1.1",
     "classnames": "^2.3.1",
     "next": "^11.1.0",
+    "node": "^21.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-transition-group": "^4.4.2"
@@ -29,6 +31,8 @@
     ]
   },
   "devDependencies": {
+    "eslint": "8.53.0",
+    "eslint-config-next": "14.0.1",
     "prettier": "2.3.2"
   }
 }
