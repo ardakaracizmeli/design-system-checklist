@@ -12,7 +12,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Color",
-          url: "https://reshaped.so/content/docs/tokens/color",
+          url: "https://reshaped.so/docs/tokens/color",
         },
         {
           title: "Material Design: Dark theme",
@@ -70,7 +70,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Shadow",
-          url: "https://reshaped.so/content/docs/tokens/shadow",
+          url: "https://reshaped.so/docs/tokens/shadow",
         },
         {
           title: "Material Design: Elevation",

@@ -18,7 +18,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Core principles",
-          url: "https://reshaped.so/content/docs/getting-started/principles",
+          url: "https://reshaped.so/docs/getting-started/principles",
         },
         {
           title: "Chakra: Design principles",

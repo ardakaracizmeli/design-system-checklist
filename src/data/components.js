@@ -12,7 +12,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Accordion",
-          url: "https://reshaped.so/content/docs/utilities/accordion",
+          url: "https://reshaped.so/docs/utilities/accordion",
         },
         {
           title: "MUI: Accordion",
@@ -37,7 +37,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Alert",
-          url: "https://reshaped.so/content/docs/components/alert",
+          url: "https://reshaped.so/docs/components/alert",
         },
         {
           title: "Atlassian Design System: Banner",
@@ -63,7 +63,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Avatar",
-          url: "https://reshaped.so/content/docs/components/avatar",
+          url: "https://reshaped.so/docs/components/avatar",
         },
         {
           title: "Polaris: Avatar",
@@ -89,7 +89,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Badge",
-          url: "https://reshaped.so/content/docs/components/badge",
+          url: "https://reshaped.so/docs/components/badge",
         },
         {
           title: "Material: Badge",
@@ -118,7 +118,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Button",
-          url: "https://reshaped.so/content/docs/components/button",
+          url: "https://reshaped.so/docs/components/button",
         },
         {
           title: "Atlassian Design System: Button",
@@ -141,7 +141,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Breadcrumbs",
-          url: "https://reshaped.so/content/docs/components/breadcrumbs",
+          url: "https://reshaped.so/docs/components/breadcrumbs",
         },
         {
           title: "Atlassian Design System: Breadcrumbs",
@@ -191,7 +191,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Card",
-          url: "https://reshaped.so/content/docs/components/card",
+          url: "https://reshaped.so/docs/components/card",
         },
         {
           title: "MUI: Card",
@@ -216,7 +216,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Carousel",
-          url: "https://reshaped.so/content/docs/components/carousel",
+          url: "https://reshaped.so/docs/components/carousel",
         },
         {
           title: "Mantine: Carousel",
@@ -242,7 +242,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Checkbox",
-          url: "https://reshaped.so/content/docs/components/checkbox",
+          url: "https://reshaped.so/docs/components/checkbox",
         },
         {
           title: "Audi Design System: Checkbox",
@@ -260,7 +260,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Divider",
-          url: "https://reshaped.so/content/docs/components/divider",
+          url: "https://reshaped.so/docs/components/divider",
         },
         {
           title: "React Spectrum: Divider",
@@ -285,7 +285,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Popover",
-          url: "https://reshaped.so/content/docs/components/popover",
+          url: "https://reshaped.so/docs/components/popover",
         },
         {
           title: "Atlassian Design System: Dropdown menu",
@@ -303,7 +303,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Icon",
-          url: "https://reshaped.so/content/docs/utilities/icon",
+          url: "https://reshaped.so/docs/utilities/icon",
         },
         {
           title: "React Spectrum: Icon",
@@ -326,7 +326,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Image",
-          url: "https://reshaped.so/content/docs/utilities/image",
+          url: "https://reshaped.so/docs/utilities/image",
         },
         {
           title: "Chakra: Image",
@@ -351,7 +351,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Link",
-          url: "https://reshaped.so/content/docs/components/link",
+          url: "https://reshaped.so/docs/components/link",
         },
         {
           title: "React Spectrum: Link",
@@ -393,7 +393,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Loader",
-          url: "https://reshaped.so/content/docs/components/loader",
+          url: "https://reshaped.so/docs/components/loader",
         },
         {
           title: "Atlassian Design System: Spinner",
@@ -420,7 +420,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Modal",
-          url: "https://reshaped.so/content/docs/components/modal",
+          url: "https://reshaped.so/docs/components/modal",
         },
         {
           title: "Atlassian Design System: Modal Dialog",
@@ -468,7 +468,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Progress",
-          url: "https://reshaped.so/content/docs/components/progress",
+          url: "https://reshaped.so/docs/components/progress",
         },
         {
           title: "Atlassian Design System: Progress bar",
@@ -492,7 +492,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Radio",
-          url: "https://reshaped.so/content/docs/components/radio",
+          url: "https://reshaped.so/docs/components/radio",
         },
         {
           title: "Material: Radio button",
@@ -519,7 +519,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Select",
-          url: "https://reshaped.so/content/docs/components/select",
+          url: "https://reshaped.so/docs/components/select",
         },
         {
           title: "Polaris: Select",
@@ -542,7 +542,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Skeleton",
-          url: "https://reshaped.so/content/docs/components/skeleton",
+          url: "https://reshaped.so/docs/components/skeleton",
         },
         {
           title: "MUI: Skeleton",
@@ -566,7 +566,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Switch",
-          url: "https://reshaped.so/content/docs/components/switch",
+          url: "https://reshaped.so/docs/components/switch",
         },
         {
           title: "Mantine: Switch",
@@ -592,7 +592,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Tabs",
-          url: "https://reshaped.so/content/docs/components/tabs",
+          url: "https://reshaped.so/docs/components/tabs",
         },
         {
           title: "Atlassian Design System: Tabs",
@@ -618,7 +618,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Text area",
-          url: "https://reshaped.so/content/docs/components/text-area",
+          url: "https://reshaped.so/docs/components/text-area",
         },
         {
           title: "Chakra: Text area",
@@ -646,7 +646,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Text field",
-          url: "https://reshaped.so/content/docs/components/text-field",
+          url: "https://reshaped.so/docs/components/text-field",
         },
         {
           title: "React Spectrum: Text field",
@@ -673,7 +673,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Toast",
-          url: "https://reshaped.so/content/docs/components/toast",
+          url: "https://reshaped.so/docs/components/toast",
         },
         {
           title: "Polarish: Toast",
@@ -695,7 +695,7 @@ export default {
       resources: [
         {
           title: "Reshaped: Tooltip",
-          url: "https://reshaped.so/content/docs/components/tooltip",
+          url: "https://reshaped.so/docs/components/tooltip",
         },
         {
           title: "React Specturm: Tooltip",
