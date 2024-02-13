@@ -97,7 +97,7 @@ export default {
         "df-elevation-shadows": {
           title: "Sombras",
           description:
-            "Forneça múltiplos valores de sombra com base nos níveis de elevação suportados. Na maioria das vezes, você precisará de 3 a 4 níveis de elevação em seu produto..",
+            "Forneça múltiplos valores de sombra com base nos níveis de elevação suportados. Na maioria das vezes, você precisará de 3 a 4 níveis de elevação em seu produto.",
         },
         "df-elevation-background": {
           title: "Cores de fundo",
