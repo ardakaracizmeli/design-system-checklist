@@ -3,7 +3,7 @@
  */
 module.exports = {
   i18n: {
-    locales: ["en", "pt", "tr", "zh-cn"],
+    locales: ["en", "ko", "pt", "tr", "zh-cn"],
     defaultLocale: "en",
   },
 };
