@@ -13,16 +13,17 @@ If you have any information to add to existing sections, please open a pull requ
 - Follow the same tone of voice used across the checklist to make reading easier for visitors
 
 ### Running locally
+
 ```
 $ git clone git@github.com:ardakaracizmeli/design-system-checklist.git
 $ cd design-system-checklist
-$ npm install
-$ npm start
+$ yarn install
+$ yarn start
 ```
 
 ### Feedback
+
 Feel free to open github issues or you can reach us directly at:
 
 ardakaracizmeli@gmail.com
 blv.dmitry@gmail.com
-
